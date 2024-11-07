@@ -1,0 +1,149 @@
+/* General Styling */
+.BuildCareers {
+    padding: 100px 50px;
+  }
+  
+  .BuildCareers_Detalis h2 {
+    font-weight: 600;
+  }
+  
+  .BuildCareersForm {
+    padding: 100px 100px;
+  }
+  
+  .BuildBTN {
+    background-color: #d4b76e;
+    transition: 0.8s;
+    font-size: 20px;
+    padding: 12px 35px;
+    margin-left: 10px;
+  }
+  
+  .BuildBTN:hover {
+    background-color: #e4c063;
+  }
+  
+  /* Input Styling */
+  .CityInput {
+    max-width: 800px;
+    width: 100%;
+    margin-right: 10px;
+  }
+  
+  .d-flex.justify-content-between {
+    gap: 10px; /* Adds space between button and input */
+  }
+  
+  .BuildJob,
+  .BuildCategory {
+    width: 48%; /* Ensures both fields are side by side */
+    /* padding: 20px !important; */
+  }
+  
+  .BuildJob .MuiOutlinedInput-root,
+  .BuildCategory .MuiOutlinedInput-root {
+    border-radius: 8px;
+  }
+  .CityInputWrapper {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .location-icon {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    color: #d4b76e; 
+  }
+
+  /*  */
+  /* Order_images_box_detals */
+  .OrderDelivertext img{
+    max-width:180px;
+    margin:0px 0px 50px 400px;
+}
+  .OrderDelivertext h2{
+    font-weight:600;
+    margin-bottom:30px; 
+}
+.OrderDeliver_images img{
+    max-width:540px;
+    height:540px;
+    position:relative;
+    margin:100px 0px;
+}
+.OrderDeliver_box1{
+    z-index:999;
+    position:absolute;
+    left: 90px;
+    top:-60px;
+    max-width: 450px;
+    height: 350px;
+    border-radius:40px;
+    background-color:#faf8f5;
+    border: 2px solid #fff5dc;
+    padding:30px;
+
+}
+
+.OrderDeliver_images img{
+    position:relative;
+}
+.OrderDeliver_box2{
+    position:absolute;
+    right:80px;
+    bottom:200px;
+    max-width: 450px;
+    height: 350px;
+    border-radius:40px;
+    background-color:#faf8f5;
+    border: 2px solid #fff5dc;
+    padding:30px;
+}
+.OrderDeliver_images{
+    position:relative;
+}
+.OrderDeliver_box3{
+    left:90px;
+    bottom:-70px;
+    position:absolute;
+    max-width: 450px;
+    height: 350px;
+    border-radius:40px;
+    background-color:#faf8f5;
+    border: 2px solid #fff5dc;
+    padding:30px;
+}
+.OrderDeliverBox_detals h4{
+    font-weight:600;
+    
+}
+.OrderDeliveryCrr{
+    padding: 0px 50px 100px 50px;
+}
+.text-ellipsis {
+  display: -webkit-box; 
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 6; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: normal; 
+  margin: 5px 0; 
+}
+
+.iconOrderDel{
+    color:#d4b76e;
+}
+.Featured img{
+    max-width: 20px;
+    width: 100%;
+    height: 20px;
+    margin: 0px;
+}
+.OrderDeliverBTN{
+    background-color:#d4b76e;
+    border-radius:10px;
+    padding: 10px;
+}

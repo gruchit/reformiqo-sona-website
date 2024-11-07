@@ -1,0 +1,13 @@
+.Footer{
+    padding:60px 50px;
+    background-color: black; 
+}
+.Footer_logo img{
+    max-width:210px;
+    margin-bottom:50px;
+}
+.Footer_Bottom_icon img{
+    max-width:30px;
+    height: 30px;
+    margin:15px;
+}

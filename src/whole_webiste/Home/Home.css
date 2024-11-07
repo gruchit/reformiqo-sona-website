@@ -1,0 +1,506 @@
+*{
+    
+}
+.Focus_on {
+    height: 150px;
+    background-color: #D4B76E;
+    display: grid;
+    place-items: center; 
+}
+
+.Focus_on p {
+    font-size: 50px;
+    font-weight:600;
+    margin: 0; 
+}
+/* AboutSonaEx */
+.AboutSonaEx_Btn button{
+    font-size:22px;
+    background-color:#d4b76e;
+    border-radius: 35px;
+    padding: 16px 85px;
+    color:white;
+    
+}
+.AboutSonaEx_Btn button:hover{
+    background-color:#dcb142;
+}
+.AboutSonaEx{
+    padding:100px 50px;
+    overflow:hidden;
+}
+.abSona_left img{
+    max-width:400px;
+}
+.absone_right h5{
+    color:#D4B76E;
+    font-size:30px;  
+
+}
+.absone_right h1{
+    font-weight:700;
+    font-size:45px; 
+    margin-bottom:30px; 
+}
+.absone_right p{
+    color:#696a6b;
+    font-size:20px;
+}
+
+/*  */
+.YearOf{
+    padding : 90px 0px;
+    background-color:#faf8f5;
+}
+.YearOf_box{
+    height:500px;
+    max-width:80%;
+    background-color:#ffffff;
+    box-shadow: 0 1px 15px rgba(130, 158, 195, 0.4);
+    position:relative ;
+}
+.year_arrow{
+    max-width:200px;
+    height:30px;
+    position: absolute;
+    z-index:1;
+    top:-15px;
+    right:0px;
+}
+.YearOf_img1 img{
+    max-width:80px;
+    margin: 30px 0px ;
+}
+.YearOf_heard h2{
+    font-weight:600;
+}
+.YearOf_heard p{
+    font-weight:100 !important;
+}
+.year_bols {
+    max-width:150px;
+    position:absolute;
+    bottom:-40px;
+    left:150px;
+    z-index:-1;
+
+}
+/* product */
+.Product{
+    padding: 100px 40px ;
+}
+.Product_Detail h2{
+    font-weight:600;
+    margin-bottom:30px; 
+}
+.Product_Detail{
+    position:relative;
+}
+.Product_Detail_left{
+    max-width:200px;
+    height:30px;
+    position: absolute;
+    z-index:1;
+    top:-15px;
+    left:0px; 
+}
+.Produ_card_det h4{
+    font-weight:600;
+    margin-bottom:30px; 
+}
+.Product_cards {
+    height:510px;
+    max-width:340px;
+    border: 2px solid #fff5dc;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+.Product_Detail .row .col-4 .Product_cards{
+    box-shadow: 0 1px 15px rgba(130, 158, 195, 0.4);
+}
+
+.product_bottom_phto img {
+    max-width: 100%; /* Ensures image does not exceed container width */
+    height: auto;
+    border-radius: 200px 200px 0 0 / 40px 40px 0 0;
+    object-fit: contain;
+    display: block;
+}
+.Product_Detail .row {
+    margin-left: 0; /* Remove default Bootstrap margin */
+    margin-right: 0;
+}
+.Product_Detail .row{
+    position:relative;
+}
+.Product_Detail .row .Double_line{
+    position:absolute;
+    width:180px;
+    height:50px;
+    bottom:-30px;
+    right:0px;
+}
+/*  */
+.infinite {
+    overflow: hidden; /* Prevent any scrolling */
+    position: relative; /* To position the background image correctly */
+}
+
+.infinite-bg {
+    z-index: -1;
+    width: 100%;
+    height: 324px;
+    object-fit: cover;
+    position: absolute;
+    top: 0; /* Aligning image to the top */
+    left: 0; /* Aligning image to the left */
+}
+
+.infinite .infi_card {
+    position: relative;
+    z-index: 1;
+    padding: 90px 0px; /* Added padding for better spacing */
+    color: #333; /* Improved text color for contrast */
+    width: 100%; /* Ensure it takes full width of the parent */
+    max-width: 1200px; /* Optional: set a max-width for large screens */
+    margin: 0 auto; /* Center the card */
+}
+
+.infi_card h1 {
+    font-size: 2.5rem; /* Larger font size for the main heading */
+    margin-bottom: 20px; /* Spacing between heading and subheading */
+}
+
+.infi_card h3 {
+    font-size: 1.5rem; /* Adjusted size for subheading */
+    /* color: #555;  */
+}
+
+.infi_card h5 {
+    font-size: 1rem; /* Adjusted size for the description */
+    margin-bottom: 20px; /* Added space below the description */
+}
+
+.custom-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 30px; /* Ensured padding is consistent */
+    background-color: #f1f1f1; 
+    border-radius: 40px; /* Rounded corners */
+    border: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+    transition: background-color 0.3s ease, transform 0.2s; 
+    width: 100%; 
+}
+
+.custom-button:hover {
+    background-color: #ddd; /* Hover effect for the button */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.custom-button span {
+    margin-right: 10px; /* Space between text and the image */
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px; 
+    height: 55px; 
+}
+
+.icon-wrapper img {
+    width: 55px; 
+    height: 55px; 
+    object-fit: contain; 
+}
+/*  */
+.markerLe{
+    overflow:hidden;
+    background-color:#faf8f5;
+    padding :100px 50px 50px 50px;
+}
+.no-gutters h2{
+    font-weight:700;
+}
+.markerLe_cards{
+    padding:30px;
+    background-color:white;
+    height:400px;
+    max-width:350px;
+    border-radius:10px;
+    box-shadow: 0 1px 15px rgba(130, 158, 195, 0.4);
+    border: 2px solid #fff5dc;
+
+}
+.markerLe_cards img{
+    max-width:80px;
+}
+.markerLe_cards h4{
+    font-weight:700;
+}
+.markerLe_img{
+    max-width:200px ;
+    height:30px;
+    /* padding:0px 0px 0px 50px; */
+}
+.doblebol_markerLe_cards{
+    width:180px;
+    height:50px;
+    margin-top :10px;
+}
+  /*  Order */
+.Order{
+    padding :100px 50px;
+}
+  
+.Order_text img{
+    max-width:180px;
+    margin:0px 0px 50px 400px;
+}
+  .Order h2{
+    font-weight:600;
+    margin-bottom:30px; 
+}
+.Order_images img{
+    z-index:-999;
+    max-width:540px;
+    height:540px;
+    position:relative;
+    margin:100px 0px;
+}
+
+.Order_images_box1{
+    z-index:999;
+    position:absolute;
+    left: 90px;
+    max-width: 450px;
+    height: 290px;
+    border-radius:40px;
+    background-color:#faf8f5;
+    border: 2px solid #fff5dc;
+
+    padding:40px;
+
+}
+
+.Order_images img{
+    position:relative;
+}
+.Order_images_box2{
+    position:absolute;
+    right:80px;
+    bottom:245px;
+    max-width: 450px;
+    height: 290px;
+    border-radius:40px;
+    background-color:#faf8f5;
+    border: 2px solid #fff5dc;
+
+    padding:40px;
+}
+.Order_images{
+    position:relative;
+}
+.Order_images_box3{
+    left:90px;
+    bottom:0px;
+    position:absolute;
+    max-width: 450px;
+    height: 290px;
+    border-radius:40px;
+    background-color:#faf8f5;
+    border: 2px solid #fff5dc;
+
+    padding:40px;
+}
+
+.Order_images_box_detals img{
+    max-width:240px;
+    height:180px;
+    margin:0px;
+    position:absolute;
+    z-index:999;
+    top:-75px;
+    left:-75px;
+}
+.Order_images_box_detals h4{
+    font-weight:600;
+    
+}
+/* Our_client */
+.Our_client{
+    overflow:hidden;
+    padding:100px 0px 100px 50px;
+    background-color:#faf8f5;
+}
+.Our_client_left .OurLeftArrow{
+    max-width:200px;
+}
+.Our_client_left h1{
+    margin: 50px 0px;
+    font-weight:600;
+}
+.OurDoubleBol{
+    max-width:180px;
+    height:50px;
+}
+.Our_client_right {
+    background-color: white;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0 1px 15px rgba(130, 158, 195, 0.4);
+    display: flex;
+    flex-direction: column;  /* Arrange children in a column */
+    height: 100%;  /* Ensure it takes full height */
+}
+.OurClientRight_top img{
+    max-width:70px;
+    height:70px;
+}
+.OurClientRight_top h5{
+    font-weight:600;
+}
+.OurClientRight_top .showPro p{
+    white-space: nowrap;      
+  overflow: hidden;
+}
+.arowOur img{
+    width:20px;
+    height:15px;
+    cursor:pointer;
+}
+/*  */
+.UpcomingEv {
+    padding: 100px 50px;
+}
+
+.UpcomingEv_text h2,h4 {
+    font-weight: 600;
+}
+
+.UpcomingEv_text img {
+    max-width: 180px;
+    margin:0px 0px 40px 400px;
+    display: block;
+}
+
+.UpcomingEv_box {
+    box-shadow: 0 1px 15px rgba(130, 158, 195, 0.4);
+    cursor: pointer;
+    max-width: 350px;
+    border-radius: 10px;
+    height: 385px;
+    overflow: hidden;
+    background-color: #efefef;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for both */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Ensure it respects the flow */
+}
+
+
+.UpcomingEv .row .col-4:hover {
+    transform: scale(1.05);
+    /* box-shadow: 0 5px 25px rgba(130, 158, 195, 0.6); */
+}
+.UpcomingEv .row .col-4:hover > .date_Upcomin {
+    
+    transform: scale(1.20); 
+    transition: transform 0.3s ease; 
+}
+.UpcomingEv_box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.UpcomingEv .row{
+    padding-top:100px;
+}
+.UpcomingEv .row .col-4{
+    position:relative;
+    transition :transform 0.3s ease;
+
+}
+.date_Upcomin {
+    max-width: 85px;
+    height: 80px;
+    top: -35px;
+    position: absolute;
+    z-index: 1;
+    right: 40px;
+    background-color: #d4b76e;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius:5px;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+/*  */
+.Trusted {
+    padding: 100px 50px;
+}
+.Trusted_text h2 {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.Trusted_text img {
+    max-width: 180px;
+    margin:0px 0px 40px 400px;
+    display: block;
+}
+
+.slider-container {
+    margin-top: 50px;
+    padding: 0 50px;
+}
+
+.slide-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.slide-item img {
+    max-width: 80%;
+    height: auto;
+    object-fit: contain;
+    cursor:pointer;
+}
+/* Counder */
+.Counter {
+    padding: 0px 80px;
+}
+
+.counder1 {
+    background-color: #d4b76e;
+    height: 150px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.counder1 h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.counder1 p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}

@@ -1,0 +1,110 @@
+.InWeSer{
+    padding:50px 50px;
+}
+.InWeSer_imag img{
+    max-width:180px;
+    margin-left:300px;
+    margin-bottom:20px;
+}
+.InWeSer_tabs{
+    background-color:#faf8f5;
+    padding:100px 0px 150px 50px;
+    position:relative;
+
+}
+.InWeSer_tabsBox{
+    max-width:1000px;
+    width:100%;
+    border-radius:20px 0px 0px 20px;
+    height:400px;
+    background-color:white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.InWeSer_tabs_left img{
+    position:absolute;
+    max-width:200px;
+    width:100%;
+    z-index:1;
+    top:82px;
+    left:171px;
+}
+.InWeSer_tabsDoBol img{
+    position:absolute;
+    max-width:200px;
+    width:100%;
+    z-index:1;
+    right:100px;
+    bottom:30px;
+}
+/*  */
+.Frequently{
+    padding:100px 50px;
+}
+.Frequently_Left h2{
+    font-weight:700;
+}
+.Frequently_Left img{
+    max-width:180px;
+    margin-bottom:20px;
+}
+.faq-section {
+    margin-top: 20px;
+}
+
+.faq-item {
+    background-color: #faf8f5; /* Set the background color */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden; /* Ensures the content is hidden during transition */
+    transition: background-color 0.3s ease;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    background-color: transparent; /* No additional color, since the item already has #faf8f5 */
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #f0f0f0; /* Subtle hover effect */
+}
+
+.arrow {
+    font-size: 16px;
+    color: black; /* Arrow color */
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 15px;
+}
+
+.faq-answer.open {
+    max-height: 100px; /* Adjust this to fit your content */
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+.faq-question h5{
+    font-weight:600;
+}
+.Frequently_right{
+    padding:30px;
+    background-color:#faf8f5;
+}
+.SubmitFormAuto{
+    background-color:#d4b76e;
+    padding:10px 0px;
+    font-size:20px;
+}
+.SubmitFormAuto:hover{
+    background-color:#dcb142;
+}

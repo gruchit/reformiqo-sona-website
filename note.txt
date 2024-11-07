@@ -1,0 +1,11 @@
+.card-grid > div:nth-child(1) {
+    margin-top: 0; /* First card stays at top */
+}
+
+.card-grid > div:nth-child(2) {
+    margin-top: 50px; /* Push the second card down */
+}
+
+.card-grid > div:nth-child(3) {
+    margin-top: 0; /* Third card stays at top */
+}

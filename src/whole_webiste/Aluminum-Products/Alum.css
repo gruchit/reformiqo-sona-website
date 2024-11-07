@@ -1,0 +1,101 @@
+.AluMarketLed{
+    padding: 50px 50px;
+    background-color:#faf8f5;
+}
+.AluMarketLed_img{
+    position:relative;
+}
+.AluMarketLed_img .AluMarketLed_imgArrow{
+    /* position:absolute; */
+    max-width:200px;
+    width:100%;
+    height:30px;
+
+}
+.AluMarketLed_img .AluMarketLed_imgDBl{
+    /* position:absolute; */
+    max-width:180px;
+    width:100%;
+}
+.AluMarketLedDetail{
+    padding:60px 0px;
+}
+.marketCards{
+    max-width:300px;
+    width:100%;
+    height:auto;
+    padding:20px;
+    border:2px solid #fff5dc;
+    background-color:white;
+    border-radius:25px;
+    position:relative;
+}
+.marketCards img{
+    max-width:70px;
+    width:100%;
+    top:-40px;
+    /* margin-top:20px; */
+    position:absolute;
+}
+.marketCardsTXT
+{
+    margin-top:50px;
+    
+}
+.marketCardsTXT h5{
+    font-weight:600;
+}
+
+.AluMarketLedCards .row .col-4:nth-child(even)  {
+    /* margin-top: 60px; */
+}
+.AluMarketLedCards .row .col-4:nth-child(odd)  {
+    /* margin-top: 0px; */
+    
+}
+/*  */
+.AlumBenefit{
+    padding:70px 50px;
+}
+.AlumBenefit_Img img{
+    margin-left:300px;
+    margin-bottom:20px;
+    max-width: 180px ;
+    width: 100%;
+}
+
+.AlumBenefitDown{
+    padding: 100px 50px 100px 0px;
+    background-color: #faf8f5;
+}
+.AlumBenefitTabs{
+    background-color:white;
+    box-shadow: 0 1px 15px rgba(130, 158, 195, 0.4);
+    max-width: 1000px;
+    height:auto;
+    padding: 30px;
+    border-radius: 0px 20px 20px 0px ;
+}
+.AlumBenefitTabsIcon{
+    margin-right:20px;
+    color:white;
+    background-color: #d4b76e ;
+    padding: 5px;
+    border-radius:50% ;
+    vertical-align: middle;
+}
+.AlumBenefitTabs h4{
+    font-weight:600;
+    line-height:30px;
+}
+.AlumBenefitDown{
+    position: relative;
+}
+.AlumBenefitDown img{
+    position: absolute;
+    max-width: 200px;
+    width: 100%;
+    right:295px;
+    top:87px;
+
+}

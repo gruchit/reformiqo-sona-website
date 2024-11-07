@@ -1,0 +1,239 @@
+.Your_choice{
+    padding:100px 50px; 
+}
+.Your_choice_leftArrow img{
+    width:200px;
+    height:30px;
+}
+.YourChoice_Details{
+    padding:50px 0px;
+}
+/* Know_More_imgBol */
+.YourChoice_Details h2{
+    font-weight:700;
+}
+.YourChoice_Btn button{
+    font-size:22px;
+    background-color:#d4b76e;
+    border-radius: 35px;
+    padding: 16px 85px;
+    color:white;
+    
+}
+.YourChoice_Btn button:hover{
+    background-color:#dcb142;
+}
+.YourChoice_tubes{
+    padding:100px 0px;
+}
+.YourChoice_tubes img{
+    width:90px;
+    height:45px;
+}
+.YourChoice_tubes_box{
+    transition:0.8s;
+    width: 100%; /* Makes the box responsive */
+    max-width: 730px; /* Maximum width constraint */
+    height:300px;
+    background-color:#d4b76e;
+    border-radius:60px;
+    padding:30px;
+}
+.YourChoice_tubes_box img{
+    max-width:80px;
+    height:100%;
+}
+.YourChoice_tubes_box h3{
+    font-weight:700;
+}
+/*  */
+.Company{
+    padding:0px 0px 50px 0px;
+}
+.Company img{
+    width: 100%;
+    object-fit: cover; 
+}
+/*  */
+.Our_Strength{
+    background-color:#faf8f5;
+    padding:50px 50px;
+    position:relative;
+}
+.Our_Strength_images .left_arwOurSt{
+    max-width:200px;
+}
+.Our_Strength_images .DoubleBolLine_Our{
+    max-width:180px;
+    height:50px;
+    position:absolute;
+    top:-25px;
+    right:75px;
+
+}
+.Our_Strength_details{
+    padding:50px 0px;
+}
+.Our_Strength_details h2{
+    font-weight:600;
+}
+.Our_Strength_cards{
+    max-width:260px;
+    width:100%;
+    height:310px;
+    background-color:white;
+    border:2px solid #fff5dc;
+    border-radius:25px;
+    position:relative;
+    padding:20px;
+}
+.Our_Strength_cards img{
+    max-width:70px;
+    width:100%;
+    position:absolute;
+    top:-30px;
+    left:20px;
+}
+.Our_Strength_cards h5{
+    font-weight:650;
+    margin-top:50px;
+}
+/*  */
+/* General styling for the container */
+.Know_More {
+    padding: 50px 30px;
+    background-color: white;
+}
+
+/* Header section with a centered line decoration */
+
+.Know_More_tabs{
+    padding:50px 70px 50px 0px;
+    background-color: #faf8f5;
+}
+.Know_More_tabsInner{
+    background-color:white;
+    max-width:1000px;
+    border-radius:0px 20px 20px 0px;
+    width:100%;
+    height:400px;
+    /* height:auto; */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.Know_More_imgBol {
+    margin-bottom: 20px;
+    margin-left:300px;
+}
+
+.Know_More h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+}
+
+.Know_More p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+/* Styling for the tab buttons */
+.filter-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    color: #555;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, letter-spacing 0.3s ease-in-out;
+}
+
+.filter-button.active {
+    color: black;
+    letter-spacing: 1px; 
+    transform: scale(1.05);
+    font-weight: 600; 
+}
+
+.filter-button.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #b49f6c;
+    transition: width 0.3s ease-in-out;
+    width: 100%; /* Full width on active */
+}
+
+.filter-button::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    right: 0% ;
+    bottom: -5px;
+    height: 2px;
+    background-color: #b49f6c;
+    
+    transition: width 0.3s ease-in-out;
+    width: 0; /* Initially hidden */
+}
+
+
+/* Main tab content container */
+.KnowMoreTabs {
+    
+    /* background-color: white; */
+    padding: 20px 60px ;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Smooth transition for content change */
+.text-ellipsis {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10; /* Limits the text to 10 lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px 0;
+}
+.tab-content {
+    flex: 1;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    display: none;
+    height: 100%; /* Take up full height */
+    overflow-y: auto; /* Add vertical scroll for overflow */
+}
+
+.tab-content.show {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+}
+
+/* Utility classes */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}

@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'ProductSans';
+    src: url('../fonts/ProductSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+     *{
+        scroll-behavior: smooth;
+     }
+      
+
+
+.home-photo{
+
+    margin-top:10px;
+}
+
+.home-photo img{
+    border-radius:35px;
+    height:750px;
+    width:100%;
+}
+
+/* navbar */
+.navbar-brand img{
+    height:50px;
+    width: 200px;
+}
