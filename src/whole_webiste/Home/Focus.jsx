@@ -1,5 +1,5 @@
 import React from 'react'
-import './home.css'
+import './Home.css'
 import '../../assets/fonts/fonts.css'
 import AOS from 'aos';
 import { useEffect } from 'react';
