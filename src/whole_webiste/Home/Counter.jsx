@@ -50,7 +50,7 @@ function Counter() {
         <div className='Counter' ref={counterRef}>
             <div className='row d-flex justify-content-center' data-aos="zoom-in-up">
                 {counters.map((counter, index) => (
-                    <div key={index} className='col-xxl-3 mt-2 col-xl-3 col-lg-3 col-md-4 col-md-6 col-sm-12 d-flex justify-content-center'>
+                    <div key={index} className='col-xxl-3 mt-2 col-xl-3 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center'>
                         <div className='counder1 flex-column text-center sans_light text-white'>
                             <h1>
                                 {isVisible && (
