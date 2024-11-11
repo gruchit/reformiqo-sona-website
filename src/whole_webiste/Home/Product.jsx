@@ -24,7 +24,7 @@ function Product() {
                         data-aos-delay="1000"
                         data-aos-duration="3000"
                     />
-                    <div className='pt-5'
+                    <div className='pt-5 container'
                         data-aos="zoom-in-up"
                         data-aos-offset="50"
                         data-aos-delay="1000"
@@ -36,12 +36,12 @@ function Product() {
                     >
                         <h2 className='text-center'>Products We Provide</h2>
                         <p className='text-center sans_light text-secondary'>We, at Sona Extrusion, are maximizing our potential at our 1,00,000 sq. ft. ultramodern &
-                            well-defined single roof manufacturing plant <br /> which is fully controlled by 5 Micron Positive
-                            Air Handling System and operated high-quality, well-advanced & reliable German Machinery. <br />
+                            well-defined single roof manufacturing plant  which is fully controlled by 5 Micron Positive
+                            Air Handling System and operated high-quality, well-advanced & reliable German Machinery. 
                             We ensure a well-organized and totally dust-free manufacturing environment, strictly
-                            adhering to <br /> ‘Good Manufacturing Practices’ as per ISO 15378.</p>
+                            adhering to  ‘Good Manufacturing Practices’ as per ISO 15378.</p>
                     </div>
-                    <div className='row  pt-5'
+                    <div className='row d-flex justify-content-center py-5'
                         data-aos="fade-up"
                         data-aos-offset="0"
                         data-aos-delay="1000"
@@ -51,7 +51,7 @@ function Product() {
                         mirror="true"
 
                     >
-                        <div className="col-4 ">
+                        <div className="col-lg-4 col-md-6 col-sm-12 ProCol d-flex justify-content-center ">
                             <div className="Product_cards m-auto">
                                 <div className="product_img p-4">
                                     <img src={Ellipse} alt="" />
@@ -69,7 +69,7 @@ function Product() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-4 mt-5 pt-5 ">
+                        <div className="col-lg-4 col-md-6 col-sm-12 ProCol d-flex justify-content-center mt-lg-5 pt-lg-5    mt-sm-3 pt-sm-0   mt-md-0 pt-md-0 ">
                             <div className="Product_cards m-auto">
                                 <div className="product_img p-4">
                                     <img src={Ellipse} alt="" />
@@ -85,7 +85,7 @@ function Product() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-4 ">
+                        <div className="col-lg-4 col-md-6 col-sm-12 ProCol d-flex justify-content-center mt-sm-3">
                             <div className="Product_cards m-auto">
                                 <div className="product_img p-4">
                                     <img src={Ellipse} alt="" />

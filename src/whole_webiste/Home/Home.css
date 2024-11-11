@@ -2,6 +2,7 @@
     
 }
 .Focus_on {
+    overflow:hidden;
     height: 150px;
     background-color: #D4B76E;
     display: grid;
@@ -14,6 +15,10 @@
     margin: 0; 
 }
 /* AboutSonaEx */
+.AboutSonaEx { 
+    padding: 70px 50px;
+    overflow: hidden;
+}
 .AboutSonaEx_Btn button{
     font-size:22px;
     background-color:#d4b76e;
@@ -31,15 +36,15 @@
 }
 .abSona_left img{
     max-width:400px;
+    width: 100%;
 }
-.absone_right h5{
+.absone_right h3{
     color:#D4B76E;
-    font-size:30px;  
+    /* font-size:30px;   */
 
 }
 .absone_right h1{
     font-weight:700;
-    font-size:45px; 
     margin-bottom:30px; 
 }
 .absone_right p{
@@ -49,18 +54,20 @@
 
 /*  */
 .YearOf{
-    padding : 90px 0px;
+    overflow:hidden;
     background-color:#faf8f5;
 }
 .YearOf_box{
-    height:500px;
-    max-width:80%;
+    padding:50px 50px ;
+    height:auto;
+    max-width:90%;
     background-color:#ffffff;
     box-shadow: 0 1px 15px rgba(130, 158, 195, 0.4);
     position:relative ;
 }
 .year_arrow{
     max-width:200px;
+    width: 100%;
     height:30px;
     position: absolute;
     z-index:1;
@@ -71,22 +78,21 @@
     max-width:80px;
     margin: 30px 0px ;
 }
+
 .YearOf_heard h2{
     font-weight:600;
 }
-.YearOf_heard p{
-    font-weight:100 !important;
-}
 .year_bols {
     max-width:150px;
+    width: 100%;
     position:absolute;
     bottom:-40px;
     left:150px;
     z-index:-1;
-
 }
 /* product */
 .Product{
+    
     padding: 100px 40px ;
 }
 .Product_Detail h2{
@@ -111,12 +117,13 @@
 .Product_cards {
     height:510px;
     max-width:340px;
+    width: 100%;
     border: 2px solid #fff5dc;
     height: auto;
     border-radius: 10px;
     overflow: hidden; 
 }
-.Product_Detail .row .col-4 .Product_cards{
+.Product_Detail .row .ProCol .Product_cards{
     box-shadow: 0 1px 15px rgba(130, 158, 195, 0.4);
 }
 
@@ -140,6 +147,7 @@
     height:50px;
     bottom:-30px;
     right:0px;
+    z-index: -999;
 }
 /*  */
 .infinite {
@@ -150,7 +158,7 @@
 .infinite-bg {
     z-index: -1;
     width: 100%;
-    height: 324px;
+    height: 100%;
     object-fit: cover;
     position: absolute;
     top: 0; /* Aligning image to the top */
@@ -232,7 +240,7 @@
 .markerLe_cards{
     padding:30px;
     background-color:white;
-    height:400px;
+    height:auto;
     max-width:350px;
     border-radius:10px;
     box-shadow: 0 1px 15px rgba(130, 158, 195, 0.4);
@@ -258,8 +266,8 @@
   /*  Order */
 .Order{
     padding :100px 50px;
+    overflow:hidden;
 }
-  
 .Order_text img{
     max-width:180px;
     margin:0px 0px 50px 400px;
@@ -275,7 +283,25 @@
     position:relative;
     margin:100px 0px;
 }
-
+.orderType{
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    border-radius:40px;
+    background-color:#faf8f5;
+    border: 2px solid #fff5dc;
+    padding:40px;
+    position: relative;
+}
+.orderTypeimages{
+    max-width:240px;
+    height:fit-content;
+    margin:0px;
+    position:absolute;
+    z-index:999;
+    top:-75px;
+    left:-75px;
+}
 .Order_images_box1{
     z-index:999;
     position:absolute;
@@ -285,7 +311,6 @@
     border-radius:40px;
     background-color:#faf8f5;
     border: 2px solid #fff5dc;
-
     padding:40px;
 
 }
@@ -308,7 +333,7 @@
 .Order_images{
     position:relative;
 }
-.Order_images_box3{
+.Order_images_box3 {
     left:90px;
     bottom:0px;
     position:absolute;
@@ -378,6 +403,7 @@
 /*  */
 .UpcomingEv {
     padding: 100px 50px;
+    overflow:hidden;
 }
 
 .UpcomingEv_text h2,h4 {
@@ -448,10 +474,13 @@
 /*  */
 .Trusted {
     padding: 100px 50px;
+    overflow:hidden;
 }
 .Trusted_text h2 {
     font-weight: 600;
-    margin-top: 20px;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .Trusted_text img {
@@ -461,8 +490,8 @@
 }
 
 .slider-container {
-    margin-top: 50px;
-    padding: 0 50px;
+    margin-top: 30px;
+    padding: 0 20px;
 }
 
 .slide-item {
@@ -473,10 +502,10 @@
 }
 
 .slide-item img {
-    max-width: 80%;
+    max-width: 70%;
     height: auto;
     object-fit: contain;
-    cursor:pointer;
+    cursor: pointer;
 }
 /* Counder */
 .Counter {
@@ -498,9 +527,266 @@
 .counder1 h1 {
     margin: 0;
     font-size: 36px;
+    font-weight:600;
 }
 
 .counder1 p {
     margin: 5px 0 0;
+    font-weight:500;
+
     font-size: 16px;
 }
+.SonaMap {
+    padding: 20px;
+}
+.responsive-map {
+    border: 0;
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+}
+
+
+
+@media (min-width: 320px) {
+    .OurClientRight_top{
+        flex-direction:column;
+    }
+    .Trusted{
+        padding: 100px 15px;
+    }
+    .orderType{
+        padding:65px 15px 15px 15px;
+    }
+    
+    .Order_text img{
+        margin:0px 0px 30px 300px;
+    }
+    .AboutSonaEx {
+        padding: 15px;
+    }
+    .YearOf_box{
+        padding:15px 15px ;
+    }
+    .YearOf_img1 img{
+        margin: 30px 0px ;
+    }
+    .YearOf_img1 img{
+        margin: 20px 0px ;
+    }
+    .YearOf{
+        padding : 40px 0px 80px 0px;
+    }
+    .Product_cards{
+        margin-top:20px !important;
+    }
+    .infinite .infi_card{
+        padding: 50px 0px;
+    }
+    .Product{
+        padding: 0px ;
+    }
+    .markerLe{
+        padding :30px 15px 30px 15px;
+    }
+    .Order{
+        padding :100px 15px;
+    }
+    .Order_text img{
+        margin:0px 0px 20px 180px;
+    }
+    .Trusted_text img{
+        margin:0px 0px 20px 270px;
+    }
+}
+@media (min-width: 576px) {
+    .Trusted{
+        padding: 100px 20px;
+    }
+    .OurClientRight_top{
+        flex-direction:column;
+        margin: auto;
+    }
+    .orderType{
+        padding:50px 15px 15px 15px;
+    }
+    .Order_text img{
+        margin:0px 0px 35px 350px;
+    }
+    .Trusted_text img{
+        margin:0px 0px 20px 270px;
+    }
+    .AboutSonaEx {
+        padding: 15px;
+    }
+    .Order{
+        padding :100px 15px;
+    }
+    .YearOf_box{
+        padding:20px 20px ;
+    }
+    .YearOf_img1 img{
+        margin: 20px 0px ;
+    }
+    .YearOf{
+        padding : 50px 0px;
+    }
+    .Product{
+        padding: 0px ;
+    }
+}
+@media (min-width: 768px) {
+    .responsive-map {
+        height: 500px;
+        padding: 20px;
+    }
+    .Trusted {
+        padding: 70px 40px;
+    }
+
+    .Trusted_text h2 {
+        font-size: 2.5rem;
+    }
+
+    .Trusted_text img {
+        max-width: 120px;
+        margin-bottom: 30px;
+    }
+
+    .slider-container {
+        padding: 0 40px;
+    }
+
+
+
+
+
+    .OurClientRight_top{
+        flex-direction:row;
+    }
+    .orderType{
+        padding:50px 15px 15px 15px;
+    }
+    .Order_text img{
+        margin:0px 0px 40px 400px;
+    }
+    .Trusted_text img{
+        margin:0px 0px 40px 400px;
+
+    }
+    .AboutSonaEx {
+        padding: 20px;
+    }
+    .Order{
+        padding :100px 20px;
+    }
+    .YearOf_box{
+        padding:30px 30px ;
+    }
+    .YearOf_img1 img{
+        margin: 25px 0px ;
+    }
+    .YearOf{
+        padding : 60px 0px;
+    }
+}
+@media (min-width: 992px) {
+    .responsive-map {
+        height: 600px;
+        padding: 30px;
+    }
+    .Trusted {
+        padding: 90px 50px;
+    }
+
+    .Trusted_text h2 {
+        font-size: 3rem;
+    }
+
+    .Trusted_text img {
+        max-width: 150px;
+        margin-bottom: 40px;
+    }
+
+    .slider-container {
+        padding: 0 60px;
+    }
+
+
+
+
+
+    .OurClientRight_top{
+        flex-direction:row;
+    }
+    .orderType{
+        padding:50px 15px 15px 15px;
+    }
+    .AboutSonaEx {
+        padding: 30px;
+    }
+    .Order{
+        padding :100px 30px;
+    }
+    .YearOf_box{
+        padding:40px 40px ;
+    }
+    .YearOf_img1 img{
+        margin: 25px 0px ;
+    }
+    .YearOf{
+        padding : 70px 0px;
+    }
+    .Order{
+        padding :100px 40px;
+    }
+    .Order_images_box1 .Order_images_box3 .Order_images_box2 .Order_images{
+        display:none;
+    }
+
+    
+}
+@media (min-width: 1200px) { 
+    .responsive-map {
+        height: 700px;
+        padding: 50px;
+    }
+    .Trusted {
+        padding: 100px 80px;
+    }
+
+    .Trusted_text h2 {
+        font-size: 3.5rem;
+    }
+
+    .Trusted_text img {
+        max-width: 180px;
+    }
+
+    .slider-container {
+        padding: 0 80px;
+    }
+
+
+
+
+
+    .OurClientRight_top{
+        flex-direction:row;
+  
+    }
+    .AboutSonaEx { 
+        padding: 70px 50px;
+    }
+    .YearOf{
+        padding : 90px 0px;
+    }
+    .Order_images_box1 .Order_images_box3 .Order_images_box2 .Order_images{
+        display:block !important;
+    }
+ }
+
+
+
+
+

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Indu.css';
-import Single_BlackBol_Line from '../../assets/single_BlackBol_Line.svg';
+import Single_BlackBol_Line from '../../../assets/single_BlackBol_Line.svg';
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 

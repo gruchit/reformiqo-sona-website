@@ -2,10 +2,11 @@ import React, { useEffect, useState, useRef } from 'react';
 import CountUp from 'react-countup'; // Import the library
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // AOS CSS
+import './Home.css'
 
 function Counter() {
-    const [isVisible, setIsVisible] = useState(false); // Track if the element is in view
-    const counterRef = useRef(null); // Reference to the counter container
+    const [isVisible, setIsVisible] = useState(false); 
+    const counterRef = useRef(null); 
 
     useEffect(() => {
         AOS.init({
@@ -47,9 +48,9 @@ function Counter() {
 
     return (
         <div className='Counter' ref={counterRef}>
-            <div className='row' data-aos="zoom-in-up">
+            <div className='row d-flex justify-content-center' data-aos="zoom-in-up">
                 {counters.map((counter, index) => (
-                    <div key={index} className='col-3 d-flex justify-content-center'>
+                    <div key={index} className='col-xxl-3 mt-2 col-xl-3 col-lg-3 col-md-4 col-md-6 col-sm-12 d-flex justify-content-center'>
                         <div className='counder1 flex-column text-center sans_light text-white'>
                             <h1>
                                 {isVisible && (
@@ -61,7 +62,7 @@ function Counter() {
                                     />
                                 )}
                             </h1>
-                            <p>{counter.text}</p>
+                            <p className=''>{counter.text}</p>
                         </div>
                     </div>
                 ))}

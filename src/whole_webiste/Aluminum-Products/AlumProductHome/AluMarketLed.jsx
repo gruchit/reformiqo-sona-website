@@ -1,8 +1,8 @@
 import React from 'react';
-import ProductCapMarket from '../../assets/productCapMarket.svg';
-import Arrow_Left from '../../assets/arrow_Left.svg';
-import IndustriesMarket from '../../assets/IndustriesMarket.svg';
-import Certifications from '../../assets/CertificationsWithout.svg';
+import ProductCapMarket from '../../../assets/productCapMarket.svg';
+import Arrow_Left from '../../../assets/arrow_Left.svg';
+import IndustriesMarket from '../../../assets/IndustriesMarket.svg';
+import Certifications from '../../../assets/CertificationsWithout.svg';
 
 import './Alum.css'
 

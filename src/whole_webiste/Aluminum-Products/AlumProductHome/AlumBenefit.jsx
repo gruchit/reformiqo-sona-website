@@ -1,6 +1,6 @@
 import React from 'react';
-import Single_BlackBol_Line from '../../assets/single_BlackBol_Line.svg';
-import Arrow from '../../assets/arrow.svg';
+import Single_BlackBol_Line from '../../../assets/single_BlackBol_Line.svg';
+import Arrow from '../../../assets/arrow.svg';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import './Alum.css';
 

@@ -3,15 +3,13 @@
 .header_main{
     position: relative;
     box-shadow: inset 0px 5px 7px rgba(0, 0, 0, 0.2);
-
-
-    
 }
 .header {
     height: 80px;
     position: absolute;
     top: 40px;
     left: 0;
+    right:0;
     width: 100%;
     z-index: 2; 
     background-color: transparent; 
@@ -22,60 +20,63 @@
     font-size: 17px;
     padding: 20px 0;
 }
+.hebo:hover{
+    color: #d5b86e;
+    transition: all 0.3s ease; 
+}
 
 .navbar-brand {
     max-width: 215px;
 }
 
 
-.hover_serv, .hover_company {
+.hover_serv { 
     position: relative;
     cursor: pointer !important;
-    transition: all 0.8s ease !important;
 }
 
-
-
-.set_ul, .set_company_ul {
-    cursor: pointer !important;
-    width: 255px;
-    display: none;
+.set_ul {
+    width: auto;
     position: absolute;
     top: 65px;
-    left: -70%;
+    left: 50%; 
+    transform: translate(-50%, -10px); 
     box-shadow: 0 1px 15px rgba(130, 158, 195, 0.4);
     background-color: #fff;
     border-radius: 20px;
     padding: 10px 30px;
     font-size: 18px;
-    transition: all 0.8s ease;
-    white-space: nowrap;
     font-weight: 400;
     z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    white-space: nowrap;
+    transition: all 0.3s ease;
 }
-.hover_serv:hover > .set_ul, .hover_company:hover > .set_company_ul {
-    display: block;
-    transition:  0.8s ;
 
+.hover_serv:hover > .set_ul {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0); /* Center and slide down into view */
+    transition: all 0.8s ease;
 }
-.set_ul ul, .set_company_ul ul {
+
+.set_ul ul {
     padding: 0;
     margin: 0;
 }
-.set_ul li, .set_company_ul li {
-    margin-left: 10px;
+
+.set_ul li {
     margin: 13px 0px;
-    transition: all 0.3s ease;
 }
-.set_ul li a, .set_company_ul li a {
-    cursor: pointer !important;
-    color: #333;
-    text-decoration: none;
+
+.set_ul li a {
     display: block;
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
 }
-.set_ul li a:hover, .set_company_ul li a:hover {
-    color: #d4b76e !important; 
+
+.set_ul li a:hover {
+    color: #d4b76e ; 
     transform: translateX(5px); 
 }
 
@@ -83,26 +84,19 @@
     max-width: 22px;
     height: 22px;
 }
-.setLing,.setcomList {
+.setLing {
     margin-left: 10px;
 }
 .nav-item a{
     font-weight:600;
 }
-.nav-item a:hover{
-    /* color: #0093ed !important;  */
-    color: #d4b76e !important; 
-    
-    transition: all 0.4s ease;
 
-}
 .home-photo {
     margin-top: 0; 
     z-index: 1; 
     position: relative;
     border-radius: 25px;
     overflow:hidden;
-
 }
 
 .home-photo img {
@@ -174,6 +168,8 @@
 }
 .sonaColor{
     color: #d5b86e ;
+    font-size:35px !important;
+    font-weight: bold;
 }
 /* Modal overlay covering the screen background */
 .modal-overlay {
@@ -189,42 +185,49 @@
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: flex-start; /* Align to the top */
+    transition: all 0.4s ease;
+
 }
 
 .modal-content {
     background: white;
-    width: 90%; /* Full width of the screen */
-    max-height: 80vh;
+    width: 90%; 
+    max-height: 87vh;
     overflow-y: auto;
     padding: 20px;
     border-radius: 10px;
     box-sizing: border-box;
     display: flex;
-    transition: all 10s ease !important;
     justify-content: center;
-    margin: 20px; /* Margin on all sides */
-    position: relative;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    transition: all 0.4s ease;
+    margin: 20px; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
 }
+
+
 .modal-content::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
+    display: none; 
 }
 .modal-content li{
     padding: 5px 0px;
-    font-weight:600;
+    font-weight:500;
     color:black;
+    cursor: pointer;
+    transition: all 0.4s ease;
+
 }
+.textBlack{
+    color:black;
+    transition: all 0.5s ease;
 
-
+}
 .close-button {
-    position: absolute;
-    top: 7px;
-    right: 7px;
     background: none;
     border: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
+    
 }
 .submenu {
     margin-top: 10px;
@@ -234,22 +237,36 @@
     width: 30px;
     margin-right: 10px;
 }
+.arwBck{
+    background-color:#d5b86e;
+    border-radius:50%;
+    font-size:30px ;
+    padding-top:3px;
+}
 .arrow-rotate {
     transform: rotate(180deg);
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 .Back-Rorate{
     /* transform: rotate(360deg); */
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 .submenusAbout {
+    max-height: 0;   
     padding-left: 20px;
-    transition: transform 0.3s ease;
-
+    overflow: hidden;             
+    transition: max-height 0.5s ease; 
 }
 .submenusAbout.open {
-    display: block;
-    transition: all 10s ease !important;
+    max-height: 500px;            /* Large enough to show content */
+    transition: max-height 0.5s ease; /* Smooth expand/collapse transition */
+
+}
+
+.active {
+    color: #d5b86e !important; /* Change to your preferred color */
+    font-weight: bold; /* Make the active item bold */
+    transition: all 0.8s ease;
 
 }
 
@@ -259,15 +276,14 @@
 
 
 
-
-
-
-
-@media (max-width: 320px) {
+@media (min-width: 320px) {
+    .header_main{
+        padding:15px;
+    }
     .header{
         display:none;   
     }
-    .HeaderSmall{
+    .HeaderSmall,.modal-overlay,.modal-content{
         display:block;
     }
 }
@@ -275,24 +291,33 @@
     .header{
         display:none;   
     }
-    .HeaderSmall{
+    .HeaderSmall,.modal-overlay,.modal-content{
         display:block;
     }
+    .home-photo img{
+        height: 400px;
+        width: 100%;
+        object-fit: cover; 
+        overflow: hidden;
+}
 }
 
 @media (max-width: 768px) {
     .header{
         display:none;   
     }
-    .HeaderSmall{
+    .HeaderSmall,.modal-overlay,.modal-content{
         display:block;
     }    
+    .home-photo{
+
+    }
 }
 @media (max-width: 992px){
     .header{
         display:none;   
     }
-    .HeaderSmall{
+    .HeaderSmall,.modal-overlay,.modal-content{
         display:block;
     }
 }
@@ -300,7 +325,7 @@
     .header{
         display:none;   
     }
-    .HeaderSmall{
+    .HeaderSmall,.modal-overlay,.modal-content{
         display:block;
     }
 }

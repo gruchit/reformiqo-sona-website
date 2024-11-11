@@ -5,7 +5,6 @@ import { LuMail, LuMails } from 'react-icons/lu';
 import { AiOutlineYoutube } from 'react-icons/ai';
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
-
 import { FaLinkedinIn } from "react-icons/fa";
 import AOS from 'aos';
 import 'slick-carousel/slick/slick.css';
@@ -28,9 +27,7 @@ function Top() {
                 setIsSliderView(false);
             }
         };
-
-        handleResize(); 
-
+        handleResize();
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
@@ -59,7 +56,6 @@ function Top() {
         { icon: <LuMail className="text-white fs-5" />, text: 'D&B DUNS® NUMBER - 91-802-7368' },
         { icon: <FaPhoneAlt className="text-white fs-5" />, text: 'Contact@sonaextrusion.com' },
     ];
-
     return (
         <div className="containers topofwebs mt-sm-3 mt-md-3 mt-lg-3">
             {isSliderView ? (
@@ -103,7 +99,7 @@ function Top() {
                     </div>
                 </div>
             )}
-            <hr data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" className="mt-sm-3 mt-md-3 mt-lg-3 d-sm-none d-md-none d-lg-none d-xl-none" />
+            {/* <hr data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" className="mt-sm-3 mt-md-3 mt-lg-3 d-sm-none d-md-none d-lg-none d-xl-none" /> */}
         </div>
     );
 }

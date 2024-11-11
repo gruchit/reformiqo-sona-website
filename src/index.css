@@ -13,15 +13,10 @@
 
 
 .home-photo{
-
     margin-top:10px;
 }
 
-.home-photo img{
-    border-radius:35px;
-    height:750px;
-    width:100%;
-}
+
 
 /* navbar */
 .navbar-brand img{

@@ -22,12 +22,19 @@ import Button_Arrow from '../../../assets/button_Arrow.svg';
 import Slider from 'react-slick';
 import './header.css';
 import AOS from 'aos';
-import './header.css';
+import { useLocation } from 'react-router-dom';
+
+
 
 function Header() {
+    const location = useLocation();
+    console.log(location);
+
     const [scrolling, setScrolling] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
     const [openSubmenu, setOpenSubmenu] = useState(null);
+
+
     useEffect(() => {
         const handleScroll = () => {
             setScrolling(true);
@@ -54,6 +61,8 @@ function Header() {
         arrows: false,
     };
     const toggleSubmenu = (submenu) => {
+
+
         setOpenSubmenu(prevSubmenu => (prevSubmenu === submenu ? null : submenu));
     };
     const toggleMenu = () => {
@@ -64,11 +73,19 @@ function Header() {
             document.body.style.overflowY = "scroll";
         }
     };
+    const handleOutsideClick = (e) => {
+        if (e.target.classList.contains('modal-overlay')) {
+            toggleMenu();
+        }
+    };
     useEffect(() => {
+        if (menuOpen) {
+            document.addEventListener('click', handleOutsideClick);
+        }
         return () => {
-            document.body.classList.remove('no-scroll');
+            document.removeEventListener('click', handleOutsideClick);
         };
-    }, []);
+    }, [menuOpen]);
     return (
         <>
             <div className='HeaderSmall d-xl-none d-flex justify-content-between align-items-center w-100 px-md-5 px-sm-3'>
@@ -88,223 +105,185 @@ function Header() {
                 </div>
             </div>
             {menuOpen && (
-                <div className="modal-overlay">
-                    <div className="modal-content">
-                        <button className="close-button d-flex align-items-center" onClick={toggleMenu}><IoClose className='fs-2'/></button>
+                <div className="modal-overlay d-flex justify-content-center" >
+                    <div className="modal-content flex-column" onClick={(e) => e.stopPropagation()} >
                         <ul className='flex-column list-unstyled m-0'>
-                            <li>
-                                <Link to="/" className='text-decoration-none text-dark'>Home</Link>
+                            <li className='d-flex justify-content-between align-items-center' onClick={() => toggleSubmenu('Home')}>
+                            
+                                <Link to="/" className={`text-decoration-none textBlack ${(location.pathname === '' || location.pathname === '/' ) ? 'active' : ''}`}>Home</Link>
+                                <button className="close-button d-flex align-items-end p-0 m-0" onClick={toggleMenu}><IoClose className=' sonaColor' /></button>
                             </li>
-                            <li>
+                            <li onClick={() => toggleSubmenu('aboutUs')}>
                                 <div className='d-flex justify-content-between align-items-center'>
-                                    <Link to="/about" className='text-decoration-none text-dark'>About Us</Link>
+                                    <Link to="" className={` text-decoration-none textBlack ${(location.pathname === '/About/Our-Store/' || location.pathname === '/About/Advatages-Sona/' || location.pathname === '/About/Manufacturing-Unit/' || location.pathname === '/About/Enviro-Friendly/' || location.pathname === '/About/Brochures/') ? 'active' : ''}`}>About Us</Link>
                                     <IoIosArrowDown
-                                        onClick={() => toggleSubmenu('aboutUs')}
-                                        className={openSubmenu === 'aboutUs' ? 'arrow-rotate' : 'Back-Rorate'}
+                                        className={`arwBck ${openSubmenu === 'aboutUs' ? '  arrow-rotate' : ' Back-Rorate'}`}
                                     />
                                 </div>
 
-                                {openSubmenu === 'aboutUs' && (
-                                    <div className='submenusAbout mt-2'>
-                                        <ul className='list-unstyled'>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={Our_Store} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/app-development" className='text-decoration-none text-dark'>Our Story</Link>
-                                                </span>
-                                            </li>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={Advantages} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/game-development" className='text-decoration-none text-dark'>Advantages Sona</Link>
-                                                </span>
-                                            </li>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={manufacturing} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/web-development" className='text-decoration-none text-dark'>Manufacturing Unit</Link>
-                                                </span>
-                                            </li>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={Envir} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/hire-offshore-developers" className='text-decoration-none text-dark'>Enviro-Friendly</Link>
-                                                </span>
-                                            </li>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={Brochures} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/hire-offshore-developers" className='text-decoration-none text-dark'>Brochure</Link>
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                )}
+                                <div className={`submenusAbout mt-2 ${openSubmenu === 'aboutUs' ? 'open' : ''}`}>
+                                    <ul className='list-unstyled'>
+                                        <li className='d-flex align-items-center'>
+                                            <img src={Our_Store} alt="" className='navimg' />
+                                            <span className='setLing'>
+                                                <Link to="/About/Our-Store/" className={`text-decoration-none textBlack ${location.pathname === '/About/Our-Store/' ? 'active' : ''}`}>Our Story</Link>
+                                            </span>
+                                        </li>
+                                        <li className='d-flex align-items-center'>
+                                            <img src={Advantages} alt="" className='navimg' />
+                                            <span className='setLing'>
+                                                <Link to="/About/Advatages-Sona/" className={`text-decoration-none textBlack ${location.pathname === '/About/Advatages-Sona/' ? 'active' : ''}`}>Advantages Sona</Link>
+                                            </span>
+                                        </li>
+                                        <li className='d-flex align-items-center'>
+                                            <img src={manufacturing} alt="" className='navimg' />
+                                            <span className='setLing'>
+                                                <Link to="/About/Manufacturing-Unit/" className={`text-decoration-none textBlack ${location.pathname === '/About/Manufacturing-Unit/' ? 'active' : ''}`}>Manufacturing Unit</Link>
+                                            </span>
+                                        </li>
+                                        <li className='d-flex align-items-center'>
+                                            <img src={Envir} alt="" className='navimg' />
+                                            <span className='setLing'>
+                                                <Link to="/About/Enviro-Friendly/" className={`text-decoration-none textBlack ${location.pathname === '/About/Enviro-Friendly/' ? 'active' : ''}`}>Enviro-Friendly</Link>
+                                            </span>
+                                        </li>
+                                        <li className='d-flex align-items-center'>
+                                            <img src={Brochures} alt="" className='navimg' />
+                                            <span className='setLing'>
+                                                <Link to="/About/Brochures/" className={`text-decoration-none textBlack ${location.pathname === '/About/Brochures/' ? 'active' : ''}`}>Brochure</Link>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li>
+                            <li onClick={() => toggleSubmenu('industry')}>
                                 <div className='d-flex justify-content-between align-items-center'>
-                                    <Link to="/industry" className='text-decoration-none text-dark'>Industry</Link>
+                                    <Link to="/Industry/" className={`text-decoration-none textBlack ${(location.pathname === '/Industry/' || location.pathname === '/Industry/Pharmaceutical/' || location.pathname === '/Industry/Cosmetic-And-Personal-Care/' || location.pathname === '/Industry/Nutraceutical/' || location.pathname === '/Industry/Industrial-And-Agro-Chemical/') ? 'active' : ''}`}>Industry</Link>
                                     <IoIosArrowDown
-                                        onClick={() => toggleSubmenu('industry')}
-                                        className={openSubmenu === 'industry' ? 'arrow-rotate' : 'Back-Rorate'}
+                                        className={`arwBck ${openSubmenu === 'industry' ? ' arrow-rotate' : 'Back-Rorate'}`}
+                                    />
+                                </div>
+                                <div className={`submenusAbout pt-2 ${openSubmenu === 'industry' ? 'open' : ''}`}>
+                                    <ul className='list-unstyled'>
+                                        <li className='d-flex align-items-center'>
+                                            <img src={Our_Store} alt="" className='navimg' />
+                                            <span className='setLing'>
+                                                <Link to="/Industry/Pharmaceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Pharmaceutical/' ? 'active' : ''}`}>Pharmaceutical</Link>
+                                            </span>
+                                        </li>
+                                        <li className='d-flex align-items-center'>
+                                            <img src={Advantages} alt="" className='navimg' />
+                                            <span className='setLing'>
+                                                <Link to="/Industry/Cosmetic-And-Personal-Care/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Cosmetic-And-Personal-Care/' ? 'active' : ''}`}>Cosmetic & Personal Care</Link>
+                                            </span>
+                                        </li>
+                                        <li className='d-flex align-items-center'>
+                                            <img src={manufacturing} alt="" className='navimg' />
+                                            <span className='setLing'>
+                                                <Link to="/Industry/Nutraceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Nutraceutical/' ? 'active' : ''}`}>Nutraceutical</Link>
+                                            </span>
+                                        </li>
+                                        <li className='d-flex align-items-center'>
+                                            <img src={Brochures} alt="" className='navimg' />
+                                            <span className='setLing'>
+                                                <Link to="/Industry/Industrial-And-Agro-Chemical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Industrial-And-Agro-Chemical/' ? 'active' : ''}`}>Industrial & Agro-Chemical</Link>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li onClick={() => toggleSubmenu('AluminumPro')}>
+                                <div className='d-flex justify-content-between align-items-center'>
+                                    <Link to="/Aluminum-Products/" className={`text-decoration-none textBlack ${(location.pathname === '/Aluminum-Products/' || location.pathname === '/Aluminum-Products/Collapsible-Tubes/' || location.pathname === '/Aluminum-Products/Flasks-And-Bottles/' || location.pathname === '/Aluminum-Products/Tablet-Canisters/') ? 'active' : ''}`}>Aluminum Products</Link>
+                                    <IoIosArrowDown
+                                        className={`arwBck ${openSubmenu === 'AluminumPro' ? 'arrow-rotate' : 'Back-Rorate'}`}
+                                    />
+                                </div>
+                                <div className={`submenusAbout pt-2 ${openSubmenu === 'AluminumPro' ? 'open' : ''}`}>
+                                    <ul className='list-unstyled'>
+                                        <li className='d-flex align-items-center'>
+                                            <img src={Our_Store} alt="" className='navimg' />
+                                            <span className='setLing'>
+                                                <Link to="/Aluminum-Products/Collapsible-Tubes/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Collapsible-Tubes/' ? 'active' : ''}`}>Collapsible Tubes</Link>
+                                            </span>
+                                        </li>
+                                        <li className='d-flex align-items-center'>
+                                            <img src={Advantages} alt="" className='navimg' />
+                                            <span className='setLing'>
+                                                <Link to="/Aluminum-Products/Flasks-And-Bottles/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Flasks-And-Bottles/' ? 'active' : ''}`}>Flasks & Bottles</Link>
+                                            </span>
+                                        </li>
+                                        <li className='d-flex align-items-center'>
+                                            <img src={Brochures} alt="" className='navimg' />
+                                            <span className='setLing'>
+                                                <Link to="/Aluminum-Products/Tablet-Canisters/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Tablet-Canisters/' ? 'active' : ''}`}>Tablet Canisters</Link>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li onClick={() => toggleSubmenu('Resources')}>
+                                <div className='d-flex justify-content-between align-items-center'>
+                                    <Link to="" className={`text-decoration-none textBlack ${(location.pathname === '/Resources/Careers/' || location.pathname === '/Resources/BlogMedia/' || location.pathname === '/Resources/Gallery/') ? 'active' : ''}`}
+                                    >Resources</Link>
+                                    <IoIosArrowDown
+
+                                        className={`arwBck ${openSubmenu === 'Resources' ? 'arrow-rotate' : 'Back-Rorate'}`}
                                     />
                                 </div>
 
-                                {openSubmenu === 'industry' && (
-                                    <div className='submenusAbout mt-2'>
-                                        <ul className='list-unstyled'>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={Our_Store} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/app-development" className='text-decoration-none text-dark'>Pharmaceutical</Link>
-                                                </span>
-                                            </li>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={Advantages} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/game-development" className='text-decoration-none text-dark'>Cosmetic & Personal Care</Link>
-                                                </span>
-                                            </li>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={manufacturing} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/web-development" className='text-decoration-none text-dark'>Nutraceutical</Link>
-                                                </span>
-                                            </li>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={Brochures} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/hire-offshore-developers" className='text-decoration-none text-dark'>Industrial & Agro-Chemical</Link>
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                )}
-                            </li>
-                            <li >
-                                <div className='d-flex justify-content-between align-items-center'>
-                                    <Link to="/aluminum-products" className='text-decoration-none text-dark'>Aluminum Products</Link>
-                                    <IoIosArrowDown
-                                        onClick={() => toggleSubmenu('AluminumPro')}
-                                        className={openSubmenu === 'AluminumPro' ? 'arrow-rotate' : 'Back-Rorate'}
-                                    />
+                                <div className={`submenusAbout pt-2 ${openSubmenu === 'Resources' ? 'open' : ''}`}>
+                                    <ul className='list-unstyled'>
+                                        <li className='d-flex align-items-center'>
+                                            <img src={Our_Store} alt="" className='navimg' />
+                                            <span className='setLing'>
+                                                <Link to="/Resources/Careers/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Careers/' ? 'active' : ''}`}>Careers</Link>
+                                            </span>
+                                        </li>
+                                        <li className='d-flex align-items-center'>
+                                            <img src={Advantages} alt="" className='navimg' />
+                                            <span className='setLing'>
+                                                <Link to="/Resources/BlogMedia/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/BlogMedia/' ? 'active' : ''}`}>Blogs & Media</Link>
+                                            </span>
+                                        </li>
+                                        <li className='d-flex align-items-center'>
+                                            <img src={manufacturing} alt="" className='navimg' />
+                                            <span className='setLing'>
+                                                <Link to="/Resources/Gallery/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Gallery/' ? 'active' : ''}`}>Gallery</Link>
+                                            </span>
+                                        </li>
+                                    </ul>
                                 </div>
-                                {openSubmenu === 'AluminumPro' && (
-                                    <div className='submenusAbout mt-2'>
-                                        <ul className='list-unstyled'>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={Our_Store} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/app-development" className='text-decoration-none text-dark'>Pharmaceutical</Link>
-                                                </span>
-                                            </li>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={Advantages} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/game-development" className='text-decoration-none text-dark'>Cosmetic & Personal Care</Link>
-                                                </span>
-                                            </li>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={manufacturing} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/web-development" className='text-decoration-none text-dark'>Nutraceutical</Link>
-                                                </span>
-                                            </li>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={Brochures} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/hire-offshore-developers" className='text-decoration-none text-dark'>Industrial & Agro-Chemical</Link>
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                )}
                             </li>
-                            <li >
+                            <li onClick={() => toggleSubmenu('LaminatedTubs')}>
                                 <div className='d-flex justify-content-between align-items-center'>
-                                    <Link to="/resources" className='text-decoration-none text-dark'>Resources</Link>
-                                    <IoIosArrowDown
-                                        onClick={() => toggleSubmenu('Resources')}
-                                        className={openSubmenu === 'Resources' ? 'arrow-rotate' : 'Back-Rorate'}
-                                    />
+                                    <Link to="/Laminated-tubs/" className={`text-decoration-none textBlack ${location.pathname === '/Laminated-tubs/' ? 'active' : ''}`}>Laminated Tubs</Link>
+                                    {/* <IoIosArrowDown className={openSubmenu === 'LaminatedTubs' ? 'arrow-rotate fs-3' : 'fs-3 Back-Rorate'}/> */}
                                 </div>
-                                {openSubmenu === 'Resources' && (
-                                    <div className='submenusAbout mt-2'>
-                                        <ul className='list-unstyled'>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={Our_Store} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/app-development" className='text-decoration-none text-dark'>Pharmaceutical</Link>
-                                                </span>
-                                            </li>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={Advantages} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/game-development" className='text-decoration-none text-dark'>Cosmetic & Personal Care</Link>
-                                                </span>
-                                            </li>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={manufacturing} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/web-development" className='text-decoration-none text-dark'>Nutraceutical</Link>
-                                                </span>
-                                            </li>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={Brochures} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/hire-offshore-developers" className='text-decoration-none text-dark'>Industrial & Agro-Chemical</Link>
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                )}
-                            </li>
-                            <li >
-                                <div className='d-flex justify-content-between align-items-center'>
-                                    <Link to="/laminated-tubs" className='text-decoration-none text-dark'>Laminated Tubs</Link>
-
-                                    <IoIosArrowDown
-                                        onClick={() => toggleSubmenu('LaminatedTubs')}
-                                        className={openSubmenu === 'LaminatedTubs' ? 'arrow-rotate' : 'Back-Rorate'}
-                                    />
-                                </div>
-                                {openSubmenu === 'LaminatedTubs' && (
-                                    <div className='submenusAbout mt-2'>
-                                        <ul className='list-unstyled'>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={Our_Store} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/app-development" className='text-decoration-none text-dark'>Pharmaceutical</Link>
-                                                </span>
-                                            </li>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={Advantages} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/game-development" className='text-decoration-none text-dark'>Cosmetic & Personal Care</Link>
-                                                </span>
-                                            </li>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={manufacturing} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/web-development" className='text-decoration-none text-dark'>Nutraceutical</Link>
-                                                </span>
-                                            </li>
-                                            <li className='d-flex align-items-center'>
-                                                <img src={Brochures} alt="" className='navimg' />
-                                                <span className='setLing'>
-                                                    <Link to="/Services/hire-offshore-developers" className='text-decoration-none text-dark'>Industrial & Agro-Chemical</Link>
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                )}
+                                {/* <div className={`submenusAbout pt-2 ${openSubmenu === 'LaminatedTubs' ? 'open' : ''}`}>
+                                    <ul className='list-unstyled'>
+                                        <li className='d-flex align-items-center'>
+                                            <img src={Our_Store} alt="" className='navimg' />
+                                            <span className='setLing'>
+                                                <Link to="" className='text-decoration-none textBlack'>Pharmaceutical</Link>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div> */}
                             </li>
                         </ul>
+                        <div className="d-flex justify-content-start mt-3">
+                            <a href="#" className="reach-us-button gap-4 text-black">
+                                Reach Us <span><GoArrowUpRight className="button-arrow text-white " /></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             )}
-            <div className="header_main ">
-                <div className="header d-xl-block">
+
+            <div className="header_main m-auto">
+                <div className="container-xxl header d-xl-block ">
                     <nav className="navbar navbar-expand"
                         data-aos="fade-up"
                         data-aos-offset="100"
@@ -316,81 +295,150 @@ function Header() {
                         </a>
                         <div className="navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
                             <ul className="navbar-nav mb-lg-0">
-                                <li className="nav-item">
-                                    <Link to="/" className="text-decoration-none text-dark">
-                                        <a className="nav-link hebo px-3 text-dark" aria-current="page">
-                                            Home
-                                        </a>
+                                <li className="nav-item hover_serv">
+                                    <Link to="/" className={`nav-link  hebo px-3 text-decoration-none textBlack ${(location.pathname === '' || location.pathname === '/' ) ? 'active' : ''}`}>
+                                        Home
                                     </Link>
                                 </li>
                                 <li className="nav-item hover_serv">
-                                    {/* <Link to="/About" className="text-decoration-none text-dark"> */}
-                                    <a className="nav-link active hebo text-dark px-3" aria-current="page">
+                                    <Link to="/About" className={`nav-link  hebo px-3 text-decoration-none textBlack ${(location.pathname === '/About/Our-Store/' || location.pathname === '/About/Advatages-Sona/' || location.pathname === '/About/Manufacturing-Unit/' || location.pathname === '/About/Enviro-Friendly/' || location.pathname === '/About/Brochures/') ? 'active' : ''}`}>
                                         About Us
-                                    </a>
-                                    {/* </Link> */}
+                                    </Link>
 
                                     <div className='set_ul'>
                                         <ul className='list-unstyled'>
                                             <li className='d-flex align-item-center'>
                                                 <img src={Our_Store} alt="" className='navimg' />
                                                 <span className='setLing'>
-                                                    <Link to="/Services/app-development" className='text-decoration-none text-dark'>Our Story</Link>
+                                                    <Link to="/About/Our-Store/" className={`text-decoration-none textBlack ${location.pathname === '/About/Our-Store/' ? 'active' : ''}`}>Our Story</Link>
                                                 </span>
                                             </li>
                                             <li className='d-flex align-item-center'>
                                                 <img src={Advantages} alt="" className='navimg' />
                                                 <span className='setLing'>
-                                                    <Link to="/Services/game-development" className='text-decoration-none text-dark'>Advantages Sona</Link>
+                                                    <Link to="/About/Advatages-Sona/" className={`text-decoration-none textBlack ${location.pathname === '/About/Advatages-Sona/' ? 'active' : ''}`}>Advantages Sona</Link>
                                                 </span>
                                             </li>
                                             <li className='d-flex align-item-center'>
                                                 <img src={manufacturing} alt="" className='navimg' />
                                                 <span className='setLing'>
-                                                    <Link to="/Services/web-development" className='text-decoration-none text-dark'>Manufacturing Unit</Link>
+                                                    <Link to="/About/Manufacturing-Unit/" className={`text-decoration-none textBlack ${location.pathname === '/About/Manufacturing-Unit/' ? 'active' : ''}`}>Manufacturing Unit</Link>
                                                 </span>
                                             </li>
                                             <li className='d-flex align-item-center'>
                                                 <img src={Envir} alt="" className='navimg' />
                                                 <span className='setLing'>
-                                                    <Link to="/Services/hire-offshore-developers" className='text-decoration-none text-dark'>Enviro-Friendly</Link>
+                                                    <Link to="/About/Enviro-Friendly/" className={`text-decoration-none textBlack ${location.pathname === '/About/Enviro-Friendly/' ? 'active' : ''}`}>Enviro-Friendly</Link>
                                                 </span>
                                             </li>
                                             <li className='d-flex align-item-center'>
                                                 <img src={Brochures} alt="" className='navimg' />
                                                 <span className='setLing'>
-                                                    <Link to="/Services/hire-offshore-developers" className='text-decoration-none text-dark'>Brochure</Link>
+                                                    <Link to="/About/Brochures/" className={`text-decoration-none textBlack ${location.pathname === '/About/Brochures/' ? 'active' : ''}`}>Brochure</Link>
                                                 </span>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
-                                <li className="nav-item">
-                                    <Link to="/Industry" className="text-decoration-none text-dark">
-                                        <a className="nav-link active hebo text-dark px-3" aria-current="page">
-                                            Industry
-                                        </a>
+                                <li className="nav-item hover_serv">
+                                    <Link to="/Industry/" className={`nav-link hebo px-3 text-decoration-none textBlack ${(location.pathname === '/Industry/' || location.pathname === '/Industry/Pharmaceutical/' || location.pathname === '/Industry/Cosmetic-And-Personal-Care/' || location.pathname === '/Industry/Nutraceutical/' || location.pathname === '/Industry/Industrial-And-Agro-Chemical/') ? 'active' : ''}`}>
+                                        Industry
                                     </Link>
+                                    <div className='set_ul'>
+                                        <ul className='list-unstyled'>
+                                            <li className='d-flex align-item-center'>
+                                                <img src={Our_Store} alt="" className='navimg' />
+                                                <span className='setLing'>
+                                                    <Link to="/Industry/Pharmaceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Pharmaceutical/' ? 'active' : ''}`}>Pharmaceutical</Link>
+                                                </span>
+                                            </li>
+                                            <li className='d-flex align-item-center'>
+                                                <img src={Advantages} alt="" className='navimg' />
+                                                <span className='setLing'>
+                                                    <Link to="/Industry/Cosmetic-And-Personal-Care/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Cosmetic-And-Personal-Care/' ? 'active' : ''}`}>Cosmetic & Personal Care</Link>
+                                                </span>
+                                            </li>
+                                            <li className='d-flex align-item-center'>
+                                                <img src={manufacturing} alt="" className='navimg' />
+                                                <span className='setLing'>
+                                                    <Link to="/Industry/Nutraceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Nutraceutical/' ? 'active' : ''}`}>Nutraceutical</Link>
+
+                                                </span>
+                                            </li>
+                                            <li className='d-flex align-item-center'>
+                                                <img src={Envir} alt="" className='navimg' />
+                                                <span className='setLing'>
+                                                    <Link to="/Industry/Industrial-And-Agro-Chemical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Industrial-And-Agro-Chemical/' ? 'active' : ''}`}>Industrial & Agro-Chemical</Link>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li className="nav-item">
-                                    <Link to="/Aluminum-Products" className="text-decoration-none text-dark">
-                                        <a className="nav-link active hebo text-dark px-3" aria-current="page">
-                                            Aluminum Products
-                                        </a>
+                                <li className="nav-item hover_serv">
+                                    <Link to="/Aluminum-Products/" className={`nav-link  hebo px-3 text-decoration-none textBlack ${(location.pathname === '/Aluminum-Products/' || location.pathname === '/Aluminum-Products/Collapsible-Tubes/' || location.pathname === '/Aluminum-Products/Flasks-And-Bottles/' || location.pathname === '/Aluminum-Products/Tablet-Canisters/') ? 'active' : ''}`}>
+                                        Aluminum Products
                                     </Link>
+                                    <div className='set_ul'>
+                                        <ul className='list-unstyled'>
+                                            <li className='d-flex align-item-center'>
+                                                <img src={Our_Store} alt="" className='navimg' />
+                                                <span className='setLing'>
+                                                    <Link to="/Aluminum-Products/Collapsible-Tubes/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Collapsible-Tubes/' ? 'active' : ''}`}>Collapsible Tubes</Link>
+
+                                                </span>
+                                            </li>
+                                            <li className='d-flex align-item-center'>
+                                                <img src={Advantages} alt="" className='navimg' />
+                                                <span className='setLing'>
+                                                    <Link to="/Aluminum-Products/Flasks-And-Bottles/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Flasks-And-Bottles/' ? 'active' : ''}`}>Flasks & Bottles</Link>
+
+                                                </span>
+                                            </li>
+                                            <li className='d-flex align-item-center'>
+                                                <img src={manufacturing} alt="" className='navimg' />
+                                                <span className='setLing'>
+                                                    <Link to="/Aluminum-Products/Tablet-Canisters/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Tablet-Canisters/' ? 'active' : ''}`}>Tablet Canisters</Link>
+                                                </span>
+                                            </li>
+
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li className="nav-item">
-                                    <Link to="/Resources/Careers" className="text-decoration-none text-dark">
-                                        <a className="nav-link active hebo text-dark px-3" aria-current="page">
-                                            Resources
-                                        </a>
+                                <li className="nav-item hover_serv">
+                                    <Link to="" className={`nav-link  hebo px-3 text-decoration-none textBlack ${(location.pathname === '/Resources/Careers/' || location.pathname === '/Resources/BlogMedia/' || location.pathname === '/Resources/Gallery/') ? 'active' : ''}`}>
+                                        Resources
                                     </Link>
+                                    <div className='set_ul'>
+                                        <ul className='list-unstyled'>
+                                            <li className='d-flex align-item-center'>
+                                                <img src={Our_Store} alt="" className='navimg' />
+                                                <span className='setLing'>
+                                                    <Link to="/Resources/Careers/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Careers/' ? 'active' : ''}`}>Careers</Link>
+
+                                                </span>
+                                            </li>
+                                            <li className='d-flex align-item-center'>
+                                                <img src={Advantages} alt="" className='navimg' />
+                                                <span className='setLing'>
+                                                    <Link to="/Resources/BlogMedia/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/BlogMedia/' ? 'active' : ''}`}>Blogs & Media</Link>
+
+                                                </span>
+                                            </li>
+                                            <li className='d-flex align-item-center'>
+                                                <img src={manufacturing} alt="" className='navimg' />
+                                                <span className='setLing'>
+                                                    <Link to="/Resources/Gallery/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Gallery/' ? 'active' : ''}`}>Gallery</Link>
+
+
+                                                </span>
+                                            </li>
+
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li className="nav-item">
-                                    <Link to="/Laminated-Tubs" className="text-decoration-none text-dark">
-                                        <a className="nav-link active hebo text-dark px-3" aria-current="page">
-                                            Laminated Tubs
-                                        </a>
+                                <li className="nav-item hover_serv">
+                                    <Link to="/Laminated-Tubs/" className={`nav-link  hebo px-3 text-decoration-none textBlack ${location.pathname === '/Laminated-Tubs/' ? 'active' : ''}`}>
+                                        Laminated Tubs
                                     </Link>
                                 </li>
                             </ul>

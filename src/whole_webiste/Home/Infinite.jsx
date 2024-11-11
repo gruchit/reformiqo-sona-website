@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React from 'react';
 import './Home.css';
 import InfiniteSVG from '../../assets/Infinite.svg';
 import button_Arrow from '../../assets/button_Arrow.svg';
@@ -8,32 +8,31 @@ import { useEffect } from 'react';
 function Infinite() {
     useEffect(() => {
         AOS.init();
-      }, []);
+    }, []);
     return (
         <div className='infinite d-flex align-items-center'>
             <img src={InfiniteSVG} alt="Background" className="infinite-bg" />
-            <div className='row infi_card w-100'
-            
-            data-aos="fade-up" 
-            data-aos-offset="0" 
-            data-aos-delay="1000" 
-            data-aos-duration="3000"
-            easing= "ease-in-out"
-            once= "true" 
-            mirror= "true"
+            <div className='row d-flex justify-content-center infi_card w-100'
+
+                data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-delay="1000"
+                data-aos-duration="3000"
+                easing="ease-in-out"
+                once="true"
+                mirror="true"
             >
-                <div className='col-8 d-flex flex-column justify-content-center'
+                <div className='col-lg-8 col-md-12 col-sm-12  d-flex flex-column justify-content-center'
 
                 >
                     <h3 className='text-white'>Collapsible Tubes</h3>
                     <h1 className='text-white'>Infinite Possibilities</h1>
                     <h5 className='text-white'>We produce high-quality collapsible multipurpose tubes that are versatile and easy to use.</h5>
                 </div>
-                <div className="col-4 d-flex align-items-end align-items-center  justify-content-end">
+                <div className="col-lg-4 col-md-12 col-sm-12 d-flex align-items-end align-items-center  justify-content-end">
                     <button className="custom-button">
                         <span >Contact Us Today</span>
                         <div className="icon-wrapper"
-                         
                         >
                             <img src={button_Arrow} alt="Arrow Icon" />
                         </div>

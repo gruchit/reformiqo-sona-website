@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Single_BlackBol_Line from '../../assets/single_BlackBol_Line.svg';
-import Arrow_Left from '../../assets/arrow_Left.svg';
-import Double_bol_line from '../../assets/double_bol_line.svg';
+import Single_BlackBol_Line from '../../../assets/single_BlackBol_Line.svg';
+import Arrow_Left from '../../../assets/arrow_Left.svg';
+import Double_bol_line from '../../../assets/double_bol_line.svg';
 import './Indu.css';
 
 function InWeSer() {

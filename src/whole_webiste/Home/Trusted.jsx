@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react'; 
 import Slider from "react-slick";
 import Single_BlackBol_Line from '../../assets/single_BlackBol_Line.svg';
 import Trust1 from '../../assets/Trust1.png';
@@ -9,33 +9,64 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Home.css';
 import AOS from 'aos';
-import { useEffect } from 'react';
 
 function Trusted() {
   useEffect(() => {
     AOS.init();
   }, []);
+
   const settings = {
-    infinite: true,   
+    infinite: true,
     slidesToShow: 3,
-    // slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 0, 
-    speed: 5000,      
-    cssEase: "linear", 
-    pauseOnHover: false, 
+    autoplaySpeed: 0,
+    speed: 5000,
+    cssEase: "linear",
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+          centerMode: true,
+          centerPadding: "60px",
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   };
 
   return (
     <div className='Trusted'>
-      <div className='Trusted_text'
-      data-aos="zoom-in-up" 
-      data-aos-offset="50" 
-      data-aos-delay="100" 
-      data-aos-duration="1000"
-      easing= "ease-in-out"
-      once= "true" 
-      mirror= "true"
+      <div 
+        className='Trusted_text'
+        data-aos="zoom-in-up" 
+        data-aos-offset="50" 
+        data-aos-delay="100" 
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true" 
+        data-aos-mirror="true"
       >
         <div className='d-flex justify-content-center'>
           <img src={Single_BlackBol_Line} alt="Separator Line" />
@@ -43,34 +74,34 @@ function Trusted() {
         <h2 className='text-center'>Our Trusted Partners</h2>
       </div>
 
-      <div className='slider-container'
-      data-aos="zoom-in-up" 
-      data-aos-offset="0" 
-      data-aos-delay="0" 
-      data-aos-duration="3000"
-      easing= "ease-in-out"
-      once= "true" 
-      mirror= "true"
-      
+      <div 
+        className='slider-container'
+        data-aos="zoom-in-up" 
+        data-aos-offset="0" 
+        data-aos-delay="0" 
+        data-aos-duration="3000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true" 
+        data-aos-mirror="true"
       >
         <Slider {...settings}>
           <div className='slide-item d-flex justify-content-center'>
-            <img src={Trust1} alt="Partner 1" />
+            <img src={Trust1} alt="Partner 1" className="partner-logo" />
           </div>
           <div className='slide-item d-flex justify-content-center'>
-            <img src={Trust2} alt="Partner 2" />
+            <img src={Trust2} alt="Partner 2" className="partner-logo" />
           </div>
           <div className='slide-item d-flex justify-content-center'>
-            <img src={Trust3} alt="Partner 3" />
+            <img src={Trust3} alt="Partner 3" className="partner-logo" />
           </div>
           <div className='slide-item d-flex justify-content-center'>
-            <img src={Trust4} alt="Partner 4" />
+            <img src={Trust4} alt="Partner 4" className="partner-logo" />
           </div>
           <div className='slide-item d-flex justify-content-center'>
-            <img src={Trust1} alt="Partner 5" />
+            <img src={Trust1} alt="Partner 5" className="partner-logo" />
           </div>
           <div className='slide-item d-flex justify-content-center'>
-            <img src={Trust2} alt="Partner 6" />
+            <img src={Trust2} alt="Partner 6" className="partner-logo" />
           </div>
         </Slider>
       </div>
