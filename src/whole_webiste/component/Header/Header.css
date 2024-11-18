@@ -57,7 +57,7 @@
 .hover_serv:hover > .set_ul {
     opacity: 1;
     visibility: visible;
-    transform: translateX(-50%) translateY(0); /* Center and slide down into view */
+    transform: translateX(-50%) translateY(0); 
     transition: all 0.8s ease;
 }
 
@@ -273,7 +273,11 @@
 
 
 
-
+@media (max-width: 319.99px) {
+    .header_main{
+        padding: 15px;
+    }
+}
 
 
 @media (min-width: 320px) {

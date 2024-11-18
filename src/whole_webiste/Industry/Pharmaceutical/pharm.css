@@ -1,0 +1,283 @@
+.TopSliderPhar {
+    width: 75%;
+    height: 100%;
+    padding: 20px 0;
+    position: relative;
+    object-fit: cover;
+}
+.slick-slide {
+    padding: 10px; 
+}
+.PharmTxtcard{
+    width: 100%;
+    height: 100%;
+}
+.slider-image {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    object-fit: cover; 
+    display: block;
+
+}
+
+.custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #d4b76e;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 20px;
+    display: block;
+}
+
+.custom-next {
+    right: 15px;
+}
+
+.custom-prev {
+    left: 15px;
+}
+.pharmaceutical{
+    padding: 80px 0px;
+}
+.pharmaceutical h2{
+    font-weight:600;
+}
+
+.PharmTxtSlider .PharmTxtcard {
+    width: 300px !important; 
+    height: 300px; 
+    overflow: hidden; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.PharmTxtSlider .slick-initialized .slick-slide{
+    display: flex;
+    justify-content:center;
+}
+.sliderimage {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    object-fit: cover; 
+    display: block;
+    border-radius: 8px; 
+}
+.custom-nex {
+    right: 0px !important; 
+}
+
+.custom-pre {
+    left: 0px !important; 
+}
+
+.custom-arow {
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #d4b76e;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 20px;
+    display: block;
+}
+
+.Our_Solutions{
+    background-color:#faf8f5;
+    position: relative;
+}
+.OurSoluLftArw{
+    position: absolute;
+    max-width:200px;
+    width: 100%;
+    height: 30px;
+    top:40px;
+    right:70px;
+}
+.OurSoluTxt h2{
+    font-weight: bold;
+}
+.text-ellipsis {
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 6; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: normal; 
+    margin: 5px 0; 
+  }
+.OurSoluCard{
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border: 2px solid #fff5dc;
+    background-color: white;
+    border-radius: 25px;
+    position: relative;
+
+}
+.OurSoluCard p{
+    text-align: justify;
+}
+.OurSoluImg{
+    max-width: 70px;
+    width: 100%;
+    top: -40px;
+    position: absolute;
+}
+/*  */
+.TbasOutSolu{
+    padding: 80px 50px 80px 0px;
+    background-color:#faf8f5;
+    position: relative; 
+}
+
+.OutSoluTbs{
+    background-color:white;
+    box-shadow: 0 1px 15px rgba(130, 158, 195, 0.4);
+    width: 90%;
+    position: relative;
+}
+
+.TbasImg{
+    position: absolute;
+    max-width: 200px;
+    height: 30px; 
+    top: -15px;
+    left: 70px;
+}
+.Faq{
+    padding: 80px 0px;
+    overflow:hidden;
+}
+.faq-section-open {
+    background-color: #d4b76e;
+    color: white;
+  }
+  
+  /* Prevent hover styles from overriding when the section is open */
+  .faq-question.faq-section-open:hover {
+    background-color: #d4b76e;
+    color: white;
+  }
+.Faq h2{
+    font-weight:600;
+}
+.FaqImage{
+    max-width:180px;
+    width: 100%;
+    margin-left: 120px;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width: 320px) {
+  .TopSliderPhar {
+        width: 100%;
+        padding: 20px 0;
+        position: relative;
+        object-fit: cover;
+    }
+    .Our_Solutions{
+        padding: 80px 15px ;
+    }
+    .TbasOutSolu{
+        padding: 80px 15px 80px 0px;
+    }
+    .FaqImage{
+        margin-left: 75px;
+        margin-bottom: 10px;
+    }
+    
+}
+@media (min-width: 576px) { 
+    .TopSliderPhar {
+        width: 100%;
+        padding: 20px 0;
+        position: relative;
+        object-fit: cover;
+    }
+    .Our_Solutions{
+        padding: 80px 20px ;
+    }
+    .TbasOutSolu{
+        padding: 80px 20px 80px 0px;
+    }
+    .FaqImage{
+        margin-left: 80px;
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 768px) { 
+    .TopSliderPhar {
+        width: 100%;
+        padding: 20px 0;
+        position: relative;
+        object-fit: cover;
+    }
+    .Our_Solutions{
+        padding: 80px 30px;
+    }
+    .TbasOutSolu{
+        padding: 80px 30px 80px 0px;
+    }
+    .FaqImage{
+    margin-left: 120px;
+    margin-bottom: 20px;
+    }
+}
+@media (min-width: 992px) { 
+    .TopSliderPhar {
+        width: 75%;
+        padding: 20px 0;
+        position: relative;
+        object-fit: cover;
+    }
+    .Our_Solutions{
+        padding: 80px 40px;
+    }
+    .TbasOutSolu{
+        padding: 80px 40px 80px 0px;
+    }
+    .FaqImage{
+        margin-left: 120px;
+        margin-bottom: 20px;
+        }
+}
+@media (min-width: 1200px) { 
+    .TopSliderPhar {
+        width: 75%;
+        padding: 20px 0;
+        position: relative;
+        object-fit: cover;
+    }
+    .Our_Solutions{
+        padding: 80px 50px;
+    }    
+    .TbasOutSolu{
+        padding: 80px 40px 80px 0px;
+    }
+    .FaqImage{
+        margin-left: 120px;
+        margin-bottom: 20px;
+        }
+}
+@media (min-width: 1400px) {  
+    .sliderimage {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        object-fit: cover; 
+        display: block;
+        border-radius: 8px; 
+    }
+}

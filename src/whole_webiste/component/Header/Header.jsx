@@ -28,7 +28,7 @@ import { useLocation } from 'react-router-dom';
 
 function Header() {
     const location = useLocation();
-    console.log(location);
+    // console.log(location);
 
     const [scrolling, setScrolling] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
@@ -41,7 +41,7 @@ function Header() {
             clearTimeout(window.scrollTimeout);
             window.scrollTimeout = setTimeout(() => {
                 setScrolling(false);
-            }, 200);
+            }, 1000);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -49,17 +49,7 @@ function Header() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        pauseOnHover: false,
-        arrows: false,
-    };
+    
     const toggleSubmenu = (submenu) => {
 
 
@@ -86,6 +76,18 @@ function Header() {
             document.removeEventListener('click', handleOutsideClick);
         };
     }, [menuOpen]);
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        pauseOnHover: false,
+        arrows: false,
+    };
     return (
         <>
             <div className='HeaderSmall d-xl-none d-flex justify-content-between align-items-center w-100 px-md-5 px-sm-3'>
@@ -109,7 +111,6 @@ function Header() {
                     <div className="modal-content flex-column" onClick={(e) => e.stopPropagation()} >
                         <ul className='flex-column list-unstyled m-0'>
                             <li className='d-flex justify-content-between align-items-center' onClick={() => toggleSubmenu('Home')}>
-                            
                                 <Link to="/" className={`text-decoration-none textBlack ${(location.pathname === '' || location.pathname === '/' ) ? 'active' : ''}`}>Home</Link>
                                 <button className="close-button d-flex align-items-end p-0 m-0" onClick={toggleMenu}><IoClose className=' sonaColor' /></button>
                             </li>
@@ -301,7 +302,7 @@ function Header() {
                                     </Link>
                                 </li>
                                 <li className="nav-item hover_serv">
-                                    <Link to="/About" className={`nav-link  hebo px-3 text-decoration-none textBlack ${(location.pathname === '/About/Our-Store/' || location.pathname === '/About/Advatages-Sona/' || location.pathname === '/About/Manufacturing-Unit/' || location.pathname === '/About/Enviro-Friendly/' || location.pathname === '/About/Brochures/') ? 'active' : ''}`}>
+                                    <Link to="" className={`nav-link  hebo px-3 text-decoration-none textBlack ${(location.pathname === '/About/Our-Store/' || location.pathname === '/About/Advatages-Sona/' || location.pathname === '/About/Manufacturing-Unit/' || location.pathname === '/About/Enviro-Friendly/' || location.pathname === '/About/Brochures/') ? 'active' : ''}`}>
                                         About Us
                                     </Link>
 
@@ -444,9 +445,9 @@ function Header() {
                             </ul>
                         </div>
                         <div className="d-flex justify-content-end">
-                            <a href="#" className="reach-us-button gap-4 text-black">
+                            <Link to="/ReachUs/" className="reach-us-button gap-4 text-black">
                                 Reach Us <span><GoArrowUpRight className="button-arrow text-white " /></span>
-                            </a>
+                            </Link>
                         </div>
                     </nav>
                 </div>

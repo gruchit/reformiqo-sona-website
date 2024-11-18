@@ -2,13 +2,18 @@ import React from 'react'
 import Top from '../../component/Top/Top'
 import Header from '../../component/Header/Header'
 import Footer from '../../component/Footer/Footer'
+import Infinite from '../../Home/Infinite'
+import Trusted from '../../Home/Trusted'
+import Our_Strength from '../../Home_AboutUs/Our_Store/Our_Strength'
 
 function Flask_Bottles() {
     return (
         <>
             <Top />
             <Header />
-            <div>Flask_Bottles</div>
+            <Infinite/>
+            <Trusted/>
+            <Our_Strength/>
             <Footer />
         </>
     )

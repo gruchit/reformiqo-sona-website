@@ -9,3 +9,14 @@
 .card-grid > div:nth-child(3) {
     margin-top: 0; /* Third card stays at top */
 }
+
+
+
+
+
+**problem facing**
+1) about-Advatages-Sona on this page does not set card on the responsive
+http://localhost:5173/About/Advatages-Sona/
+
+2) make brocher book 
+

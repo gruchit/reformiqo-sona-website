@@ -4,8 +4,7 @@ import Single_BlackBol_Line from '../../../assets/single_BlackBol_Line.svg';
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 
-import { FaArrowDown } from "react-icons/fa";
-import { FaArrowUp } from "react-icons/fa";
+
 
 
 function Frequently() {
@@ -90,7 +89,7 @@ function Frequently() {
 
                         <div className='faq-section'>
                             {faqs.map((faq, index) => (
-                                <div key={index} className='faq-item'>
+                                <div key={index} className='faq-item border-0'>
                                     <div className='faq-question' onClick={() => toggleFAQ(index)}>
                                         <h5 className='sans_light'>{faq.question}</h5>
                                         <span className='arrow'>

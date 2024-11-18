@@ -6,20 +6,17 @@
 }
 
 
-     *{
-        scroll-behavior: smooth;
-     }
-      
-
-
+html {
+    scroll-behavior: smooth;
+}
 .home-photo{
     margin-top:10px;
 }
-
-
-
 /* navbar */
 .navbar-brand img{
     height:50px;
     width: 200px;
+}
+.SonaTxtColor{
+    color:#d4b76e;
 }

@@ -9,7 +9,8 @@ function SonaMap() {
 
     return (
         <div className="SonaMap">
-            <div
+
+            <div className=' d-flex justify-content-center'
                 data-aos="zoom-in-up"
                 data-aos-offset="50"
                 data-aos-delay="100"
@@ -27,6 +28,7 @@ function SonaMap() {
                 ></iframe>
             </div>
         </div>
+
     );
 }
 
