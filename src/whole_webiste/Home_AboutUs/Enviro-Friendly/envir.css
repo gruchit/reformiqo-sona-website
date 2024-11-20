@@ -1,0 +1,129 @@
+.EnviTop{
+    padding: 80px 15px;
+}
+.EnviTopTxt h2,ul li{
+    font-weight: 600;
+}
+.EnviTopBody{
+    background-color: #faf8f5;
+    padding: 20px;
+    border-radius:20px;
+    
+}
+.Emission{
+    padding: 80px 15px;
+    /* background-color: #faf8f5; */
+}
+
+.EmissionCard{
+    padding: 20px;
+    max-width: 400px ;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+.EmissionCard h2{
+    font-weight:600;
+}
+.Missine{
+    padding: 80px 15px;
+    background-color: #faf8f5;
+}
+.MissineCard{
+    background-color: white;
+    padding: 20px;
+    max-width: 400px ;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius:20px;
+    border:2px solid #fff5dc;
+    position: relative;
+}
+
+.MissionImg{
+    max-width: 95px;
+    position: absolute;
+    top:-45px;
+}
+
+
+
+
+
+@media (min-width: 320px) {
+    .Missine{
+        padding: 80px 15px;
+    } 
+.EmissionCard{
+    padding: 10px;
+}
+    .Emission{
+        padding: 10px 15px 40px 15px;
+    }
+    .EnviTop{
+    padding: 80px 15px;
+}
+ }
+
+@media (min-width: 576px) {
+    .Missine{
+        padding: 80px 20px;
+    }  
+    .EmissionCard{
+        padding: 20px;
+    }
+    .Emission{
+        padding: 80px 20px;
+    }
+    .EnviTop{
+    padding: 80px 20px;
+}
+ }
+
+
+@media (min-width: 768px) { 
+    .Missine{
+        padding: 80px 30px;
+    }  
+    .Emission{
+        padding: 80px 30px;
+    }
+    .EnviTop{
+    padding: 80px 30px;
+}
+ }
+
+
+@media (min-width: 992px) {
+    .Missine{
+        padding: 80px 40px;
+    }  
+    .Emission{
+        padding: 80px 40px;
+    }
+    .EnviTop{
+    padding: 80px 40px;
+}
+ }
+
+
+@media (min-width: 1200px) { 
+    .Missine{
+        padding: 80px 50px;
+    }  
+    .Emission{
+        padding: 80px 50px;
+    }
+    .EnviTop{
+    padding: 80px 50px;
+}
+ }
+
+
+@media (min-width: 1400px) { 
+    .EnviTop{
+    padding: 80px 50px;
+}
+ }

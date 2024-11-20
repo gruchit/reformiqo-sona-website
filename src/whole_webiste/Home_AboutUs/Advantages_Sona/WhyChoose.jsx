@@ -21,9 +21,9 @@ function WhyChoose() {
                 <div className='container'>
                         <div className='d-flex justify-content-center'>
                             <ul className=' list-unstyled sans_light'>
-                                <li className='py-2'><FaCheck className='WhyIcon fs-6 me-4'/><a href="" className='text-black text-decoration-none'>Leading Manufacturer of Aluminium Collapsible Tubes, Containers, Bottles and Flasks</a></li>
-                                <li className='py-2'><FaCheck className='WhyIcon fs-6 me-4'/><a href="" className='text-black text-decoration-none'>One of the Largest Single Roof Production Capacity in India</a></li>
-                                <li className='py-2'><FaCheck className='WhyIcon fs-6 me-4'/><a href="" className='text-black text-decoration-none'>Manufacturing Capacity of 500 Mn Tubes & 50 Mn Flasks/Containers per annum</a></li>
+                                <li className='py-2'><FaCheck className='WhyIcon fs-6 me-4'/><a  className='text-black text-decoration-none'>Leading Manufacturer of Aluminium Collapsible Tubes, Containers, Bottles and Flasks</a></li>
+                                <li className='py-2'><FaCheck className='WhyIcon fs-6 me-4'/><a  className='text-black text-decoration-none'>One of the Largest Single Roof Production Capacity in India</a></li>
+                                <li className='py-2'><FaCheck className='WhyIcon fs-6 me-4'/><a  className='text-black text-decoration-none'>Manufacturing Capacity of 500 Mn Tubes & 50 Mn Flasks/Containers per annum</a></li>
                             </ul>
                         </div>
                         <p className='text-center text-secondary sans_light'>We are delivering premium quality products meeting the ever-changing requirements of our elite customers in the markets of Canada, U.S.A., U.K., Spain, Sweden, Russia, India, Sri Lanka, Singapore, Malaysia, Australia, Nigeria, Joran, Ethiopia, South Africa, and many more.</p>

@@ -72,7 +72,7 @@ function Top() {
                         <div className="header-right d-flex justify-content-evenly w-100 ps-xl-5">
                             {socialIcons.map((icon, index) => (
                                 <div key={index} className="nav-icon-round d-flex justify-content-center align-items-center">
-                                    <a href="#" className='d-inline-block'>{icon}</a>
+                                    <a  className='d-inline-block'>{icon}</a>
                                 </div>
                             ))}
                         </div>
@@ -93,7 +93,7 @@ function Top() {
                     <div className="header-right d-flex justify-content-evenly w-25 ps-5">
                         {socialIcons.map((icon, index) => (
                             <div key={index} className="nav-icon-round d-flex justify-content-center align-items-center">
-                                <a href="#">{icon}</a>
+                                <a >{icon}</a>
                             </div>
                         ))}
                     </div>

@@ -4,6 +4,8 @@ import Header from '../../component/Header/Header'
 import Footer from '../../component/Footer/Footer'
 import Our_Client from '../../Home/Our_client'
 import AllumColl from './AllumColl'
+import Certificates from './Certificates'
+import ProdCapa from './ProdCapa'
 
 function ManufacturingUnit() {
   return (
@@ -11,6 +13,8 @@ function ManufacturingUnit() {
     <Top />
     <Header />
     <AllumColl/>
+    <Certificates/>
+    <ProdCapa/>
     <Our_Client/>
     <Footer />
 </>

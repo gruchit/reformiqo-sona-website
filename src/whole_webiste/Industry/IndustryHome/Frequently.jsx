@@ -42,9 +42,9 @@ function Frequently() {
                             <h3 className='text-start py-3'>Talk to an Automation Expert</h3>
                             <h4>Help With:</h4>
                             <ul className='ps-5 pt-3'>
-                                <li className='py-1'><a href="" className='text-decoration-none sans_light text-secondary '>Discuss your requirements</a></li>
-                                <li className='py-1'><a href="" className='text-decoration-none sans_light text-secondary'>Evaluate feasibility &ROI</a></li>
-                                <li className='py-1'><a href="" className='text-decoration-none sans_light text-secondary'>Get assistance</a></li>
+                                <li className='py-1'><a  className='text-decoration-none sans_light text-secondary '>Discuss your requirements</a></li>
+                                <li className='py-1'><a  className='text-decoration-none sans_light text-secondary'>Evaluate feasibility &ROI</a></li>
+                                <li className='py-1'><a  className='text-decoration-none sans_light text-secondary'>Get assistance</a></li>
                             </ul>
                         </div>
                         <div className='flex-column'>

@@ -42,9 +42,9 @@ function PhotoGallery() {
     
     <div className="photo-gallery">
       {!selectedCategory ? (
-        <div className="row">
+        <div className="row d-flex justify-content-center">
           {categories.map((category) => (
-            <div key={category.id} className="col-12 col-md-4 mb-4">
+            <div key={category.id} className="col-12 col-md-4 mb-4 d-flex justify-content-center">
               <div
                 className="category-card"
                 onClick={() => setSelectedCategory(category)}

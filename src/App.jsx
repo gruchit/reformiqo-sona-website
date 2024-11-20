@@ -23,73 +23,66 @@ import Gallery from './whole_webiste/Resources/Gallery/Gallery.jsx';
 import Laminated_Tubs from './whole_webiste/Laminated_Tubs/Laminated_Tubs.jsx';
 import ReachUs from './whole_webiste/ReachUs/ReachUs/ReachUs.jsx';
 import Error from './whole_webiste/component/ErrorPages/ErrorPage.jsx';
+import Loader from './whole_webiste/component/Loader/Loader.jsx';
+import ScrolingTop from './whole_webiste/component/ScrolingTop/ScrolingTop.jsx';
 
 // slick styles
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
 function App() {
-    const [scrolling, setScrolling] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const handleScroll = () => {
-            setScrolling(true);
-            clearTimeout(window.scrollTimeout);
-            window.scrollTimeout = setTimeout(() => {
-                setScrolling(false);
-            }, 10000);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
+        const timer = setTimeout(() => setLoading(false), 1500); // Simulating loading time
+        return () => clearTimeout(timer);
     }, []);
 
+    if (loading) {
+        return <Loader />;
+    }
+
     return (
-        <>
-            <Router>
-                <Routes>
-                    {/* HomePage */}
-                    <Route path="/" element={<Home />} />
+        <Router>
+            <ScrolingTop /> {/* Ensures scroll to top on route change */}
+            <Routes>
+                {/* Home Page */}
+                <Route path="/" element={<Home />} />
+                <Route path="/About/Our-Store/" element={<OurStore />} />
+                <Route path="/About/Advatages-Sona/" element={<AdvatagesSona />} />
+                <Route path="/About/Manufacturing-Unit/" element={<ManufacturingUnit />} />
+                <Route path="/About/Enviro-Friendly/" element={<Enviro_Friendly />} />
+                <Route path="/About/Brochures/" element={<Brochures />} />
 
-                    {/* About */}
-                    <Route path="/About/Our-Store/" element={<OurStore />} />
-                    <Route path="/About/Advatages-Sona/" element={<AdvatagesSona />} />
-                    <Route path="/About/Manufacturing-Unit/" element={<ManufacturingUnit />} />
-                    <Route path="/About/Enviro-Friendly/" element={<Enviro_Friendly />} />
-                    <Route path="/About/Brochures/" element={<Brochures />} />
+                {/* Industry Pages */}
+                <Route path="/Industry/" element={<IndustryHome />} />
+                <Route path="/Industry/Pharmaceutical/" element={<Pharmaceutical />} />
+                <Route path="/Industry/Cosmetic-And-Personal-Care/" element={<Cosm_Per />} />
+                <Route path="/Industry/Nutraceutical/" element={<Nutraceutical />} />
+                <Route path="/Industry/Industrial-And-Agro-Chemical/" element={<Indust_Agro />} />
 
-                    {/* Industry */}
-                    <Route path="/Industry/" element={<IndustryHome />} />
-                    <Route path="/Industry/Pharmaceutical/" element={<Pharmaceutical />} />
-                    <Route path="/Industry/Cosmetic-And-Personal-Care/" element={<Cosm_Per />} />
-                    <Route path="/Industry/Nutraceutical/" element={<Nutraceutical />} />
-                    <Route path="/Industry/Industrial-And-Agro-Chemical/" element={<Indust_Agro />} />
+                {/* Aluminum Products */}
+                <Route path="/Aluminum-Products/" element={<Aluminum_Pro />} />
+                <Route path="/Aluminum-Products/Collapsible-Tubes/" element={<Collapsible />} />
+                <Route path="/Aluminum-Products/Flasks-And-Bottles/" element={<FlaskBottles />} />
+                <Route path="/Aluminum-Products/Tablet-Canisters/" element={<TableCanisters />} />
 
-                    {/* Aluminum-Products */}
-                    <Route path="/Aluminum-Products/" element={<Aluminum_Pro />} />
-                    <Route path="/Aluminum-Products/Collapsible-Tubes/" element={<Collapsible />} />
-                    <Route path="/Aluminum-Products/Flasks-And-Bottles/" element={<FlaskBottles />} />
-                    <Route path="/Aluminum-Products/Tablet-Canisters/" element={<TableCanisters />} />
+                {/* Resources */}
+                <Route path="/Resources/Careers/" element={<Careers />} />
+                <Route path="/Resources/BlogMedia/" element={<BlogMedia />} />
+                <Route path="/Resources/Gallery/" element={<Gallery />} />
 
-                    {/* Resources */}
-                    <Route path="/Resources/Careers/" element={<Careers />} />
-                    <Route path="/Resources/BlogMedia/" element={<BlogMedia />} />
-                    <Route path="/Resources/Gallery/" element={<Gallery />} />
+                {/* Laminated Tubs */}
+                <Route path="/Laminated-Tubs/" element={<Laminated_Tubs />} />
 
-                    {/* LaminatedTubs */}
-                    <Route path="/Laminated-Tubs/" element={<Laminated_Tubs />} /> 
+                {/* Reach Us */}
+                <Route path="/ReachUs/" element={<ReachUs />} />
 
-                    {/* ReachUs */}
-                    <Route path="/ReachUs/" element={<ReachUs />} /> 
-
-                    {/* Error */}
-                    <Route path="*" element={<Error />} /> 
-                </Routes>
-            </Router>
-            
-        </>
+                {/* Error Page */}
+                <Route path="*" element={<Error />} />
+            </Routes>
+        </Router>
     );
 }
 

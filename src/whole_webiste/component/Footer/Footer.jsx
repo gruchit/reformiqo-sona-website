@@ -49,20 +49,20 @@ function Footer() {
                             <div className='Quick_link'>
                                 <h3 className='text-white sans_light'>Quick Links</h3>
                                 <ul className='ps-5 '>
-                                    <li className='text-secondary p-1'><a href="" className='sans_light text-decoration-none text-secondary'>Our Story</a></li>
-                                    <li className='text-secondary p-1'><a href="" className='sans_light text-decoration-none text-secondary'>Advantage Sona</a></li>
-                                    <li className='text-secondary p-1'><a href="" className='sans_light text-decoration-none text-secondary'>Manufacturing Unit</a></li>
-                                    <li className='text-secondary p-1'><a href="" className='sans_light text-decoration-none text-secondary'>Industries We Serve</a></li>
-                                    <li className='text-secondary p-1'><a href="" className='sans_light text-decoration-none text-secondary'>Aluminium Products</a></li>
-                                    <li className='text-secondary p-1'><a href="" className='sans_light text-decoration-none text-secondary'>Contact Us</a></li>
-                                    <li className='text-secondary p-1'><a href="" className='sans_light text-decoration-none text-secondary'>Enquiry</a></li>
+                                    <li className='text-secondary p-1'><a  className='sans_light text-decoration-none text-secondary'>Our Story</a></li>
+                                    <li className='text-secondary p-1'><a  className='sans_light text-decoration-none text-secondary'>Advantage Sona</a></li>
+                                    <li className='text-secondary p-1'><a  className='sans_light text-decoration-none text-secondary'>Manufacturing Unit</a></li>
+                                    <li className='text-secondary p-1'><a  className='s_light text-decoration-none text-secondary'>Industries We Serve</a></li>
+                                    <li className='text-secondary p-1'><a  className='sans_light text-decoration-none text-secondary'>Aluminium Products</a></li>
+                                    <li className='text-secondary p-1'><a  className='s_light text-decoration-none text-secondary'>Contact Us</a></li>
+                                    <li className='text-secondary p-1'><a  className='sans_light text-decoration-none text-secondary'>Enquiry</a></li>
                                 </ul>
 
                             </div>
                         </div>
                         <div className='col-xl-4 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center'>
                                 <div className='Contact_Company p-lg-3'>
-                                <h3 className='sans_light text-white text-center'>Contact Company</h3>
+                                <h3 className='s_light text-white text-center'>Contact Company</h3>
                                     <div className='Cont_number d-flex p-3'>
                                         <div className=''>
                                             <FaPhoneAlt className='text-secondary' />

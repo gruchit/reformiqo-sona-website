@@ -35,8 +35,8 @@ function OrderDeliveryCrr() {
                             </div>
                             <div>
                                 <ul className='d-flex list-unstyled gap-5'>
-                                    <li><span><IoTimeOutline className='iconOrderDel mb-1' /></span> <a href="" className='text-secondary text-decoration-none'>March 29, 2023</a></li>
-                                    <li><span><IoTimeOutline className='iconOrderDel mb-1' /></span> <a href="" className='text-secondary text-decoration-none'>Full-time, Permanent</a></li>
+                                    <li><span><IoTimeOutline className='iconOrderDel mb-1' /></span> <a  className='text-secondary text-decoration-none'>March 29, 2023</a></li>
+                                    <li><span><IoTimeOutline className='iconOrderDel mb-1' /></span> <a  className='text-secondary text-decoration-none'>Full-time, Permanent</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -57,8 +57,8 @@ function OrderDeliveryCrr() {
                             </div>
                             <div>
                                 <ul className='d-flex list-unstyled gap-5'>
-                                    <li><span><IoTimeOutline className='iconOrderDel mb-1' /></span> <a href="" className='text-secondary text-decoration-none'>March 29, 2023</a></li>
-                                    <li><span><IoTimeOutline className='iconOrderDel mb-1' /></span> <a href="" className='text-secondary text-decoration-none'>Full-time, Permanent</a></li>
+                                    <li><span><IoTimeOutline className='iconOrderDel mb-1' /></span> <a  className='text-secondary text-decoration-none'>March 29, 2023</a></li>
+                                    <li><span><IoTimeOutline className='iconOrderDel mb-1' /></span> <a  className='text-secondary text-decoration-none'>Full-time, Permanent</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -79,8 +79,8 @@ function OrderDeliveryCrr() {
                             </div>
                             <div>
                                 <ul className='d-flex list-unstyled gap-5'>
-                                    <li><span><IoTimeOutline className='iconOrderDel mb-1' /></span> <a href="" className='text-secondary text-decoration-none'>March 29, 2023</a></li>
-                                    <li><span><IoTimeOutline className='iconOrderDel mb-1' /></span> <a href="" className='text-secondary text-decoration-none'>Full-time, Permanent</a></li>
+                                    <li><span><IoTimeOutline className='iconOrderDel mb-1' /></span> <a  className='text-secondary text-decoration-none'>March 29, 2023</a></li>
+                                    <li><span><IoTimeOutline className='iconOrderDel mb-1' /></span> <a  className='text-secondary text-decoration-none'>Full-time, Permanent</a></li>
                                 </ul>
                             </div>
                         </div>

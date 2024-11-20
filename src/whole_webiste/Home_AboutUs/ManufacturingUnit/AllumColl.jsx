@@ -15,8 +15,8 @@ function AllumColl() {
                         <div className='col-lg-6 col-md-12 mt-5 d-flex justify-content-center'>
                             <div className='AllumBodyCads'>
                                 <h4 className='mb-3 text-center'>Specialities:</h4>
-                                <div className='AllumBodyCard d-flex'>
-                                    <div className='AllumBodyLeft flex-column' >
+                                <div className='AllumBodyCard d-md-flex d-lg-flex d-xl-flex d-xxl-flex'>
+                                    <div className='AllumBodyLeft flex-column ' >
                                         <ul className='list-unstyled'>
                                             <li> <span><FaCheck className='me-3 checkAllum fs-5' /></span> Collapsible Tubes</li>
                                             <li> <span><FaCheck className='me-3 checkAllum fs-5' /></span>Adhesive Tubes</li>

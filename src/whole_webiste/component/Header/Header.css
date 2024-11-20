@@ -269,31 +269,46 @@
     transition: all 0.8s ease;
 
 }
-
+.smallHeader{
+    width: 100%;
+}
 
 
 
 @media (max-width: 319.99px) {
+    .Sticky-Navbar{
+        padding: 0px ;
+    }
     .header_main{
         padding: 15px;
+    }
+    .ApplySticky{
+        display:none;   
     }
 }
 
 
 @media (min-width: 320px) {
+   .Sticky-Navbar{
+        padding: 0px ;
+    }
     .header_main{
         padding:15px;
     }
-    .header{
+    .header,.ApplySticky{
         display:none;   
     }
     .HeaderSmall,.modal-overlay,.modal-content{
         display:block;
     }
 }
+
 @media (max-width: 576px) {
-    .header{
+    .header,.ApplySticky{
         display:none;   
+    }
+    .Sticky-Navbar{
+        padding: 0px ;
     }
     .HeaderSmall,.modal-overlay,.modal-content{
         display:block;
@@ -307,7 +322,7 @@
 }
 
 @media (max-width: 768px) {
-    .header{
+    .header,.ApplySticky{
         display:none;   
     }
     .HeaderSmall,.modal-overlay,.modal-content{
@@ -318,7 +333,7 @@
     }
 }
 @media (max-width: 992px){
-    .header{
+    .header,.ApplySticky{
         display:none;   
     }
     .HeaderSmall,.modal-overlay,.modal-content{
@@ -326,18 +341,74 @@
     }
 }
 @media (max-width: 1200px){
-    .header{
+    .header,.ApplySticky{
         display:none;   
     }
     .HeaderSmall,.modal-overlay,.modal-content{
         display:block;
     }
 }
-/* @media (max-width: 1400px){
-    .header{
-        display:block;   
-    }
-    .HeaderSmall{
-        display:none;
-    }
-} */
+
+
+
+.Sticky-Navbar{
+    width: 100%;
+    padding: 10px ;
+    display: flex;
+    justify-content:space-between;
+}
+
+.smallHeaderStylky{
+    width: 100%; /* Make it take the full width of the viewport */
+    display: flex;
+    justify-content:space-between;
+}
+
+.sticky-header { 
+    position: fixed;
+    top: 10px; /* Small gap from top */
+    left: 0;
+    right: 0;
+    width: 98%; /* Make it take the full width of the viewport */
+    margin: 0 auto; /* Center the header horizontally */
+    border-radius: 60px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Items on the left and right */
+    padding: 0px 20px;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+  }
+  
+  .sticky-header.visible {
+    transform: translateY(0); /* Slide in */
+    opacity: 1;
+  }
+  
+  .sticky-header .navbar-brand img {
+    width: 120px;
+  }
+  
+  .sticky-header .nav-item {
+    margin-right: 15px;
+  }
+  
+  .sticky-header .nav-link {
+    color: #333;
+    font-weight: 500;
+  }
+  .StlyHeader{
+    padding: 25px;
+  }
+
+  /* Optional: Apply Sticky wrapper */
+  .ApplySticky {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
