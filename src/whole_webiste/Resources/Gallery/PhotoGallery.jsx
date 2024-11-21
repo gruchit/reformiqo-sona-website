@@ -39,7 +39,7 @@ function PhotoGallery() {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   return (
-    
+
     <div className="photo-gallery">
       {!selectedCategory ? (
         <div className="row d-flex justify-content-center">
@@ -50,7 +50,7 @@ function PhotoGallery() {
                 onClick={() => setSelectedCategory(category)}
               >
                 <img
-                  src={category.images[0]} 
+                  src={category.images[0]}
                   alt={category.title}
                   className="category-thumbnail"
                 />
@@ -59,7 +59,7 @@ function PhotoGallery() {
             </div>
           ))}
         </div>
-    
+
       ) : (
         <div className={`subcategory-view ${selectedCategory ? 'show' : ''}`}>
           <button

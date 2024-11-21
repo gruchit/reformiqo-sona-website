@@ -45,7 +45,7 @@ function App() {
 
     return (
         <Router>
-            <ScrolingTop /> {/* Ensures scroll to top on route change */}
+            {/* <ScrolingTop />  */}
             <Routes>
                 {/* Home Page */}
                 <Route path="/" element={<Home />} />

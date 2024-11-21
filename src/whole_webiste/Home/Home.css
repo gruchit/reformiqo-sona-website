@@ -19,17 +19,49 @@
     padding: 70px 50px;
     overflow: hidden;
 }
-.AboutSonaEx_Btn button{
+.AboutSonaEx_Btn button {
+    position: relative; /* Needed for the pseudo-element positioning */
+    overflow: hidden; /* Ensures the pseudo-element does not go outside the button */
+    background-color: transparent; /* Transparent base for visual effect */
+    border: 2px solid #d4b76e; /* Optional: Customize button border */
+    color: #d4b76e; /* Text color */
+    padding: 15px 50px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size:24px;
+
+}
+
+.AboutSonaEx_Btn button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #d4b76e; /* Fill color */
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: left; /* Animation starts from the left */
+    transition: transform 0.3s ease; /* Smooth transition */
+    z-index: -1; /* Ensures it appears behind text */
+}
+.AboutSonaEx_Btn button:hover::before {
+    transform: scaleX(1); /* Expands the fill */
+}
+
+.AboutSonaEx_Btn button:hover {
+    color: #fff; /* Changes text color on hover */
+}
+/*  button{
     font-size:22px;
-    background-color:#d4b76e;
+    
     border-radius: 35px;
     padding: 16px 85px;
-    color:white;
-    
+    color:white;  
 }
 .AboutSonaEx_Btn button:hover{
     background-color:#dcb142;
-}
+} */
 .AboutSonaEx{
     padding:100px 50px;
     overflow:hidden;
@@ -150,24 +182,25 @@
     z-index: -999;
 }
 /*  */
+
 .infinite {
-    overflow: hidden; /* Prevent any scrolling */
-    position: relative; /* To position the background image correctly */
+    overflow: hidden;
+    position: relative; 
 }
 
 .infinite-bg {
-    z-index: -1;
+    z-index: -2;
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
-    top: 0; /* Aligning image to the top */
-    left: 0; /* Aligning image to the left */
+    top: 0; 
+    left: 0; 
 }
 
-.infinite .infi_card {
+ .infi_card {
     position: relative;
-    z-index: 1;
+    z-index: 3;
     padding: 90px 0px; /* Added padding for better spacing */
     color: #333; /* Improved text color for contrast */
     width: 100%; /* Ensure it takes full width of the parent */
@@ -554,12 +587,18 @@
 }
 
 @media (max-width: 319.99px) {
+    .custom-button {
+        width: 100%; 
+    }
     .Order_text img{
         margin:0px 0px 20px 180px;
     }
 }
 
 @media (min-width: 320px) {
+    .custom-button {
+        width: 100%; 
+    }
     .OurClientRight_top{
         flex-direction:column;
     }
@@ -616,6 +655,10 @@
     }
 }
 @media (min-width: 576px) {
+    .custom-button {
+        width: 50%; 
+        margin-right:auto;
+    }
     .orderTypeimages {
         top:-110px;
         left:0px;
@@ -663,6 +706,10 @@
     }
 }
 @media (min-width: 768px) {
+    .custom-button {
+        width: 50%; 
+        margin-right:auto;
+    }
     .date_Upcomin{
         top: -35px;
     right: 195px;
@@ -709,6 +756,9 @@
     }
 }
 @media (min-width: 992px) {
+    .custom-button {
+        width: 100%;  
+    }
     .date_Upcomin{
     top: -35px;
     right: 80px;

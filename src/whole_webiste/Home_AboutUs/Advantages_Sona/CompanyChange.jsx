@@ -4,7 +4,7 @@ import Cosmetic1 from '../../../assets/Cosmetic1.svg'
 import Nutraceuticals from '../../../assets/Nutraceuticals.svg'
 import Industrial1 from '../../../assets/Industrial1.svg'
 import Company_black from '../../../assets/Company_black.jpg'
-
+import './AdvantSona.css'
 
 function CompanyChange() {
     return (

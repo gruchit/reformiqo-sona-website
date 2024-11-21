@@ -42,9 +42,9 @@ function Header() {
       const currentScrollY = window.scrollY;
 
       // Show the header if scrolled down more than 100px
-      if (currentScrollY > 300 && currentScrollY > lastScrollY) {
+      if (currentScrollY > 400 && currentScrollY > lastScrollY) {
         setIsStickyVisible(true);
-      } else if (currentScrollY > lastScrollY || currentScrollY <= 300) {
+      } else if (currentScrollY > lastScrollY || currentScrollY <= 400) {
         setIsStickyVisible(false);
       }
 

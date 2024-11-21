@@ -2,9 +2,11 @@ import React from 'react'
 import Top from '../../component/Top/Top'
 import Header from '../../component/Header/Header'
 import Footer from '../../component/Footer/Footer'
-import Infinite from '../../Home/Infinite'
 import Trusted from '../../Home/Trusted'
 import Our_Strength from '../../Home_AboutUs/Our_Store/Our_Strength'
+import Collapsible from './Collapsible'
+import CollaSlider from './CollaSlider'
+import ParalexImg from './ParalexImg'
 
 
 function CollapsibleTube() {
@@ -12,8 +14,10 @@ function CollapsibleTube() {
         <>
             <Top />
             <Header />
-            <Infinite/>
+            <Collapsible/>
+            <ParalexImg Type="Colla"/>
             <Trusted/>
+            <CollaSlider/>
             <Our_Strength/>
             <Footer />
         </>

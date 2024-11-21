@@ -156,7 +156,7 @@ function PharmTxt({ Type }) {
                                     <>
                                         <h2 className=' sans_light'>Industrial & Agro-Chemical</h2>
                                         <p className='sans_light text-secondary'>We are the industry’s top producers and distributors of aluminium packaging solutions or products. Because of our commitment to quality and innovation, we have gained the trust of customers all over the world.
-                                        To ensure that our customers receive the best possible service, we have continuously improved our procedures and designed our products to meet the highest standards of quality and safety.
+                                            To ensure that our customers receive the best possible service, we have continuously improved our procedures and designed our products to meet the highest standards of quality and safety.
                                         </p>
                                     </>
                                     :
@@ -170,7 +170,7 @@ function PharmTxt({ Type }) {
                                     </>
                         }
                         <div className='pharmacSlider position-relative'>
-                            <div className="PharmTxtSlider ">
+                            <div className="PharmTxtSlider">
                                 <Slider {...settings}>
                                     {SmallSlider.map((slide, index) => (
                                         <div className="PharmTxtcard" key={index}>

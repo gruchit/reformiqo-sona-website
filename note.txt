@@ -20,3 +20,16 @@ http://localhost:5173/About/Advatages-Sona/
 
 2) make brocher book 
 
+
+
+
+
+loader
+aluminiam 3 page
+
+
+responsive
+animation
+wellset karva ni chhe 
+{text,paragraph}
+

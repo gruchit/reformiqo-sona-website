@@ -1,13 +1,13 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import ErrorImage from '../../../assets/Error1.png'; 
+import ErrorImage from '../../../assets/error3.svg'; 
 import './Error.css';
 
 function ErrorPage() {
     const navigate = useNavigate();
 
     const handleBackHome = () => {
-        navigate('/'); // Redirect to homepage
+        navigate('/'); 
     };
     
     return (
