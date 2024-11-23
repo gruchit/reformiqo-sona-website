@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
 // Import Components
 import Home from './whole_webiste/Home/Home.jsx';
@@ -32,20 +32,9 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 function App() {
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        const timer = setTimeout(() => setLoading(false), 1500); // Simulating loading time
-        return () => clearTimeout(timer);
-    }, []);
-
-    if (loading) {
-        return <Loader />;
-    }
-
     return (
         <Router>
-            {/* <ScrolingTop />  */}
+              
             <Routes>
                 {/* Home Page */}
                 <Route path="/" element={<Home />} />
@@ -85,5 +74,16 @@ function App() {
         </Router>
     );
 }
+
+const PageLoader = ({ loading }) => {
+    useEffect(() => {
+      const loader = document.getElementById("loader");
+      if (loader) {
+        loader.style.display = loading ? "block" : "none";
+      }
+    }, [loading]);
+    return null; 
+  };
+
 
 export default App;

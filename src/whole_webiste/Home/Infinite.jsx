@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import { Link } from 'react-router-dom';
 import InfiniteSVG from '../../assets/Infinite.svg';
 import button_Arrow from '../../assets/button_Arrow.svg';
 import AOS from 'aos';
@@ -24,18 +25,20 @@ function Infinite() {
                 <div className='col-lg-8 col-md-12 col-sm-12  d-flex flex-column justify-content-center'
 
                 >
-                    <h3 className='text-white'>Collapsible Tubes</h3>
-                    <h1 className='text-white'>Infinite Possibilities</h1>
-                    <h5 className='text-white'>We produce high-quality collapsible multipurpose tubes that are versatile and easy to use.</h5>
+                    <h3 className='text-white sans_light'>Collapsible Tubes</h3>
+                    <h1 className='text-white sans_bold'>Infinite Possibilities</h1>
+                    <h5 className='text-white sans_light'>We produce high-quality collapsible multipurpose tubes that are versatile and easy to use.</h5>
                 </div>
                 <div className="col-lg-4 col-md-12 col-sm-12 d-flex align-items-end align-items-center  justify-content-end ">
-                    <button className="custom-button">
+                    {/* <button > */}
+                        <Link to="/ReachUs/" className="custom-button text-decoration-none">
                         <span >Contact Us Today</span>
                         <div className="icon-wrapper"
                         >
                             <img src={button_Arrow} alt="Arrow Icon" />
                         </div>
-                    </button>
+                    {/* </button> */}
+                    </Link>
                 </div>
             </div>
         </div>

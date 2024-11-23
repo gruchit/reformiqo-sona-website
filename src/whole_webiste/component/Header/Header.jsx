@@ -107,8 +107,8 @@ function Header() {
         <div className='header-items'>
           <ul className='d-flex list-unstyled m-0'>
             <li className='mx-3'>
-              <a  onClick={toggleMenu} className='text-decoration-none text-white'>
-                <FiMenu className='fs-3 sonaColor' />
+              <a  onClick={toggleMenu} className='text-decoration-none '>
+                <FiMenu className='fs-3 sonaColorr' />
               </a>
             </li>
           </ul>
@@ -120,7 +120,7 @@ function Header() {
             <ul className='flex-column list-unstyled m-0'>
               <li className='d-flex justify-content-between align-items-center' onClick={() => toggleSubmenu('Home')}>
                 <Link to="/" className={`text-decoration-none textBlack ${(location.pathname === '' || location.pathname === '/') ? 'active' : ''}`}>Home</Link>
-                <button className="close-button d-flex align-items-end p-0 m-0" onClick={toggleMenu}><IoClose className=' sonaColor' /></button>
+                <button className="close-button d-flex align-items-end p-0 m-0" onClick={toggleMenu}><IoClose className=' sonaColorr' /></button>
               </li>
               <li onClick={() => toggleSubmenu('aboutUs')}>
                 <div className='d-flex justify-content-between align-items-center'>
@@ -270,16 +270,7 @@ function Header() {
                   <Link to="/Laminated-tubs/" className={`text-decoration-none textBlack ${location.pathname === '/Laminated-tubs/' ? 'active' : ''}`}>Laminated Tubs</Link>
                   {/* <IoIosArrowDown className={openSubmenu === 'LaminatedTubs' ? 'arrow-rotate fs-3' : 'fs-3 Back-Rorate'}/> */}
                 </div>
-                {/* <div className={`submenusAbout pt-2 ${openSubmenu === 'LaminatedTubs' ? 'open' : ''}`}>
-                                    <ul className='list-unstyled'>
-                                        <li className='d-flex align-items-center'>
-                                            <img src={Our_Store} alt="" className='navimg' />
-                                            <span className='setLing'>
-                                                <Link to="" className='text-decoration-none textBlack'>Pharmaceutical</Link>
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </div> */}
+
               </li>
             </ul>
             <div className="d-flex justify-content-start mt-3">
@@ -456,6 +447,8 @@ function Header() {
             </div>
           </nav>
         </div>
+
+
         <div className={`sticky-header  p-md-0 p-sm-0 ${isStickyVisible ? 'visible' : ''}`}>
           <nav className="navbar navbar-expand ApplySticky d-lg-none d-md-none d-sm-none d-none d-xl-block d-xxl-block ">
             <div className='container-xxl'>
@@ -464,13 +457,13 @@ function Header() {
               </a>
               <div className="navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
                 <ul className="navbar-nav mb-lg-0">
-                  <li className="nav-item hover_serv">
-                    <Link to="/" className={`nav-link  StlyHeader px-3 text-decoration-none textBlack ${(location.pathname === '' || location.pathname === '/') ? 'active' : ''}`}>
+                  <li className="nav-item  hover_serv">
+                    <Link to="/" className={`nav-link HTxt StlyHeader px-3 text-decoration-none textBlack ${(location.pathname === '' || location.pathname === '/') ? 'active' : ''}`}>
                       Home
                     </Link>
                   </li>
-                  <li className="nav-item hover_serv">
-                    <Link to="" className={`nav-link  StlyHeader px-3 text-decoration-none textBlack ${(location.pathname === '/About/Our-Store/' || location.pathname === '/About/Advatages-Sona/' || location.pathname === '/About/Manufacturing-Unit/' || location.pathname === '/About/Enviro-Friendly/' || location.pathname === '/About/Brochures/') ? 'active' : ''}`}>
+                  <li className="nav-item  hover_serv">
+                    <Link to="" className={`nav-link HTxt StlyHeader px-3 text-decoration-none textBlack ${(location.pathname === '/About/Our-Store/' || location.pathname === '/About/Advatages-Sona/' || location.pathname === '/About/Manufacturing-Unit/' || location.pathname === '/About/Enviro-Friendly/' || location.pathname === '/About/Brochures/') ? 'active' : ''}`}>
                       About Us
                     </Link>
 
@@ -509,8 +502,8 @@ function Header() {
                       </ul>
                     </div>
                   </li>
-                  <li className="nav-item hover_serv">
-                    <Link to="/Industry/" className={`nav-link StlyHeader px-3 text-decoration-none textBlack ${(location.pathname === '/Industry/' || location.pathname === '/Industry/Pharmaceutical/' || location.pathname === '/Industry/Cosmetic-And-Personal-Care/' || location.pathname === '/Industry/Nutraceutical/' || location.pathname === '/Industry/Industrial-And-Agro-Chemical/') ? 'active' : ''}`}>
+                  <li className="nav-item HTxt hover_serv">
+                    <Link to="/Industry/" className={`nav-link HTxt StlyHeader px-3 text-decoration-none textBlack ${(location.pathname === '/Industry/' || location.pathname === '/Industry/Pharmaceutical/' || location.pathname === '/Industry/Cosmetic-And-Personal-Care/' || location.pathname === '/Industry/Nutraceutical/' || location.pathname === '/Industry/Industrial-And-Agro-Chemical/') ? 'active' : ''}`}>
                       Industry
                     </Link>
                     <div className='set_ul'>
@@ -543,8 +536,8 @@ function Header() {
                       </ul>
                     </div>
                   </li>
-                  <li className="nav-item hover_serv">
-                    <Link to="/Aluminum-Products/" className={`nav-link  StlyHeader px-3 text-decoration-none textBlack ${(location.pathname === '/Aluminum-Products/' || location.pathname === '/Aluminum-Products/Collapsible-Tubes/' || location.pathname === '/Aluminum-Products/Flasks-And-Bottles/' || location.pathname === '/Aluminum-Products/Tablet-Canisters/') ? 'active' : ''}`}>
+                  <li className="nav-item HTxt hover_serv">
+                    <Link to="/Aluminum-Products/" className={`nav-link HTxt StlyHeader px-3 text-decoration-none textBlack ${(location.pathname === '/Aluminum-Products/' || location.pathname === '/Aluminum-Products/Collapsible-Tubes/' || location.pathname === '/Aluminum-Products/Flasks-And-Bottles/' || location.pathname === '/Aluminum-Products/Tablet-Canisters/') ? 'active' : ''}`}>
                       Aluminum Products
                     </Link>
                     <div className='set_ul'>
@@ -573,8 +566,8 @@ function Header() {
                       </ul>
                     </div>
                   </li>
-                  <li className="nav-item hover_serv">
-                    <Link to="" className={`nav-link  StlyHeader px-3 text-decoration-none textBlack ${(location.pathname === '/Resources/Careers/' || location.pathname === '/Resources/BlogMedia/' || location.pathname === '/Resources/Gallery/') ? 'active' : ''}`}>
+                  <li className="nav-item HTxt hover_serv">
+                    <Link to="" className={`nav-link HTxt StlyHeader px-3 text-decoration-none textBlack ${(location.pathname === '/Resources/Careers/' || location.pathname === '/Resources/BlogMedia/' || location.pathname === '/Resources/Gallery/') ? 'active' : ''}`}>
                       Resources
                     </Link>
                     <div className='set_ul'>
@@ -605,8 +598,8 @@ function Header() {
                       </ul>
                     </div>
                   </li>
-                  <li className="nav-item hover_serv">
-                    <Link to="/Laminated-Tubs/" className={`nav-link  StlyHeader px-3 text-decoration-none textBlack ${location.pathname === '/Laminated-Tubs/' ? 'active' : ''}`}>
+                  <li className="nav-item HTxt hover_serv">
+                    <Link to="/Laminated-Tubs/" className={`nav-link HTxt StlyHeader px-3 text-decoration-none textBlack ${location.pathname === '/Laminated-Tubs/' ? 'active' : ''}`}>
                       Laminated Tubs
                     </Link>
                   </li>
@@ -629,7 +622,7 @@ function Header() {
               <ul className='d-flex align-items-center justify-content-end list-unstyled m-0'>
                 <li className='mx-3'onClick={toggleMenu} >
                   <a  className='p-0 text-decoration-none text-white '>
-                    <FiMenu className='fs-3 sonaColor' />
+                    <FiMenu className='fs-3 sonaColorr' />
                   </a>
                 </li>
               </ul>

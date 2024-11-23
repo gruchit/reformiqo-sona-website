@@ -1,5 +1,5 @@
 .AdvantagesTop {
-    padding:80px 50px ;
+    padding:80px 15px ;
     overflow:hidden;
 }
 .AdvTopLeft{
@@ -24,9 +24,7 @@
 .AdvTopright h3{
     font-weight:600;
 }
-.AdvTopright h3{
-    font-weight:600;
-}
+
 .AdvTopright h1{
     font-weight:700;
 }
@@ -37,7 +35,7 @@
 
 /*  */
 .ThreTabs{
-    padding:80px 50px 80px 50px;
+    padding:80px 15px 60px 15px;
     background-color:#faf8f5;
     position: relative;
 
@@ -71,27 +69,27 @@
     max-width:80px;
     width: 100%;
     height:auto;
-    top:-45px;
     z-index: 2;
-    left:75px
+    top:-45px;
+    left:25px
 }
 .ThreUnprecedented{
     position: absolute;
     max-width:80px;
     width: 100%;
     height:auto;
-    top:0px;
     z-index: 2;
-    left:75px
+    top:0px;
+    left:25px
 }
 .ThreSpecifications{
     position: absolute;
     max-width:80px;
     width: 100%;
     height:auto;
-    top:-45px;
     z-index: 2;
-    left:75px
+    top:-45px;
+    left:25px
 }
 .ThreTabs1 h4{
     font-weight:600;
@@ -101,7 +99,7 @@
     margin-bottom:200px;
 }
 .CompanyBlackCard{
-    padding:0px 50px ;
+    padding:0px 15px ;
 }
 
 .Company_black img{
@@ -186,13 +184,20 @@
 
 /* WhyChoose */
 .WhyChoose{
-    padding: 80px 50px 40px 50px;
+    padding: 80px 15px 40px 15px;
+    position: relative;
 }
 .WhyChooseTXT{
-    padding: 40px 50px 40px 50px;
-    background-color:#faf8f5
+    padding: 40px 15px 40px 15px;
+    background-color:#faf8f5;
 }
-
+.WhyDoted{
+    max-width:150px ;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top:-10px;
+}
 .WhyIcon{
     background-color:#d4b76e;
     border-radius:50%;
@@ -202,13 +207,7 @@
 .WhyChooseTXT ul li a,.WhyChoose h3,.WhyChoose h1{
     font-weight:600;
 }
-.WhyDoted{
-    max-width:150px ;
-    width: 100%;
-    position: absolute;
-    left: 0px;
-    /* top:0px; */
-}
+
 .WhyChooseTXT{
     position: relative;
 }
@@ -219,7 +218,6 @@
     position: absolute;
     right: 0px;
     top:-14px;
-
 }
 
 
@@ -227,6 +225,12 @@
 
 
 @media (min-width: 320px){
+    .CompanyBlackCard{
+        padding:0px 15px ;
+    }
+    .WhyChooseTXT{
+        padding: 40px 15px 40px 15px;
+    }
     .AdvantagesTop {
         padding:80px 20px 60px 20px;
     }
@@ -239,8 +243,26 @@
     .WhyChooseTXT{
         padding: 40px 15px 80px 15px;
     }
+    .ThreTbsPioneers{
+        top:0px;
+        left:25px
+    }
+    .ThreUnprecedented{
+        top:0px;
+        left:25px
+    }
+    .ThreSpecifications{
+        top:0px;
+        left:25px
+    }
 }
 @media (min-width: 576px){
+    .CompanyBlackCard{
+        padding:0px 20px ;
+    }
+    .WhyChooseTXT{
+        padding: 40px 20px 40px 20px;
+    }
     .AdvantagesTop {
         padding:80px 30px 60px 30px;
     }
@@ -253,8 +275,26 @@
     .WhyChooseTXT{
         padding: 40px 20px 80px 20px;
     }
+    .ThreTbsPioneers{
+        top:0px;
+        left:25px
+    }
+    .ThreUnprecedented{
+        top:0px;
+        left:25px
+    }
+    .ThreSpecifications{
+        top:0px;
+        left:25px
+    }
 }
 @media (min-width: 768px) {
+    .CompanyBlackCard{
+        padding:0px 30px ;
+    }
+    .WhyChooseTXT{
+        padding: 40px 30px 40px 30px;
+    }
     .AdvantagesTop {
         padding:60px 40px 60px 40px;
     }
@@ -267,19 +307,55 @@
     .WhyChooseTXT{
         padding: 40px 30px 80px 0px;
     }
+    .ThreTbsPioneers{
+        top:-45px;
+        left:25px
+    }
+    .ThreUnprecedented{
+        top:-45px;
+        left:25px
+    }
+    .ThreSpecifications{
+        top:0px;
+        left:25px
+    }
 }
 @media (min-width: 992px) {
+    .CompanyBlackCard{
+        padding:0px 40px ;
+    }
+    .WhyChooseTXT{
+        padding: 40px 40px 40px 40px;
+    }
+    .ThreTbsPioneers{
+        top:-45px;
+        left:25px
+    }
+    .ThreUnprecedented{
+        top:0px;
+        left:25px
+    }
+    .ThreSpecifications{
+        top:-45px;
+        left:25px
+    }
     .AdvantagesTop {
         padding:70px 50px 70px 50px;
     }
     .ThreTabs{
-        padding:80px 50px 60px 50px;
+        padding:80px 40px 60px 40px;
     }
     .WhyChoose{
         padding: 80px 40px 40px 40px;
     }
 }
 @media (min-width: 1200px) {
+    .CompanyBlackCard{
+        padding:0px 50px ;
+    }
+    .WhyChooseTXT{
+        padding: 40px 50px 40px 50px;
+    }
     .AdvantagesTop {
     padding:80px 50px 80px 50px;
     }

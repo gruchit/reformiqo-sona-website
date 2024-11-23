@@ -52,7 +52,7 @@ function Counter() {
                 {counters.map((counter, index) => (
                     <div key={index} className='col-xxl-3 mt-2 col-xl-3 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center'>
                         <div className='counder1 flex-column text-center sans_light text-white'>
-                            <h1>
+                            <h1 className='sans_bold'>
                                 {isVisible && (
                                     <CountUp 
                                         start={0} 
@@ -62,7 +62,7 @@ function Counter() {
                                     />
                                 )}
                             </h1>
-                            <p className=''>{counter.text}</p>
+                            <p className='sans_Medium'>{counter.text}</p>
                         </div>
                     </div>
                 ))}

@@ -11,12 +11,12 @@
 
 .Focus_on p {
     font-size: 50px;
-    font-weight:600;
+    font-weight:700;
     margin: 0; 
 }
 /* AboutSonaEx */
 .AboutSonaEx { 
-    padding: 70px 50px;
+    padding: 70px 15px;
     overflow: hidden;
 }
 .AboutSonaEx_Btn button {
@@ -52,37 +52,19 @@
 .AboutSonaEx_Btn button:hover {
     color: #fff; /* Changes text color on hover */
 }
-/*  button{
-    font-size:22px;
-    
-    border-radius: 35px;
-    padding: 16px 85px;
-    color:white;  
-}
-.AboutSonaEx_Btn button:hover{
-    background-color:#dcb142;
-} */
-.AboutSonaEx{
-    padding:100px 50px;
-    overflow:hidden;
-}
 .abSona_left img{
     max-width:400px;
     width: 100%;
 }
 .absone_right h3{
     color:#D4B76E;
-    /* font-size:30px;   */
-
+    font-weight:700;
 }
 .absone_right h1{
     font-weight:700;
     margin-bottom:30px; 
 }
-.absone_right p{
-    /* color:#696a6b; */
-    /* font-size:20px; */
-}
+
 
 /*  */
 .YearOf{
@@ -112,7 +94,7 @@
 }
 
 .YearOf_heard h2{
-    font-weight:600;
+    font-weight:700;
 }
 .year_bols {
     max-width:150px;
@@ -124,11 +106,10 @@
 }
 /* product */
 .Product{
-    
-    padding: 100px 40px ;
+    padding: 100px 15px ;
 }
-.Product_Detail h2{
-    font-weight:600;
+.Product_Detail h1{
+    font-weight:700;
     margin-bottom:30px; 
 }
 .Product_Detail{
@@ -143,8 +124,11 @@
     left:0px; 
 }
 .Produ_card_det h4{
-    font-weight:600;
+    font-weight:700;
     margin-bottom:30px; 
+}
+.Produ_card_det p{ 
+    text-align:justify;
 }
 .Product_cards {
     height:510px;
@@ -209,18 +193,10 @@
 }
 
 .infi_card h1 {
-    font-size: 2.5rem; /* Larger font size for the main heading */
-    margin-bottom: 20px; /* Spacing between heading and subheading */
+    margin-bottom: 20px;
 }
-
-.infi_card h3 {
-    font-size: 1.5rem; /* Adjusted size for subheading */
-    /* color: #555;  */
-}
-
 .infi_card h5 {
-    font-size: 1rem; /* Adjusted size for the description */
-    margin-bottom: 20px; /* Added space below the description */
+    margin-bottom: 20px; 
 }
 
 .custom-button {
@@ -240,8 +216,8 @@
 }
 
 .custom-button:hover {
-    background-color: #ddd; /* Hover effect for the button */
-    transform: translateY(-2px); /* Slight lift effect on hover */
+    background-color: #ddd; 
+    transform: translateY(-2px); 
 }
 
 .custom-button span {
@@ -265,9 +241,9 @@
 .markerLe{
     overflow:hidden;
     background-color:#faf8f5;
-    padding :100px 50px 50px 50px;
+    padding :100px 15px 15px 15px;
 }
-.no-gutters h2{
+.markerLeLeft h2{
     font-weight:700;
 }
 .markerLe_cards{
@@ -275,16 +251,18 @@
     background-color:white;
     height:auto;
     max-width:350px;
-    border-radius:10px;
+    border-radius:40px;
     box-shadow: 0 1px 15px rgba(130, 158, 195, 0.4);
     border: 2px solid #fff5dc;
+    text-align:justify;
 
 }
+
 .markerLe_cards img{
     max-width:80px;
 }
 .markerLe_cards h4{
-    font-weight:700;
+    font-weight:600;
 }
 .markerLe_img{
     max-width:200px ;
@@ -298,45 +276,59 @@
 }
   /*  Order */
 .Order{
-    padding :100px 50px;
+    padding :100px 15px;
     overflow:hidden;
 }
 .Order_text img{
     max-width:180px;
     margin:0px 0px 50px 400px;
 }
-  .Order h2{
-    font-weight:600;
+  .Order h1{
+    font-weight:770;
     margin-bottom:30px; 
 }
 .Order_images img{
-    z-index:-999;
+    z-index:-10;
     max-width:540px;
     height:540px;
     position:relative;
     margin:100px 0px;
+    
 }
-.orderType{
+.orderType {
     max-width: 450px;
     width: 100%;
     height: auto;
-    border-radius:40px;
-    background-color:#faf8f5;
+    border-radius: 40px;
+    background-color: #faf8f5;
     border: 2px solid #fff5dc;
-    padding:40px;
-    position: relative;
+    padding: 40px;
+    text-align: justify;
+    margin: 50px auto; /* Centers the entire box */
+    position: relative; /* To allow relative positioning if needed */
 }
-.orderTypeimages{
-    max-width:240px;
-    height:fit-content;
-    margin:0px;
-    position:absolute;
-    z-index:999;
-    top:-75px;
-    left:-75px;
+.orderType p{
+    text-align: justify;
 }
+.orderTypeimages {
+    position: absolute; /* Allow placement outside the container */
+    top: -25%; /* Move the image upward (adjust as needed) */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust alignment */
+    max-width: 240px !important; /* Adjust the image size */
+    width: 100%;
+    height: auto;
+    z-index: 5; /* Ensure it is above the content */
+}
+
+.orderTypeimages img {
+    max-width: 100%; /* Ensures image responsiveness */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 50%; /* Adds a rounded effect if needed */
+}
+
 .Order_images_box1{
-    z-index:999;
+    z-index:5;
     position:absolute;
     left: 90px;
     max-width: 450px;
@@ -344,8 +336,8 @@
     border-radius:40px;
     background-color:#faf8f5;
     border: 2px solid #fff5dc;
-    padding:40px;
-
+    padding:38px;
+    text-align:justify;
 }
 
 .Order_images img{
@@ -354,14 +346,14 @@
 
 .Order_images_box2{
     position:absolute;
-    right:80px;
+    right:120px ;
     bottom:245px;
     max-width: 450px;
     height: 290px;
     border-radius:40px;
     background-color:#faf8f5;
     border: 2px solid #fff5dc;
-
+    text-align:justify;
     padding:40px;
 }
 .Order_images{
@@ -386,7 +378,7 @@
     height:180px;
     margin:0px;
     position:absolute;
-    z-index:999;
+    z-index:5;
     top:-75px;
     left:-75px;
 }
@@ -397,7 +389,7 @@
 /* Our_client */
 .Our_client{
     overflow:hidden;
-    padding:100px 0px 100px 50px;
+    padding:100px 0px 100px 20px;
     background-color:#faf8f5;
 }
 .Our_client_left .OurLeftArrow{
@@ -405,7 +397,7 @@
 }
 .Our_client_left h1{
     margin: 50px 0px;
-    font-weight:600;
+    font-weight:770;
 }
 .OurDoubleBol{
     max-width:180px;
@@ -424,7 +416,7 @@
     height:70px;
 }
 .OurClientRight_top h5{
-    font-weight:600;
+    font-weight:670;
 }
 .OurClientRight_top .showPro p{
     white-space: nowrap;      
@@ -436,19 +428,18 @@
     cursor:pointer;
 }
 /*  */
-.UpcomingEv {
-    padding: 100px 50px;
+.UpcomingEv{
+    padding: 100px 15px;
     overflow: hidden;
 }
 
-.UpcomingEv_text h2 {
-    font-weight: 600;
+.UpcomingEv_text h1 {
+    font-weight: 700;
     margin-top: 20px;
 }
 .date_Upcominrela h4{
     font-weight: 600;
-}
-.UpcomingEv_text img {
+} {
     max-width: 180px;
     margin:0px 0px 40px 400px;
     display: block;
@@ -499,7 +490,7 @@
     max-width: 85px;
     height: 80px;
     position: absolute;
-    z-index: 999;
+    z-index: 5;
     top: -35px;
     right: 40px;
     background-color: #d4b76e;
@@ -513,19 +504,18 @@
 }
 /*  */
 .Trusted {
-    padding: 100px 50px;
+    padding: 100px 15px;
     overflow:hidden;
 }
-.Trusted_text h2 {
-    font-weight: 600;
-    /* font-size: 2rem; */
+.Trusted_text h1 {
+    font-weight: 700;
     text-align: center;
     margin-top: 10px;
 }
 
-.Trusted_text img {
+.Trusted_text img,.UpcomingEv_text img {
     max-width: 180px;
-    margin:0px 0px 40px 400px;
+    /* margin:0px 0px 40px 400px; */
     display: block;
 }
 
@@ -549,7 +539,7 @@
 }
 /* Counder */
 .Counter {
-    padding: 0px 80px;
+    padding: 80px 15px;
 }
 
 .counder1 {
@@ -566,15 +556,12 @@
 
 .counder1 h1 {
     margin: 0;
-    font-size: 36px;
-    font-weight:600;
+    font-weight:700;
 }
 
 .counder1 p {
     margin: 5px 0 0;
-    font-weight:500;
-
-    font-size: 16px;
+    font-weight:700;
 }
 .SonaMap {
     padding: 20px;
@@ -591,11 +578,14 @@
         width: 100%; 
     }
     .Order_text img{
-        margin:0px 0px 20px 180px;
+        margin:0px 0px 10px 120px;
     }
 }
 
 @media (min-width: 320px) {
+    .orderTypeimages {
+        top: -25%; 
+    }
     .custom-button {
         width: 100%; 
     }
@@ -603,7 +593,7 @@
         flex-direction:column;
     }
     .Our_client{
-        padding: 100px 0px 100px 30px;
+        padding: 100px 0px 100px 20px;
     }
     .UpcomingEv{
     padding: 100px 15px;
@@ -612,12 +602,13 @@
         padding: 100px 15px;
     }
     .orderType{
+
         padding:65px 15px 15px 15px;
     }
-    .orderTypeimages {
-        transform: translateX(60%) translateY(0);
-    }
-    .AboutSonaEx {
+    /* .orderTypeimages {
+        
+    } */
+    .AboutSonaEx,.Product{
         padding: 80px 15px;
     }
     .YearOf_box{
@@ -638,37 +629,40 @@
     .infinite .infi_card{
         padding: 50px 0px;
     }
-    .Product{
-        padding: 50px 0px ;
-    }
     .markerLe{
-        padding :30px 15px 30px 15px;
+        padding :50px 15px 30px 15px;
     }
     .Order{
         padding :100px 15px;
     }
-    .Order_text img{
-        margin:0px 0px 20px 180px;
-    }
-    .Trusted_text img{
+    .Trusted_text img,.UpcomingEv_text img,.Order_text img{
         margin:0px 0px 10px 120px;
+    }
+    .Counter {
+        padding: 80px 15px;
     }
 }
 @media (min-width: 576px) {
+    .orderTypeimages {
+        top: -40%; 
+    }
+    .markerLe{
+        padding :100px 20px 20px 20px;
+    }
     .custom-button {
         width: 50%; 
         margin-right:auto;
     }
-    .orderTypeimages {
-        top:-110px;
+    /* .orderTypeimages {
+        
         left:0px;
-    }
+    } */
     .date_Upcomin{
     top: -35px;
     right: 135px;
     }
     .Our_client{
-        padding: 100px 0px 100px 40px;
+        padding: 100px 0px 100px 30px;
     }
     .Trusted{
         padding: 100px 20px;
@@ -678,19 +672,18 @@
         margin: auto;
     }
     .orderType{
+        
         padding:50px 15px 15px 15px;
     }
-    .Order_text img{
-        margin:0px 0px 35px 350px;
-    }
-    .Trusted_text img{
+    
+    .Trusted_text img,.UpcomingEv_text img,.Order_text img{
         margin:0px 0px 20px 270px;
     }
-    .AboutSonaEx {
-        padding: 80px 15px
+    .AboutSonaEx,.Product {
+        padding: 80px 20px;
     }
     .Order{
-        padding :100px 15px;
+        padding :100px 20px;
     }
     .YearOf_box{
         padding:20px 20px ;
@@ -701,11 +694,18 @@
     .YearOf{
         padding : 80px 0px;
     }
-    .Product{
-        padding: 0px ;
+    
+    .Counter {
+        padding: 80px 20px;
     }
 }
 @media (min-width: 768px) {
+    .Counter,.Product {
+        padding: 80px 30px;
+    }
+    .markerLe{
+        padding :100px 30px 30px 30px;
+    }
     .custom-button {
         width: 50%; 
         margin-right:auto;
@@ -719,7 +719,7 @@
         padding: 20px;
     }
     .Our_client{
-        padding: 100px 0px 100px 50px;
+        padding: 100px 0px 100px 30px;
     }
     .Trusted {
         padding: 70px 40px;
@@ -733,17 +733,15 @@
     .orderType{
         padding:50px 15px 15px 15px;
     }
-    .Order_text img{
-        margin:0px 0px 40px 400px;
-    }
-    .Trusted_text img{
+    
+    .Trusted_text img,.Order_text img{
         margin:0px 0px 40px 400px;
     }
     .AboutSonaEx {
-        padding: 80px 20px;
+        padding: 80px 30px;
     }
     .Order{
-        padding :100px 20px;
+        padding :100px 30px;
     }
     .YearOf_box{
         padding:30px 30px ;
@@ -756,6 +754,12 @@
     }
 }
 @media (min-width: 992px) {
+    .Counter,.Product {
+        padding: 80px 40px;
+    }
+    .markerLe{
+        padding :100px 40px 40px 40px;
+    }
     .custom-button {
         width: 100%;  
     }
@@ -768,7 +772,7 @@
         padding: 30px;
     }
     .Our_client{
-        padding: 100px 0px 100px 50px;
+        padding: 100px 0px 100px 40px;
     }
     .Trusted {
         padding: 90px 50px;
@@ -783,10 +787,10 @@
         padding:50px 15px 15px 15px;
     }
     .AboutSonaEx {
-        padding: 80px 30px;
+        padding: 80px 40px;
     }
     .Order{
-        padding :100px 30px;
+        padding :100px 40px;
     }
     .YearOf_box{
         padding:40px 40px ;
@@ -806,6 +810,15 @@
 }
 
 @media (min-width: 1200px) { 
+    .Counter,.Product {
+        padding: 80px 50px;
+    }
+    .markerLe{
+        padding :100px 50px 50px 50px;
+    }
+    /* .markerLeLeft{
+        padding-left: 20px  ;
+    } */
     .Our_client{
         padding: 100px 0px 100px 50px;
     }
@@ -836,18 +849,13 @@
     .Order_images_box1 .Order_images_box3 .Order_images_box2 .Order_images{
         display:block !important;
     }
+    .Order{
+        padding : 100px 50px;
+    }
+ }
+ 
 
- }
- @media (min-width: 1200px) { 
-    .Order_images_box1,
-    .Order_images_box3{
-        left:80px ;
-    }
-    .Order_images_box2{
-        right:80px ;
-    }
- }
- @media (min-width: 1249.98px) { 
+ /* @media (min-width: 1249.98px) { 
     .Order_images_box1,
     .Order_images_box3{
         left:138px ;
@@ -855,7 +863,7 @@
     .Order_images_box2{
         right:138px ;
     }
- }
+ } */
  @media (min-width: 1399.98px) { 
     .Order_images_box1,
     .Order_images_box3{
@@ -873,13 +881,100 @@
     }
 
 } 
+@media (max-width: 2099.98px) { 
+    .Order_images_box1,
+    .Order_images_box3{
+        left:520px ;
+    }
+    .Order_images_box2{
+        right:485px;
+    }
+}
+@media (max-width: 2079.98px) { 
+    .Order_images_box1,
+    .Order_images_box3{
+        left:515px ;
+    }
+    .Order_images_box2{
+        right:470px;
+    }
+}
+@media (max-width: 2049.98px) { 
+    .Order_images_box1,
+    .Order_images_box3{
+        left:500px ;
+    }
+    .Order_images_box2{
+        right:455px;
+    }
+}
+@media (max-width: 2029.98px) { 
+    .Order_images_box1,
+    .Order_images_box3{
+        left:490px ;
+    }
+    .Order_images_box2{
+        right:455px;
+    }
+}
+@media (max-width: 1999.98px) { 
+    .Order_images_box1,
+    .Order_images_box3{
+        left:475px ;
+    }
+    .Order_images_box2{
+        right:430px;
+    }
+ }
+@media (max-width: 1979.98px) { 
+    .Order_images_box1,
+    .Order_images_box3{
+        left:455px ;
+    }
+    .Order_images_box2{
+        right:420px;
+    }
+ }
+@media (max-width: 1949.98px) { 
+    .Order_images_box1,
+    .Order_images_box3{
+        left:445px ;
+    }
+    .Order_images_box2{
+        right:400px;
+    }
+ }
+@media (max-width: 1929.98px) { 
+    .Order_images_box1,
+    .Order_images_box3{
+        left:415px ;
+    }
+    .Order_images_box2{
+        right:375px;
+    }
+ }
 @media (max-width: 1899.98px) { 
     .Order_images_box1,
     .Order_images_box3{
         left:415px ;
     }
     .Order_images_box2{
-        right:415px;
+        right:360px;
+    }
+ }
+ @media (max-width: 1879.98px) {
+    .Order_images_box2{
+        right:360px;
+    }
+ }
+ @media (max-width: 1849.98px) {
+    .Order_images_box2{
+        right:350px;
+    }
+ }
+ @media (max-width: 1829.98px) {
+    .Order_images_box2{
+        right:340px;
     }
  }
  @media (max-width: 1799.98px) { 
@@ -888,7 +983,23 @@
         left:360px ;
     }
     .Order_images_box2{
-        right:360px;
+        right:330px;
+
+    }
+ }
+ @media (max-width: 1779.98px) {
+    .Order_images_box2{
+        right:325px;
+    }
+ }
+ @media (max-width: 1749.98px) {
+    .Order_images_box2{
+        right:280px;
+    }
+ }
+ @media (max-width: 1729.98px) {
+    .Order_images_box2{
+        right:280px;
     }
  }
  @media (max-width: 1699.98px) { 
@@ -897,25 +1008,79 @@
         left:315px ;
     }
     .Order_images_box2{
-        right:315px;
+        right:280px;
+        /* right:120px; */
     }
- } @media (max-width: 1599.98px) { 
+ }
+ @media (max-width: 1679.98px) {
+    .Order_images_box2{
+        right:260px;
+    }
+ }
+ @media (max-width: 1649.98px) {
+    .Order_images_box2{
+        right:240px;
+    }
+ }
+ @media (max-width: 1629.98px) {
+    .Order_images_box2{
+        right:220px;
+    }
+ }
+@media (max-width: 1599.98px) { 
     .Order_images_box1,
     .Order_images_box3{
         left:260px ;
     }
     .Order_images_box2{
-        right:260px ;
+        right:240px ;
+        /* right:80px ; */
     }
- } @media (max-width: 1499.98px) { 
+ }
+ @media (max-width: 1579.98px) { 
+    .Order_images_box2{
+        right:230px ;
+    }
+ }
+ @media (max-width: 1549.98px) { 
+    .Order_images_box2{
+        right:170px ;
+    }
+ }
+ @media (max-width: 1529.98px) { 
+    .Order_images_box2{
+        right:170px ;
+    }
+ }
+@media (max-width: 1499.98px) { 
     .Order_images_box1,
     .Order_images_box3{
         left:215px ;
     }
     .Order_images_box2{
-        right:215px ;
+        right:170px ;
     }
- } @media (max-width: 1399.98px) { 
+ }
+ @media (max-width: 1479.98px) { 
+    .Order_images_box2{
+        right:120px ;
+    }
+  }
+@media (max-width: 1449.98px) { 
+    .Order_images_box2{
+        right:120px ;
+    }
+}
+ @media (max-width: 1430.98px) { 
+    .Order_images_box1,
+    .Order_images_box3{
+        left:215px ;
+    }
+    .Order_images_box2{
+        right:120px ;
+    }
+  } 
+@media (max-width: 1399.98px) { 
     .Order_images_box1,
     .Order_images_box3{
         left:160px ;
@@ -924,18 +1089,68 @@
         right:160px ;
     }
  }
+ @media (max-width: 1379.98px) { 
+    .Order_images_box1,
+    .Order_images_box3{
+        left:115px ;
+    }
+    .Order_images_box2{
+        right:110px ;
+    }
+  }
+ @media (max-width: 1349.98px) { 
+    .Order_images_box1,
+    .Order_images_box3{
+        left:115px ;
+    }
+    .Order_images_box2{
+        right:110px ;
+    }
+ }
+
+ @media (max-width: 1330.98px) { 
+    .Order_images_box1,
+    .Order_images_box3{
+        left:115px ;
+    }
+    .Order_images_box2{
+        right:35px ;
+    }
+ }
  @media (max-width: 1299.98px) { 
     .Order_images_box1,
     .Order_images_box3{
         left:115px ;
     }
     .Order_images_box2{
-        right:115px ;
+        right:85px ;
     }
  }
-
-
-
-
- 
+ @media (max-width: 1279.98px) { 
+    .Order_images_box1,
+    .Order_images_box3{
+        left:115px ;
+    }
+    .Order_images_box2{
+        right:80px ;
+    }
+ }
+ @media (max-width: 1249.98px) {
+    .Order_images_box1,
+    .Order_images_box3{
+        left:138px ;
+    }
+    .Order_images_box2{
+        right:20px ;
+    }
+}
+@media (max-width: 1230.98px) { 
+    .Order_images_box1,
+    .Order_images_box3{
+        left:115px ;
+    }
+    .Order_images_box2{
+        right:10px ;
+    }
+ }
 

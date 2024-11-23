@@ -4,16 +4,26 @@ import BlogImg1 from '../../../assets/Home4.svg'
 import BlogImg2 from '../../../assets/Home_main.svg'
 
 
-function BlogTxt() {
+function BlogTxt({ Type }) {
     return (
         <>
             <div className='BlogTxt'>
                 <div className='container'>
 
                     <div className='BlogTxtBody mb-5'>
-                        <h2 className='text-center sans_Light mb-5'>Let's Learn More About Aluminium Extrusion News?</h2>
-                        <p className='text-center text-secondary sans_Light'>Sona Extrusion is a great place to kickstart your career. You will contribute to our business from day one and get access to build your skills for your future. You’ll also collaborate with global teams, take advantage of opportunities – all in a dynamic environment filled with industry experts.</p>
-                        <p className='text-center text-secondary sans_Light'>We take our responsibilities as an employer very seriously. We take good care of our new employees, but we also challenge them from the very beginning by giving them responsibilities very quickly.</p>
+                        <h1 className='text-center sans_bold mb-5'>Let's Learn More About Aluminium Extrusion News?</h1>
+                        {Type === "Home" ?
+                            <>
+                                <p className='text-center text-secondary sans_light'>There is always more to know on what we are doing and we also intend to keep you all updated on the trending news of aluminium extrusion. Keep reading and be informed.</p>
+                            </>
+                            :
+                            <>
+                                <p className='text-center text-secondary sans_bold'>
+                                Sona Extrusion is a great place to kickstart your career. You will contribute to our business from day one and get access to build your skills for your future. You’ll also collaborate with global teams, take advantage of opportunities – all in a dynamic environment filled with industry experts.</p>
+                                <p className='text-center text-secondary sans_bold'>We take our responsibilities as an employer very seriously. We take good care of our new employees, but we also challenge them from the very beginning by giving them responsibilities very quickly.</p>
+
+                            </>
+                        }
                     </div>
                     <div className='BlogBodyBox mt-5'>
                         <div className='row d-flex justify-content-center'>

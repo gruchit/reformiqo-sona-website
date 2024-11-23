@@ -12,8 +12,8 @@
     flex-direction: column; 
     justify-content: space-between; 
 }
-.BlogBox h2{
-    font-weight:600;
+.BlogBox h1{
+    font-weight:700;
 }
 .BlogBoxTxt {
     flex-grow: 1; 
@@ -39,12 +39,40 @@
     border-radius: 30px;
     margin-bottom: 10px; 
 }
-.BlogBtn:hover{
-    background-color: #d5b86e ;
+
+.BlogBtn {
+    position: relative; /* Needed for the pseudo-element positioning */
+    overflow: hidden; /* Ensures the pseudo-element does not go outside the button */
+    background-color: transparent; /* Transparent base for visual effect */
+    border: 2px solid #d4b76e; /* Optional: Customize button border */
+    color: #d4b76e; /* Text color */
+    padding: 15px 50px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    /* font-size:24px; */
 
 }
 
+.BlogBtn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #d4b76e; /* Fill color */
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: left; /* Animation starts from the left */
+    transition: transform 0.3s ease; /* Smooth transition */
+    z-index: -1; /* Ensures it appears behind text */
+}
+.BlogBtn:hover::before {
+    transform: scaleX(1); /* Expands the fill */
+}
 
+.BlogBtn:hover {
+    color: #fff; /* Changes text color on hover */
+}
 
 
 

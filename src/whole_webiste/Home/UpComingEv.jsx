@@ -15,9 +15,8 @@ function UpComingEv() {
 
     const events = [
         { id: 1, date: "26-28", month: "Dec", title: "CPHI PMEC New Delhi", image: Upcoming_Event },
-        { id: 2, date: "26-28", month: "Dec", title: "CPHI PMEC New Delhi", image: Upcoming_Even },
-        { id: 3, date: "26-28", month: "Dec", title: "CPHI PMEC New Delhi", image: Upcoming_Eve },
-        // Add more events as needed
+        { id: 2, date: "5-7", month: "Dec", title: "Cosmoprof", image: Upcoming_Even },
+        { id: 3, date: "26-28", month: "Nov", title: "CPHI PMEC New Delhi", image: Upcoming_Eve },
     ];
 
     useEffect(() => {
@@ -70,7 +69,7 @@ function UpComingEv() {
                 <div className='d-flex justify-content-center'>
                     <img src={Single_BlackBol_Line} alt="" className='' />
                 </div>
-                <h2 className='text-center'>Upcoming Events</h2>
+                <h1 className='text-center'>Upcoming Events</h1>
             </div>
 
             <div className='slider-container'
@@ -93,7 +92,7 @@ function UpComingEv() {
                                 </div>
                                 <div className='UpcomingEv_box flex-column'>
                                     <img src={event.image} alt={event.title} />
-                                    <h4 className='text-center my-xxl-3 my-xl-3 my-lg-3 my-md-3 my-sm-3 my-2'>{event.title}</h4>
+                                    <h4 className='text-center my-xxl-3 my-xl-3 my-lg-3 my-md-3 my-sm-3 my-2 sans_bold'>{event.title}</h4>
                                 </div>
                             </div>
                         ))}
@@ -109,7 +108,7 @@ function UpComingEv() {
                                     </div>
                                     <div className='UpcomingEv_box flex-column'>
                                         <img src={event.image} alt={event.title} />
-                                        <h4 className='text-center my-xxl-3 my-xl-3 my-lg-3 my-md-3 my-sm-3 my-2'>{event.title}</h4>
+                                        <h4 className='text-center my-xxl-3 my-xl-3 my-lg-3 my-md-3 my-sm-3 my-2 sans_bold'>{event.title}</h4>
                                     </div>
                                 </div>
                             ))}

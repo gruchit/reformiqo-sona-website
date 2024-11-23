@@ -24,7 +24,7 @@ function MarketLe() {
             />
             <div className="row no-gutters d-flex justify-content-center pt-sm-3 ">
                 <div className="col-xl-6 col-lg-6 col-sm-12 col-md-6 d-flex justify-content-center">
-                    <div className='py-4'
+                    <div className='py-4 markerLeLeft'
                         data-aos="zoom-in-up"
                         data-aos-offset="50"
                         data-aos-delay="1000"
@@ -33,8 +33,8 @@ function MarketLe() {
                         once="true"
                         mirror="true"
                     >
-                        <h2 className='text-center text-lg-start text-md-start text-cl-start'>Market Leaders</h2>
-                        <p className='py-3 text-center text-lg-start text-md-start text-cl-start'>
+                        <h2 className='sans_bold text-center text-lg-start text-md-start text-sm-start '>Market Leaders</h2>
+                        <p className='sans_light text-secondary py-3 text-center text-lg-start text-md-start text-xl-start '>
                             Sona Extrusion Pvt. Ltd. is a leading manufacturer of aluminium   collapsible
                             tubes, containers, and  aluminium bottles/flasks in India, duly ISO 15378:2017
                             (GMP) Certified – SGS (Primary Packaging  Materials for Pharmaceutical Products)
@@ -44,7 +44,7 @@ function MarketLe() {
                     </div>
                 </div>
                 <div className="col-xl-6 col-lg-6 col-sm-12 col-md-6 flex-column ">
-                    <div className='markerLe_cards flex-column mx-auto'
+                    <div className=' markerLe_cards flex-column mx-auto'
                         data-aos="fade-left"
                         data-aos-offset="0"
                         data-aos-delay="1000"
@@ -53,8 +53,8 @@ function MarketLe() {
                         once="true"
                         mirror="true">
                         <img src={Cret} alt="" srcset="" />
-                        <h4>500 Mn Tubes</h4>
-                        <p>Investing in cutting-edge technology, equipment, and infrastructure while ensuring the highest level of safety and quality standards, effective processes and skilled personnels, we are in a position to offer our customers state-of-the-art facilities and high-quality products.</p>
+                        <h4 className='py-3 sans_Medium'>500 Mn Tubes</h4>
+                        <p className='text-secondary sans_light'>Investing in cutting-edge technology, equipment, and infrastructure while ensuring the highest level of safety and quality standards, effective processes and skilled personnels, we are in a position to offer our customers state-of-the-art facilities and high-quality products.</p>
                     </div>
                     <img src={Double_bol_line} alt="" srcset="" className='doblebol_markerLe_cards'
                         data-aos="fade-up"

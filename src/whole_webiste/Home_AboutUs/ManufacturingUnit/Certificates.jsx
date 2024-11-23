@@ -10,9 +10,11 @@ function Certificates() {
         <>
             <div className='Certificates'>
                 <div className='CertTxt'>
+                    <div className='container'>
                     <div className='flex-column'>
-                        <h2 className='text-center mb-5'>Certificates</h2>
+                        <h1 className='text-center mb-5'>Certificates</h1>
                         <p className='text-secondary text-center sans_Light'>Sona Extrusion Pvt. Ltd. is one of the leading manufacturers of aluminium collapsible tubes, containers and aluminium bottles/flasks in India, duly ISO 15378:2017 (GMP) Certified – SGS (Primary Packaging Materials for Pharmaceutical Products) & ISO 9001:2015 Certified – TUV & US DMF Registered Company.</p>
+                    </div>
                     </div>
                 </div>
                 <div className='container-xxl'>

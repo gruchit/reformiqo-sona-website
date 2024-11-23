@@ -162,16 +162,12 @@
 .header-items a {
     padding: 10px; /* Add padding for clickable area */
 }
-
-.header-items a:hover {
-    text-decoration: underline; /* Optional: Add hover effect */
-}
-.sonaColor{
+.sonaColorr{
     color: #d5b86e ;
     font-size:35px !important;
     font-weight: bold;
 }
-/* Modal overlay covering the screen background */
+
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -272,7 +268,10 @@
 .smallHeader{
     width: 100%;
 }
-
+.HTxt:hover{
+    color: #d5b86e !important;
+    transition: all 0.3s ease; 
+}
 
 
 @media (max-width: 319.99px) {

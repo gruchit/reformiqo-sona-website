@@ -1,7 +1,16 @@
 .EnviTop{
     padding: 80px 15px;
+    position: relative;
 }
-.EnviTopTxt h2,ul li{
+.EnviTopArwLeft{
+    position: absolute;
+    max-width: 200px;
+    width: 100%;
+    height: 30px;
+    right:0px;
+    top:-15px;
+}
+.EnviTopTxt h1,ul li{
     font-weight: 600;
 }
 .EnviTopBody{

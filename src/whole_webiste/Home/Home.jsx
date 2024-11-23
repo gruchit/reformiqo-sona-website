@@ -15,6 +15,7 @@ import SonaMap from './SonaMap'
 import Trusted from './Trusted'
 import Counter from './Counter'
 import Footer from '../component/Footer/Footer'
+import BlogTxt from '../Resources/Blogs&Media/BlogTxt'
 
 
 function Home() {
@@ -33,6 +34,7 @@ function Home() {
             <UpComingEv/>
             <Trusted/>
             <Counter/>
+            <BlogTxt Type="Home" />
             <SonaMap/>
             <Footer/>
         </>

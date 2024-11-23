@@ -71,7 +71,7 @@ function Trusted() {
         <div className='d-flex justify-content-center'>
           <img src={Single_BlackBol_Line} alt="Separator Line" />
         </div>
-        <h2 className='text-center'>Our Trusted Partners</h2>
+        <h1 className='text-center'>Our Trusted Partners</h1>
       </div>
 
       <div 

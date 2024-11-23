@@ -59,6 +59,7 @@ function Top() {
     return (
         <div className="containers topofwebs mt-sm-3 mt-md-3 mt-lg-3">
             {isSliderView ? (
+                <div className='d-xl-none d-xxl-none d-block'>
                 <Slider {...sliderSettings}>
                     {navItems.map((item, index) => (
                         <div key={index} className="slider-item d-flex align-items-center justify-content-center">
@@ -78,8 +79,10 @@ function Top() {
                         </div>
                     </div>
                 </Slider>
+                </div>
             ) : (
-                <div className="nav-top d-flex align-items-center" data-aos="fade-up">
+                <div className='d-xl-block d-xxl-block d-none'>
+                <div className="nav-top d-flex align-items-center  " data-aos="fade-up">
                     <div className="header-left d-flex align-items-center justify-content-between w-75">
                         {navItems.map((item, index) => (
                             <div key={index} className="header-item d-flex align-items-center">
@@ -97,6 +100,7 @@ function Top() {
                             </div>
                         ))}
                     </div>
+                </div>
                 </div>
             )}
             {/* <hr data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" className="mt-sm-3 mt-md-3 mt-lg-3 d-sm-none d-md-none d-lg-none d-xl-none" /> */}

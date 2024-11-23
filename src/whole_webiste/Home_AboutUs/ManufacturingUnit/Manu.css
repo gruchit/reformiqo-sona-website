@@ -11,10 +11,10 @@
     color:white;
 }
 .AllumBodyLeft{
-  padding: 20px 0px 20px 15px;
+  padding: 20px 10px 0px 10px;
 }
 .AllumBodyright{
-  padding: 20px 15px 20px 0px;
+  padding: 0px 10px 20px 10px;
 }
 .checkAllum{
   background-color:white;
@@ -22,8 +22,8 @@
   padding: 3px;
   border-radius:50%;
 }
-.AllumCollTxt h2{
-    font-weight:600 ;
+.AllumCollTxt h1{
+    font-weight:700 ;
 }
 .info-table-container {
     display: flex;
@@ -92,8 +92,8 @@
   padding: 80px 15px;
   background-color: #faf8f5;
 }
-.CertTxt h2{
-  font-weight:600;
+.CertTxt h1{
+  font-weight:700;
 }
 .CertBodyCard{
   height: 435px;
@@ -141,12 +141,6 @@
   .info-table td {
     padding: 6px 10px;
   }
-  .AllumBodyLeft{
-    padding: 20px 0px 0px 15px;
-  }
-  .AllumBodyright{
-    padding: 20px 15px 20px 0px;
-  }
 }
 
 @media (min-width: 320px) { 
@@ -168,6 +162,12 @@
 }
 
 @media (min-width: 576px) {
+  .AllumBodyright{
+    padding: 20px 15px 20px 0px;
+  }
+  .AllumBodyLeft{
+    padding: 20px 0px 20px 15px;
+  }
   .ProdCapa{
     padding: 80px 20px;
   } 
@@ -184,6 +184,12 @@
 
 
 @media (min-width: 768px) { 
+  .AllumBodyright{
+    padding: 20px 15px 20px 0px;
+  }
+  .AllumBodyLeft{
+    padding: 20px 0px 20px 15px;
+  }
   .ProdCapa{
     padding: 80px 30px;
   }
@@ -198,6 +204,12 @@
 
 
  @media (min-width: 992px) { 
+  .AllumBodyright{
+    padding: 20px 15px 20px 0px;
+  }
+  .AllumBodyLeft{
+    padding: 20px 0px 20px 15px;
+  }
   .ProdCapa{
     padding: 80px 40px;
   }
@@ -212,6 +224,12 @@
 
 
  @media (min-width: 1200px) { 
+  .AllumBodyright{
+    padding: 20px 15px 20px 0px;
+  }
+  .AllumBodyLeft{
+    padding: 20px 0px 20px 15px;
+  }
   .ProdCapa{
     padding: 80px 50px;
   }

@@ -58,8 +58,8 @@ function Our_client() {
                                 data-aos-once="true"
                                 data-aos-mirror="true"
                             >
-                                <h1 className='d-md-none d-sm-none d-lg-none d-xxl-none d-xl-none d-none'>What Our <br /> Clients Are <br /> Saying</h1>
-                                <h1 className='d-md-block d-sm-block'>What Our Clients Are  Saying</h1>
+                                <h1 className='d-md-none d-sm-none d-lg-none d-xxl-none d-xl-none d-none sans_bold'>What Our <br /> Clients Are <br /> Saying</h1>
+                                <h1 className='d-md-block d-sm-block sans_bold'>What Our Clients Are  Saying</h1>
                             </div>
 
                             <div

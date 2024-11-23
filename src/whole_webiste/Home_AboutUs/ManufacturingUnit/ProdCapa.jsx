@@ -16,8 +16,8 @@ function ProdCapa() {
                                 <div className='d-flex justify-content-end'>
                                 <img src={SignleBlackLine} alt="" srcset="" className='ProdCapaImg mb-3' />
                                 </div>
-                                <h2 className='text-center'>Production Capacity</h2>
-                                <ul className='list-unstyled mt-4'>
+                                <h2 className='text-center sans_bold'>Production Capacity</h2>
+                                <ul className='list-unstyled sans_Medium mt-4'>
                                     <li className='d-flex py-3'><div><FaCheck className='ProdCapaCheck fs-5 me-3 ' /></div> <div>Over 500 million tubes & 50 million Flask and Containers per annum.</div></li>
                                     <li className='d-flex py-3'><div><FaCheck className='ProdCapaCheck fs-5 me-3 ' /></div> <div>280+ fully trained and experienced and knowledgeable Employees.</div></li>
                                     <li className='d-flex py-3'><div><FaCheck className='ProdCapaCheck fs-5 me-3 ' /></div> <div> Installed with modern machineries</div></li>
@@ -26,8 +26,8 @@ function ProdCapa() {
                         </div>
                         <div className='col-lg-6 col-md-12 mt-5 '>
                             <div>
-                                <div className='ProdCapaTxt d-flex justify-content-center'>
-                                    <table className="info-table">
+                                <div className='ProdCapaTxt d-flex justify-content-center '>
+                                    <table className="info-table sans_Medium">
                                         <tbody>
                                             <tr>
                                                 <td>Extrusion Press</td>

@@ -26,7 +26,7 @@ function CompanyChange() {
                 <div className=' d-flex justify-content-center'>
                     <div className='CompanyBlackCard'>
                         <div className='row d-flex justify-content-center'>
-                            <div className='col-xl-3 cmp1  col-lg-4 col-md-6  mt-lg-0  d-flex justify-content-center'>
+                            <div className='cmp1 col-xl-3 col-lg-4 col-md-6  mt-lg-0  d-flex justify-content-center'>
                                 <img src={Pharmaceutical1} alt="" className='cmpTbsPioneers' />
                                 <div className='CompanyChangeCard d-flex align-items-center mt-5 mt-sm-5 mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0  '>
                                     <div>
@@ -35,7 +35,7 @@ function CompanyChange() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-xl-3 cmp1 col-lg-4 col-md-6  mt-lg-0 d-flex justify-content-center'>
+                            <div className='cmp1 col-xl-3 ol-lg-4 col-md-6  mt-lg-0 d-flex justify-content-center'>
                                 <img src={Cosmetic1} alt="" className='cmpUnprecedented' />
                                 <div className='CompanyChangeCard d-flex align-items-center mt-5 mt-sm-5 mt-md-0 mt-lg-5 mt-xl-5 mt-xxl-5   '>
                                     <div>
@@ -45,7 +45,7 @@ function CompanyChange() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-xl-3 cmp1 col-lg-4 col-md-6  mt-lg-0 d-flex justify-content-center'>
+                            <div className='cmp1 col-xl-3 ol-lg-4 col-md-6  mt-lg-0 d-flex justify-content-center'>
                                 <img src={Nutraceuticals} alt="" className='cmpSpecifications' />
                                 <div className='CompanyChangeCard d-flex align-items-center mt-5 mt-sm-5 mt-md-5 mt-lg-0 mt-xl-0 mt-xxl-0  '>
                                     <div>
@@ -55,7 +55,7 @@ function CompanyChange() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-xl-3 cmp1 col-lg-4 col-md-6  mt-lg-0 d-flex justify-content-center'>
+                            <div className='cmp1 col-xl-3 ol-lg-4 col-md-6  mt-lg-0 d-flex justify-content-center'>
                                 <img src={Industrial1} alt="" className='cmpIndustrial1' />
                                 <div className='CompanyChangeCard d-flex align-items-center mt-5 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5 mt-xxl-5'>
                                     <div>

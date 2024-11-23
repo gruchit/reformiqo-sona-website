@@ -1,31 +1,34 @@
 .Your_choice{
-    padding:100px 50px; 
+    padding:100px 15px; 
+    overflow: hidden;
 }
 .Your_choice_leftArrow img{
-    width:200px;
-    height:30px;
+    max-width:180px;
+    width: 100%;
+    /* height:30px; */
 }
 .YourChoice_Details{
     padding:50px 0px;
 }
-.YourChoice_Details h2{
+.YourChoice_Details h1{
     font-weight:700;
 }
-
+.YAboutSonaExtubesImg{
+    max-width: 80px;
+    width: 100%;
+}
 .YourChoice_Btn button {
-    position: relative; /* Needed for the pseudo-element positioning */
-    overflow: hidden; /* Ensures the pseudo-element does not go outside the button */
-    background-color: transparent; /* Transparent base for visual effect */
-    border: 2px solid #d4b76e; /* Optional: Customize button border */
-    color: #d4b76e; /* Text color */
+    position: relative; 
+    overflow: hidden; 
+    background-color: transparent; 
+    border: 2px solid #d4b76e; 
+    color: #d4b76e; 
     padding: 10px 80px;
     cursor: pointer;
     border-radius:35px;
     transition: color 0.3s ease;
     font-size:24px;
-
 }
-
 .YourChoice_Btn button::before {
     content: "";
     position: absolute;
@@ -57,10 +60,11 @@
     transition:0.8s;
     width: 100%; /* Makes the box responsive */
     max-width: 730px; /* Maximum width constraint */
-    height:300px;
+    height:auto;
     background-color:#d4b76e;
     border-radius:60px;
-    padding:30px;
+    padding:15px;
+    text-align:justify;
 }
 .YourChoice_tubes_box img{
     max-width:80px;
@@ -80,7 +84,7 @@
 /*  */
 .Our_Strength{
     background-color:#faf8f5;
-    padding:50px 50px;
+    padding:50px 15px;
     position:relative;
 }
 .Our_Strength_images .left_arwOurSt{
@@ -97,18 +101,23 @@
 .Our_Strength_details{
     padding:50px 0px;
 }
-.Our_Strength_details h2{
-    font-weight:600;
+.Our_Strength_details h1{
+    font-weight:700;
 }
 .Our_Strength_cards{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     max-width:260px;
     width:100%;
     height:310px;
     background-color:white;
     border:2px solid #fff5dc;
-    border-radius:25px;
+    border-radius:15px;
     position:relative;
     padding:20px;
+}
+.Our_Strength_cards p{
+    text-align:justify;
+
 }
 .Our_Strength_cards img{
     max-width:70px;
@@ -118,29 +127,33 @@
     left:20px;
 }
 .Our_Strength_cards h5{
-    font-weight:650;
+    font-weight:700;
     margin-top:50px;
 }
 /*  */
 /* General styling for the container */
 .Know_More {
-    padding: 50px 30px;
+    padding: 80px 15px;
     background-color: white;
+    overflow:hidden;
 }
 
 /* Header section with a centered line decoration */
 
 .Know_More_tabs{
-    padding:50px 70px 50px 0px;
+    padding:50px 0px;
     background-color: #faf8f5;
+    transition: all 0.3s;
+
 }
 .Know_More_tabsInner{
     background-color:white;
-    max-width:1000px;
-    border-radius:0px 20px 20px 0px;
-    width:100%;
-    height:400px;
-    /* height:auto; */
+    width:90%;
+    overflow: hidden;
+    height:auto;
+    transition: all 0.3s;
+    /* height:325px; */
+
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 .Know_More_imgBol {
@@ -153,24 +166,10 @@
     scrollbar-width: none; 
     -ms-overflow-style: none; 
 }
-.Know_More h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-    font-weight: 400;
-    color: #333;
-    text-align: center;
+.Know_More h1 {
+    /* margin-bottom: 10px; */
+    font-weight: 700;
 }
-
-.Know_More p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto 30px;
-    text-align: center;
-}
-
-/* Styling for the tab buttons */
 .filter-button {
     background: none;
     border: none;
@@ -210,19 +209,17 @@
     bottom: -5px;
     height: 2px;
     background-color: #b49f6c;
-    
     transition: width 0.3s ease-in-out;
-    width: 0; /* Initially hidden */
+    width: 0; 
 }
 
 
 /* Main tab content container */
 .KnowMoreTabs {
-    padding: 20px 60px ;
+    padding: 15px 15px ;
     border-radius: 8px;
     overflow: hidden;
 }
-
 /* Smooth transition for content change */
 .text-ellipsis {
     display: -webkit-box;
@@ -240,6 +237,8 @@
     display: none;
     height: 100%; /* Take up full height */
     overflow-y: auto; /* Add vertical scroll for overflow */
+    transition: all 0.3s;
+
 }
 
 .tab-content.show {
@@ -247,6 +246,7 @@
     opacity: 1;
     transform: translateY(0);
     display: block;
+    
 }
 
 /* Utility classes */
@@ -263,30 +263,98 @@
     justify-content: center;
 }
 
-.KnowMoreTabs {
-    padding: 15px ;
-    border-radius: 8px;
-    overflow: hidden;
-}
+
 @media (min-width: 320px) { 
+    .Your_choice{
+        padding:100px 15px; 
+    }
     .KnowMoreTabs {
         padding: 15px 15px ;
     } 
+    .YourChoice_tubes_box{
+        padding: 15px;
+    }
+    .Our_Strength{
+        padding: 50px 15px;
+    }
+    .Know_More{
+    padding: 80px 15px;
+    }
 }
 @media (min-width: 576px) { 
     .KnowMoreTabs {
-        padding: 15px 15px ;
+        padding: 20px 15px ;
     } 
+    .Your_choice{
+        padding:100px 20px; 
+    }
+    .YourChoice_tubes_box{
+        padding: 15px;
+    }
+    .Our_Strength{
+        padding: 50px 20px;
+    }
+    .Know_More{
+        padding: 80px 20px;
+    }
 }
 
 
-@media (min-width: 768px) {  }
+@media (min-width: 768px) { 
+    .Your_choice{
+        padding:100px 30px; 
+    }
+    .YourChoice_tubes_box{
+        padding: 20px;
+    }
+    .Our_Strength{
+        padding: 50px 30px;
+    }
+    .Know_More{
+        padding: 80px 30px;
+    }
+    .KnowMoreTabs {
+        padding: 20px 40px ;
+    }
+ }
 
 
-@media (min-width: 992px) {  }
+@media (min-width: 992px) { 
+    .Your_choice{
+        padding:100px 40px; 
+    }
+    .YourChoice_tubes_box{
+        padding: 30px;
+    }
+    .Our_Strength{
+        padding: 50px 40px;
+    }
+    .Know_More{
+        padding: 80px 40px;
+    }
+    .KnowMoreTabs {
+        padding: 20px 50px ;
+    }
+ }
 
 
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) { 
+    .Your_choice{
+        padding:100px 50px; 
+    }
+    .YourChoice_tubes_box{
+        padding: 30px;
+    }
+    .Our_Strength{
+        padding: 50px 50px;
+    }
+    .Know_More{
+        padding: 80px 50px;
+    }
+    .KnowMoreTabs {
+        padding: 20px 60px ;
+    }
+ }
 
 
 @media (min-width: 1400px) {  }
