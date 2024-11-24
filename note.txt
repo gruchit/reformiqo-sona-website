@@ -33,3 +33,12 @@ animation
 wellset karva ni chhe 
 {text,paragraph}
 
+
+
+
+***
+Industry -> Top photo right
+about page ma Advatages sona page ma 
+Home page nu 1 component
+loader
+

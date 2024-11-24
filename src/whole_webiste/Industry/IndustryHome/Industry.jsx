@@ -7,6 +7,7 @@ import Counter from '../../Home/Counter.jsx'
 import Focus from '../../Home/Focus.jsx'
 import InWeSer from './InWeSer'
 import Frequently from './Frequently.jsx' 
+import IndustryTop from './IndustryTop.jsx'
 
 
 function Industry() {
@@ -15,7 +16,7 @@ function Industry() {
             <Top />
             <Header />
             <Focus type="Industry"/>
-            <AboutSonaEx/>
+            <IndustryTop/>
             <InWeSer/>
             <Counter/>
             <Frequently/>

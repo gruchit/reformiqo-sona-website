@@ -36,7 +36,7 @@ function AboutSonaEx() {
                                 <h3 className='mb-4 sans_Medium'>About Sona Extrusion</h3>
                                 <h1 className='sans_bold'>Efficiently Crafting The Future: Innovating  effective Engineering</h1>
                                 <p className='sans_light text-secondary text-lg-center text-xl-start '>We, Sona Extrusions, a leading manufacturer of aluminium collapsible tubes, containers and aluminium bottles/flasks in India with ISO 15378:2017 (GMP) Certified – SGS and ISO 9001:2015 Certified – TUV certification and have a verifiable 35+ years of reputation for providing high-quality standard products. </p>
-                                <div className='YourChoice_Btn  mt-5'>
+                                <div className='AboutSonaEx_Btn  mt-5'>
                                     <Link to="/About/Our-Store/" className=" text-decoration-none">
                                         <button class=" btn-1 hover-filled-slide-right"><span>Read More</span></button>
                                     </Link>

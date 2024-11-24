@@ -1,24 +1,78 @@
+.IndustryTop{
+    padding: 80px 15px;
+}
+
+.IndustryTop_Btn button {
+    position: relative;
+    overflow: hidden; 
+    background-color: transparent; /* Transparent base for visual effect */
+    border: 2px solid #d4b76e; /* Optional: Customize button border */
+    color: #d4b76e; 
+    padding: 10px 70px;
+    cursor: pointer;
+    border-radius:35px;
+
+    transition: color 0.3s ease;
+    font-size:24px;
+
+}
+
+.IndustryTop_Btn button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #d4b76e; /* Fill color */
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: left; /* Animation starts from the left */
+    transition: transform 0.3s ease; /* Smooth transition */
+    z-index: -1; /* Ensures it appears behind text */
+}
+.IndustryTop_Btn button:hover::before {
+    transform: scaleX(1); /* Expands the fill */
+}
+
+.IndustryTop_Btn button:hover {
+    color: #fff; 
+}
+
+.IndustryTop_left img{
+    max-width: 400px;
+    width: 100%;
+}
+
+
+
+
+.Frequently_Left h1{
+    font-weight:700;
+}
+
+
 .InWeSer{
-    padding:50px 50px;
+    padding:50px 15px;
+    overflow: hidden;
 }
 .InWeSer_imag img{
     max-width:180px;
-    margin-left:300px;
-    margin-bottom:20px;
+    margin:0px 0px 10px 120px;
 }
 .InWeSer_tabs{
     background-color:#faf8f5;
-    padding:100px 0px 150px 50px;
+    padding:100px 0px 150px 15px;
     position:relative;
-
 }
 .InWeSer_tabsBox{
-    max-width:1000px;
-    width:100%;
-    border-radius:20px 0px 0px 20px;
-    height:400px;
+    /* max-width:1000px; */
+    width:90%;
+    height:auto;
     background-color:white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.InWeSer_tabsBox p{
+    text-align:justify;
 }
 .InWeSer_tabs_left img{
     position:absolute;
@@ -26,7 +80,8 @@
     width:100%;
     z-index:1;
     top:82px;
-    left:171px;
+    left:20px;
+    /* left:171px; */
 }
 .InWeSer_tabsDoBol img{
     position:absolute;
@@ -38,9 +93,9 @@
 }
 /*  */
 .Frequently{
-    padding:100px 50px;
+    padding:50px 15px;
 }
-.Frequently_Left h2{
+.Frequently_Left h1{
     font-weight:700;
 }
 .Frequently_Left img{
@@ -57,7 +112,7 @@
     border-radius: 5px;
     margin-bottom: 10px;
     overflow: hidden; /* Ensures the content is hidden during transition */
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 }
 
 .faq-question {
@@ -67,7 +122,7 @@
     cursor: pointer;
     padding: 15px;
     background-color: transparent; /* No additional color, since the item already has #faf8f5 */
-    transition: background-color 0.3s;
+    transition: background-color 0.5s;
 }
 
 .faq-question:hover {
@@ -78,18 +133,19 @@
     font-size: 16px;
     color: black; /* Arrow color */
     margin-left: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.4s ease;
+    transition: max-height 0.5s ease, padding 0.5s ease;
     padding: 0 15px;
 }
 
 .faq-answer.open {
-    max-height: 100px; /* Adjust this to fit your content */
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    max-height: 1000px; /* Adjust this to fit your content */
     padding: 15px;
     background-color: #f9f9f9;
 }
@@ -97,8 +153,11 @@
     font-weight:600;
 }
 .Frequently_right{
-    padding:30px;
+    padding:15px;
     background-color:#faf8f5;
+}
+.Frequently_right ul{
+    font-weight:500 !important;
 }
 .SubmitFormAuto{
     background-color:#d4b76e;
@@ -107,4 +166,141 @@
 }
 .SubmitFormAuto:hover{
     background-color:#dcb142;
+}
+.Frequently_right form:focus{
+}
+.Frequently_right form input:focus,.Frequently_right textarea:focus {
+    transition: all 0.5s;
+
+    box-shadow: 0 0 5px #D4B76E !important; /* Blue shadow to show focus */
+    background-color: #ffffff !important; /* Slight color change on focus */
+    border-radius:10px;
+}
+.Frequently_right input:focus,.Frequently_right textarea:focus {
+    outline: none; /* Removes the default focus border */
+    box-shadow: none; /* Removes any shadow applied */
+}
+.faq-section-open {
+    transition: all 0.5s;
+
+    background-color: #d4b76e;
+    color: white;
+  }
+@media (min-width: 320px) { 
+    .Frequently_right{
+        padding:15px;
+    }
+    .Frequently{
+        padding:50px 15px;
+    }
+    .IndustryTop{
+        padding: 80px 15px;
+    }
+    .InWeSer{
+        padding:50px 15px;
+    }
+    .InWeSer_tabs{
+        padding:100px 0px 150px 15px;
+    }
+    .InWeSer_imag img{
+        margin:0px 0px 10px 120px;
+    }
+}
+
+@media (min-width: 576px) { 
+    .Frequently_right{
+        padding:20px;
+    }
+    .Frequently{
+        padding:50px 20px;
+    }
+    .InWeSer_tabs{
+        padding:100px 0px 150px 20px;
+    }
+    .IndustryTop{
+        padding: 80px 20px;
+    }
+    .InWeSer{
+        padding:50px 20px;
+    }
+    .InWeSer_imag img{
+        margin:0px 0px 20px 270px;
+    }
+}
+
+@media (min-width: 768px) { 
+    .Frequently_right{
+        padding:20px;
+    }
+    .Frequently{
+        padding:50px 30px;
+    }
+    .InWeSer_imag img{
+        margin:0px 0px 40px 400px;
+    }
+    .InWeSer_tabs{
+        padding:100px 0px 150px 30px;
+    }
+    .IndustryTop{
+        padding: 80px 30px;
+    }
+    .InWeSer_tabs_left img{
+        left:15px;
+    }
+    .InWeSer{
+        padding:50px 30px;
+    }
+}
+
+
+@media (min-width: 992px) { 
+    .Frequently_right{
+        padding:25px;
+    }
+    .Frequently{
+        padding:50px 40px;
+    }
+    .InWeSer_imag img{
+        margin:0px 0px 40px 400px;
+    }
+    .InWeSer_tabs{
+        padding:100px 0px 150px 40px;
+    }
+    .IndustryTop{
+        padding: 80px 40px;
+    }
+    .InWeSer_tabs_left img{
+        left:30px;
+    }
+    .InWeSer{
+        padding:50px 40px;
+    }
+}
+
+
+@media (min-width: 1200px) { 
+    .Frequently_right{
+        padding:30px;
+    }
+    .Frequently{
+        padding:50px 50px;
+    }
+    .InWeSer_tabs{
+        padding:100px 0px 150px 50px;
+    }
+    .IndustryTop{
+        padding: 80px 50px;
+    }
+    .InWeSer_tabs_left img{
+        /* left:20px; */
+        left:171px;
+    }
+    .InWeSer{
+        padding:50px 50px;
+    }
+}
+
+
+@media (min-width: 1400px) { 
+
 }
