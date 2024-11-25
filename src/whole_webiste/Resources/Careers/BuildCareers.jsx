@@ -21,14 +21,14 @@ function BuildCareers() {
     <>
       <div className="BuildCareers">
         <div className="BuildCareers_Detalis flex-column text-center">
-          <h2 className="sans_light">Build Your Career</h2>
-          <p className="sans_light">
+          <h1 className="sans_bold mb-5">Build Your Career</h1>
+          <p className="sans_light text-secondary">
             Sona Extrusion is a great place to kickstart your career. You will contribute to our
             business from day one and get access to build your skills for your future. You’ll also
             collaborate with global teams, take advantage of opportunities – all in a dynamic
             environment filled with industry experts.
           </p>
-          <p className="sans_light">
+          <p className="sans_light text-secondary">
             We take our responsibilities as an employer very seriously. We take good care of our new
             employees, but we also challenge them from the very beginning by giving them
             responsibilities very quickly.

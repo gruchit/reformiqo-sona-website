@@ -2,6 +2,8 @@ import React from 'react'
 import './Home.css'
 import Arrow_Left from '../../assets/arrow_Left.svg'
 import Ellipse from '../../assets/Ellipse2.svg'
+// import HomeProduct2 from '../../assets/HomeProduct2.png'
+
 import Product2 from '../../assets/Product2.svg'
 import Product3 from '../../assets/Product3.svg'
 import Product_card from '../../assets/Product_card.svg'

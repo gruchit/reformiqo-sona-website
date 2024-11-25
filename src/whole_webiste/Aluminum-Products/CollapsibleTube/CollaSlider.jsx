@@ -47,21 +47,20 @@ function CollaSlider() {
         ],
     };
     const imagePaths = [
-
-        AllumPro1,
-        AllumPro2,
-        AllumPro3,
-        AllumPro4,
-        AllumPro5,
-        AllumPro6,
-        AllumPro7,
-        AllumPro8,
-        AllumPro9,
-        AllumPro10,
-        AllumPro11,
-        AllumPro12,
-        AllumPro13,
-        AllumPro14,
+        { imgSrc: AllumPro1, title: 'Brushed Aluminium Bottles' },
+        { imgSrc: AllumPro2, title: 'Ayurvedic Tubes' },
+        { imgSrc: AllumPro3, title: 'Primary Pharma Packaging' },
+        { imgSrc: AllumPro4, title: 'Adhesive Tubes' },
+        { imgSrc: AllumPro5, title: 'Cyanoacrylate Tubes' },
+        { imgSrc: AllumPro6, title: 'Ophthalmic Tubes' },
+        { imgSrc: AllumPro7, title: 'Stationary Tubes' },
+        { imgSrc: AllumPro8, title: 'Cosmetic Tubes' },
+        { imgSrc: AllumPro9, title: 'Aluminium Open-End Containers' },
+        { imgSrc: AllumPro10, title: 'Aluminium Flasks' },
+        { imgSrc: AllumPro11, title: 'Aluminium Tablet Canisters' },
+        { imgSrc: AllumPro12, title: 'Printed Bottles' },
+        { imgSrc: AllumPro13, title: 'Shampoo Bottles' },
+        { imgSrc: AllumPro14, title: 'Essential Oil And Perfume Bottles' },
     ];
 
     return (
@@ -72,7 +71,7 @@ function CollaSlider() {
             <div className="container-xxl">
                 {/* Slider Header */}
                 <div className="CollaSliderTxt">
-                    <h2 className="text-center mb-5">Specificities</h2>
+                    <h1 className="text-center sans_bold mb-5">Specificities</h1>
                     <p className="text-center text-secondary sans_light mb-5">
                         Sona Extrusion has proficiency and competence in the Aluminium Packaging Industry spanning
                         over three decades of experience. Being an ISO 15378, ISO 9001 Certified & US FDA DMF Registered
@@ -88,9 +87,9 @@ function CollaSlider() {
                             {imagePaths.map((image, index) => (
                                 <div className="CollaSliderCard" key={index}>
 
-                                    <img src={image} alt={`Slide ${index + 1}`} className="sliderCollaimage" />
+                                    <img src={image.imgSrc} alt={`Slide ${index + 1}`} className="sliderCollaimage" />
                                     <div className="CollaSliderTitle ">
-                                        <p className='sans_light text-dark'>Ayurvedic Tubes</p>
+                                        <p className='sans_bold text-dark my-3 '>{image.title}</p>
                                     </div>
                                 </div>
                             ))}

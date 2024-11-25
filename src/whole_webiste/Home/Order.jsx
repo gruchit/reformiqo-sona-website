@@ -40,9 +40,7 @@ function Order() {
                     </div>
                     <div className='d-lg-none d-md-none d-sm-none d-none d-xl-block'>
                         <div className='Order_images d-flex justify-content-center '>
-
                             <img src={Doted_line} alt="" srcset="" className='' />
-
                             <div className=' Order_images_box1  flex-column'
                                 data-aos="fade-right"
                                 data-aos-offset="0"

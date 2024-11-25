@@ -1,14 +1,14 @@
 /* General Styling */
 .BuildCareers {
-    padding: 100px 50px;
+    padding: 100px 15px;
   }
   
-  .BuildCareers_Detalis h2 {
-    font-weight: 600;
+  .BuildCareers_Detalis h1 {
+    font-weight: 700;
   }
   
   .BuildCareersForm {
-    padding: 100px 100px;
+    padding: 20px 20px;
   }
   
   .BuildBTN {
@@ -74,10 +74,11 @@
     position:relative;
     margin:100px 0px;
 }
+
 .OrderDeliver_box1{
-    z-index:999;
+    z-index:5;
     position:absolute;
-    left: 90px;
+    left:115px ;
     top:-60px;
     max-width: 450px;
     height: 350px;
@@ -85,9 +86,15 @@
     background-color:#faf8f5;
     border: 2px solid #fff5dc;
     padding:30px;
-
 }
-
+.OrderDeliver_box1_Col{
+  max-width: 450px;
+  height: 350px;
+  border-radius:40px;
+  background-color:#faf8f5;
+  border: 2px solid #fff5dc;
+  padding:30px;
+}
 .OrderDeliver_images img{
     position:relative;
 }
@@ -102,11 +109,19 @@
     border: 2px solid #fff5dc;
     padding:30px;
 }
+.OrderDeliver_box2_Col{
+  max-width: 450px;
+  height: 350px;
+  border-radius:40px;
+  background-color:#faf8f5;
+  border: 2px solid #fff5dc;
+  padding:30px;
+}
 .OrderDeliver_images{
     position:relative;
 }
 .OrderDeliver_box3{
-    left:90px;
+  left:115px ;
     bottom:-70px;
     position:absolute;
     max-width: 450px;
@@ -116,12 +131,20 @@
     border: 2px solid #fff5dc;
     padding:30px;
 }
+.OrderDeliver_box3_Col{
+  max-width: 450px;
+  height: 350px;
+  border-radius:40px;
+  background-color:#faf8f5;
+  border: 2px solid #fff5dc;
+  padding:30px;
+}
 .OrderDeliverBox_detals h4{
     font-weight:600;
     
 }
 .OrderDeliveryCrr{
-    padding: 0px 50px 100px 50px;
+    padding: 0px 15px 100px 15px;
 }
 .text-ellipsis {
   display: -webkit-box; 
@@ -146,4 +169,385 @@
     background-color:#d4b76e;
     border-radius:10px;
     padding: 10px;
+}
+.OrderDelivertext img{
+  max-width:180px;
+  margin:0px 0px 10px 120px;
+}
+@media (min-width: 320px) { 
+  .OrderDelivertext img{
+    margin:0px 0px 10px 120px;
+  }
+  .BuildCareers {
+    padding: 100px 15px;
+  }
+  .BuildCareersForm {
+    padding: 20px 20px;
+  }
+  .BuildBTN {
+    font-size: 16px;
+    padding: 8px 35px;
+    margin-left: 10px;
+  }
+  .OrderDeliveryCrr{
+    padding: 0px 15px 100px 15px;
+}
+}
+
+@media (min-width: 576px) { 
+  .OrderDelivertext img{
+    margin:0px 0px 20px 270px;
+  }
+  .BuildCareers {
+    padding: 100px 20px;
+  }
+  .BuildCareersForm {
+    padding: 20px 20px;
+  }
+  .BuildBTN {
+    font-size: 16px;
+    padding: 8px 35px;
+    margin-left: 10px;
+  }
+  .OrderDeliveryCrr{
+    padding: 0px 20px 100px 20px;
+}
+}
+
+
+@media (min-width: 768px) { 
+  .OrderDelivertext img{
+    margin:0px 0px 40px 400px;
+  }
+  .BuildCareers {
+    padding: 100px 30px;
+  }
+  .BuildCareersForm {
+    padding: 30px 30px;
+  }
+  .BuildBTN {
+    font-size: 16px;
+    padding: 8px 35px;
+    margin-left: 10px;
+  }
+  .OrderDeliveryCrr{
+    padding: 0px 30px 100px 30px;
+}
+}
+
+
+@media (min-width: 992px) { 
+  .OrderDelivertext img{
+    max-width:180px;
+    margin:0px 0px 50px 400px;
+  }
+  .BuildCareers {
+    padding: 100px 40px;
+  }
+  .BuildCareersForm {
+    padding: 40px 40px;
+  }
+  .BuildBTN {
+    font-size: 16px;
+    padding: 8px 35px;
+    margin-left: 10px;
+  }
+  .OrderDeliveryCrr{
+    padding: 0px 40px 100px 40px;
+}
+}
+
+
+@media (min-width: 1200px) { 
+  .OrderDelivertext img{
+    max-width:180px;
+    margin:0px 0px 50px 400px;
+  }
+  .BuildCareers {
+    padding: 100px 50px;
+  }
+  .BuildCareersForm {
+    padding: 50px 50px;
+  }
+  .BuildBTN {
+    font-size: 20px;
+    padding: 12px 35px;
+    margin-left: 10px;
+  }
+  .OrderDeliveryCrr{
+    padding: 0px 50px 100px 50px;
+}
+}
+
+@media (max-width: 2099.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:520px ;
+  }
+  .OrderDeliver_box2{
+      right:485px;
+  }
+}
+@media (max-width: 2079.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:515px ;
+  }
+  .OrderDeliver_box2{
+      right:470px;
+  }
+}
+@media (max-width: 2049.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:500px ;
+  }
+  .OrderDeliver_box2{
+      right:455px;
+  }
+}
+@media (max-width: 2029.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:490px ;
+  }
+  .OrderDeliver_box2{
+      right:455px;
+  }
+}
+@media (max-width: 1999.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:475px ;
+  }
+  .OrderDeliver_box2{
+      right:430px;
+  }
+}
+@media (max-width: 1979.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:455px ;
+  }
+  .OrderDeliver_box2{
+      right:420px;
+  }
+}
+@media (max-width: 1949.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:445px ;
+  }
+  .OrderDeliver_box2{
+      right:400px;
+  }
+}
+@media (max-width: 1929.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:415px ;
+  }
+  .OrderDeliver_box2{
+      right:375px;
+  }
+}
+@media (max-width: 1899.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:415px ;
+  }
+  .OrderDeliver_box2{
+      right:360px;
+  }
+}
+@media (max-width: 1879.98px) {
+  .OrderDeliver_box2{
+      right:360px;
+  }
+}
+@media (max-width: 1849.98px) {
+  .OrderDeliver_box2{
+      right:350px;
+  }
+}
+@media (max-width: 1829.98px) {
+  .OrderDeliver_box2{
+      right:340px;
+  }
+}
+@media (max-width: 1799.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:360px ;
+  }
+  .OrderDeliver_box2{
+      right:330px;
+
+  }
+}
+@media (max-width: 1779.98px) {
+  .OrderDeliver_box2{
+      right:325px;
+  }
+}
+@media (max-width: 1749.98px) {
+  .OrderDeliver_box2{
+      right:280px;
+  }
+}
+@media (max-width: 1729.98px) {
+  .OrderDeliver_box2{
+      right:280px;
+  }
+}
+@media (max-width: 1699.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:315px ;
+  }
+  .OrderDeliver_box2{
+      right:280px;
+      /* right:120px; */
+  }
+}
+@media (max-width: 1679.98px) {
+  .OrderDeliver_box2{
+      right:260px;
+  }
+}
+@media (max-width: 1649.98px) {
+  .OrderDeliver_box2{
+      right:240px;
+  }
+}
+@media (max-width: 1629.98px) {
+  .OrderDeliver_box2{
+      right:220px;
+  }
+}
+@media (max-width: 1599.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:260px ;
+  }
+  .OrderDeliver_box2{
+      right:240px ;
+      /* right:80px ; */
+  }
+}
+@media (max-width: 1579.98px) { 
+  .OrderDeliver_box2{
+      right:230px ;
+  }
+}
+@media (max-width: 1549.98px) { 
+  .OrderDeliver_box2{
+      right:170px ;
+  }
+}
+@media (max-width: 1529.98px) { 
+  .OrderDeliver_box2{
+      right:170px ;
+  }
+}
+@media (max-width: 1499.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:215px ;
+  }
+  .OrderDeliver_box2{
+      right:170px ;
+  }
+}
+@media (max-width: 1479.98px) { 
+  .OrderDeliver_box2{
+      right:120px ;
+  }
+}
+@media (max-width: 1449.98px) { 
+  .OrderDeliver_box2{
+      right:120px ;
+  }
+}
+@media (max-width: 1430.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:215px ;
+  }
+  .OrderDeliver_box2{
+      right:120px ;
+  }
+} 
+@media (max-width: 1399.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:160px ;
+  }
+  .OrderDeliver_box2{
+      right:160px ;
+  }
+}
+@media (max-width: 1379.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:115px ;
+  }
+  .OrderDeliver_box2{
+      right:110px ;
+  }
+}
+@media (max-width: 1349.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:115px ;
+  }
+  .OrderDeliver_box2{
+      right:110px ;
+  }
+}
+
+@media (max-width: 1330.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:115px ;
+  }
+  .OrderDeliver_box2{
+      right:35px ;
+  }
+}
+@media (max-width: 1299.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:115px ;
+  }
+  .OrderDeliver_box2{
+      right:85px ;
+  }
+}
+@media (max-width: 1279.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:115px ;
+  }
+  .OrderDeliver_box2{
+      right:80px ;
+  }
+}
+@media (max-width: 1249.98px) {
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:138px ;
+  }
+  .OrderDeliver_box2{
+      right:20px ;
+  }
+}
+@media (max-width: 1230.98px) { 
+  .OrderDeliver_box1,
+  .OrderDeliver_box3{
+      left:70px ;
+  }
+  .OrderDeliver_box2{
+      right:0px ;
+  }
 }

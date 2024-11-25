@@ -65,7 +65,6 @@ function Our_Solutions({ Type }) {
                                                             <p className='text-secondary sans_Light mt-3'>We are a customer-centric company committed to offering our loyal pharmaceutical customers a cutting-edge manufacturing facility that makes High quality aluminium packaging solution using cutting-edge technology and equipment. Our committed team of engineers and technicians makes sure that each product that is released onto the market is up to the highest standards of reliability and quality. Our tubes are preferred because they are chemically stable and provide protection against contamination, oxidation, evaporation, and microbial growth.</p>
                                                         </div>
                                                     </>
-
                                         }
 
                                     </div>

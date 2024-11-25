@@ -1,9 +1,8 @@
 .Collapsible{
     padding: 80px 15px;
 }
-.CollapsibleTxt h2{
-    
-    font-weight:600;
+.CollapsibleTxt h1{
+    font-weight:700;
 }
 
 .CollapsibleCard {
@@ -23,6 +22,13 @@
     justify-content: flex-end;
 }
 
+.CollapsibleCard img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio:3/2;
+    object-fit: cover;
+    position: absolute;
+}
 .CollapsibleCard:hover {
     transform: translateY(-5px);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
@@ -64,17 +70,17 @@
     width: 100%;
     height: 30px;
     top: 40px;
-    left: 70px;
+    left: 0px;
 }
 .Double_bol_lineCollaSlider{
     position: absolute;
 top:-25px;
 max-width: 180px;
 height: 50px;
-right:45px;
+right:0px;
 }
-.CollaSliderTxt h2{
-    font-weight:600;
+.CollaSliderTxt h1{
+    font-weight:700;
 }
 .CollaBody .CollaSliderCard {
     width: 300px !important; 
@@ -194,8 +200,79 @@ right:45px;
 .ParalexContent h1{
     font-weight:600;
 }
+/*  */
+.Our_Strength_Alum{
+    overflow:hidden;
+    padding: 80px 15px;
+    position: relative;
+}
+.Our_Strength_Alumimages .Strength_Alumleft_arwOurSt{
+    max-width:200px;
+}
+ .Strength_AlumDoubleBolLine_Our{
+    max-width:180px;
+    height:50px;
+    position:absolute;
+    top:-25px;
+    right:0px;
+}
+.Our_Strength_Alumdetails{
+    padding:50px 0px;
+}
+.Our_Strength_Alumdetails h1{
+    font-weight:700;
+}
+.Our_Strength_Alumcards{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width:260px;
+    width:100%;
+    height:auto;
+    background-color:white;
+    border:2px solid #fff5dc;
+    border-radius:15px;
+    position:relative;
+    padding:20px;
+}
+.Our_Strength_Alumcards p{
+    text-align:justify;
+}
+.OurSoluImgAlum{
+    max-width:70px;
+    width:100%;
+    position:absolute;
+    top:-40px;
+    left:20px;
+}
 
 @media (min-width: 320px) { 
+     .Strength_AlumDoubleBolLine_Our{
+        max-width:180px;
+        height:50px;
+        position:absolute;
+        top:-25px;
+        right:0px;
+    }
+    .Double_bol_lineCollaSlider{
+        position: absolute;
+    top:-25px;
+    max-width: 180px;
+    height: 50px;
+    right:0px;
+    }
+    .LeftarwCollaSlider{
+        position: absolute;
+        max-width: 200px;
+        width: 100%;
+        height: 30px;
+        top: 40px;
+        left: 0px;
+    }
+    .Our_Strength_Alumcards{
+        height:auto;
+    }
+    .Our_Strength_Alum{
+        padding: 80px 15px;
+    }
     .custom-button {
         width: 100%; 
     }
@@ -208,6 +285,34 @@ right:45px;
 }
 
 @media (min-width: 576px) { 
+    .Strength_AlumDoubleBolLine_Our{
+        max-width:180px;
+        height:50px;
+        position:absolute;
+        top:-25px;
+        right:20px;
+    }
+    .Double_bol_lineCollaSlider{
+        position: absolute;
+    top:-25px;
+    max-width: 180px;
+    height: 50px;
+    right:20px;
+    }
+    .LeftarwCollaSlider{
+        position: absolute;
+        max-width: 200px;
+        width: 100%;
+        height: 30px;
+        top: 40px;
+        left: 25px;
+    }
+    .Our_Strength_Alumcards{
+        height:auto;
+    }
+    .Our_Strength_Alum{
+        padding: 80px 20px;
+    }
     .custom-button {
         width: 50%; 
     }
@@ -221,6 +326,34 @@ right:45px;
 
 
 @media (min-width: 768px) { 
+    .Strength_AlumDoubleBolLine_Our{
+        max-width:180px;
+        height:50px;
+        position:absolute;
+        top:-25px;
+        right:35px;
+    }
+    .Double_bol_lineCollaSlider{
+        position: absolute;
+    top:-25px;
+    max-width: 180px;
+    height: 50px;
+    right:30px;
+    }
+    .LeftarwCollaSlider{
+        position: absolute;
+        max-width: 200px;
+        width: 100%;
+        height: 30px;
+        top: 40px;
+        left: 45px;
+    }
+    .Our_Strength_Alumcards{
+        height:auto;
+    }
+    .Our_Strength_Alum{
+        padding: 80px 30px;
+    }
     .custom-button {
         width: 50%; 
     }
@@ -234,6 +367,31 @@ right:45px;
 
 
 @media (min-width: 992px) { 
+    .Strength_AlumDoubleBolLine_Our{
+        max-width:180px;
+        height:50px;
+        position:absolute;
+        top:-25px;
+        right:55px;
+    }
+    .Double_bol_lineCollaSlider{
+        position: absolute;
+    top:-25px;
+    max-width: 180px;
+    height: 50px;
+    right:40px;
+    }
+    .LeftarwCollaSlider{
+        position: absolute;
+        max-width: 200px;
+        width: 100%;
+        height: 30px;
+        top: 40px;
+        left: 60px;
+    }
+    .Our_Strength_Alum{
+        padding: 80px 40px;
+    }
     .custom-button {
         width: 100%;  
     }
@@ -247,11 +405,39 @@ right:45px;
 
 
 @media (min-width: 1200px) { 
+    .Our_Strength_Alumcards{
+        height:250px;
+    }
+    .Our_Strength_Alum{
+        padding: 80px 50px;
+    }
     .CollaSlider{
         padding: 80px 50px;
     }
     .Collapsible{
         padding: 80px 50px;
+    }
+    .LeftarwCollaSlider{
+        position: absolute;
+        max-width: 200px;
+        width: 100%;
+        height: 30px;
+        top: 40px;
+        left: 70px;
+    }
+    .Double_bol_lineCollaSlider{
+        position: absolute;
+    top:-25px;
+    max-width: 180px;
+    height: 50px;
+    right:45px;
+    }
+    .Strength_AlumDoubleBolLine_Our{
+        max-width:180px;
+        height:50px;
+        position:absolute;
+        top:-25px;
+        right:75px;
     }
  }
 
