@@ -67,7 +67,7 @@ function UpComingEv() {
                 data-aos-mirror="true"
             >
                 <div className='d-flex justify-content-center'>
-                    <img src={Single_BlackBol_Line} alt="" className='' />
+                    <img src={Single_BlackBol_Line} alt="" className='' loading='lazy'/>
                 </div>
                 <h1 className='text-center'>Upcoming Events</h1>
             </div>
@@ -91,7 +91,7 @@ function UpComingEv() {
                                     <h4 className='p-0 m-0 sans_light'>{event.month}</h4>
                                 </div>
                                 <div className='UpcomingEv_box flex-column'>
-                                    <img src={event.image} alt={event.title} />
+                                    <img src={event.image} alt={event.title} loading='lazy'/>
                                     <h4 className='text-center my-xxl-3 my-xl-3 my-lg-3 my-md-3 my-sm-3 my-2 sans_bold'>{event.title}</h4>
                                 </div>
                             </div>
@@ -107,7 +107,7 @@ function UpComingEv() {
                                         <h4 className='p-0 m-0 sans_light'>{event.month}</h4>
                                     </div>
                                     <div className='UpcomingEv_box flex-column'>
-                                        <img src={event.image} alt={event.title} />
+                                        <img src={event.image} alt={event.title} loading='lazy'/>
                                         <h4 className='text-center my-xxl-3 my-xl-3 my-lg-3 my-md-3 my-sm-3 my-2 sans_bold'>{event.title}</h4>
                                     </div>
                                 </div>

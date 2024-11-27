@@ -8,7 +8,7 @@ function EnviTop() {
     return (
         <>
             <div className='EnviTop'>
-                <img src={RightArrow} alt="" srcset="" className='EnviTopArwLeft'/>
+                <img src={RightArrow} alt="" srcset="" className='EnviTopArwLeft' loading='lazy'/>
                 <div className='container-xxl'>
                     <div className='EnviTopTxt'>
                         <h1 className='text-center mb-4 sans_bold'>Enviro-Friendly Strategy</h1>

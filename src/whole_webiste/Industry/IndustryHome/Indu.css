@@ -42,9 +42,106 @@
     max-width: 400px;
     width: 100%;
 }
+.filter-buttons{
+    overflow-y: auto;
+    box-sizing: border-box;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+.Know_More h1 {
+    /* margin-bottom: 10px; */
+    font-weight: 700;
+}
+.filter-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    color: #555;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, letter-spacing 0.3s ease-in-out;
+}
 
+.filter-button.active {
+    color: black;
+    letter-spacing: 1px; 
+    transform: scale(1.05);
+    font-weight: 600; 
+    
+}
 
+.filter-button.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #b49f6c;
+    transition: width 0.3s ease-in-out;
+    width: 100%; /* Full width on active */
+}
 
+.filter-button::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    right: 0% ;
+    bottom: -5px;
+    height: 2px;
+    background-color: #b49f6c;
+    transition: width 0.3s ease-in-out;
+    width: 0; 
+}
+
+.KnowMoreTabs {
+    padding: 15px 15px ;
+    border-radius: 8px;
+    overflow: hidden;
+}
+/* Smooth transition for content change */
+.text-ellipsis {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10; /* Limits the text to 10 lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px 0;
+}
+.tab-content {
+    flex: 1;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease;
+    display: none;
+    height: 100%; /* Take up full height */
+    overflow-y: auto; /* Add vertical scroll for overflow */
+    transition: all 0.3s;
+
+}
+
+.tab-content.show {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+    
+}
+
+/* Utility classes */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
 
 .Frequently_Left h1{
     font-weight:700;
@@ -187,6 +284,9 @@
     color: white;
   }
 @media (min-width: 320px) { 
+    .KnowMoreTabs {
+        padding: 15px 15px ;
+    }
     .Frequently_right{
         padding:15px;
     }
@@ -208,6 +308,9 @@
 }
 
 @media (min-width: 576px) { 
+    .KnowMoreTabs {
+        padding: 20px 15px ;
+    }
     .Frequently_right{
         padding:20px;
     }
@@ -229,6 +332,9 @@
 }
 
 @media (min-width: 768px) { 
+    .KnowMoreTabs {
+        padding: 20px 40px ;
+    }
     .Frequently_right{
         padding:20px;
     }
@@ -254,6 +360,9 @@
 
 
 @media (min-width: 992px) { 
+    .KnowMoreTabs {
+        padding: 20px 50px ;
+    }
     .Frequently_right{
         padding:25px;
     }
@@ -279,6 +388,9 @@
 
 
 @media (min-width: 1200px) { 
+    .KnowMoreTabs {
+        padding: 20px 60px ;
+    }
     .Frequently_right{
         padding:30px;
     }

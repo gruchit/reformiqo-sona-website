@@ -10,11 +10,11 @@ function VideoGlry() {
             <div className='VideoGlry'>
                 <div className='container-xxl p-0 '>
                     <div className='VideoGlryTxt flex-column'>
-                        <img src={LeftArrow} alt="" srcset="" className='VdoLftarw' />
+                        <img src={LeftArrow} alt="" srcset="" className='VdoLftarw' loading='lazy'/>
                         <div className='d-flex justify-content-center'>
-                            <img src={Single_BlackBol_Line} alt="" className='VideoGlryTxtImg' />
+                            <img src={Single_BlackBol_Line} alt="" className='VideoGlryTxtImg' loading='lazy'/>
                         </div>
-                        <h2 className='text-center'>Video Gallery</h2>
+                        <h1 className='text-center sans_bold'>Video Gallery</h1>
                     </div>
                     <div className='VideoGlryBody'>
                         <div className='row d-flex justify-content-center'>

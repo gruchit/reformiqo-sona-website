@@ -8,6 +8,10 @@ import Advantages from "../../../assets/advantages.png";
 import manufacturing from "../../../assets/manufacturing.png";
 import Envir from "../../../assets/Envir.png";
 import Brochures from "../../../assets/brochures.png";
+import IndustrialAgro from "../../../assets/Industrial.png";
+import Pharmaceutical from "../../../assets/pharmaceutical.png";
+import Cosmetic from "../../../assets/cosmetic.png";
+import Nutraceutical from "../../../assets/Nutraceutical.png";
 import Home1 from '../../../assets/Home_main.svg';
 import Home2 from '../../../assets/Home2.svg';
 import Home3 from '../../../assets/Home3.svg';
@@ -15,7 +19,7 @@ import Home4 from '../../../assets/Home4.svg';
 import Home5 from '../../../assets/Tablet_Home.jpg';
 import Home6 from '../../../assets/Indus.jpg';
 import Home7 from '../../../assets/FlaskHome.jpg';
-import Cosmetic from "../../../assets/cosmetic.png";
+import Home8 from '../../../assets/Home9.jpg';
 import { GoArrowUpRight } from "react-icons/go";
 import { IoClose } from "react-icons/io5";
 import Button_Arrow from '../../../assets/button_Arrow.svg';
@@ -101,14 +105,14 @@ function Header() {
       <div className='HeaderSmall d-xl-none d-flex justify-content-between align-items-center w-100 px-md-5 px-sm-3'>
         <div className='HeaderSmall_Logo'>
           <a className="navbar-brand" href="/">
-            <img className="w-100" src={Logo} alt="Logo" />
+            <img className="w-100" src={Logo} alt="Logo" loading='lazy'/>
           </a>
         </div>
         <div className='header-items'>
           <ul className='d-flex list-unstyled m-0'>
             <li className='mx-3'>
               <a  onClick={toggleMenu} className='text-decoration-none '>
-                <FiMenu className='fs-3 sonaColorr' />
+                <FiMenu className='fs-3 sonaColorr' loading='lazy'/>
               </a>
             </li>
           </ul>
@@ -133,31 +137,31 @@ function Header() {
                 <div className={`submenusAbout mt-2 ${openSubmenu === 'aboutUs' ? 'open' : ''}`}>
                   <ul className='list-unstyled'>
                     <li className='d-flex align-items-center'>
-                      <img src={Our_Store} alt="" className='navimg' />
+                      <img src={Our_Store} alt="" className='navimg' loading='lazy'/>
                       <span className='setLing'>
                         <Link to="/About/Our-Store/" className={`text-decoration-none textBlack ${location.pathname === '/About/Our-Store/' ? 'active' : ''}`}>Our Story</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={Advantages} alt="" className='navimg' />
+                      <img src={Advantages} alt="" className='navimg' loading='lazy'/>
                       <span className='setLing'>
                         <Link to="/About/Advatages-Sona/" className={`text-decoration-none textBlack ${location.pathname === '/About/Advatages-Sona/' ? 'active' : ''}`}>Advantages Sona</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={manufacturing} alt="" className='navimg' />
+                      <img src={manufacturing} alt="" className='navimg' loading='lazy'/>
                       <span className='setLing'>
                         <Link to="/About/Manufacturing-Unit/" className={`text-decoration-none textBlack ${location.pathname === '/About/Manufacturing-Unit/' ? 'active' : ''}`}>Manufacturing Unit</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={Envir} alt="" className='navimg' />
+                      <img src={Envir} alt="" className='navimg' loading='lazy'/>
                       <span className='setLing'>
                         <Link to="/About/Enviro-Friendly/" className={`text-decoration-none textBlack ${location.pathname === '/About/Enviro-Friendly/' ? 'active' : ''}`}>Enviro-Friendly</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={Brochures} alt="" className='navimg' />
+                      <img src={Brochures} alt="" className='navimg' loading='lazy'/>
                       <span className='setLing'>
                         <Link to="/About/Brochures/" className={`text-decoration-none textBlack ${location.pathname === '/About/Brochures/' ? 'active' : ''}`}>Brochure</Link>
                       </span>
@@ -175,25 +179,25 @@ function Header() {
                 <div className={`submenusAbout pt-2 ${openSubmenu === 'industry' ? 'open' : ''}`}>
                   <ul className='list-unstyled'>
                     <li className='d-flex align-items-center'>
-                      <img src={Our_Store} alt="" className='navimg' />
+                      <img src={Our_Store} alt="" className='navimg' loading='lazy'/>
                       <span className='setLing'>
                         <Link to="/Industry/Pharmaceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Pharmaceutical/' ? 'active' : ''}`}>Pharmaceutical</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={Advantages} alt="" className='navimg' />
+                      <img src={Advantages} alt="" className='navimg' loading='lazy'/>
                       <span className='setLing'>
                         <Link to="/Industry/Cosmetic-And-Personal-Care/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Cosmetic-And-Personal-Care/' ? 'active' : ''}`}>Cosmetic & Personal Care</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={manufacturing} alt="" className='navimg' />
+                      <img src={manufacturing} alt="" className='navimg' loading='lazy'/>
                       <span className='setLing'>
                         <Link to="/Industry/Nutraceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Nutraceutical/' ? 'active' : ''}`}>Nutraceutical</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={Brochures} alt="" className='navimg' />
+                      <img src={Brochures} alt="" className='navimg' loading='lazy'/>
                       <span className='setLing'>
                         <Link to="/Industry/Industrial-And-Agro-Chemical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Industrial-And-Agro-Chemical/' ? 'active' : ''}`}>Industrial & Agro-Chemical</Link>
                       </span>
@@ -211,19 +215,19 @@ function Header() {
                 <div className={`submenusAbout pt-2 ${openSubmenu === 'AluminumPro' ? 'open' : ''}`}>
                   <ul className='list-unstyled'>
                     <li className='d-flex align-items-center'>
-                      <img src={Our_Store} alt="" className='navimg' />
+                      <img src={Our_Store} alt="" className='navimg' loading='lazy'/>
                       <span className='setLing'>
                         <Link to="/Aluminum-Products/Collapsible-Tubes/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Collapsible-Tubes/' ? 'active' : ''}`}>Collapsible Tubes</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={Advantages} alt="" className='navimg' />
+                      <img src={Advantages} alt="" className='navimg' loading='lazy'/>
                       <span className='setLing'>
                         <Link to="/Aluminum-Products/Flasks-And-Bottles/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Flasks-And-Bottles/' ? 'active' : ''}`}>Flasks & Bottles</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={Brochures} alt="" className='navimg' />
+                      <img src={Brochures} alt="" className='navimg' loading='lazy'/>
                       <span className='setLing'>
                         <Link to="/Aluminum-Products/Tablet-Canisters/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Tablet-Canisters/' ? 'active' : ''}`}>Tablet Canisters</Link>
                       </span>
@@ -245,19 +249,19 @@ function Header() {
                 <div className={`submenusAbout pt-2 ${openSubmenu === 'Resources' ? 'open' : ''}`}>
                   <ul className='list-unstyled'>
                     <li className='d-flex align-items-center'>
-                      <img src={Our_Store} alt="" className='navimg' />
+                      <img src={Our_Store} alt="" className='navimg' loading='lazy'/>
                       <span className='setLing'>
                         <Link to="/Resources/Careers/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Careers/' ? 'active' : ''}`}>Careers</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={Advantages} alt="" className='navimg' />
+                      <img src={Advantages} alt="" className='navimg' loading='lazy'/>
                       <span className='setLing'>
                         <Link to="/Resources/BlogMedia/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/BlogMedia/' ? 'active' : ''}`}>Blogs & Media</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={manufacturing} alt="" className='navimg' />
+                      <img src={manufacturing} alt="" className='navimg' loading='lazy'/>
                       <span className='setLing'>
                         <Link to="/Resources/Gallery/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Gallery/' ? 'active' : ''}`}>Gallery</Link>
                       </span>
@@ -291,7 +295,7 @@ function Header() {
             data-aos-duration="3000"
           >
             <a className="navbar-brand" href="/">
-              <img className="w-100" src={Logo} alt="Logo" />
+              <img className="w-100" src={Logo} alt="Logo" loading='lazy'/>
             </a>
             <div className="navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
               <ul className="navbar-nav mb-lg-0">
@@ -308,31 +312,31 @@ function Header() {
                   <div className='set_ul'>
                     <ul className='list-unstyled'>
                       <li className='d-flex align-item-center'>
-                        <img src={Our_Store} alt="" className='navimg' />
+                        <img src={Our_Store} alt="" className='navimg' loading='lazy'/>
                         <span className='setLing'>
                           <Link to="/About/Our-Store/" className={`text-decoration-none textBlack ${location.pathname === '/About/Our-Store/' ? 'active' : ''}`}>Our Story</Link>
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={Advantages} alt="" className='navimg' />
+                        <img src={Advantages} alt="" className='navimg' loading='lazy'/>
                         <span className='setLing'>
                           <Link to="/About/Advatages-Sona/" className={`text-decoration-none textBlack ${location.pathname === '/About/Advatages-Sona/' ? 'active' : ''}`}>Advantages Sona</Link>
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={manufacturing} alt="" className='navimg' />
+                        <img src={manufacturing} alt="" className='navimg' loading='lazy'/>
                         <span className='setLing'>
                           <Link to="/About/Manufacturing-Unit/" className={`text-decoration-none textBlack ${location.pathname === '/About/Manufacturing-Unit/' ? 'active' : ''}`}>Manufacturing Unit</Link>
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={Envir} alt="" className='navimg' />
+                        <img src={Envir} alt="" className='navimg' loading='lazy'/>
                         <span className='setLing'>
                           <Link to="/About/Enviro-Friendly/" className={`text-decoration-none textBlack ${location.pathname === '/About/Enviro-Friendly/' ? 'active' : ''}`}>Enviro-Friendly</Link>
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={Brochures} alt="" className='navimg' />
+                        <img src={Brochures} alt="" className='navimg' loading='lazy'/>
                         <span className='setLing'>
                           <Link to="/About/Brochures/" className={`text-decoration-none textBlack ${location.pathname === '/About/Brochures/' ? 'active' : ''}`}>Brochure</Link>
                         </span>
@@ -347,26 +351,26 @@ function Header() {
                   <div className='set_ul'>
                     <ul className='list-unstyled'>
                       <li className='d-flex align-item-center'>
-                        <img src={Our_Store} alt="" className='navimg' />
+                        <img src={Our_Store} alt="" className='navimg' loading='lazy'/>
                         <span className='setLing'>
                           <Link to="/Industry/Pharmaceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Pharmaceutical/' ? 'active' : ''}`}>Pharmaceutical</Link>
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={Advantages} alt="" className='navimg' />
+                        <img src={Advantages} alt="" className='navimg' loading='lazy'/>
                         <span className='setLing'>
                           <Link to="/Industry/Cosmetic-And-Personal-Care/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Cosmetic-And-Personal-Care/' ? 'active' : ''}`}>Cosmetic & Personal Care</Link>
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={manufacturing} alt="" className='navimg' />
+                        <img src={manufacturing} alt="" className='navimg' loading='lazy'/>
                         <span className='setLing'>
                           <Link to="/Industry/Nutraceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Nutraceutical/' ? 'active' : ''}`}>Nutraceutical</Link>
 
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={Envir} alt="" className='navimg' />
+                        <img src={Envir} alt="" className='navimg' loading='lazy'/>
                         <span className='setLing'>
                           <Link to="/Industry/Industrial-And-Agro-Chemical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Industrial-And-Agro-Chemical/' ? 'active' : ''}`}>Industrial & Agro-Chemical</Link>
                         </span>
@@ -381,21 +385,21 @@ function Header() {
                   <div className='set_ul'>
                     <ul className='list-unstyled'>
                       <li className='d-flex align-item-center'>
-                        <img src={Our_Store} alt="" className='navimg' />
+                        <img src={Our_Store} alt="" className='navimg' loading='lazy'/>
                         <span className='setLing'>
                           <Link to="/Aluminum-Products/Collapsible-Tubes/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Collapsible-Tubes/' ? 'active' : ''}`}>Collapsible Tubes</Link>
 
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={Advantages} alt="" className='navimg' />
+                        <img src={Advantages} alt="" className='navimg' loading='lazy'/>
                         <span className='setLing'>
                           <Link to="/Aluminum-Products/Flasks-And-Bottles/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Flasks-And-Bottles/' ? 'active' : ''}`}>Flasks & Bottles</Link>
 
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={manufacturing} alt="" className='navimg' />
+                        <img src={manufacturing} alt="" className='navimg' loading='lazy'/>
                         <span className='setLing'>
                           <Link to="/Aluminum-Products/Tablet-Canisters/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Tablet-Canisters/' ? 'active' : ''}`}>Tablet Canisters</Link>
                         </span>
@@ -411,21 +415,21 @@ function Header() {
                   <div className='set_ul'>
                     <ul className='list-unstyled'>
                       <li className='d-flex align-item-center'>
-                        <img src={Our_Store} alt="" className='navimg' />
+                        <img src={Our_Store} alt="" className='navimg' loading='lazy'/>
                         <span className='setLing'>
                           <Link to="/Resources/Careers/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Careers/' ? 'active' : ''}`}>Careers</Link>
 
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={Advantages} alt="" className='navimg' />
+                        <img src={Advantages} alt="" className='navimg' loading='lazy'/>
                         <span className='setLing'>
                           <Link to="/Resources/BlogMedia/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/BlogMedia/' ? 'active' : ''}`}>Blogs & Media</Link>
 
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={manufacturing} alt="" className='navimg' />
+                        <img src={manufacturing} alt="" className='navimg' loading='lazy'/>
                         <span className='setLing'>
                           <Link to="/Resources/Gallery/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Gallery/' ? 'active' : ''}`}>Gallery</Link>
                         </span>
@@ -453,7 +457,7 @@ function Header() {
           <nav className="navbar navbar-expand ApplySticky d-lg-none d-md-none d-sm-none d-none d-xl-block d-xxl-block ">
             <div className='container-xxl'>
               <a className="navbar-brand" href="/">
-                <img className="w-100" src={Logo} alt="Logo" />
+                <img className="w-100" src={Logo} alt="Logo" loading='lazy'/>
               </a>
               <div className="navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
                 <ul className="navbar-nav mb-lg-0">
@@ -470,31 +474,31 @@ function Header() {
                     <div className='set_ul'>
                       <ul className='list-unstyled'>
                         <li className='d-flex align-item-center'>
-                          <img src={Our_Store} alt="" className='navimg' />
+                          <img src={Our_Store} alt="" className='navimg' loading='lazy'/>
                           <span className='setLing'>
                             <Link to="/About/Our-Store/" className={`text-decoration-none textBlack ${location.pathname === '/About/Our-Store/' ? 'active' : ''}`}>Our Story</Link>
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={Advantages} alt="" className='navimg' />
+                          <img src={Advantages} alt="" className='navimg' loading='lazy'/>
                           <span className='setLing'>
                             <Link to="/About/Advatages-Sona/" className={`text-decoration-none textBlack ${location.pathname === '/About/Advatages-Sona/' ? 'active' : ''}`}>Advantages Sona</Link>
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={manufacturing} alt="" className='navimg' />
+                          <img src={manufacturing} alt="" className='navimg' loading='lazy'/>
                           <span className='setLing'>
                             <Link to="/About/Manufacturing-Unit/" className={`text-decoration-none textBlack ${location.pathname === '/About/Manufacturing-Unit/' ? 'active' : ''}`}>Manufacturing Unit</Link>
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={Envir} alt="" className='navimg' />
+                          <img src={Envir} alt="" className='navimg' loading='lazy'/>
                           <span className='setLing'>
                             <Link to="/About/Enviro-Friendly/" className={`text-decoration-none textBlack ${location.pathname === '/About/Enviro-Friendly/' ? 'active' : ''}`}>Enviro-Friendly</Link>
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={Brochures} alt="" className='navimg' />
+                          <img src={Brochures} alt="" className='navimg' loading='lazy'/>
                           <span className='setLing'>
                             <Link to="/About/Brochures/" className={`text-decoration-none textBlack ${location.pathname === '/About/Brochures/' ? 'active' : ''}`}>Brochure</Link>
                           </span>
@@ -509,26 +513,26 @@ function Header() {
                     <div className='set_ul'>
                       <ul className='list-unstyled'>
                         <li className='d-flex align-item-center'>
-                          <img src={Our_Store} alt="" className='navimg' />
+                          <img src={Our_Store} alt="" className='navimg' loading='lazy'/>
                           <span className='setLing'>
                             <Link to="/Industry/Pharmaceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Pharmaceutical/' ? 'active' : ''}`}>Pharmaceutical</Link>
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={Advantages} alt="" className='navimg' />
+                          <img src={Advantages} alt="" className='navimg' loading='lazy'/>
                           <span className='setLing'>
                             <Link to="/Industry/Cosmetic-And-Personal-Care/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Cosmetic-And-Personal-Care/' ? 'active' : ''}`}>Cosmetic & Personal Care</Link>
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={manufacturing} alt="" className='navimg' />
+                          <img src={manufacturing} alt="" className='navimg' loading='lazy'/>
                           <span className='setLing'>
                             <Link to="/Industry/Nutraceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Nutraceutical/' ? 'active' : ''}`}>Nutraceutical</Link>
 
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={Envir} alt="" className='navimg' />
+                          <img src={Envir} alt="" className='navimg' loading='lazy'/>
                           <span className='setLing'>
                             <Link to="/Industry/Industrial-And-Agro-Chemical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Industrial-And-Agro-Chemical/' ? 'active' : ''}`}>Industrial & Agro-Chemical</Link>
                           </span>
@@ -543,21 +547,21 @@ function Header() {
                     <div className='set_ul'>
                       <ul className='list-unstyled'>
                         <li className='d-flex align-item-center'>
-                          <img src={Our_Store} alt="" className='navimg' />
+                          <img src={Our_Store} alt="" className='navimg' loading='lazy'/>
                           <span className='setLing'>
                             <Link to="/Aluminum-Products/Collapsible-Tubes/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Collapsible-Tubes/' ? 'active' : ''}`}>Collapsible Tubes</Link>
 
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={Advantages} alt="" className='navimg' />
+                          <img src={Advantages} alt="" className='navimg' loading='lazy'/>
                           <span className='setLing'>
                             <Link to="/Aluminum-Products/Flasks-And-Bottles/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Flasks-And-Bottles/' ? 'active' : ''}`}>Flasks & Bottles</Link>
 
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={manufacturing} alt="" className='navimg' />
+                          <img src={manufacturing} alt="" className='navimg' loading='lazy'/>
                           <span className='setLing'>
                             <Link to="/Aluminum-Products/Tablet-Canisters/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Tablet-Canisters/' ? 'active' : ''}`}>Tablet Canisters</Link>
                           </span>
@@ -573,21 +577,21 @@ function Header() {
                     <div className='set_ul'>
                       <ul className='list-unstyled'>
                         <li className='d-flex align-item-center'>
-                          <img src={Our_Store} alt="" className='navimg' />
+                          <img src={Our_Store} alt="" className='navimg' loading='lazy'/>
                           <span className='setLing'>
                             <Link to="/Resources/Careers/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Careers/' ? 'active' : ''}`}>Careers</Link>
 
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={Advantages} alt="" className='navimg' />
+                          <img src={Advantages} alt="" className='navimg' loading='lazy'/>
                           <span className='setLing'>
                             <Link to="/Resources/BlogMedia/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/BlogMedia/' ? 'active' : ''}`}>Blogs & Media</Link>
 
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={manufacturing} alt="" className='navimg' />
+                          <img src={manufacturing} alt="" className='navimg' loading='lazy'/>
                           <span className='setLing'>
                             <Link to="/Resources/Gallery/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Gallery/' ? 'active' : ''}`}>Gallery</Link>
 
@@ -615,7 +619,7 @@ function Header() {
           <nav className="Sticky-Navbar p-md-0 p-sm-0 d-flex justify-content-between  d-lg-block d-lg-block  d-xl-none">
             <div className='StickyNavbarImg float-start  d-flex justify-content-start'>
               <a className="navbar-brand" href="/">
-                <img className="" src={Logo} alt="Logo" />
+                <img className="" src={Logo} alt="Logo" loading='lazy'/>
               </a>
             </div>
             <div className='header-items float-end d-flex  align-items-center'>
@@ -635,22 +639,25 @@ function Header() {
         <div className="home-photo" style={{ borderRadius: scrolling ? '0' : '35px' }}>
           <Slider {...settings}>
             <div>
-              <img src={Home1} alt="" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" />
+              <img src={Home1} alt="" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" loading='lazy'/>
             </div>
             <div>
-              <img src={Home2} alt="" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" />
+              <img src={Home2} alt="" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" loading='lazy'/>
             </div>
             <div>
-              <img src={Home6} alt="" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" />
+              <img src={Home6} alt="" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" loading='lazy'/>
             </div>
             <div>
-              <img src={Home4} alt="" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" />
+              <img src={Home4} alt="" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" loading='lazy'/>
             </div>
             <div>
-              <img src={Home5} alt="" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" />
+              <img src={Home5} alt="" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" loading='lazy'/>
             </div>
             <div>
-              <img src={Home7} alt="" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" />
+              <img src={Home7} alt="" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" loading='lazy'/>
+            </div>
+            <div>
+              <img src={Home8} alt="" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000" loading='lazy'/>
             </div>
           </Slider>
         </div>

@@ -49,33 +49,33 @@ function TopSliderPhar({ Type }) {
 
     const slides = Type === "Cosm"
         ? [
-            <img src={Cons1} alt="Cosm Slide 1" className="slider-image w-100" />,
-            <img src={Cons2} alt="Cosm Slide 2" className="slider-image w-100" />,
-            <img src={Cons3} alt="Cosm Slide 2" className="slider-image w-100" />,
-            <img src={Cons4} alt="Cosm Slide 2" className="slider-image w-100" />
+            <img src={Cons1} alt="Cosm Slide 1" className="slider-image w-100" loading='lazy'/>,
+            <img src={Cons2} alt="Cosm Slide 2" className="slider-image w-100" loading='lazy'/>,
+            <img src={Cons3} alt="Cosm Slide 2" className="slider-image w-100" loading='lazy'/>,
+            <img src={Cons4} alt="Cosm Slide 2" className="slider-image w-100" loading='lazy'/>
         ]
         : Type === "Nut" ? 
         [
-            <img src={Nuts1} alt="Default Slide 2" className="slider-image w-100" />,
-            <img src={Nuts2} alt="Default Slide 2" className="slider-image w-100" />,
-            <img src={Nuts3} alt="Default Slide 2" className="slider-image w-100" />
+            <img src={Nuts1} alt="Default Slide 2" className="slider-image w-100" loading='lazy'/>,
+            <img src={Nuts2} alt="Default Slide 2" className="slider-image w-100" loading='lazy'/>,
+            <img src={Nuts3} alt="Default Slide 2" className="slider-image w-100" loading='lazy'/>
         ] 
         : Type === "Indu" ?
         [
-            <img src={Idus1} alt="Default Slide 1" className="slider-image w-100" />,
-            <img src={Idus2} alt="Default Slide 1" className="slider-image w-100" />,
-            <img src={Idus3} alt="Default Slide 1" className="slider-image w-100" />,
-            <img src={Idus4} alt="Default Slide 1" className="slider-image w-100" />,
-            <img src={Idus5} alt="Default Slide 1" className="slider-image w-100" />,
-            <img src={Idus6} alt="Default Slide 1" className="slider-image w-100" />,
-            <img src={Idus7} alt="Default Slide 1" className="slider-image w-100" />,
-            <img src={Idus8} alt="Default Slide 1" className="slider-image w-100" />,
-            <img src={Idus9} alt="Default Slide 1" className="slider-image w-100" />
+            <img src={Idus1} alt="Default Slide 1" className="slider-image w-100" loading='lazy'/>,
+            <img src={Idus2} alt="Default Slide 1" className="slider-image w-100" loading='lazy'/>,
+            <img src={Idus3} alt="Default Slide 1" className="slider-image w-100" loading='lazy'/>,
+            <img src={Idus4} alt="Default Slide 1" className="slider-image w-100" loading='lazy'/>,
+            <img src={Idus5} alt="Default Slide 1" className="slider-image w-100" loading='lazy'/>,
+            <img src={Idus6} alt="Default Slide 1" className="slider-image w-100" loading='lazy'/>,
+            <img src={Idus7} alt="Default Slide 1" className="slider-image w-100" loading='lazy'/>,
+            <img src={Idus8} alt="Default Slide 1" className="slider-image w-100" loading='lazy'/>,
+            <img src={Idus9} alt="Default Slide 1" className="slider-image w-100" loading='lazy'/>
         ] 
         : 
         [
-             <img src={phar1} alt="Default Slide 2" className="slider-image w-100" />,
-            <img src={phar2} alt="Default Slide 1" className="slider-image w-100" />
+             <img src={phar1} alt="Default Slide 2" className="slider-image w-100" loading='lazy'/>,
+            <img src={phar2} alt="Default Slide 1" className="slider-image w-100" loading='lazy'/>
         ] ;
 
     return (

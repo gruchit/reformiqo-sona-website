@@ -8,7 +8,7 @@ function Emission() {
     return (
         <>
             <div className='Emission'>
-                <img src={Single_BlackBol_Line} alt="" srcset="" className='EmissionSingleBoletdIMg'/>
+                <img src={Single_BlackBol_Line} alt="" srcset="" className='EmissionSingleBoletdIMg' loading='lazy'/>
                 <div className='container-xxl'>
                     <div className='EmissionBody'>
                         <div className='row d-flex justify-content-center'>

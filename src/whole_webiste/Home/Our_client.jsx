@@ -46,7 +46,7 @@ function Our_client() {
                                 data-aos-once="true"
                                 data-aos-mirror="true"
                             >
-                                <img src={Double_bol_line} alt="" className='OurLeftArrow' />
+                                <img src={Double_bol_line} alt="" className='OurLeftArrow' loading='lazy'/>
                             </div>
                             <div
                                 className='d-flex justify-content-center'
@@ -72,7 +72,7 @@ function Our_client() {
                                 data-aos-once="true"
                                 data-aos-mirror="true"
                             >
-                                <img src={double_bol_line} alt="" className='OurDoubleBol' />
+                                <img src={double_bol_line} alt="" className='OurDoubleBol' loading='lazy'/>
                             </div>
                         </div>
                     </div>
@@ -88,12 +88,12 @@ function Our_client() {
                         <Slider ref={sliderRef} {...settings}>
                             <div>
                                 <div className='OurClientRight_top d-xxl-flex d-xl-flex d-lg-flex d-md-flex align-items-xxl-center align-items-xl-center align-items-lg-center align-items-md-center '>
-                                    <img src={User} alt="" className='m-auto m-xxl-0 m-xl-0 m-lg-0 m-md-0' />
+                                    <img src={User} alt="" className='m-auto m-xxl-0 m-xl-0 m-lg-0 m-md-0' loading='lazy'/>
                                     <div className='mx-4 my-auto '>
                                         <h5 className='text-xl-start text-center text-xxl-start'>Ratheesh Sheth</h5>
                                         <p className='text-xl-start text-xxl-start m-0 text-center text-center text-secondary sans_light'>Procurement & Quality Head</p>
                                     </div>
-                                    <img src={Star} alt="" className='m-auto m-xxl-0 m-xl-0 m-lg-0 m-md-0' />
+                                    <img src={Star} alt="" className='m-auto m-xxl-0 m-xl-0 m-lg-0 m-md-0' loading='lazy'/>
                                 </div>
                                 <div className='my-5'>
                                     <p className='sans_light text-secondary showPro p-3'>
@@ -107,12 +107,12 @@ function Our_client() {
                             </div>
                             <div>
                                 <div className='OurClientRight_top d-xxl-flex d-xl-flex d-lg-flex d-md-flex align-items-xxl-center align-items-xl-center align-items-lg-center align-items-md-center'>
-                                    <img src={User} alt="" className='m-auto m-xxl-0 m-xl-0 m-lg-0 m-md-0' />
+                                    <img src={User} alt="" className='m-auto m-xxl-0 m-xl-0 m-lg-0 m-md-0' loading='lazy'/>
                                     <div className='mx-4 my-auto'>
                                         <h5 className='text-xl-start text-xxl-start text-center'>Another Client</h5>
                                         <p className='m-0 text-secondary sans_light text-xl-start text-center text-xxl-start'>CEO, XYZ Company</p>
                                     </div>
-                                    <img src={Star} alt="" className='m-auto m-xxl-0 m-xl-0 m-lg-0 m-md-0' />
+                                    <img src={Star} alt="" className='m-auto m-xxl-0 m-xl-0 m-lg-0 m-md-0' loading='lazy'/>
                                 </div>
                                 <div className='my-5'>
                                     <p className='sans_light text-secondary'>

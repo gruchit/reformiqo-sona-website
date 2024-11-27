@@ -13,7 +13,7 @@ function MarketLe() {
     }, []);
     return (
         <div className="markerLe">
-            <img src={Arrow_Left} alt="" className='markerLe_img'
+            <img src={Arrow_Left} alt="" className='markerLe_img' loading='lazy'
                 data-aos="fade-right"
                 data-aos-offset="0"
                 data-aos-delay="1000"
@@ -52,11 +52,11 @@ function MarketLe() {
                         easing="ease-in-out"
                         once="true"
                         mirror="true">
-                        <img src={Cret} alt="" srcset="" />
+                        <img src={Cret} alt="" srcset="" loading='lazy'/>
                         <h4 className='py-3 sans_Medium'>500 Mn Tubes</h4>
                         <p className='text-secondary sans_light'>Investing in cutting-edge technology, equipment, and infrastructure while ensuring the highest level of safety and quality standards, effective processes and skilled personnels, we are in a position to offer our customers state-of-the-art facilities and high-quality products.</p>
                     </div>
-                    <img src={Double_bol_line} alt="" srcset="" className='doblebol_markerLe_cards'
+                    <img src={Double_bol_line} alt="" srcset="" className='doblebol_markerLe_cards' loading='lazy'
                         data-aos="fade-up"
                         data-aos-offset="0"
                         data-aos-delay="1000"

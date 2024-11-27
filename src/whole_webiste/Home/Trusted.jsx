@@ -69,7 +69,7 @@ function Trusted() {
         data-aos-mirror="true"
       >
         <div className='d-flex justify-content-center'>
-          <img src={Single_BlackBol_Line} alt="Separator Line" />
+          <img src={Single_BlackBol_Line} alt="Separator Line" loading='lazy'/>
         </div>
         <h1 className='text-center'>Our Trusted Partners</h1>
       </div>
@@ -86,22 +86,22 @@ function Trusted() {
       >
         <Slider {...settings}>
           <div className='slide-item d-flex justify-content-center'>
-            <img src={Trust1} alt="Partner 1" className="partner-logo" />
+            <img src={Trust1} alt="Partner 1" className="partner-logo" loading='lazy'/>
           </div>
           <div className='slide-item d-flex justify-content-center'>
-            <img src={Trust2} alt="Partner 2" className="partner-logo" />
+            <img src={Trust2} alt="Partner 2" className="partner-logo" loading='lazy'/>
           </div>
           <div className='slide-item d-flex justify-content-center'>
-            <img src={Trust3} alt="Partner 3" className="partner-logo" />
+            <img src={Trust3} alt="Partner 3" className="partner-logo" loading='lazy'/>
           </div>
           <div className='slide-item d-flex justify-content-center'>
-            <img src={Trust4} alt="Partner 4" className="partner-logo" />
+            <img src={Trust4} alt="Partner 4" className="partner-logo" loading='lazy'/>
           </div>
           <div className='slide-item d-flex justify-content-center'>
-            <img src={Trust1} alt="Partner 5" className="partner-logo" />
+            <img src={Trust1} alt="Partner 5" className="partner-logo" loading='lazy'/>
           </div>
           <div className='slide-item d-flex justify-content-center'>
-            <img src={Trust2} alt="Partner 6" className="partner-logo" />
+            <img src={Trust2} alt="Partner 6" className="partner-logo" loading='lazy'/>
           </div>
         </Slider>
       </div>

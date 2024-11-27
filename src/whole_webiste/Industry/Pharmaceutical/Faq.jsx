@@ -84,7 +84,7 @@ function Faq({ Type }) {
       <div className='Faq'>
         <div className='container'>
           <div className='FaqTxt'>
-            <img src={Single_BlackBol_Line} alt="" srcset="" className='FaqImage' />
+            <img src={Single_BlackBol_Line} alt="" srcset="" className='FaqImage' loading='lazy'/>
             <h2 className='pb-5 sans_light'>(FAQs)</h2>
           </div>
           <div className='faq-section'>

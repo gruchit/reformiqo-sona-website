@@ -33,14 +33,14 @@ function Footer() {
                         <div className='col-xl-5 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center'>
                             <div className='Footer_logo flex-column px-4'>
                                 <div className='d-flex justify-content-center'>
-                                    <img src={Logo} alt="" className='' />
+                                    <img src={Logo} alt="" className='' loading='lazy'/>
                                 </div>
                                 <p className='sans_light text-secondary'>Sona Extrusion Private Limited is one of the leading manufacturers of aluminium collapsible tubes, containers and aluminium bottles/flasks in India, US FDA DMF Registered, ISO 15378(SGS) & ISO 9001(TUV-SUD) certified company.</p>
                                 <div className='Footer_Bottom_icon d-flex justify-content-center mt-3 '>
-                                    <img src={Facebook} alt="" />
-                                    <img src={Insta} alt="" />
-                                    <img src={Linkdin} alt="" />
-                                    <img src={Youtube} alt="" />
+                                    <img src={Facebook} alt="" loading='lazy'/>
+                                    <img src={Insta} alt="" loading='lazy'/>
+                                    <img src={Linkdin} alt="" loading='lazy'/>
+                                    <img src={Youtube} alt="" loading='lazy'/>
 
                                 </div>
                             </div>

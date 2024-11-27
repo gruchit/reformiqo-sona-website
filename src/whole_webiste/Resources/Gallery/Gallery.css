@@ -1,3 +1,7 @@
+.photo-gallery{
+    padding: 50px 10px;
+}
+
 .VideoGlry{
     background-color: #faf8fa;
     padding: 80px 15px;
@@ -9,13 +13,14 @@
     max-width: 200px;
     top:10px;
 }
-.VideoGlryTxt{
-font-weight: 600;
+.VideoGlryTxt h1{
+font-weight: 700;
 }
 .VideoGlryTxt .VideoGlryTxtImg,.PhotoGlryTxtImg{
 max-width: 180px;
-margin:0px 0px 40px 400px;
-display: block;
+width: 100%;
+margin:0px 0px 10px 120px;
+/* display: block; */
 }
 .VideoGlryCard,.photoGlryCard{
 max-width: 400px;
@@ -84,16 +89,12 @@ position: relative; /* Set position for containing child */
     text-align: center;
 }
 
-.PhotoGlryTxtImg {
-    width: 50px; /* adjust size if needed */
-}
-
 
 
 
 
 @media (min-width: 320px) { 
-    .VideoGlry,.PhotoGallery{
+    .VideoGlry,.photo-gallery{
         padding: 80px 15px;
     }
     .VideoGlryTxt .VideoGlryTxtImg,.PhotoGlryTxtImg{
@@ -103,7 +104,7 @@ position: relative; /* Set position for containing child */
 }
 
 @media (min-width: 576px) { 
-    .VideoGlry,.PhotoGallery{
+    .VideoGlry,.photo-gallery{
         padding: 80px 20px;
     }
     .VideoGlryTxt .VideoGlryTxtImg,.PhotoGlryTxtImg{
@@ -113,7 +114,7 @@ position: relative; /* Set position for containing child */
 
 
 @media (min-width: 768px) { 
-    .VideoGlry,.PhotoGallery{
+    .VideoGlry,.photo-gallery{
         padding: 80px 30px;
     }
     .VideoGlryTxt .VideoGlryTxtImg,.PhotoGlryTxtImg{
@@ -123,7 +124,7 @@ position: relative; /* Set position for containing child */
 
 
 @media (min-width: 992px) { 
-    .VideoGlry,.PhotoGallery{
+    .VideoGlry,.photo-gallery{
         padding: 80px 40px;
     }
     .VideoGlryTxt .VideoGlryTxtImg,.PhotoGlryTxtImg{
@@ -133,7 +134,7 @@ position: relative; /* Set position for containing child */
 
 
 @media (min-width: 1200px) { 
-    .VideoGlry,.PhotoGallery{
+    .VideoGlry,.photo-gallery{
         padding: 80px 50px;
     }
     .VideoGlryTxt .VideoGlryTxtImg,.PhotoGlryTxtImg{

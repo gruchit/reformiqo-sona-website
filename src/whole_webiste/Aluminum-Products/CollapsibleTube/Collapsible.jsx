@@ -107,7 +107,7 @@ function Collapsible({ Type }) {
                                 className='col-xl-4 col-lg-4 col-md-6 mt-5 d-flex justify-content-center'
                             >
                                 <div className='CollapsibleCard'>
-                                    <img src={card.imgSrc} alt={card.title} />
+                                    <img src={card.imgSrc} alt={card.title} loading='lazy'/>
                                     <div className='CollaCardTitale'>
                                         <p className='sans_bold'>{card.title}</p>
                                     </div>

@@ -17,7 +17,7 @@ function AboutSonaEx() {
                     <div className='row'>
                         <div className='col-xl-6  col-lg-12 p-0 m-0'>
                             <div className='abSona_left  d-flex justify-content-center'>
-                                <img src={Truck} alt="" srcset=""
+                                <img src={Truck} alt="" srcset="" loading='lazy'
                                     data-aos="fade-zoom-in"
                                     data-aos-easing="ease-in-back"
                                     data-aos-delay="200"

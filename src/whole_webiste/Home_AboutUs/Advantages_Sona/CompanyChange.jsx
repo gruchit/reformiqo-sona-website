@@ -11,7 +11,7 @@ function CompanyChange() {
         <>
             <div className='CompanyChange position-relative'>
                 <div className='Company_black '>
-                    <img src={Company_black} alt="" />
+                    <img src={Company_black} alt="" loading='lazy' />
                     <div className='CompanyblackThm d-flex align-items-center'>
                         <div className='Companyblacktxt container'>
                             <div className=' mt-5'>
@@ -27,7 +27,7 @@ function CompanyChange() {
                     <div className='CompanyBlackCard'>
                         <div className='row d-flex justify-content-center'>
                             <div className='cmp1 col-xl-3 col-lg-4 col-md-6  mt-lg-0  d-flex justify-content-center'>
-                                <img src={Pharmaceutical1} alt="" className='cmpTbsPioneers' />
+                                <img src={Pharmaceutical1} alt="" className='cmpTbsPioneers' loading='lazy'/>
                                 <div className='CompanyChangeCard d-flex align-items-center mt-5 mt-sm-5 mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0  '>
                                     <div>
                                         <h4 className='sans_light'>Pharmaceutical</h4>
@@ -36,7 +36,7 @@ function CompanyChange() {
                                 </div>
                             </div>
                             <div className='cmp1 col-xl-3 ol-lg-4 col-md-6  mt-lg-0 d-flex justify-content-center'>
-                                <img src={Cosmetic1} alt="" className='cmpUnprecedented' />
+                                <img src={Cosmetic1} alt="" className='cmpUnprecedented' loading='lazy'/>
                                 <div className='CompanyChangeCard d-flex align-items-center mt-5 mt-sm-5 mt-md-0 mt-lg-5 mt-xl-5 mt-xxl-5   '>
                                     <div>
                                         <h4 className='sans_light'>Cosmetic & <br />
@@ -46,7 +46,7 @@ function CompanyChange() {
                                 </div>
                             </div>
                             <div className='cmp1 col-xl-3 ol-lg-4 col-md-6  mt-lg-0 d-flex justify-content-center'>
-                                <img src={Nutraceuticals} alt="" className='cmpSpecifications' />
+                                <img src={Nutraceuticals} alt="" className='cmpSpecifications' loading='lazy'/>
                                 <div className='CompanyChangeCard d-flex align-items-center mt-5 mt-sm-5 mt-md-5 mt-lg-0 mt-xl-0 mt-xxl-0  '>
                                     <div>
                                         <h4 className='sans_light'>Nutraceuticals</h4>
@@ -56,7 +56,7 @@ function CompanyChange() {
                                 </div>
                             </div>
                             <div className='cmp1 col-xl-3 ol-lg-4 col-md-6  mt-lg-0 d-flex justify-content-center'>
-                                <img src={Industrial1} alt="" className='cmpIndustrial1' />
+                                <img src={Industrial1} alt="" className='cmpIndustrial1' loading='lazy'/>
                                 <div className='CompanyChangeCard d-flex align-items-center mt-5 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5 mt-xxl-5'>
                                     <div>
                                         <h4 className='sans_light'>Industrial & Agro

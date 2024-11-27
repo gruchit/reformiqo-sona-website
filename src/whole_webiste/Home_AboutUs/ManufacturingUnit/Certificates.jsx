@@ -22,17 +22,17 @@ function Certificates() {
                         <div className='row d-flex justify-content-center'>
                             <div className='col-xl-4  col-lg-4 col-md-6 mt-5 d-flex justify-content-center'>
                                 <div className='CertBodyCard'>
-                                    <img src={Cert1} alt="" srcset="" />
+                                    <img src={Cert1} alt="" srcset="" loading='lazy'/>
                                 </div>
                             </div>
                             <div className='col-xl-4  col-lg-4 col-md-6 mt-5 d-flex justify-content-center'>
                                 <div className='CertBodyCard'>
-                                    <img src={Cert2} alt="" srcset="" />
+                                    <img src={Cert2} alt="" srcset="" loading='lazy'/>
                                 </div>
                             </div>
                             <div className='col-xl-4  col-lg-4 col-md-6 mt-5 d-flex justify-content-center'>
                                 <div className='CertBodyCard'>
-                                    <img src={Cert3} alt="" srcset="" />
+                                    <img src={Cert3} alt="" srcset="" loading='lazy'/>
                                 </div>
                             </div>
                         </div>

@@ -33,7 +33,7 @@ function Product() {
         <>
             <div className='Product'>
                 <div className='Product_Detail'>
-                    <img src={Arrow_Left} alt="" className='Product_Detail_left'
+                    <img src={Arrow_Left} alt="" loading='lazy' className='Product_Detail_left'
                         data-aos="fade-right"
                         data-aos-offset="50"
                         data-aos-delay="1000"
@@ -71,7 +71,7 @@ function Product() {
                         <div className="col-lg-4 col-md-6 col-sm-12 ProCol d-flex justify-content-center ">
                             <div className="Product_cards m-auto">
                                 <div className="product_img p-4">
-                                    <img src={Ellipse} alt="" />
+                                    <img  src={Ellipse} alt="" loading='lazy'/>
                                 </div>
                                 <div className="Produ_card_det  px-4">
                                     <h4 className='m-0 my-2 sans_Medium'>Collapsible Tubes</h4>
@@ -82,14 +82,14 @@ function Product() {
                                     </p>
                                 </div>
                                 <div className='product_bottom_phto'>
-                                    <img src={Product_card} alt="" />
+                                    <img src={Product_card} alt="" loading='lazy'/>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 ProCol d-flex justify-content-center mt-lg-5 pt-lg-5    mt-sm-3 pt-sm-0   mt-md-0 pt-md-0 ">
                             <div className="Product_cards m-auto">
                                 <div className="product_img p-4">
-                                    <img src={Product2} alt="" />
+                                    <img src={Product2} alt="" loading='lazy'/>
                                 </div>
                                 <div className="Produ_card_det  px-4">
                                     <h4 className='m-0 my-2 sans_Medium'>Flasks & Bottles</h4>
@@ -98,14 +98,14 @@ function Product() {
                                     </p>
                                 </div>
                                 <div className='product_bottom_phto'>
-                                    <img src={Flask} alt="" />
+                                    <img src={Flask} alt="" loading='lazy'/>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 ProCol d-flex justify-content-center mt-sm-3">
                             <div className="Product_cards m-auto">
                                 <div className="product_img p-4">
-                                    <img src={Product3} alt="" />
+                                    <img src={Product3} alt="" loading='lazy'/>
                                 </div>
                                 <div className="Produ_card_det  px-4">
                                     <h4 className='m-0 my-2 sans_Medium'>Tablet Canisters</h4>
@@ -114,11 +114,11 @@ function Product() {
                                     </p>
                                 </div>
                                 <div className='product_bottom_phto'>
-                                    <img src={Table} alt="" />
+                                    <img src={Table} alt="" loading='lazy'/>
                                 </div>
                             </div>
                         </div>
-                        <img src={Double_bol_line} alt="" srcset="" className='Double_line' />
+                        <img src={Double_bol_line} alt="" srcset="" className='Double_line' loading='lazy'/>
                     </div>
                     </div>
                 </div>

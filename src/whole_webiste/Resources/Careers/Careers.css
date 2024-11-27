@@ -139,6 +139,15 @@
   border: 2px solid #fff5dc;
   padding:30px;
 }
+.OrderDeliver_box3_Col p{
+  text-align:justify;
+}
+.OrderDeliver_box2_Col p{
+  text-align:justify;
+}
+.OrderDeliver_box1_Col p{
+  text-align:justify;
+}
 .OrderDeliverBox_detals h4{
     font-weight:600;
     
@@ -175,6 +184,9 @@
   margin:0px 0px 10px 120px;
 }
 @media (min-width: 320px) { 
+  .OrderDeliver_box1_Col,.OrderDeliver_box2_Col,.OrderDeliver_box3_Col{
+    padding: 20px;
+  }
   .OrderDelivertext img{
     margin:0px 0px 10px 120px;
   }

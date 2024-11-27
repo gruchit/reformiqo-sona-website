@@ -20,7 +20,7 @@ function WhyChoose() {
     return (
         <>
             <div className='WhyChoose'>
-                <img src={Double_bol_line} alt="" srcset="" className='WhyDoted' />
+                <img src={Double_bol_line} alt="" srcset="" className='WhyDoted' loading='lazy'/>
                 <div className={isLargeScreen ? "container-xxl" : ""}>
                     <h3 className='SonaTxtColor text-center mb-4 sans_Medium'>Why Choose Us</h3>
                     <h1 className='text-center sans_bold mb-4'>We Manufacture With Responsibility </h1>
@@ -28,7 +28,7 @@ function WhyChoose() {
                 </div>
             </div>
             <div className='WhyChooseTXT '>
-                <img src={Arrow} alt="" srcset="" className='WhyArrow' />
+                <img src={Arrow} alt="" srcset="" className='WhyArrow' loading='lazy'/>
                 <div className={isLargeScreen ? "container-xl" : ""}>
                     <div className='d-flex justify-content-center'>
                         <ul className=' list-unstyled sans_bold'>

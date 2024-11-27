@@ -1,6 +1,7 @@
+/* Gallery.css */
+
 .photo-gallery {
-  padding: 20px;
-  font-family: Arial, sans-serif;
+  overflow: hidden;
   position: relative;
 }
 
@@ -12,9 +13,13 @@
   cursor: pointer;
   transition: transform 0.3s ease-in-out, opacity 0.5s ease; /* Add opacity transition */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  height: 300px; /* Fixed height for consistency */
+  height: 280px; /* Fixed height for consistency */
   width: 100%; /* Ensure it takes up the full column width */
-  max-width: 300px; /* Optional: max width if you want cards to not exceed a certain size */
+  max-width: 280px; /* Optional: max width if you want cards to not exceed a certain size */
+}
+
+.image-card{
+
 }
 
 .category-card:hover, .image-card:hover {
@@ -24,7 +29,7 @@
 .category-thumbnail, .image-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures images cover the card space without distortion */
+  object-fit: cover; 
 }
 
 .category-title {
@@ -36,7 +41,7 @@
   padding: 8px 20px;
   border-radius: 30px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   color: #333;
 }
@@ -54,16 +59,21 @@
 }
 
 .back-button {
-  background: #efdbb8;
+  background: #D4B76E;
   color: #333;
-  padding: 10px 20px;
+  padding: 10px 15px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50%;
   cursor: pointer;
-  margin-bottom: 20px;
   transition: background-color 0.3s ease;
 }
-
+.PhotoBorder{
+  /* border-top:1.5px solid black; */
+  border-bottom:1.5px solid black;
+}
+.back-button-arow{
+  padding: 10px;
+}
 .back-button:hover {
   background: #d4b76e;
 }

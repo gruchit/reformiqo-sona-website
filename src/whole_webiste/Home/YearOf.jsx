@@ -24,11 +24,12 @@ function YearOf() {
                             data-aos-offset="50"
                             data-aos-delay="1000"
                             data-aos-duration="1000"
+                            loading='lazy'
                         />
                         <div className='row d-flex justify-content-center '>
                             <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
                                 <div className='YearOf_img1'>
-                                    <img src={Cret} alt="" />
+                                    <img src={Cret} alt="" loading='lazy'/>
                                 </div>
                                 <div className='YearOf_heard'>
                                     <h2 className='sans_Medium'>35+ Years Of <br />
@@ -38,7 +39,7 @@ function YearOf() {
                             </div>
                             <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12 '>
                                 <div className='YearOf_img1'>
-                                    <img src={Yearof} alt="" />
+                                    <img src={Yearof} alt="" loading='lazy'/>
                                 </div>
                                 <div className='YearOf_heard'>
                                     <h2 className='sans_Medium'>35+ Years Of <br />
@@ -50,7 +51,7 @@ function YearOf() {
                                     data-aos-offset="50"
                                     data-aos-delay="1000"
                                     data-aos-duration="1000"
-                                />
+                                    loading='lazy'/>
                             </div>
                         </div>
                     </div>

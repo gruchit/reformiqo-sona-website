@@ -26,7 +26,7 @@ function IndustryTop() {
                         </div>
                         <div className='col-xl-6 mt-5 col-lg-12 p-0 m-0'>
                             <div className='IndustryTop_left  d-flex justify-content-center'>
-                                <img src={Truck} alt="" srcset=""/>
+                                <img src={Truck} alt="" srcset="" loading='lazy'/>
                             </div>
                         </div>
                     </div>

@@ -65,8 +65,8 @@ function CollaSlider() {
 
     return (
         <div className="CollaSlider">
-            <img src={Leftarrow} alt="" srcset="" className='LeftarwCollaSlider ' />
-            <img src={Double_bol_line} alt="" srcset="" className='Double_bol_lineCollaSlider ' />
+            <img src={Leftarrow} alt="" srcset="" className='LeftarwCollaSlider ' loading='lazy'/>
+            <img src={Double_bol_line} alt="" srcset="" className='Double_bol_lineCollaSlider ' loading='lazy'/>
 
             <div className="container-xxl">
                 {/* Slider Header */}
@@ -87,7 +87,7 @@ function CollaSlider() {
                             {imagePaths.map((image, index) => (
                                 <div className="CollaSliderCard" key={index}>
 
-                                    <img src={image.imgSrc} alt={`Slide ${index + 1}`} className="sliderCollaimage" />
+                                    <img src={image.imgSrc} alt={`Slide ${index + 1}`} className="sliderCollaimage" loading='lazy'/>
                                     <div className="CollaSliderTitle ">
                                         <p className='sans_bold text-dark my-3 '>{image.title}</p>
                                     </div>

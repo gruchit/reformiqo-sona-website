@@ -13,7 +13,7 @@ function TbasOutSolu() {
             <div className='TbasOutSolu d-flex justify-content-start'>
 
                 <div className='OutSoluTbs p-xxl-5 p-xl-5 p-lg-5 p-md-5 p-sm-5'>
-                    <img src={Arrow} alt="" className='TbasImg' />
+                    <img src={Arrow} alt="" className='TbasImg' loading='lazy'/>
 
                     <div className="filter-buttons py-4 d-flex justify-content-evenly">
                         {['Market Leader', 'Infrastructure', 'Production Capacity'].map((tab) => (

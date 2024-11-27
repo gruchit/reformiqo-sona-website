@@ -8,7 +8,7 @@ function Company() {
     return (
         <>
             <div className='Company'>
-                <img src={Company_black} alt="" />
+                <img src={Company_black} alt="" loading='lazy'/>
             </div>
         </>
     )

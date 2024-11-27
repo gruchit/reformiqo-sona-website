@@ -13,7 +13,7 @@ function ErrorPage() {
     return (
         <div className=''>
         <div className=" error-page d-flex flex-column align-items-center justify-content-center">
-            <img src={ErrorImage} alt="Error Illustration" className="error-image bounce" />
+            <img src={ErrorImage} alt="Error Illustration" className="error-image bounce" loading='lazy'/>
             <h1 className="error-title">404 - Page Not Found</h1>
             <p className="error-message">
                 The page you’re looking for doesn’t exist. It might have been moved or deleted.

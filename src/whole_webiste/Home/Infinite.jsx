@@ -12,7 +12,7 @@ function Infinite() {
     }, []);
     return (
         <div className='infinite d-flex align-items-center'>
-            <img src={InfiniteSVG} alt="Background" className="infinite-bg" />
+            <img src={InfiniteSVG} alt="Background" className="infinite-bg" loading='lazy' />
             <div className='row d-flex justify-content-center infi_card w-100'
                 data-aos="fade-up"
                 data-aos-offset="0"
@@ -20,7 +20,7 @@ function Infinite() {
                 data-aos-duration="3000"
                 easing="ease-in-out"
                 once="true"
-                mirror="true"
+                mirror="true" 
             >
                 <div className='col-lg-8 col-md-12 col-sm-12  d-flex flex-column justify-content-center'
 
@@ -35,7 +35,7 @@ function Infinite() {
                         <span >Contact Us Today</span>
                         <div className="icon-wrapper"
                         >
-                            <img src={button_Arrow} alt="Arrow Icon" />
+                            <img src={button_Arrow} alt="Arrow Icon" loading='lazy'/>
                         </div>
                     {/* </button> */}
                     </Link>

@@ -10,7 +10,7 @@ function Your_choice() {
             <div className="Your_choice">
                 <div className="flex-column">
                     <div className="Your_choice_leftArrow">
-                        <img src={Arrow_Left} alt="" />
+                        <img src={Arrow_Left} alt="" loading='lazy'/>
                     </div>
                     <div className="YourChoice_Details">
                         <h1 className="text-center sans_bold">
@@ -25,12 +25,12 @@ function Your_choice() {
                     <div className='YAboutSonaEx_tubes d-flex justify-content-center '>
                         <div className='d-flex justify-content-start align-items-center'>
                         <span className='d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block'>
-                            <img src={Bot_bol_3} alt="" className='YAboutSonaExtubesImg' />
+                            <img src={Bot_bol_3} alt="" className='YAboutSonaExtubesImg' loading='lazy'/>
                         </span>
                         </div>
                         <div className='YourChoice_tubes_box  d-lg-flex d-xl-flex d-xxl-flex align-items-start'>
                             <div className=''>
-                                <img src={Idea_white} alt="" />
+                                <img src={Idea_white} alt="" loading='lazy'/>
                             </div>
                             <div className='flex-column text-white p-3'>
                                 <h3 className='sans_bold'>500 Mn Tubesubes</h3>

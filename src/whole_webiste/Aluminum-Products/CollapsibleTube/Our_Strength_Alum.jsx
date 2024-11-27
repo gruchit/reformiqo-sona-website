@@ -13,8 +13,8 @@ function Our_Strength_Alum({ Type }) {
             <div className='Our_Strength_Alum'>
                 <div className='flex-column'>
                     <div className='Our_Strength_Alumimages'>
-                        <img src={Arrow_Left} alt="" className='Strength_Alumleft_arwOurSt' />
-                        <img src={Double_bol_line} alt="" srcset="" className='Strength_AlumDoubleBolLine_Our' />
+                        <img src={Arrow_Left} alt="" className='Strength_Alumleft_arwOurSt' loading='lazy'/>
+                        <img src={Double_bol_line} alt="" srcset="" className='Strength_AlumDoubleBolLine_Our' loading='lazy'/>
                     </div>
                     <div className='Our_Strength_Alumdetails'>
                         <h1 className='sans_bold text-center'>Our Strength</h1>
@@ -48,7 +48,7 @@ function Our_Strength_Alum({ Type }) {
                                         <>
                                             <div>
                                                 <div>
-                                                    <img src={FirstRate} alt="" className='OurSoluImgAlum' />
+                                                    <img src={FirstRate} alt="" className='OurSoluImgAlum' loading='lazy'/>
                                                 </div>
                                                 <div className='mt-5'>
                                                     <h5 className='sans_Medium'>First Rate Quality</h5>
@@ -60,7 +60,7 @@ function Our_Strength_Alum({ Type }) {
                                         Type === "Flask" ?
                                             <>
                                                 <div>
-                                                    <img src={FirstRate} alt="" className='OurSoluImgAlum' />
+                                                    <img src={FirstRate} alt="" className='OurSoluImgAlum' loading='lazy'/>
                                                 </div>
                                                 <div className='mt-5'>
                                                     <h5 className='sans_Medium'>High Quality Material</h5>
@@ -71,7 +71,7 @@ function Our_Strength_Alum({ Type }) {
                                             Type === "Table" ?
                                                 <>
                                                     <div>
-                                                        <img src={FirstRate} alt="" className='OurSoluImgAlum' />
+                                                        <img src={FirstRate} alt="" className='OurSoluImgAlum' loading='lazy'/>
                                                     </div>
                                                     <div className='mt-5'>
                                                         <h5 className='sans_Medium'>Resilient & Robust</h5>
@@ -91,7 +91,7 @@ function Our_Strength_Alum({ Type }) {
                                     {Type === "Colla" ?
                                         <>
                                             <div>
-                                                <img src={Environment} alt="" className='OurSoluImgAlum' />
+                                                <img src={Environment} alt="" className='OurSoluImgAlum' loading='lazy'/>
                                             </div>
                                             <div className='mt-5'>
                                                 <h5 className='sans_Medium'>Environment Safety</h5>
@@ -102,7 +102,7 @@ function Our_Strength_Alum({ Type }) {
                                         Type === "Flask" ?
                                             <>
                                                 <div>
-                                                    <img src={Environment} alt="" className='OurSoluImgAlum' />
+                                                    <img src={Environment} alt="" className='OurSoluImgAlum' loading='lazy' />
                                                 </div>
                                                 <div className='mt-5'>
                                                     <h5 className='sans_Medium'>Wide Range of Options</h5>
@@ -113,7 +113,7 @@ function Our_Strength_Alum({ Type }) {
                                             Type === "Table" ?
                                                 <>
                                                     <div>
-                                                        <img src={Environment} alt="" className='OurSoluImgAlum' />
+                                                        <img src={Environment} alt="" className='OurSoluImgAlum' loading='lazy'/>
                                                     </div>
                                                     <div className='mt-5'>
                                                         <h5 className='sans_Medium'>Compact & Portable</h5>
@@ -133,7 +133,7 @@ function Our_Strength_Alum({ Type }) {
                                     {Type === "Colla" ?
                                         <>
                                             <div>
-                                                <img src={Convenient} alt="" className='OurSoluImgAlum' />
+                                                <img src={Convenient} alt="" className='OurSoluImgAlum' loading='lazy'/>
                                             </div>
                                             <div className='mt-5'>
                                                 <h5 className='sans_Medium'>Convenient & Handy </h5>
@@ -144,7 +144,7 @@ function Our_Strength_Alum({ Type }) {
                                         Type === "Flask" ?
                                             <>
                                                 <div>
-                                                    <img src={Convenient} alt="" className='OurSoluImgAlum' />
+                                                    <img src={Convenient} alt="" className='OurSoluImgAlum' loading='lazy'/>
                                                 </div>
                                                 <div className='mt-5'>
                                                     <h5 className='sans_Medium'>Highly Versatile</h5>
@@ -155,7 +155,7 @@ function Our_Strength_Alum({ Type }) {
                                             Type === "Table" ?
                                                 <>
                                                     <div>
-                                                        <img src={Convenient} alt="" className='OurSoluImgAlum' />
+                                                        <img src={Convenient} alt="" className='OurSoluImgAlum' loading='lazy'/>
                                                     </div>
                                                     <div className='mt-5'>
                                                         <h5 className='sans_Medium'>Accessible & Efficient </h5>
@@ -175,7 +175,7 @@ function Our_Strength_Alum({ Type }) {
                                     {Type === "Colla" ?
                                         <>
                                             <div>
-                                                <img src={Practical} alt="" className='OurSoluImgAlum' />
+                                                <img src={Practical} alt="" className='OurSoluImgAlum' loading='lazy'/>
                                             </div>
                                             <div className='mt-5'>
                                                 <h5 className='sans_Medium'>Practical & Profitable</h5>
@@ -186,7 +186,7 @@ function Our_Strength_Alum({ Type }) {
                                         Type === "Flask" ?
                                             <>
                                                 <div>
-                                                    <img src={Practical} alt="" className='OurSoluImgAlum' />
+                                                    <img src={Practical} alt="" className='OurSoluImgAlum' loading='lazy'/>
                                                 </div>
                                                 <div className='mt-5'>
                                                     <h5 className='sans_Medium'>Reduce Carbon Footprint</h5>
@@ -197,7 +197,7 @@ function Our_Strength_Alum({ Type }) {
                                             Type === "Table" ?
                                                 <>
                                                     <div>
-                                                        <img src={Practical} alt="" className='OurSoluImgAlum' />
+                                                        <img src={Practical} alt="" className='OurSoluImgAlum' loading='lazy' />
                                                     </div>
                                                     <div className='mt-5'>
                                                         <h5 className='sans_Medium'>Safe & Long Lasting</h5>

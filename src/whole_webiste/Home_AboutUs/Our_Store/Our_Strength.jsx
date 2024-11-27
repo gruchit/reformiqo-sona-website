@@ -16,8 +16,8 @@ function Our_Strength() {
             <div className='Our_Strength'>
                 <div className='flex-column'>
                     <div className='Our_Strength_images'>
-                        <img src={Arrow_Left} alt="" className='left_arwOurSt' />
-                        <img src={Double_bol_line} alt="" srcset="" className='DoubleBolLine_Our' />
+                        <img src={Arrow_Left} alt="" className='left_arwOurSt' loading='lazy'/>
+                        <img src={Double_bol_line} alt="" srcset="" className='DoubleBolLine_Our' loading='lazy'/>
                     </div>
                     <div className='Our_Strength_details'>
                         <h1 className='sans_bold text-center'>Our Strength</h1>
@@ -29,7 +29,7 @@ function Our_Strength() {
                             <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0 d-flex justify-content-center'>
                                 <div className='Our_Strength_cards flex-column '>
 
-                                    <img src={Pharmaceutical1} alt="" />
+                                    <img src={Pharmaceutical1} alt="" loading='lazy'/>
                                     <h5 className='sans_Medium'>Efficient and Effective Technology</h5>
                                     <p className='sans_light text-secondary'>We manufacture using state-of-the-art machinery and technology making it possible for us to efficiently & effectively produce quality aluminium packaging solutions.</p>
 
@@ -39,7 +39,7 @@ function Our_Strength() {
                             <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-0 mt-lg-5 mt-xl-5 mt-xxl-5 d-flex justify-content-center'>
                                 <div className='Our_Strength_cards flex-column '>
 
-                                    <img src={Cosmetic1} alt="" />
+                                    <img src={Cosmetic1} alt="" loading='lazy'/>
                                     <h5 className='sans_Medium'>Rigorous Quality Control</h5>
                                     <p className='sans_light text-secondary'>With a strict quality control procedure in place, we make sure that our products adhere to high standards of quality, giving customers dependable and consistent products.</p>
 
@@ -49,7 +49,7 @@ function Our_Strength() {
                             <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-5 mt-lg-0 mt-xl-0 mt-xxl-0 d-flex justify-content-center'>
                                 <div className='Our_Strength_cards flex-column '>
 
-                                    <img src={Nutraceuticals} alt="" />
+                                    <img src={Nutraceuticals} alt="" loading='lazy'/>
                                     <h5 className='sans_Medium'>Customized Solutions</h5>
                                     <p className='sans_light text-secondary'>We place a high value on comprehending the specific needs and developing custom solutions, ensuring products that are on par with or better than client’s expectations.</p>
 
@@ -59,7 +59,7 @@ function Our_Strength() {
                             <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5 mt-xxl-5 d-flex justify-content-center '>
                                 <div className='Our_Strength_cards flex-column '>
 
-                                    <img src={Industrial1} alt="" />
+                                    <img src={Industrial1} alt="" loading='lazy'/>
                                     <h5 className='sans_Medium'>Green Practices</h5>
                                     <p className='sans_light text-secondary'>We are dedicated to using eco-friendly procedures and lessen our carbon footprint and advance sustainability and putting into practice energy-saving techniques.</p>
 

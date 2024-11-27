@@ -13,13 +13,13 @@ function ParalexImg({ Type }) {
         <>
             <div className="ParalexImg">
                 {Type === "Colla" ?
-                    <img src={AllumBack} alt="Background" className="ParalexBlack-img" />
+                    <img src={AllumBack} alt="Background" className="ParalexBlack-img" loading='lazy'/>
 
                     : Type === "Flask" ?
-                        <img src={FlaskPeralex} alt="Background" className="ParalexBlack-img" />
+                        <img src={FlaskPeralex} alt="Background" className="ParalexBlack-img" loading='lazy'/>
 
                         : Type === "Table" ?
-                            <img src={TablePeralex} alt="Background" className="ParalexBlack-img" />
+                            <img src={TablePeralex} alt="Background" className="ParalexBlack-img" loading='lazy'/>
 
                             :
                             <> Sorry </>
@@ -51,7 +51,7 @@ function ParalexImg({ Type }) {
                                 <Link to="/ReachUs" className="custom-button text-decoration-none">
                                     <span >Contact Us Today</span>
                                     <div className="icon-wrapper">
-                                        <img src={button_Arrow} alt="Arrow Icon" />
+                                        <img src={button_Arrow} alt="Arrow Icon" loading='lazy'/>
                                     </div>
                                 </Link>
                             </div>

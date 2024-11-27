@@ -1,13 +1,13 @@
 .Why_Sona{
-    padding: 100px 50px;
+    padding: 100px 15px;
 }
-.WhySonaDetails h2{
+.WhySonaDetails h1{
     font-weight:700;
 }
 .Why_SonaCards{
-    padding-top:100px;
+    padding-top:20px;
 }
-.WhySonaCards1 h5{
+.WhySonaCards1 h4{
     font-weight:650;
     margin-top:50px;
 }
@@ -21,7 +21,9 @@
     box-shadow: 0 1px 15px rgba(130, 158, 195, 0.4);
     position: relative;
 }
-
+.WhySonaCards1 p,.SonaLngCard1 p{
+    text-align:justify;
+}
 .WhySonaCards1 img{
     position: absolute;
     max-width: 85px;
@@ -31,7 +33,7 @@
 }
 
 .SonaLngCrd{
-    margin-top:100px;
+    margin-top:0px;
 }
 
 
@@ -45,7 +47,7 @@
     box-shadow: 0 1px 15px rgba(130, 158, 195, 0.4);
     position: relative;
 }
-.SonaLngCard1 h5{
+.SonaLngCard1 h4{
     margin-top:50px;
     font-weight:700;
 }
@@ -57,21 +59,21 @@
     left: 20px;
 }
 /*  */
-.WhyPartner_ditals h2{
+.WhyPartner_ditals h1{
     font-weight:700;
 
-}
+} 
 .WhyPartner{
-    padding:70px 50px;
+    padding:70px 15px;
+    overflow: hidden;
 }
 .WhyPartner_Img img{
-    margin-left:300px;
-    margin-bottom:20px;
+    margin:0px 0px 10px 120px;
     max-width: 180px ;
     width: 100%;
 }
 .WhyPartnerDown{
-    padding: 100px 50px 100px 0px;
+    padding: 100px 0px 100px 0px;
     background-color: #faf8f5;
 }
 .WhyPartnerDown{
@@ -84,7 +86,7 @@
     right:295px;
     top:87px;
 }
-
+/*  */
 .WhyPartnerTabs h5{
     font-weight:600;
     line-height:30px;
@@ -100,9 +102,124 @@
 .WhyPartnerTabs{
     background-color:white;
     box-shadow: 0 1px 15px rgba(130, 158, 195, 0.4);
-    max-width: 1000px;
-    width: 100%;
+    /* max-width: 1000px; */
+    width: 90%;
     height:auto;
-    padding: 30px;
-    border-radius: 0px 20px 20px 0px ;
+    padding: 15px;
+}
+.WhyPartnerTabs p{
+    text-align:justify;
+}
+
+
+@media (min-width: 320px) { 
+    .WhyPartner_Img img{
+        margin:0px 0px 10px 120px;
+    }
+    .Why_Sona{
+        padding: 100px 15px;
+    }
+    .Why_SonaCards{
+        padding-top:20px;
+    }
+    .SonaLngCrd{
+        margin-top:0px;
+    }
+    .WhyPartner{
+        padding:70px 15px;
+    }
+    .WhyPartnerTabs {
+        padding: 5px;
+    }
+}
+
+@media (min-width: 576px) { 
+    
+    .Why_SonaCards{
+        padding-top:40px;
+    }
+    .SonaLngCrd{
+        margin-top:20px;
+    }
+    .WhyPartner{
+        padding:70px 20px;
+    }
+    .WhyPartnerTabs {
+        padding: 10px;
+    }
+    .WhyPartner_Img img{
+        margin:0px 0px 10px 120px;
+    }
+
+}
+
+
+@media (min-width: 768px) { 
+    .WhyPartner_Img img{
+        margin:0px 0px 40px 400px;
+    }
+    .WhyPartnerTabs {
+        padding: 15px;
+    }
+    .Why_Sona{
+        padding: 100px 30px;
+    }
+    .Why_SonaCards{
+        padding-top:60px;
+    }
+    .SonaLngCrd{
+        margin-top:40px;
+    }
+    .WhyPartner{
+        padding:70px 30px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .WhyPartner_Img img{
+        margin:0px 0px 20px 270px;
+    }
+    .WhyPartnerTabs {
+        padding: 25px;
+    } 
+    .Why_Sona{
+        padding: 100px 40px;
+    }
+    .Why_SonaCards{
+        padding-top:80px;
+    }
+    .SonaLngCrd{
+        margin-top:60px;
+    }
+    .WhyPartner{
+        padding:70px 40px;
+    }
+}
+
+
+@media (min-width: 1200px) { 
+    .WhyPartner_Img img{
+        margin:0px 0px 20px 270px;
+    }
+    .WhyPartnerTabs {
+        padding: 30px;
+    }
+    .Why_Sona{
+        padding: 100px 50px;
+    }
+    .Why_SonaCards{
+        padding-top:100px;
+    }
+    .SonaLngCrd{
+        margin-top:80px;
+    }
+    .WhyPartner{
+        padding:70px 50px;
+    }
+}
+
+
+@media (min-width: 1400px) { 
+
 }

@@ -95,38 +95,38 @@ function PharmTxt({ Type }) {
     };
     const SmallSlider = Type === "Cosm"
         ? [
-            <img src={Cosm1S} alt="Cosm Slide 1" className="sliderimage" />,
-            <img src={Cosm2S} alt="Cosm Slide 2" className="slider-image" />,
-            <img src={Cosm3S} alt="Cosm Slide 2" className="slider-image" />,
-            <img src={Cosm4S} alt="Cosm Slide 2" className="slider-image" />,
-            <img src={Cosm5S} alt="Cosm Slide 2" className="slider-image" />,
-            <img src={Cosm6S} alt="Cosm Slide 2" className="slider-image" />,
-            <img src={Cosm7S} alt="Cosm Slide 2" className="slider-image" />
+            <img src={Cosm1S} alt="Cosm Slide 1" className="sliderimage" loading='lazy'/>,
+            <img src={Cosm2S} alt="Cosm Slide 2" className="slider-image" loading='lazy'/>,
+            <img src={Cosm3S} alt="Cosm Slide 2" className="slider-image" loading='lazy'/>,
+            <img src={Cosm4S} alt="Cosm Slide 2" className="slider-image" loading='lazy'/>,
+            <img src={Cosm5S} alt="Cosm Slide 2" className="slider-image" loading='lazy'/>,
+            <img src={Cosm6S} alt="Cosm Slide 2" className="slider-image" loading='lazy'/>,
+            <img src={Cosm7S} alt="Cosm Slide 2" className="slider-image" loading='lazy'/>
         ]
         : Type === "Nut" ?
             [
-                <img src={Nut1S} alt="Default Slide 1" className="slider-image" />,
-                <img src={Nut2S} alt="Default Slide 1" className="slider-image" />,
-                <img src={Nut3S} alt="Default Slide 1" className="slider-image" />
+                <img src={Nut1S} alt="Default Slide 1" className="slider-image" loading='lazy'/>,
+                <img src={Nut2S} alt="Default Slide 1" className="slider-image" loading='lazy'/>,
+                <img src={Nut3S} alt="Default Slide 1" className="slider-image" loading='lazy'/>
             ]
             : Type === "Indu" ?
                 [
-                    <img src={Indu1S} alt="Default Slide 1" className="slider-image" />,
-                    <img src={Indu2S} alt="Default Slide 1" className="slider-image" />,
-                    <img src={Indu3S} alt="Default Slide 1" className="slider-image" />,
-                    <img src={Indu4S} alt="Default Slide 1" className="slider-image" />,
-                    <img src={Indu5S} alt="Default Slide 1" className="slider-image" />,
-                    <img src={Indu6S} alt="Default Slide 1" className="slider-image" />,
-                    <img src={Indu7S} alt="Default Slide 1" className="slider-image" />,
-                    <img src={Indu8S} alt="Default Slide 1" className="slider-image" />,
-                    <img src={Indu9S} alt="Default Slide 1" className="slider-image" />
+                    <img src={Indu1S} alt="Default Slide 1" className="slider-image" loading='lazy'/>,
+                    <img src={Indu2S} alt="Default Slide 1" className="slider-image" loading='lazy'/>,
+                    <img src={Indu3S} alt="Default Slide 1" className="slider-image" loading='lazy'/>,
+                    <img src={Indu4S} alt="Default Slide 1" className="slider-image" loading='lazy'/>,
+                    <img src={Indu5S} alt="Default Slide 1" className="slider-image" loading='lazy'/>,
+                    <img src={Indu6S} alt="Default Slide 1" className="slider-image" loading='lazy'/>,
+                    <img src={Indu7S} alt="Default Slide 1" className="slider-image" loading='lazy'/>,
+                    <img src={Indu8S} alt="Default Slide 1" className="slider-image" loading='lazy'/>,
+                    <img src={Indu9S} alt="Default Slide 1" className="slider-image" loading='lazy'/>
                 ]
                 :
                 [
-                    <img src={ParmS1} alt="Default Slide 2" className="slider-image" />,
-                    <img src={ParmS2} alt="Default Slide 2" className="slider-image" />,
-                    <img src={ParmS3} alt="Default Slide 2" className="slider-image" />,
-                    <img src={ParmS4} alt="Default Slide 2" className="slider-image" />,
+                    <img src={ParmS1} alt="Default Slide 2" className="slider-image" loading='lazy'/>,
+                    <img src={ParmS2} alt="Default Slide 2" className="slider-image" loading='lazy'/>,
+                    <img src={ParmS3} alt="Default Slide 2" className="slider-image" loading='lazy'/>,
+                    <img src={ParmS4} alt="Default Slide 2" className="slider-image" loading='lazy'/>,
                 ];
     return (
         <>

@@ -25,8 +25,8 @@ function AdvantagesTop() {
                     <div className="row">
                         <div className='col-xl-6 col-lg-12 d-flex justify-content-center p-0 m-0'>
                             <div className='AdvTopLeft d-flex justify-content-center'>
-                                <img src={AdvaLeft} alt="" className='AdvTopLeftTruck' />
-                                <img src={Youtube} alt="" className='AdvTopYoutube ' />
+                                <img src={AdvaLeft} alt="" className='AdvTopLeftTruck' loading='lazy'/>
+                                <img src={Youtube} alt="" className='AdvTopYoutube ' loading='lazy'/>
                             </div>
                         </div>
                         <div className='col-xl-6 col-lg-12 d-flex justify-content-center align-items-center pe-xxl-5 pe-xl-5 mt-5 mt-lg-5 mt-md-5 mt-xxl-0 mt-xl-0'>

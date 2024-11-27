@@ -12,7 +12,7 @@ function AluMarketLed() {
             <div className='AluMarketLed'>
                 <div className='flex-column'>
                     <div className='AluMarketLed_img'>
-                        <img src={Arrow_Left} alt="" className='AluMarketLed_imgArrow' />
+                        <img src={Arrow_Left} alt="" className='AluMarketLed_imgArrow' loading='lazy'/>
                     </div>
                     <div className='AluMarketLedDetail'>
                         <h1 className='text-center sans_bold my-4'>Market Leaders</h1>
@@ -25,7 +25,7 @@ function AluMarketLed() {
                                     <div className='d-flex justify-content-center mt-5 mt-sm-5 mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0'>
                                         <div className='marketCards  flex-column'>
                                             <div>
-                                                <img src={ProductCapMarket} alt="" />
+                                                <img src={ProductCapMarket} alt="" loading='lazy'/>
                                             </div>
                                             <div className='marketCardsTXT'>
                                                 <h4 className='sans_Medium'>Production Capacity</h4>
@@ -38,7 +38,7 @@ function AluMarketLed() {
                                     <div className='d-flex justify-content-center mt-5 mt-sm-5 mt-md-0 mt-lg-5 mt-xl-5 mt-xxl-5'>
                                         <div className='marketCards flex-column'>
                                             <div>
-                                                <img src={IndustriesMarket} alt="" />
+                                                <img src={IndustriesMarket} alt="" loading='lazy'/>
                                             </div>
                                             <div className='marketCardsTXT'>
                                                 <h4 className='sans_Medium'>Industry We Serve</h4>
@@ -51,7 +51,7 @@ function AluMarketLed() {
                                     <div className='d-flex justify-content-center mt-5 mt-sm-5 mt-md-5 mt-lg-0 mt-xl-0 mt-xxl-0'>
                                         <div className='marketCards flex-column'>
                                             <div>
-                                                <img src={Certifications} alt="" />
+                                                <img src={Certifications} alt="" loading='lazy'/>
                                             </div>
                                             <div className='marketCardsTXT'>
                                                 <h4 className='sans_Medium'>Certifications</h4>

@@ -15,7 +15,7 @@ function InWeSer() {
         <>
             <div className='InWeSer'>
                 <div className="InWeSer_imag d-flex justify-content-center">
-                    <img src={Single_BlackBol_Line} alt="Line Decoration" />
+                    <img src={Single_BlackBol_Line} alt="Line Decoration" loading='lazy'/>
                 </div>
                 <div>
                     <h1 className="text-center sans_bold mb-5">Industries We Serve</h1>
@@ -26,14 +26,14 @@ function InWeSer() {
             </div>
             <div className='InWeSer_tabs d-flex justify-content-end '>
                 <div className='InWeSer_tabs_left '>
-                    <img src={Arrow_Left} alt="" />
+                    <img src={Arrow_Left} alt="" loading='lazy'/>
                 </div>
                 <div className='InWeSer_tabsBox'>
                     <div className="filter-buttons py-4 d-flex justify-content-evenly">
-                        {['Pharmaceutical', 'Cosmetic & Personal Care', 'Nutraceutical', 'Industrial'].map((tab) => (
+                    {['Pharmaceutical', 'Cosmetic & Personal Care', 'Nutraceutical', 'Industrial'].map((tab) => (
                             <button
                                 key={tab}
-                                className={`sans_bold filter-button ${activeTab === tab ? 'active' : ''}`}
+                                className={`filter-button ${activeTab === tab ? 'active' : ''}`}
                                 onClick={handleTabChange(tab)}
                                 aria-pressed={activeTab === tab}
                             >
@@ -66,7 +66,7 @@ function InWeSer() {
                     </div>
                 </div>
                 <div className='InWeSer_tabsDoBol '>
-                    <img src={Double_bol_line} alt="" />
+                    <img src={Double_bol_line} alt="" loading='lazy'/>
                 </div>
             </div>
         </>

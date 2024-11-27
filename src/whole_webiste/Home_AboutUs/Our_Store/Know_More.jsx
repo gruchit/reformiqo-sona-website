@@ -13,7 +13,7 @@ function KnowMore() {
         <>
             <div className="Know_More flex-column">
                 <div className="Know_More_imgBol d-flex justify-content-center">
-                    <img src={Single_BlackBol_Line} alt="Line Decoration" />
+                    <img src={Single_BlackBol_Line} alt="Line Decoration" loading='lazy'/>
                 </div>
                 <div className='container'>
                     <h1 className="text-center sans_bold mb-5">Know More About Us</h1>

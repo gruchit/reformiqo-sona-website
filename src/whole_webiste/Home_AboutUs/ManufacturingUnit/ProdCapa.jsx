@@ -14,7 +14,7 @@ function ProdCapa() {
                         <div className='col-lg-6 col-md-12 mt-5 d-flex justify-content-center align-items-center'>
                             <div className='ProdCapaTxt flex-column'>
                                 <div className='d-flex justify-content-end'>
-                                <img src={SignleBlackLine} alt="" srcset="" className='ProdCapaImg mb-3' />
+                                <img src={SignleBlackLine} alt="" srcset="" className='ProdCapaImg mb-3' loading='lazy'/>
                                 </div>
                                 <h2 className='text-center sans_bold'>Production Capacity</h2>
                                 <ul className='list-unstyled sans_Medium mt-4'>
