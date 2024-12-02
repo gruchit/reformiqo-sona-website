@@ -2,18 +2,23 @@
     
 }
 .Focus_on {
-    overflow:hidden;
-    height: 150px;
+    padding: 10px;
+    overflow-x: hidden; /* Ensures no horizontal scrolling */
     background-color: #D4B76E;
-    display: grid;
-    place-items: center; 
+    display: flex; /* Ensures proper alignment */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    box-sizing: border-box; /* Includes padding in the element’s width/height */
+    width: 100%; /* Prevents content from exceeding the viewport width */
 }
 
 .Focus_on p {
-    font-size: 50px;
-    font-weight:700;
-    margin: 0; 
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center; /* Ensures text is centered */
 }
+
 /* AboutSonaEx */
 .AboutSonaEx { 
     padding: 70px 15px;
@@ -384,7 +389,9 @@
 
     padding:40px;
 }
-
+.Order_images_box3 p{
+    text-align:justify;
+}
 .Order_images_box_detals img{
     max-width:240px;
     height:180px;
@@ -653,6 +660,11 @@
     .Counter {
         padding: 80px 15px;
     }
+    .Focus_on p {
+        font-size: 40px;
+        font-weight:700;
+        margin: 0; 
+    }
 }
 @media (min-width: 576px) {
     .orderTypeimages {
@@ -710,6 +722,11 @@
     .Counter {
         padding: 80px 20px;
     }
+    .Focus_on p {
+        font-size: 50px;
+        font-weight:700;
+        margin: 0; 
+    }
 }
 @media (min-width: 768px) {
     .Counter,.Product {
@@ -763,6 +780,11 @@
     }
     .YearOf{
         padding : 60px 0px;
+    }
+    .Focus_on p {
+        font-size: 65px;
+        font-weight:700;
+        margin: 0; 
     }
 }
 @media (min-width: 992px) {
@@ -819,6 +841,11 @@
     .Order_images_box1 .Order_images_box3 .Order_images_box2 .Order_images{
         display:none;
     }
+    .Focus_on p {
+        font-size: 70px;
+        font-weight:700;
+        margin: 0; 
+    }
 }
 
 @media (min-width: 1200px) { 
@@ -863,6 +890,18 @@
     }
     .Order{
         padding : 100px 50px;
+    }
+    .Focus_on p {
+        font-size: 80px;
+        font-weight:700;
+        margin: 0; 
+    }
+ }
+ @media (min-width: 1249.98px) {
+    .Focus_on p {
+        font-size: 80px;
+        font-weight:700;
+        margin: 0; 
     }
  }
  
@@ -1164,5 +1203,6 @@
     .Order_images_box2{
         right:10px ;
     }
+    
  }
 

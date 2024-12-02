@@ -2,23 +2,32 @@ import React from 'react'
 import './Gallery.css'
 import Single_BlackBol_Line from '../../../assets/single_BlackBol_Line.svg';
 import LeftArrow from '../../../assets/arrow_Left.svg';
-
+import AOS from 'aos';
+import { useEffect } from 'react';
 
 function VideoGlry() {
+    useEffect(() => {
+        AOS.init({
+            once: true, // Prevent animations from replaying
+        });
+    }, []);
     return (
         <>
             <div className='VideoGlry'>
                 <div className='container-xxl p-0 '>
                     <div className='VideoGlryTxt flex-column'>
-                        <img src={LeftArrow} alt="" srcset="" className='VdoLftarw' loading='lazy'/>
+                        <img src={LeftArrow} alt="" srcset="" className='VdoLftarw' loading='lazy' />
                         <div className='d-flex justify-content-center'>
-                            <img src={Single_BlackBol_Line} alt="" className='VideoGlryTxtImg' loading='lazy'/>
+                            <img src={Single_BlackBol_Line} alt="" className='VideoGlryTxtImg' loading='lazy' />
                         </div>
-                        <h1 className='text-center sans_bold'>Video Gallery</h1>
+                        <div data-aos="zoom-out-up"
+                            data-aos-offset="200">
+                            <h1 className='text-center sans_bold'>Video Gallery</h1>
+                        </div>
                     </div>
                     <div className='VideoGlryBody'>
                         <div className='row d-flex justify-content-center'>
-                            <div className='mt-5 col-lg-4 col-md-6 col-sm-12   d-flex justify-content-center'>
+                            <div className='mt-5 col-lg-4 col-md-6 col-sm-12   d-flex justify-content-center' data-aos="zoom-in" data-aos-offset="200">
                                 <div className='VideoGlryCard'>
                                     <iframe
                                         className="VideoIframe"
@@ -30,7 +39,7 @@ function VideoGlry() {
                                     ></iframe>
                                 </div>
                             </div>
-                            <div className='mt-5 col-lg-4 col-md-6 col-sm-12  d-flex justify-content-center'>
+                            <div className='mt-5 col-lg-4 col-md-6 col-sm-12  d-flex justify-content-center' data-aos="zoom-in" data-aos-offset="200">
                                 <div className='VideoGlryCard'>
                                     <iframe
                                         className="VideoIframe"
@@ -42,7 +51,7 @@ function VideoGlry() {
                                         allowfullscreen></iframe>
                                 </div>
                             </div>
-                            <div className='mt-5 col-lg-4 col-md-6 col-sm-12  d-flex justify-content-center'>
+                            <div className='mt-5 col-lg-4 col-md-6 col-sm-12  d-flex justify-content-center' data-aos="zoom-in" data-aos-offset="200">
                                 <div className='VideoGlryCard'>
                                     <iframe
                                         className="VideoIframe"

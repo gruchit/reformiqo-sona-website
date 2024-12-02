@@ -13,20 +13,30 @@ import Highest from '../../../assets/Highest.svg'
 import Configurability from '../../../assets/Configurability.svg'
 import Industryexpertise from '../../../assets/Industry-expertise.svg'
 import './pharm.css'
-
+import AOS from 'aos';
+import { useEffect } from 'react';
 function Our_Solutions({ Type }) {
+    useEffect(() => {
+        AOS.init();
+    }, []);
     return (
         <>
             <div className='Our_Solutions'>
                 <div className='container-xxl'>
-                    <div className='OurSoluTxt'>
+                    <div className='OurSoluTxt'
+                    data-aos="zoom-in-up"
+                    data-aos-offset="300"
+                    >
                         <h1 className='sans_bold text-center pb-5 mb-5'>Our Solutions & Benefits</h1>
                     </div>
-                    <img src={Arrow} alt="" className='OurSoluLftArw' loading='lazy'/>
+                    <img src={Arrow} alt="" className='OurSoluLftArw' loading='lazy' data-aos="fade-left"/>
                     <div className='OurSoluCards'>
                         <div className='row d-flex justify-content-center'>
                             <div className='col-xl-4  col-lg-4 col-md-6   mt-lg-0'>
-                                <div className=' d-flex justify-content-center'>
+                                <div className='d-flex justify-content-center'
+                                data-aos="zoom-in-up"
+                                data-aos-offset="300"
+                                >
                                     <div className='OurSoluCard  flex-column  mt-5 mt-sm-5 mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0'>
 
                                         {Type === "Cosm" ?
@@ -71,7 +81,10 @@ function Our_Solutions({ Type }) {
                                 </div>
                             </div>
                             <div className='col-xl-4  col-lg-4 col-md-6  mt-lg-0'>
-                                <div className=' d-flex justify-content-center'>
+                                <div className=' d-flex justify-content-center'
+                                data-aos="zoom-in-up"
+                                data-aos-offset="300"
+                                >
                                     <div className='OurSoluCard   flex-column  mt-5 mt-sm-5 mt-md-0 mt-lg-5 mt-xl-5 mt-xxl-5'>
                                         {Type === "Cosm" ?
                                             <>
@@ -113,7 +126,10 @@ function Our_Solutions({ Type }) {
                                 </div>
                             </div>
                             <div className='col-xl-4  col-lg-4 col-md-6  mt-lg-0'>
-                                <div className=' d-flex justify-content-center'>
+                                <div className=' d-flex justify-content-center'
+                                data-aos="zoom-in-up"
+                                data-aos-offset="300"
+                                >
                                     <div className='OurSoluCard  flex-column  mt-5 mt-sm-5 mt-md-5 mt-lg-0 mt-xl-0 mt-xxl-0'>
                                         {Type === "Cosm" ?
                                             <>

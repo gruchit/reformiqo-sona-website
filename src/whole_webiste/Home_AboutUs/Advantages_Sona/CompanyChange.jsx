@@ -5,8 +5,13 @@ import Nutraceuticals from '../../../assets/Nutraceuticals.svg'
 import Industrial1 from '../../../assets/Industrial1.svg'
 import Company_black from '../../../assets/Company_black.jpg'
 import './AdvantSona.css'
+import AOS from 'aos';
+import { useState, useEffect } from 'react';
 
 function CompanyChange() {
+    useEffect(() => {
+        AOS.init();
+    }, []);
     return (
         <>
             <div className='CompanyChange position-relative'>
@@ -14,7 +19,15 @@ function CompanyChange() {
                     <img src={Company_black} alt="" loading='lazy' />
                     <div className='CompanyblackThm d-flex align-items-center'>
                         <div className='Companyblacktxt container'>
-                            <div className=' mt-5'>
+                            <div className=' mt-5'
+                            data-aos="zoom-in-up"
+                            data-aos-offset="50"
+                            // data-aos-delay="1000"
+                            data-aos-duration="1000"
+                            easing="ease-in-out"
+                            once="true"
+                            mirror="true"
+                            >
                                 <h1 className='text-center sans_light text-white mb-5'>A Company to Change the World  </h1>
                                 <p className='text-center sans_light text-white'>We manufacture and supply products that are of the highest quality to various business verticals across industries like Pharmaceuticals, Cosmetic and Personal Care, Industrial, Agro Chemical and many more. We take immense pride in our commitment to customer satisfaction, safety, and sustainability.</p>
                             </div>
@@ -25,7 +38,15 @@ function CompanyChange() {
             <div className='container-xxl position-absolute '>
                 <div className=' d-flex justify-content-center'>
                     <div className='CompanyBlackCard'>
-                        <div className='row d-flex justify-content-center'>
+                        <div className='row d-flex justify-content-center'
+                         data-aos="fade-up"
+                         data-aos-delay="500"
+                         data-aos-duration="1000"
+                         easing="ease-in-out"
+                         once="true"
+                         mirror="true"
+                        
+                        >
                             <div className='cmp1 col-xl-3 col-lg-4 col-md-6  mt-lg-0  d-flex justify-content-center'>
                                 <img src={Pharmaceutical1} alt="" className='cmpTbsPioneers' loading='lazy'/>
                                 <div className='CompanyChangeCard d-flex align-items-center mt-5 mt-sm-5 mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0  '>

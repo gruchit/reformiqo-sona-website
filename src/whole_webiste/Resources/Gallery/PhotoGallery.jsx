@@ -41,6 +41,8 @@ import PhotoGlry35 from '../../../assets/PhotoGly35.jpg';
 import PhotoGlry36 from '../../../assets/PhotoGly36.png';
 import PhotoGlry37 from '../../../assets/PhotoGly37.jpg';
 import { FaChevronLeft } from "react-icons/fa";
+import AOS from 'aos';
+import { useEffect } from 'react';
 const categories = [
   {
     id: 1,
@@ -60,6 +62,11 @@ const categories = [
 ];
 
 function PhotoGallery() {
+  useEffect(() => {
+    AOS.init({
+      once: true, // Prevent animations from replaying
+    });
+  }, []);
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   return (
@@ -67,14 +74,18 @@ function PhotoGallery() {
       <div className='container-xxl '>
         <div className='flex-column'>
           <div className='d-flex justify-content-center'>
-            <img src={Single_BlackBol_Line} alt="" className='PhotoGlryTxtImg' loading='lazy'/>
+            <img src={Single_BlackBol_Line} alt="" className='PhotoGlryTxtImg' loading='lazy' />
           </div>
-          <h1 className='text-center sans_bold mb-5'>Photo Gallery</h1>
+          <div data-aos="zoom-out-up"
+            data-aos-offset="200">
+            <h1 className='text-center sans_bold mb-5'>Photo Gallery</h1>
+          </div>
           <div className='PhotoBorder py-3 d-flex justify-content-between align-items-center'>
-            <div>
+            <div data-aos="fade-right"
+              data-aos-offset="200">
               <h2 className='sans_Medium mb-0'>Sona Extrusion</h2>
             </div>
-            
+
             <div className={` subcategory-view d-flex justify-content-center   ${selectedCategory ? 'show' : ''}`}>
               <button
                 className="back-button"
@@ -85,44 +96,45 @@ function PhotoGallery() {
             </div>
           </div>
           <div className='SonaTxtColor'>
-              <h5 className={`mt-4 subcategory-view ${selectedCategory ? 'show' : ''}`}>{!selectedCategory ? "" : selectedCategory.title}</h5>
-            </div>
+            <h5 className={`mt-4 subcategory-view ${selectedCategory ? 'show' : ''}`}>{!selectedCategory ? "" : selectedCategory.title}</h5>
+          </div>
         </div>
         <div className='container'>
           <div className='mt-5'>
-          {!selectedCategory ? (
-            <div className="row d-flex justify-content-center">
-              {categories.map((category) => (
-                <div key={category.id} className="col-12 col-md-4 mb-4 d-flex justify-content-center">
-                  <div
-                    className="category-card"
-                    onClick={() => setSelectedCategory(category)}
-                  >
-                    <img
-                      src={category.images[0]}
-                      alt={category.title}
-                      className="category-thumbnail"
-                      loading='lazy'
-                    />
-                    <div className="category-title">{category.title}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className={`subcategory-view ${selectedCategory ? 'show' : ''}`}>
-              <div className="row">
-                {selectedCategory.images.map((image, index) => (
-                  <div key={index} className="col-12 col-md-4 mb-4 d-flex justify-content-center">
-                    <div className="image-card">
-                      <img src={image} alt={`Image ${index + 1}`} loading='lazy'/>
+            {!selectedCategory ? (
+              <div className="row d-flex justify-content-center">
+                {categories.map((category) => (
+                  <div key={category.id} className="col-12 col-md-4 mb-4 d-flex justify-content-center">
+                    <div
+                      className="category-card"
+                      onClick={() => setSelectedCategory(category)}
+                      data-aos="fade-up"
+                    >
+                      <img
+                        src={category.images[0]}
+                        alt={category.title}
+                        className="category-thumbnail"
+                        loading='lazy'
+                      />
+                      <div className="category-title">{category.title}</div>
                     </div>
                   </div>
                 ))}
               </div>
-            </div>
-          )}
-        </div>
+            ) : (
+              <div className={`subcategory-view ${selectedCategory ? 'show' : ''}`}>
+                <div className="row">
+                  {selectedCategory.images.map((image, index) => (
+                    <div key={index} className="col-12 col-md-4 mb-4 d-flex justify-content-center">
+                      <div className="image-card" data-aos="fade-up">
+                        <img src={image} alt={`Image ${index + 1}`} loading='lazy' />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>

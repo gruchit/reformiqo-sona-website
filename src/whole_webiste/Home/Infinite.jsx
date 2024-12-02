@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
-import InfiniteSVG from '../../assets/Infinite.svg';
+import InfiniteSVG from '../../assets/Infinite_webp.webp';
 import button_Arrow from '../../assets/button_Arrow.svg';
 import AOS from 'aos';
 import { useEffect } from 'react';
@@ -15,9 +15,8 @@ function Infinite() {
             <img src={InfiniteSVG} alt="Background" className="infinite-bg" loading='lazy' />
             <div className='row d-flex justify-content-center infi_card w-100'
                 data-aos="fade-up"
-                data-aos-offset="0"
-                data-aos-delay="1000"
-                data-aos-duration="3000"
+                data-aos-offset="50"
+                data-aos-duration="1000"
                 easing="ease-in-out"
                 once="true"
                 mirror="true" 

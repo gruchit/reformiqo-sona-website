@@ -1,5 +1,6 @@
 .IndustryTop{
     padding: 80px 15px;
+    overflow-x: hidden;
 }
 
 .IndustryTop_Btn button {
@@ -129,7 +130,7 @@
     
 }
 
-/* Utility classes */
+/* Utility classNamees */
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -157,6 +158,7 @@
     margin:0px 0px 10px 120px;
 }
 .InWeSer_tabs{
+    overflow: hidden;
     background-color:#faf8f5;
     padding:100px 0px 150px 15px;
     position:relative;
@@ -182,7 +184,8 @@
 }
 .InWeSer_tabsDoBol img{
     position:absolute;
-    max-width:200px;
+    max-width:180px;
+    height: 50px;
     width:100%;
     z-index:1;
     right:100px;

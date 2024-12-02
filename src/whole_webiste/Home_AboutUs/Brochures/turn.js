@@ -332,7 +332,7 @@
                     data.totalPages = lastPage;
     
                 // Add element
-                data.pageObjs[page] = $(element).addClass('turn-page p' + page);
+                data.pageObjs[page] = $(element).addclassName('turn-page p' + page);
     
                 // Add page
                 turnMethods._addPage.call(this, page);
@@ -368,7 +368,7 @@
                         data.pagePlace[page] = page;
     
                         // Wrapper
-                        data.pageWrap[page] = $('<div/>', {'class': 'turn-page-wrapper',
+                        data.pageWrap[page] = $('<div/>', {'className': 'turn-page-wrapper',
                                                         page: page,
                                                         css: {position: 'absolute',
                                                         overflow: 'hidden',
@@ -590,7 +590,7 @@
                         odd = next%2;
     
                     if (data.pageObjs[page])
-                        data.pageObjs[next] = data.pageObjs[page].removeClass('page' + page).addClass('page' + next);
+                        data.pageObjs[next] = data.pageObjs[page].removeclassName('page' + page).addclassName('page' + next);
     
                     if (data.pagePlace[page] && data.pageWrap[page]) {
                         data.pagePlace[next] = next;
@@ -636,7 +636,7 @@
                     if (!data.pageObjs[0]) {
                         this.turn('stop').
                             css({'overflow': 'hidden'});
-                        data.pageObjs[0] = $('<div />', {'class': 'turn-page p-temporal'}).
+                        data.pageObjs[0] = $('<div />', {'className': 'turn-page p-temporal'}).
                                         css({width: this.width(), height: this.height()}).
                                             appendTo(this);
                     }

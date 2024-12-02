@@ -138,7 +138,12 @@
 }
 
 /* Header section with a centered line decoration */
-
+.MoreImgBolDoted{
+    max-width:180px;
+    width: 100%;
+    display: block;
+    margin: 0px 0px 10px 120px;
+}
 .Know_More_tabs{
     padding:50px 0px;
     background-color: #faf8f5;
@@ -152,12 +157,7 @@
     height:auto;
     transition: all 0.3s;
     /* height:325px; */
-
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-.Know_More_imgBol {
-    margin-bottom: 20px;
-    margin-left:300px;
 }
 .filter-buttons{
     overflow-y: auto;
@@ -232,23 +232,20 @@
     flex: 1;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.5s ease;
-    display: none;
+    position: absolute; /* Remove from normal flow */
+    visibility: hidden; /* Hide element initially */
+    transition: visibility 0s ease 0.8s; /* Delay visibility change to match animation */
     height: 100%; /* Take up full height */
     overflow-y: auto; /* Add vertical scroll for overflow */
-    transition: all 0.3s;
-
 }
 
 .tab-content.show {
-    transition: opacity 0.5s ease;
-    opacity: 1;
-    transform: translateY(0);
-    display: block;
-    
+    visibility: visible; /* Make it visible */
+    position: relative; /* Restore normal flow */
+    animation: fadeInUp 0.8s ease; /* Apply animation */
 }
 
-/* Utility classes */
+/* Utility classNamees */
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -261,9 +258,20 @@
 .justify-content-center {
     justify-content: center;
 }
-
-
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 @media (min-width: 320px) { 
+    .MoreImgBolDoted{
+        margin: 0px 0px 10px 120px;
+    }
     .Your_choice{
         padding:100px 15px; 
     }
@@ -281,6 +289,9 @@
     }
 }
 @media (min-width: 576px) { 
+    .MoreImgBolDoted{
+        margin: 0px 0px 20px 270px;
+    }
     .KnowMoreTabs {
         padding: 20px 15px ;
     } 
@@ -300,6 +311,12 @@
 
 
 @media (min-width: 768px) { 
+    .MoreImgBolDoted{
+        margin: 0px 0px 40px 400px;
+    }
+    .MoreImgBolDoted{ 
+       margin: 0px 0px 20px 270px;
+    }
     .Your_choice{
         padding:100px 30px; 
     }
@@ -319,6 +336,9 @@
 
 
 @media (min-width: 992px) { 
+    .MoreImgBolDoted{
+        margin: 0px 0px 40px 400px;
+    }
     .Your_choice{
         padding:100px 40px; 
     }
@@ -338,6 +358,9 @@
 
 
 @media (min-width: 1200px) { 
+    .MoreImgBolDoted{ 
+        margin: 0px 0px 20px 270px;
+     }
     .Your_choice{
         padding:100px 50px; 
     }

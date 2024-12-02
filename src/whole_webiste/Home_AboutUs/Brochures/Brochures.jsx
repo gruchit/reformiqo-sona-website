@@ -1,17 +1,24 @@
 import React, { useRef } from 'react';
 import HTMLFlipBook from 'react-pageflip';
+import './Brochures.css';
 import Top from '../../component/Top/Top';
 import Header from '../../component/Header/Header';
 import Footer from '../../component/Footer/Footer';
-import './Brochures.css';
-
+import Focus from '../../Home/Focus';
+import Helmet  from 'react-helmet';
 function Brochures() {
   const bookRef = useRef();
 
   return (
     <>
+      <Helmet>
+        <title>Brochures | Sona Extrusion</title>
+        <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
+        <meta name="keywords" content="company, products, services, home, business" />
+      </Helmet>
       <Top />
       <Header />
+      <Focus type="Brochure" />
       <div className="brochure-container">
         <HTMLFlipBook
           width={300}

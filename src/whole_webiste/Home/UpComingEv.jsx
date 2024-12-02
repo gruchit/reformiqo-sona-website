@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import Single_BlackBol_Line from '../../assets/single_BlackBol_Line.svg';
-import Upcoming_Event from '../../assets/Upcomin_Event4.jpg';
-// import Upcoming_Even from '../../assets/UPcomin_event3.png';
-import Upcoming_Even from '../../assets/Upcoming_Event4.jpg';
-import Upcoming_Eve from '../../assets/Upcomin_Event5.jpg';
+import Upcoming_Event from '../../assets/Upcomin_Event1_webp.webp';
+import Upcoming_Even from '../../assets/Upcomin_Event2_webp.webp';
+import Upcoming_Eve from '../../assets/Upcomin_Event3_webp.webp';
 import AOS from 'aos';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -60,7 +59,7 @@ function UpComingEv() {
             <div className='UpcomingEv_text flex-column'
                 data-aos="zoom-in-up"
                 data-aos-offset="50"
-                data-aos-delay="1000"
+                data-aos-delay="500"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
                 data-aos-once="true"
@@ -75,8 +74,8 @@ function UpComingEv() {
             <div className='slider-container'
                 data-aos="zoom-in-up"
                 data-aos-offset="0"
-                data-aos-delay="1000"
-                data-aos-duration="3000"
+                // data-aos-delay=""
+                data-aos-duration="1300"
                 data-aos-easing="ease-in-out"
                 data-aos-once="true"
                 data-aos-mirror="true"

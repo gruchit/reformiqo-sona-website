@@ -18,11 +18,8 @@ function AboutSonaEx() {
                         <div className='col-xl-6  col-lg-12 p-0 m-0'>
                             <div className='abSona_left  d-flex justify-content-center'>
                                 <img src={Truck} alt="" srcset="" loading='lazy'
-                                    data-aos="fade-zoom-in"
-                                    data-aos-easing="ease-in-back"
-                                    data-aos-delay="200"
-                                    data-aos-offset="0"
-                                    data-aos-duration="1000"
+                                    data-aos="fade-right"
+                                //    data-aos-duration="1000"
                                 />
                             </div>
                         </div>
@@ -30,15 +27,14 @@ function AboutSonaEx() {
                             {/* <div className='absone_right  text-lg-center px-xl-4 py-xl-0 text-xl-start p-lg-5 p-md-5 p-sm-5 ' */}
                             <div className='absone_right text-center text-xl-start'
                                 data-aos="zoom-out-left"
-                                data-aos-offset="0"
-                                data-aos-delay="200"
-                                data-aos-duration="1000">
+                                // data-aos-duration="1000"
+                                >
                                 <h3 className='mb-4 sans_Medium'>About Sona Extrusion</h3>
                                 <h1 className='sans_bold'>Efficiently Crafting The Future: Innovating  effective Engineering</h1>
                                 <p className='sans_light text-secondary text-lg-center text-xl-start '>We, Sona Extrusions, a leading manufacturer of aluminium collapsible tubes, containers and aluminium bottles/flasks in India with ISO 15378:2017 (GMP) Certified – SGS and ISO 9001:2015 Certified – TUV certification and have a verifiable 35+ years of reputation for providing high-quality standard products. </p>
                                 <div className='AboutSonaEx_Btn  mt-5'>
                                     <Link to="/About/Our-Store/" className=" text-decoration-none">
-                                        <button class=" btn-1 hover-filled-slide-right"><span>Read More</span></button>
+                                        <button className=" btn-1 hover-filled-slide-right"><span>Read More</span></button>
                                     </Link>
                                 </div>
                             </div>

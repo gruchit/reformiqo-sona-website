@@ -6,28 +6,43 @@ import { useEffect } from 'react';
 
 function Focus({ type }) {
     useEffect(() => {
-        AOS.init();
+        AOS.init({
+            once: true, // Prevent animations from replaying
+        });
     }, []);
     return (
         <>
-            <div className='container-fluid p-0 m-0'>
-                <div className='Focus_on'
-                    data-aos="fade-up"
-                    data-aos-offset="100"
-                    data-aos-delay="300"
-                    data-aos-duration="3000"
+            <div style={{ overflow: 'hidden' }}>
+                <div
+                    className="Focus_on"
+                    data-aos="zoom-out-up"
+                    data-aos-offset="200"
+                    // data-aos-delay="500"
                 >
-                    <div className='d-flex align-items-cente justify-content-center'>
-                        <p className='font_oswald text-uppercase text-center'
-                            data-aos="zoom-out"
-                            data-aos-offset="10"
-                            data-aos-delay="1000"
-                            data-aos-duration="3000">
-                            {type == "Home" && "Focus on Innovation"}
-                            {type == "Our_Store" && "Our Store"}
-                            {type == "Industry" && "Industry"}
-                            {type == "Aluminium Products" && "Aluminium Products"}
-                            {type == "" && "No word found"}
+                    <div className="d-flex align-items-center justify-content-center">
+                        <p className="font_oswald text-white text-uppercase text-center">
+                            
+                            {type === "ReachUs" && "Reach Us"}
+                            {type === "Laminated_Tubs" && "Laminated Tubs"}
+                            {type === "Careers" && "Careers"}
+                            {type === "BlogMedia" && "Blog & Media"}
+                            {type === "Gallery" && "Gallery"}
+                            {type === "TabletCanisters" && "Tablet Canisters"}
+                            {type === "Flask_Bottles" && "Flasks & Bottles"}
+                            {type === "CollapsibleTube" && "Collapsible Tubes"}
+                            {type === "Cosm_Per" && "Cosmetic & Personal Care"}
+                            {type === "Indu_Ago" && "Industrial & Agro-Chemical"}
+                            {type === "Nutrac" && "Nutraceutical"}
+                            {type === "pharmaceutical" && "Pharmaceutical"}
+                            {type === "Brochure" && "Brochure"}
+                            {type === "EnviroFriendly" && "Enviro friendly"}
+                            {type === "ManufacturingUnit" && "Manufacturing Unit"}
+                            {type === "AdvantagesSona" && "Advantages Sona"}
+                            {type === "Home" && "Focus on Innovation"}
+                            {type === "Our_Store" && "Our Store"}
+                            {type === "Industry" && "Industry"}
+                            {type === "Aluminium Products" && "Aluminium Products"}
+                            {type === "" && "No word found"}
                         </p>
                     </div>
                 </div>

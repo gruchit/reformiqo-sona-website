@@ -9,29 +9,41 @@ import { CiShare2 } from "react-icons/ci";
 import { IoTimeOutline } from "react-icons/io5";
 import { PiBagBold } from "react-icons/pi";
 import './Careers.css'
-
+import AOS from 'aos';
+import { useEffect } from 'react';
 function OrderDeliveryCrr() {
+    useEffect(() => {
+        AOS.init({
+            once: true, // Prevent animations from replaying
+        });
+    }, []);
     return (
         <>
             <div className='OrderDeliveryCrr'>
-                <div className='OrderDelivertext flex-column'>
+                <div className='OrderDelivertext flex-column' data-aos="zoom-in-up" >
                     <div className='d-flex justify-content-center '>
                         <img src={Single_BlackBol_Line} alt="" srcset="" className='' data-aos="zoom-in-up"
-                        loading='lazy'/>
+                            loading='lazy' />
                     </div>
                     <h2 className='text-center mb-5 pb-5'>Orders Delivered Satisfactorily</h2>
                 </div>
                 <div className='d-lg-none d-md-none d-sm-none d-none d-xl-block'>
                     <div className='OrderDeliver_images d-flex justify-content-center '>
-                        <img src={Doted_line} alt="" srcset="" loading='lazy'/>
-                        <div className='OrderDeliver_box1 text-ellipsis flex-column'>
+                        <img src={Doted_line} alt="" srcset="" loading='lazy' />
+                        <div className='OrderDeliver_box1 text-ellipsis flex-column' data-aos="fade-right"
+                            data-aos-offset="500"
+                            // data-aos-delay="500"
+                            data-aos-duration="1000"
+                            easing="ease-in-out"
+                            once="true"
+                            mirror="true">
                             <div className='OrderDeliverBox_detals'>
                                 <div className='d-flex justify-content-between'>
                                     <div>
                                         <h4 className='text-start sans_Medium'>Production Supervisor</h4>
                                     </div>
                                     <div className='Featured my-auto'>
-                                        <img src={Featured} alt="" srcset="" className='mb-1' loading='lazy'/><span className='my-auto ms-2 sans_bold'>Featured</span>
+                                        <img src={Featured} alt="" srcset="" className='mb-1' loading='lazy' /><span className='my-auto ms-2 sans_bold'>Featured</span>
                                     </div>
                                 </div>
                                 <div>
@@ -46,14 +58,20 @@ function OrderDeliveryCrr() {
                                 <button className='border-0 OrderDeliverBTN text-white'><span><CiShare2 className='fs-4' /></span> Details </button>
                             </div>
                         </div>
-                        <div className='OrderDeliver_box2 text-ellipsis flex-column'>
+                        <div className='OrderDeliver_box2 text-ellipsis flex-column' data-aos="fade-left"
+                            data-aos-offset="500"
+                            // data-aos-delay="500"
+                            data-aos-duration="1000"
+                            easing="ease-in-out"
+                            once="true"
+                            mirror="true">
                             <div className='OrderDeliverBox_detals'>
                                 <div className='d-flex justify-content-between'>
                                     <div>
                                         <h4 className='text-start sans_Medium'>Machine Operator</h4>
                                     </div>
                                     <div className='Featured my-auto'>
-                                        <img src={Featured} alt="" srcset="" className='mb-1' loading='lazy'/><span className='my-auto ms-2 sans_bold'>Featured</span>
+                                        <img src={Featured} alt="" srcset="" className='mb-1' loading='lazy' /><span className='my-auto ms-2 sans_bold'>Featured</span>
                                     </div>
                                 </div>
                                 <div>
@@ -68,14 +86,20 @@ function OrderDeliveryCrr() {
                                 <button className='border-0 OrderDeliverBTN text-white'><span><CiShare2 className='fs-4' /></span> Details </button>
                             </div>
                         </div>
-                        <div className='OrderDeliver_box3 text-ellipsis flex-column'>
+                        <div className='OrderDeliver_box3 text-ellipsis flex-column' data-aos="fade-up"
+                            data-aos-offset="500"
+                            // data-aos-delay="500"
+                            data-aos-duration="1000"
+                            easing="ease-in-out"
+                            once="true"
+                            mirror="true">
                             <div className='OrderDeliverBox_detals'>
                                 <div className='d-flex justify-content-between'>
                                     <div>
                                         <h4 className='text-start sans_Medium'>Assistant IPQC Executive</h4>
                                     </div>
                                     <div className='Featured my-auto'>
-                                        <img src={Featured} alt="" srcset="" className='mb-1' loading='lazy'/><span className='my-auto ms-2 sans_bold'>Featured</span>
+                                        <img src={Featured} alt="" srcset="" className='mb-1' loading='lazy' /><span className='my-auto ms-2 sans_bold'>Featured</span>
                                     </div>
                                 </div>
                                 <div>
@@ -96,14 +120,14 @@ function OrderDeliveryCrr() {
                 <div className='container d-lg-block d-md-block d-sm-block '>
                     <div className='row d-flex justify-content-center '>
                         <div className="col-lg-12 p-0 col-md-12  d-xl-none  d-flex justify-content-center ">
-                            <div className='OrderDeliver_box1_Col text-ellipsis flex-column text-center'>
+                            <div className='OrderDeliver_box1_Col text-ellipsis flex-column text-center' data-aos="zoom-in-up" data-aos-offset="300">
                                 <div className='OrderDeliverBox_detals'>
                                     <div className='d-flex justify-content-between'>
                                         <div className='d-inline-block'>
                                             <h4 className='text-start d-inline-block sans_Medium'>Production Supervisor</h4>
                                         </div>
                                         <div className='Featured my-auto'>
-                                            <img src={Featured} alt="" srcset="" className='mb-1' loading='lazy'/><span className='my-auto ms-2 sans_bold'>Featured</span>
+                                            <img src={Featured} alt="" srcset="" className='mb-1' loading='lazy' /><span className='my-auto ms-2 sans_bold'>Featured</span>
                                         </div>
                                     </div>
                                     <div>
@@ -120,14 +144,14 @@ function OrderDeliveryCrr() {
                             </div>
                         </div>
                         <div className='col-lg-12 p-0 col-md-12 mt-sm-5 mt-md-5 mt-lg-5 d-xl-none  d-flex justify-content-center'>
-                            <div className='OrderDeliver_box2_Col mt-sm-5 mt-md-5 mt-lg-5 mt-5 text-center '>
+                            <div className='OrderDeliver_box2_Col mt-sm-5 mt-md-5 mt-lg-5 mt-5 text-center ' data-aos="zoom-in-up" data-aos-offset="300">
                                 <div className='OrderDeliverBox_detals'>
                                     <div className='d-flex justify-content-between'>
                                         <div>
                                             <h4 className='text-start sans_Medium'>Machine Operator </h4>
                                         </div>
                                         <div className='Featured my-auto'>
-                                            <img src={Featured} alt="" srcset="" className='mb-1' loading='lazy'/><span className='my-auto ms-2 sans_bold'>Featured</span>
+                                            <img src={Featured} alt="" srcset="" className='mb-1' loading='lazy' /><span className='my-auto ms-2 sans_bold'>Featured</span>
                                         </div>
                                     </div>
                                     <div>
@@ -144,14 +168,14 @@ function OrderDeliveryCrr() {
                             </div>
                         </div>
                         <div className='col-lg-12 p-0 col-md-12 mt-sm-5 mt-md-5 mt-lg-5 d-xl-none  d-flex justify-content-center'>
-                            <div className='OrderDeliver_box3_Col mt-sm-5 mt-md-5 mt-lg-5 mt-5 text-center '>
+                            <div className='OrderDeliver_box3_Col mt-sm-5 mt-md-5 mt-lg-5 mt-5 text-center ' data-aos="zoom-in-up" data-aos-offset="300">
                                 <div className='OrderDeliverBox_detals'>
                                     <div className='d-flex justify-content-between'>
                                         <div>
                                             <h4 className='text-start sans_Medium'>Assistant IPQC Executive</h4>
                                         </div>
                                         <div className='Featured my-auto'>
-                                            <img src={Featured} alt="" srcset="" className='mb-1' loading='lazy'/><span className='my-auto ms-2 sans_bold'>Featured</span>
+                                            <img src={Featured} alt="" srcset="" className='mb-1' loading='lazy' /><span className='my-auto ms-2 sans_bold'>Featured</span>
                                         </div>
                                     </div>
                                     <div>

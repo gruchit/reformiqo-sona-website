@@ -35,8 +35,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './pharm.css';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import AOS from 'aos';
+import { useEffect } from 'react';
 
 function TopSliderPhar({ Type }) {
+    useEffect(() => {
+        AOS.init({
+          
+        });
+    }, []);
     const settings = {
         dots: false,
         infinite: true,
@@ -80,8 +87,12 @@ function TopSliderPhar({ Type }) {
 
     return (
         <div className="container">
-            <div className="d-flex justify-content-center">
-                <div className="TopSliderPhar">
+            <div className="d-flex justify-content-center" 
+             data-aos="zoom-in"
+             data-aos-offset="300"
+            >
+                <div className="TopSliderPhar"
+                >
                     <Slider {...settings}>
                         {slides.map((slide, index) => (
                             <div className="PharmTxtcard" key={index}>

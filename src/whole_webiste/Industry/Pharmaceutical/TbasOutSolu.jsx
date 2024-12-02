@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
-
 import Arrow from '../../../assets/arrow_Left.svg'
 import './pharm.css'
-
+import AOS from 'aos';
+import { useEffect } from 'react';
 function TbasOutSolu() {
+    useEffect(() => {
+        AOS.init();
+    }, []);
     const [activeTab, setActiveTab] = useState('Market Leader');
     const handleTabChange = (tabName) => () => {
         setActiveTab(tabName);
@@ -12,8 +15,13 @@ function TbasOutSolu() {
         <>
             <div className='TbasOutSolu d-flex justify-content-start'>
 
-                <div className='OutSoluTbs p-xxl-5 p-xl-5 p-lg-5 p-md-5 p-sm-5'>
-                    <img src={Arrow} alt="" className='TbasImg' loading='lazy'/>
+                <div className='OutSoluTbs p-xxl-5 p-xl-5 p-lg-5 p-md-5 p-sm-5' 
+                data-aos="fade-right"
+                data-aos-offset="300"
+                // data-aos-delay="500"
+                data-aos-duration="1000"
+                >
+                    <img src={Arrow} alt="" className='TbasImg' loading='lazy' />
 
                     <div className="filter-buttons py-4 d-flex justify-content-evenly">
                         {['Market Leader', 'Infrastructure', 'Production Capacity'].map((tab) => (

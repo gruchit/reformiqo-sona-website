@@ -25,22 +25,23 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #d4b76e;
-    color: white;
+    background-color:white ;
+    color:#d4b76e ;
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
     z-index: 1;
     font-size: 20px;
     display: block;
+    box-shadow: 0 1px 15px rgba(130, 158, 195, 0.4);
 }
 
 .custom-next {
-    right: 15px;
+    right: 0px;
 }
 
 .custom-prev {
-    left: 15px;
+    left: 0px;
 }
 .pharmaceutical{
     padding: 80px 0px;
@@ -93,6 +94,7 @@
 .Our_Solutions{
     background-color:#faf8f5;
     position: relative;
+    overflow: hidden;
 }
 .OurSoluLftArw{
     position: absolute;

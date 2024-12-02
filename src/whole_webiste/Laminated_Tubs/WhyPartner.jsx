@@ -3,9 +3,14 @@ import Single_BlackBol_Line from '../../assets/single_BlackBol_Line.svg';
 import Arrow from '../../assets/arrow.svg';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import './Laminated.css'
-
-
+import AOS from 'aos';
+import { useEffect } from 'react';
 function WhyPartner() {
+    useEffect(() => {
+        AOS.init({
+            once: true, // Prevent animations from replaying
+        });
+    }, []);
     return (
         <>
             <div className='WhyPartner'>
@@ -13,7 +18,7 @@ function WhyPartner() {
                     <div className='WhyPartner_Img d-flex justify-content-center'>
                         <img src={Single_BlackBol_Line} alt="Line Decoration" loading='lazy'/>
                     </div>
-                    <div className='WhyPartner_ditals'>
+                    <div className='WhyPartner_ditals' data-aos="zoom-in-up" data-aos-offset="200">
                         <h1 className="text-center sans_bold">Why Partner with Us?</h1>
                         <p className="text-center sans_light text-secondary">
                             Aluminum tubes are a popular packaging option for leading industries because
@@ -24,8 +29,8 @@ function WhyPartner() {
                 </div>
             </div>
             <div className='WhyPartnerDown d-flex'>
-                <img src={Arrow} alt="" srcset="" loading='lazy'/>
-                <div className='WhyPartnerTabs flex-column me-auto'>
+                <img src={Arrow} alt="" srcset="" loading='lazy' data-aos="fade-left"/>
+                <div className='WhyPartnerTabs flex-column me-auto' data-aos="fade-right">
                     <div className='d-flex my-2 ms-4'>
                         <div className='d-flex align-items-center me-2'>
                             <span><FaArrowRightLong className='AlumBenefitTabsIcon fs-5' /></span>

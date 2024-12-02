@@ -16,7 +16,7 @@ function Top() {
     const [slidesToShow, setSlidesToShow] = useState(1);
 
     useEffect(() => {
-        AOS.init({ duration: 1500, once: true });
+        AOS.init({ duration: 1500, once: false });
 
         const handleResize = () => {
             const width = window.innerWidth;
@@ -82,7 +82,7 @@ function Top() {
                 </div>
             ) : (
                 <div className='d-xl-block d-xxl-block d-none'>
-                <div className="nav-top d-flex align-items-center  " data-aos="fade-up">
+                <div className="nav-top d-flex align-items-center  " data-aos="fade-down">
                     <div className="header-left d-flex align-items-center justify-content-between w-75">
                         {navItems.map((item, index) => (
                             <div key={index} className="header-item d-flex align-items-center">

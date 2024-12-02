@@ -13,7 +13,7 @@
     width: 100%;
     z-index: 2; 
     background-color: transparent; 
-    padding :0px 50px;
+    padding :0px 30px;
 }
 
 .header .hebo {
@@ -92,19 +92,21 @@
 }
 
 .home-photo {
-    margin-top: 0; 
-    z-index: 1; 
+    margin-top: 0;
+    z-index: 1;
     position: relative;
     border-radius: 25px;
-    overflow:hidden;
+    overflow: hidden; /* Ensures content stays within the rounded container */
+    width: 100%; /* Parent width adapts to its container */
+    height: 100%;
 }
 
 .home-photo img {
-    border-radius: 25px ;
-    height: 650px;
-    width: 100%;
-    object-fit: cover; 
-    overflow: hidden;
+    border-radius: 25px;
+    width: 100%; /* Ensures image width doesn't exceed container */
+    height: 100%; /* Ensures image height doesn't exceed container */
+    object-fit: cover; /* Maintains image aspect ratio and fits entirely */
+    
 }
 
 /* Navbar Brand Image */
@@ -230,8 +232,9 @@
     padding-left: 20px;
 } 
 .navimg {
-    width: 30px;
-    margin-right: 10px;
+        max-width: 30px;
+        object-fit: cover;
+        transition: none; /* Ensure no transition is affecting the image */
 }
 .arwBck{
     background-color:#d5b86e;
@@ -316,6 +319,8 @@
         height: 400px;
         width: 100%;
         object-fit: cover; 
+        object-position: 80% 50%;
+        /* object-fit: content; */
         overflow: hidden;
 }
 }

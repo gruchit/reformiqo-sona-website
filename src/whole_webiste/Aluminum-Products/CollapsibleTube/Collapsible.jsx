@@ -19,10 +19,15 @@ import Flask6 from '../../../assets/Flask6.jpg';
 import Table1 from '../../../assets/Table1.png';
 import Table2 from '../../../assets/Table2.png';
 import Table3 from '../../../assets/Table3.png';
-
+import AOS from 'aos';
+import { useEffect } from 'react';
 
 function Collapsible({ Type }) {
-
+    useEffect(() => {
+        AOS.init({
+            once: true, // Prevent animations from replaying
+        });
+    }, []);
     let cardData
 
     if (Type === "Colla") {
@@ -56,7 +61,7 @@ function Collapsible({ Type }) {
     return (
         <div className='Collapsible'>
             <div className='container-xxl'>
-                <div className='CollapsibleTxt'>
+                <div className='CollapsibleTxt' data-aos="zoom-in-up" >
                     {Type === "Colla" ?
                         <>
                             <h1 className='text-center sans_bold mb-5'>
@@ -106,7 +111,7 @@ function Collapsible({ Type }) {
                                 key={index}
                                 className='col-xl-4 col-lg-4 col-md-6 mt-5 d-flex justify-content-center'
                             >
-                                <div className='CollapsibleCard'>
+                                <div className='CollapsibleCard' data-aos="zoom-in">
                                     <img src={card.imgSrc} alt={card.title} loading='lazy'/>
                                     <div className='CollaCardTitale'>
                                         <p className='sans_bold'>{card.title}</p>

@@ -76,13 +76,13 @@ function Trusted() {
 
       <div 
         className='slider-container'
-        data-aos="zoom-in-up" 
-        data-aos-offset="0" 
-        data-aos-delay="0" 
-        data-aos-duration="3000"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true" 
-        data-aos-mirror="true"
+        // data-aos="zoom-in-up" 
+        // data-aos-offset="0" 
+        // data-aos-delay="0" 
+        // data-aos-duration="3000"
+        // data-aos-easing="ease-in-out"
+        // data-aos-once="true" 
+        // data-aos-mirror="true"
       >
         <Slider {...settings}>
           <div className='slide-item d-flex justify-content-center'>

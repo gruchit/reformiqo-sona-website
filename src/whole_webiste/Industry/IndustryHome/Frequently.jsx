@@ -3,11 +3,14 @@ import './Indu.css';
 import Single_BlackBol_Line from '../../../assets/single_BlackBol_Line.svg';
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
-
-
+import AOS from 'aos';
+import { useEffect } from 'react';
 
 
 function Frequently() {
+    useEffect(() => {
+        AOS.init();
+    }, []);
     const [openIndex, setOpenIndex] = useState(null);
 
     const faqs = [
@@ -41,14 +44,16 @@ function Frequently() {
         <div className='Frequently'>
             <div className='row'>
                 <div className='col-xl-6 col-lg-12 mt-5'>
-                    <div className='Frequently_right flex-column'>
+                    <div className='Frequently_right flex-column'
+                        data-aos="fade-up"
+                    >
                         <div className='px-sm-5 px-md-5 px-lg-5 px-xl-5 px-xxl-5 '>
                             <h3 className='text-start py-3 sans_bold'>Talk to an Automation Expert</h3>
                             <h4 className='sans_bold'>Help With:</h4>
                             <ul className='ps-5 pt-3 '>
-                                <li className='py-1'><a  className='text-decoration-none sans_light text-secondary '>Discuss your requirements</a></li>
-                                <li className='py-1'><a  className='text-decoration-none sans_light text-secondary'>Evaluate feasibility &ROI</a></li>
-                                <li className='py-1'><a  className='text-decoration-none sans_light text-secondary'>Get assistance</a></li>
+                                <li className='py-1'><a className='text-decoration-none sans_light text-secondary '>Discuss your requirements</a></li>
+                                <li className='py-1'><a className='text-decoration-none sans_light text-secondary'>Evaluate feasibility &ROI</a></li>
+                                <li className='py-1'><a className='text-decoration-none sans_light text-secondary'>Get assistance</a></li>
                             </ul>
                         </div>
                         <div className='flex-column '>
@@ -57,7 +62,7 @@ function Frequently() {
                                     <label className='sans_Medium' htmlFor="Name">Name <span className='text-danger'>*</span></label>
                                     <input type="text" placeholder='Name' className='p-3 border-0' />
                                 </div>
-                                <div  className='flex-column py-3'>
+                                <div className='flex-column py-3'>
                                     <label className='sans_Medium' htmlFor="Email">Email <span className='text-danger'>*</span></label>
                                     <input type="Email" placeholder='Email' className='p-3 border-0' />
                                 </div>
@@ -72,13 +77,14 @@ function Frequently() {
                                 <div className='flex-column'>
                                     <button type="button" className='btn SubmitFormAuto'>Submit</button>
                                 </div>
-                                
+
                             </form>
                         </div>
                     </div>
                 </div>
                 <div className='col-xl-6 col-lg-12 mt-5 pt-5'>
                     <div className='Frequently_Left flex-column'>
+                        <div data-aos="fade-up" >
                         <div className='d-flex justify-content-end'>
                             <img src={Single_BlackBol_Line} alt="" />
                         </div>
@@ -90,11 +96,11 @@ function Frequently() {
                             If you have any questions, please ask us and we will
                             answer you at the earliest possible. Make a question now.
                         </p>
-
+                        </div>
                         <div className='faq-section'>
                             {faqs.map((faq, index) => (
-                                <div key={index} className='faq-item border-0'>
-                                    <div className={`faq-question ${openIndex === index ? 'faq-section-open' : ''}`} onClick={() => toggleFAQ(index)}>
+                                <div key={index} className='faq-item border-0' data-aos="zoom-in-up">
+                                    <div className={`faq-question ${openIndex === index ? 'faq-section-open' : ''}`} onClick={() => toggleFAQ(index)} >
                                         <h5 className='sans_light'>{faq.question}</h5>
                                         <span className='arrow'>
                                             {openIndex === index ? <MdOutlineKeyboardArrowUp className='arrow_upicon fs-3' /> : <MdOutlineKeyboardArrowDown className='arrow_upicon fs-3' />}

@@ -3,8 +3,18 @@ import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import Single_BlackBol_Line from '../../../assets/single_BlackBol_Line.svg'
 import './pharm.css'
+import AOS from 'aos';
+import { useEffect } from 'react';
+
 
 function Faq({ Type }) {
+  useEffect(() => {
+    AOS.init({
+      once:true
+    });
+}, []);
+
+
   const [openIndex, setOpenIndex] = useState(null);
 
   let faqs;
@@ -89,7 +99,7 @@ function Faq({ Type }) {
           </div>
           <div className='faq-section'>
             {faqs.map((faq, index) => (
-              <div key={index} className='faq-item border-0 mb-4'>
+              <div key={index} className='faq-item border-0 mb-4' data-aos="zoom-in-up" data-aos-offset="300">
                 <div
                   className={`faq-question ${openIndex === index ? 'faq-section-open' : ''}`}
                   onClick={() => toggleFAQ(index)}
@@ -97,9 +107,9 @@ function Faq({ Type }) {
                   <h5 className='sans_light'>{faq.question}</h5>
                   <span className='arrow'>
                     {openIndex === index ? (
-                      <MdOutlineKeyboardArrowUp className='arrow_upicon fs-3' />
+                      <MdOutlineKeyboardArrowUp className={`arrow_upicon fs-3 ${openIndex === index ? 'text-white' : ''} `} data-aos="flip-up" data-aos-duration="500"/>
                     ) : (
-                      <MdOutlineKeyboardArrowDown className='arrow_upicon fs-3' />
+                      <MdOutlineKeyboardArrowDown className='arrow_upicon fs-3' data-aos="flip-up"  data-aos-duration="500"/>
                     )}
                   </span>
                 </div>

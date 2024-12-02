@@ -42,3 +42,11 @@ about page ma Advatages sona page ma
 Home page nu 1 component
 loader
 
+<Helmet>
+        <title>Home | Your Company</title>
+        <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
+        <meta name="keywords" content="company, products, services, home, business" />
+      </Helmet>
+
+
+      body horizontal scroling turn off property apply in the index.css

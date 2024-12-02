@@ -6,49 +6,55 @@ import Environment from '../../../assets/Environment.svg'
 import Convenient from '../../../assets/Convenient.svg'
 import Practical from '../../../assets/Practical.svg'
 import './Colla.css'
-
+import AOS from 'aos';
+import { useEffect } from 'react';
 function Our_Strength_Alum({ Type }) {
+    useEffect(() => {
+        AOS.init({
+            once: true,
+        });
+    }, []);
     return (
         <>
             <div className='Our_Strength_Alum'>
                 <div className='flex-column'>
                     <div className='Our_Strength_Alumimages'>
-                        <img src={Arrow_Left} alt="" className='Strength_Alumleft_arwOurSt' loading='lazy'/>
-                        <img src={Double_bol_line} alt="" srcset="" className='Strength_AlumDoubleBolLine_Our' loading='lazy'/>
+                        <img src={Arrow_Left} alt="" className='Strength_Alumleft_arwOurSt' loading='lazy' />
+                        <img src={Double_bol_line} alt="" srcset="" className='Strength_AlumDoubleBolLine_Our' loading='lazy' />
                     </div>
-                    <div className='Our_Strength_Alumdetails'>
+                    <div className='Our_Strength_Alumdetails' data-aos="zoom-in-up">
                         <h1 className='sans_bold text-center'>Our Strength</h1>
                         {Type === "Colla" ?
-                                        <>
-                                           <p className='sans_light text-center text-secondary'>Our Formula for success: Precision manufacturing, quality assurance and
-                                           state-of-the-art technology.</p>
-                                        </>
-                                        :
-                                        Type === "Flask" ?
-                                            <>
-                                                <p className='sans_light text-center text-secondary'>Perfection Delivered: Stylish, versatile and functional Flask and Bottles</p>
-                                            </>
-                                            :
-                                            Type === "Table" ?
-                                                <>
-                                                   <p className='sans_light text-center text-secondary'>Durability and Convenience: Market leaders in tablet canisters</p>
-                                                </>
-                                                :
-                                                <>
-                                                    sorry
-                                                </>
-                                    }
+                            <>
+                                <p className='sans_light text-center text-secondary'>Our Formula for success: Precision manufacturing, quality assurance and
+                                    state-of-the-art technology.</p>
+                            </>
+                            :
+                            Type === "Flask" ?
+                                <>
+                                    <p className='sans_light text-center text-secondary'>Perfection Delivered: Stylish, versatile and functional Flask and Bottles</p>
+                                </>
+                                :
+                                Type === "Table" ?
+                                    <>
+                                        <p className='sans_light text-center text-secondary'>Durability and Convenience: Market leaders in tablet canisters</p>
+                                    </>
+                                    :
+                                    <>
+                                        sorry
+                                    </>
+                        }
 
                     </div>
                     <div className='Our_Strength_Alumcards_details'>
                         <div className='row d-flex justify-content-center'>
                             <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0 d-flex justify-content-center'>
-                                <div className='Our_Strength_Alumcards flex-column '>
+                                <div className='Our_Strength_Alumcards flex-column '  data-aos="zoom-in">
                                     {Type === "Colla" ?
                                         <>
                                             <div>
                                                 <div>
-                                                    <img src={FirstRate} alt="" className='OurSoluImgAlum' loading='lazy'/>
+                                                    <img src={FirstRate} alt="" className='OurSoluImgAlum' loading='lazy' />
                                                 </div>
                                                 <div className='mt-5'>
                                                     <h5 className='sans_Medium'>First Rate Quality</h5>
@@ -60,7 +66,7 @@ function Our_Strength_Alum({ Type }) {
                                         Type === "Flask" ?
                                             <>
                                                 <div>
-                                                    <img src={FirstRate} alt="" className='OurSoluImgAlum' loading='lazy'/>
+                                                    <img src={FirstRate} alt="" className='OurSoluImgAlum' loading='lazy' />
                                                 </div>
                                                 <div className='mt-5'>
                                                     <h5 className='sans_Medium'>High Quality Material</h5>
@@ -71,7 +77,7 @@ function Our_Strength_Alum({ Type }) {
                                             Type === "Table" ?
                                                 <>
                                                     <div>
-                                                        <img src={FirstRate} alt="" className='OurSoluImgAlum' loading='lazy'/>
+                                                        <img src={FirstRate} alt="" className='OurSoluImgAlum' loading='lazy' />
                                                     </div>
                                                     <div className='mt-5'>
                                                         <h5 className='sans_Medium'>Resilient & Robust</h5>
@@ -87,11 +93,11 @@ function Our_Strength_Alum({ Type }) {
                                 </div>
                             </div>
                             <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-0 mt-lg-5 mt-xl-5 mt-xxl-5 d-flex justify-content-center'>
-                                <div className='Our_Strength_Alumcards flex-column '>
+                                <div className='Our_Strength_Alumcards flex-column ' data-aos="zoom-in">
                                     {Type === "Colla" ?
                                         <>
                                             <div>
-                                                <img src={Environment} alt="" className='OurSoluImgAlum' loading='lazy'/>
+                                                <img src={Environment} alt="" className='OurSoluImgAlum' loading='lazy' />
                                             </div>
                                             <div className='mt-5'>
                                                 <h5 className='sans_Medium'>Environment Safety</h5>
@@ -113,7 +119,7 @@ function Our_Strength_Alum({ Type }) {
                                             Type === "Table" ?
                                                 <>
                                                     <div>
-                                                        <img src={Environment} alt="" className='OurSoluImgAlum' loading='lazy'/>
+                                                        <img src={Environment} alt="" className='OurSoluImgAlum' loading='lazy' />
                                                     </div>
                                                     <div className='mt-5'>
                                                         <h5 className='sans_Medium'>Compact & Portable</h5>
@@ -129,11 +135,11 @@ function Our_Strength_Alum({ Type }) {
                                 </div>
                             </div>
                             <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-5 mt-lg-0 mt-xl-0 mt-xxl-0 d-flex justify-content-center'>
-                                <div className='Our_Strength_Alumcards flex-column '>
+                                <div className='Our_Strength_Alumcards flex-column ' data-aos="zoom-in">
                                     {Type === "Colla" ?
                                         <>
                                             <div>
-                                                <img src={Convenient} alt="" className='OurSoluImgAlum' loading='lazy'/>
+                                                <img src={Convenient} alt="" className='OurSoluImgAlum' loading='lazy' />
                                             </div>
                                             <div className='mt-5'>
                                                 <h5 className='sans_Medium'>Convenient & Handy </h5>
@@ -144,7 +150,7 @@ function Our_Strength_Alum({ Type }) {
                                         Type === "Flask" ?
                                             <>
                                                 <div>
-                                                    <img src={Convenient} alt="" className='OurSoluImgAlum' loading='lazy'/>
+                                                    <img src={Convenient} alt="" className='OurSoluImgAlum' loading='lazy' />
                                                 </div>
                                                 <div className='mt-5'>
                                                     <h5 className='sans_Medium'>Highly Versatile</h5>
@@ -155,7 +161,7 @@ function Our_Strength_Alum({ Type }) {
                                             Type === "Table" ?
                                                 <>
                                                     <div>
-                                                        <img src={Convenient} alt="" className='OurSoluImgAlum' loading='lazy'/>
+                                                        <img src={Convenient} alt="" className='OurSoluImgAlum' loading='lazy' />
                                                     </div>
                                                     <div className='mt-5'>
                                                         <h5 className='sans_Medium'>Accessible & Efficient </h5>
@@ -171,11 +177,11 @@ function Our_Strength_Alum({ Type }) {
                                 </div>
                             </div>
                             <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5 mt-xxl-5 d-flex justify-content-center '>
-                                <div className='Our_Strength_Alumcards flex-column '>
+                                <div className='Our_Strength_Alumcards flex-column '  data-aos="zoom-in">
                                     {Type === "Colla" ?
                                         <>
                                             <div>
-                                                <img src={Practical} alt="" className='OurSoluImgAlum' loading='lazy'/>
+                                                <img src={Practical} alt="" className='OurSoluImgAlum' loading='lazy' />
                                             </div>
                                             <div className='mt-5'>
                                                 <h5 className='sans_Medium'>Practical & Profitable</h5>
@@ -186,7 +192,7 @@ function Our_Strength_Alum({ Type }) {
                                         Type === "Flask" ?
                                             <>
                                                 <div>
-                                                    <img src={Practical} alt="" className='OurSoluImgAlum' loading='lazy'/>
+                                                    <img src={Practical} alt="" className='OurSoluImgAlum' loading='lazy' />
                                                 </div>
                                                 <div className='mt-5'>
                                                     <h5 className='sans_Medium'>Reduce Carbon Footprint</h5>

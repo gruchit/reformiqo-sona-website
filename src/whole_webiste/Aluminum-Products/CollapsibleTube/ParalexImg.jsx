@@ -5,10 +5,15 @@ import FlaskPeralex from '../../../assets/FlaskPeralex.png';
 import TablePeralex from '../../../assets/TablePeralex.png';
 import button_Arrow from '../../../assets/button_Arrow.svg';
 import { Link } from 'react-router-dom';
-
-
+import AOS from 'aos';
+import { useEffect } from 'react';
 
 function ParalexImg({ Type }) {
+    useEffect(() => {
+        AOS.init({
+            once: true, // Prevent animations from replaying
+        });
+    }, []);
     return (
         <>
             <div className="ParalexImg">
@@ -26,7 +31,7 @@ function ParalexImg({ Type }) {
                 }
                 <div className="ParalexTheam-img">
                     <div className="ParalexContent">
-                        <div className='row d-flex justify-content-center'>
+                        <div className='row d-flex justify-content-center' data-aos="zoom-in">
                             <div className='col-lg-8 col-md-12 col-sm-12  d-flex flex-column justify-content-center'>
                                 {Type === "Colla" ?
                                     <>

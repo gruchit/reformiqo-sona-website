@@ -16,8 +16,7 @@ function MarketLe() {
             <img src={Arrow_Left} alt="" className='markerLe_img' loading='lazy'
                 data-aos="fade-right"
                 data-aos-offset="0"
-                data-aos-delay="1000"
-                data-aos-duration="3000"
+                data-aos-duration="1000"
                 easing="ease-in-out"
                 once="true"
                 mirror="true"
@@ -25,12 +24,10 @@ function MarketLe() {
             <div className="row no-gutters d-flex justify-content-center pt-sm-3 ">
                 <div className="col-xl-6 col-lg-6 col-sm-12 col-md-6 d-flex justify-content-center">
                     <div className='py-4 markerLeLeft'
-                        data-aos="zoom-in-up"
-                        data-aos-offset="50"
-                        data-aos-delay="1000"
+                        data-aos="fade-right"
                         data-aos-duration="1000"
-                        easing="ease-in-out"
-                        once="true"
+                        data-aos-easing="ease-in-sine"
+                        data-aos-once="true"
                         mirror="true"
                     >
                         <h2 className='sans_bold text-center text-lg-start text-md-start text-sm-start '>Market Leaders</h2>
@@ -45,10 +42,9 @@ function MarketLe() {
                 </div>
                 <div className="col-xl-6 col-lg-6 col-sm-12 col-md-6 flex-column ">
                     <div className=' markerLe_cards flex-column mx-auto'
-                        data-aos="fade-left"
-                        data-aos-offset="0"
-                        data-aos-delay="1000"
-                        data-aos-duration="3000"
+                        data-aos="zoom-in"
+                        data-aos-offset="500"
+                        data-aos-duration="1000"
                         easing="ease-in-out"
                         once="true"
                         mirror="true">

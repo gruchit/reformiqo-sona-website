@@ -20,8 +20,14 @@ import AllumPro11 from '../../../assets/AllumPro11.png';
 import AllumPro12 from '../../../assets/AllumPro12.jpg';
 import AllumPro13 from '../../../assets/AllumPro13.jpg';
 import AllumPro14 from '../../../assets/AllumPro14.jpg';
-
+import AOS from 'aos';
+import { useEffect } from 'react';
 function CollaSlider() {
+    useEffect(() => {
+        AOS.init({
+            once: true, // Prevent animations from replaying
+        });
+    }, []);
     // Slider settings
     const settings = {
         dots: false,
@@ -65,12 +71,11 @@ function CollaSlider() {
 
     return (
         <div className="CollaSlider">
-            <img src={Leftarrow} alt="" srcset="" className='LeftarwCollaSlider ' loading='lazy'/>
-            <img src={Double_bol_line} alt="" srcset="" className='Double_bol_lineCollaSlider ' loading='lazy'/>
+            <img src={Leftarrow} alt="" srcset="" className='LeftarwCollaSlider ' loading='lazy'data-aos="fade-right"/>
+            <img src={Double_bol_line} alt="" srcset="" className='Double_bol_lineCollaSlider ' loading='lazy' data-aos="fade-down"/>
 
             <div className="container-xxl">
-                {/* Slider Header */}
-                <div className="CollaSliderTxt">
+                <div className="CollaSliderTxt" data-aos="zoom-in-up">
                     <h1 className="text-center sans_bold mb-5">Specificities</h1>
                     <p className="text-center text-secondary sans_light mb-5">
                         Sona Extrusion has proficiency and competence in the Aluminium Packaging Industry spanning
@@ -85,7 +90,7 @@ function CollaSlider() {
                     <div className="CollaBody">
                         <Slider {...settings}>
                             {imagePaths.map((image, index) => (
-                                <div className="CollaSliderCard" key={index}>
+                                <div className="CollaSliderCard" key={index} data-aos="fade-up">
 
                                     <img src={image.imgSrc} alt={`Slide ${index + 1}`} className="sliderCollaimage" loading='lazy'/>
                                     <div className="CollaSliderTitle ">

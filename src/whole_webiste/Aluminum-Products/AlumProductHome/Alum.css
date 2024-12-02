@@ -99,7 +99,7 @@
     width: 100%;
     right:295px;
     top:87px;
-
+    z-index: 2;
 }
 
 @media (min-width: 320px) { 

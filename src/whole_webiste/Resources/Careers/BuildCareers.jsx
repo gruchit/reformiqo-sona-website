@@ -1,9 +1,10 @@
-import * as React from 'react'; 
+import React from 'react';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import { IoLocationOutline } from "react-icons/io5";
 import './Careers.css';
-
+import AOS from 'aos';
+import { useEffect } from 'react';
 // Sample Data for Autocomplete Suggestions
 const jobOptions = [
   { label: 'Full-Time' },
@@ -17,10 +18,15 @@ const categoryOptions = [
 ];
 
 function BuildCareers() {
+  useEffect(() => {
+    AOS.init({
+      once: true, // Prevent animations from replaying
+    });
+  }, []);
   return (
     <>
       <div className="BuildCareers">
-        <div className="BuildCareers_Detalis flex-column text-center">
+        <div className="BuildCareers_Detalis flex-column text-center" data-aos="zoom-in-up"  data-aos-offset="200">
           <h1 className="sans_bold mb-5">Build Your Career</h1>
           <p className="sans_light text-secondary">
             Sona Extrusion is a great place to kickstart your career. You will contribute to our
@@ -34,7 +40,7 @@ function BuildCareers() {
             responsibilities very quickly.
           </p>
         </div>
-        <div className="BuildCareersForm">
+        <div className="BuildCareersForm" data-aos="zoom-in-up"  data-aos-offset="200">
           <form action="">
             <div className="flex-column row-gap-3">
               <div className="d-flex justify-content-between align-items-center">

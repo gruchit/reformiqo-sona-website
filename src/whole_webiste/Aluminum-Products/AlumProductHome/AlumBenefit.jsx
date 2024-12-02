@@ -3,8 +3,14 @@ import Single_BlackBol_Line from '../../../assets/single_BlackBol_Line.svg';
 import Arrow from '../../../assets/arrow.svg';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import './Alum.css';
-
+import AOS from 'aos';
+import { useEffect } from 'react';
 function AlumBenefit() {
+    useEffect(() => {
+        AOS.init({
+            once: true, // Prevent animations from replaying
+        });
+    }, []);
     return (
         <>
             <div className='AlumBenefit'>
@@ -12,7 +18,10 @@ function AlumBenefit() {
                     <div className='AlumBenefit_Img d-flex justify-content-center'>
                         <img src={Single_BlackBol_Line} alt="Line Decoration" loading='lazy'/>
                     </div>
-                    <div className='AlumBenefit_ditals'>
+                    <div className='AlumBenefit_ditals'
+                    data-aos="zoom-in-up"
+                    data-aos-offset="300"
+                    >
                         <h1 className="text-center sans_bold">Aluminium Benefits</h1>
                         <p className="text-center text-secondary sans_light">
                             Aluminum tubes are a popular packaging option for leading industries because
@@ -21,10 +30,10 @@ function AlumBenefit() {
                     </div>
                 </div>
             </div>
-            <div className='AlumBenefitDown d-flex'>
-                <img src={Arrow} alt="" srcset="" loading='lazy'/>
-                <div className='d-flex justify-content-start'>
-                    <div className='AlumBenefitTabs flex-column '>
+            <div className='AlumBenefitDown d-flex' >
+                <img src={Arrow} alt="" srcset="" loading='lazy' data-aos="fade-left"/>
+                <div className='d-flex justify-content-start' data-aos="fade-right">
+                    <div className='AlumBenefitTabs flex-column' >
                         <div className='d-flex my-2 ms-4'>
                             <div className='d-flex align-items-center me-2'>
                                 <span><FaArrowRightLong className='AlumBenefitTabsIcon fs-5' /></span>
