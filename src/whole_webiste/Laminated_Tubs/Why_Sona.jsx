@@ -17,7 +17,7 @@ function Why_Sona() {
             <div className='Why_Sona'>
                 <div className='WhySonaAbout flex-column'>
 
-                    <div className='WhySonaDetails' data-aos="zoom-in-up" data-aos-offset="200">
+                    <div className='WhySonaDetails' data-aos="zoom-in-up" data-aos-offset="100">
                         <h1 className='text-center sans_bold mb-5'>Why Sona Extrusion?</h1>
                         <p className='text-center sans_light text-secondary'>Sona Extrusion Pvt. Ltd. is one of the leading manufacturers of aluminium collapsible
                             tubes and containers in India, duly ISO 15378:2017 (GMP) Certified – SGS
@@ -28,7 +28,7 @@ function Why_Sona() {
                         <div className='Why_SonaCards'>
                             <div className='row d-flex justify-content-center'>
                                 <div className='col-xl-4 mt-5 col-lg-4 col-md-6 col-12 d-flex justify-content-center'>
-                                    <div className='WhySonaCards1' data-aos="zoom-in" data-aos-offset="200">
+                                    <div className='WhySonaCards1' data-aos="zoom-in" data-aos-offset="100">
                                         <img src={Cut} alt="" loading='lazy' />
                                         <h4 className='sans_Medium'>Cutting-Edge
                                             Technology</h4>
@@ -36,14 +36,14 @@ function Why_Sona() {
                                     </div>
                                 </div>
                                 <div className='col-xl-4 mt-5 col-lg-4 col-md-6 d-flex justify-content-center'>
-                                    <div className='WhySonaCards1' data-aos="zoom-in" data-aos-offset="200">
+                                    <div className='WhySonaCards1' data-aos="zoom-in" data-aos-offset="100">
                                         <img src={Craftsmanship} alt="" loading='lazy' />
                                         <h4 className='sans_Medium'>Expert Craftsmanship</h4>
                                         <p className='sans_light pt-2 text-secondary'>Our team of skilled professionals is at the heart of our operations, bringing years of expertise to every project. Our manufacturing facilities are fully certified, reflecting our unwavering commitment to quality and adherence to international standards. This ensures that every tube we produce not only meets but exceeds industry expectations.</p>
                                     </div>
                                 </div>
                                 <div className='col-xl-4 mt-5 col-lg-4 col-md-6 d-flex justify-content-center'>
-                                    <div className='WhySonaCards1' data-aos="zoom-in" data-aos-offset="200">
+                                    <div className='WhySonaCards1' data-aos="zoom-in" data-aos-offset="100">
                                         <img src={Vibrant} alt="" loading='lazy' />
                                         <h4 className='sans_Medium'>Vibrant and
                                             Versatile Printing</h4>

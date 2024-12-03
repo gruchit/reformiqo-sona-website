@@ -18,7 +18,7 @@ function WhyPartner() {
                     <div className='WhyPartner_Img d-flex justify-content-center'>
                         <img src={Single_BlackBol_Line} alt="Line Decoration" loading='lazy'/>
                     </div>
-                    <div className='WhyPartner_ditals' data-aos="zoom-in-up" data-aos-offset="200">
+                    <div className='WhyPartner_ditals' data-aos="zoom-in-up" data-aos-offset="100">
                         <h1 className="text-center sans_bold">Why Partner with Us?</h1>
                         <p className="text-center sans_light text-secondary">
                             Aluminum tubes are a popular packaging option for leading industries because

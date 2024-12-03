@@ -652,25 +652,25 @@ function Header() {
         <div className="home-photo" style={{ borderRadius: scrolling ? '0' : '35px' }}>
           <Slider {...settings}>
           <div>
-              <img src={Home10} alt="" data-aos="zoom-in"  data-aos-offset="50"  data-aos-duration="1000" loading='eager'/>
+              <img src={Home10} alt="" data-aos="zoom-in"  data-aos-offset="50"  data-aos-duration="700" loading='eager'/>
             </div>
             <div>
-              <img src={Home1} alt="" data-aos="zoom-in" data-aos-offset="50"  data-aos-duration="1000" loading='eager'/>
+              <img src={Home1} alt="" data-aos="zoom-in" data-aos-offset="50"  data-aos-duration="700" loading='eager'/>
             </div>
             <div>
-              <img src={Home2} alt="" data-aos="zoom-in" data-aos-offset="50"  data-aos-duration="1000" loading='eager'/>
+              <img src={Home2} alt="" data-aos="zoom-in" data-aos-offset="50"  data-aos-duration="700" loading='eager'/>
             </div>
             <div>
-              <img src={Home11} alt="" data-aos="zoom-in"  data-aos-offset="50"  data-aos-duration="1000" loading='eager'/>
+              <img src={Home11} alt="" data-aos="zoom-in"  data-aos-offset="50"  data-aos-duration="700" loading='eager'/>
             </div>
             <div>
-              <img src={Home4} alt="" data-aos="zoom-in"  data-aos-offset="50"  data-aos-duration="1000" loading='eager'/>
+              <img src={Home4} alt="" data-aos="zoom-in"  data-aos-offset="50"  data-aos-duration="700" loading='eager'/>
             </div>
             <div>
-              <img src={Home5} alt="" data-aos="zoom-in"  data-aos-offset="50"  data-aos-duration="1000" loading='eager'/>
+              <img src={Home5} alt="" data-aos="zoom-in"  data-aos-offset="50"  data-aos-duration="700" loading='eager'/>
             </div>
             <div>
-              <img src={Home7} alt="" data-aos="zoom-in"  data-aos-offset="50"  data-aos-duration="1000" loading='eager'/>
+              <img src={Home7} alt="" data-aos="zoom-in"  data-aos-offset="50"  data-aos-duration="700" loading='eager'/>
             </div>
             
           </Slider>
