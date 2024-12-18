@@ -11,9 +11,8 @@ function Enviro_Friendly() {
     return (
         <>
             <Helmet>
-                <title>Enviro-Friendly | Sona Extrusion</title>
-                <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
-                <meta name="keywords" content="company, products, services, home, business" />
+                <title>Sonaextrusion - Committed to Enviro-Friendly Strategy</title>
+                <meta name="description" content="Sonaextrusion’s eco-conscious initiatives, from reducing waste to energy-efficient manufacturing. Learn how we prioritize sustainability in our operations!" />
             </Helmet>
             <Top />
             <Header />

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import '../../../assets/fonts/fonts.css'
-import Helmet  from 'react-helmet';
+import Helmet from 'react-helmet';
 import Top from '../../component/Top/Top.jsx'
 import Header from '../../component/Header/Header.jsx'
 import Footer from '../../component/Footer/Footer.jsx'
@@ -14,17 +14,19 @@ function Sona_About() {
     return (
         <>
             <Helmet>
-                <title>Our Store | Sona Extrusion</title>
-                <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
-                <meta name="keywords" content="company, products, services, home, business" />
+                <title>Sonaextrusion Store: Precision, Sustainability, Innovation</title>
+                <meta
+                    name="description"
+                    content="Sonaextrusion’s store offers precision engineered extrusion products made for exceptional industrial performance. Designed to enhance efficiency. Visit Today!"
+                />
             </Helmet>
             <Top />
             <Header />
             <Focus type="Our_Store" />
+            <Know_More />
+            <Our_Strength />
             <Your_choice />
             <Company />
-            <Our_Strength />
-            <Know_More />
             <Footer />
 
         </>

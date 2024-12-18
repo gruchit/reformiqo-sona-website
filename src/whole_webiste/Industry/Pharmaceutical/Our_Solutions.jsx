@@ -15,6 +15,7 @@ import Industryexpertise from '../../../assets/Industry-expertise.svg'
 import './pharm.css'
 import AOS from 'aos';
 import { useEffect } from 'react';
+
 function Our_Solutions({ Type }) {
     useEffect(() => {
         AOS.init();
@@ -26,6 +27,7 @@ function Our_Solutions({ Type }) {
                     <div className='OurSoluTxt'
                     data-aos="zoom-in-up"
                     data-aos-offset="300"
+                    data-aos-duration="500"
                     >
                         <h1 className='sans_bold text-center pb-5 mb-5'>Our Solutions & Benefits</h1>
                     </div>
@@ -36,6 +38,7 @@ function Our_Solutions({ Type }) {
                                 <div className='d-flex justify-content-center'
                                 data-aos="zoom-in-up"
                                 data-aos-offset="300"
+                                data-aos-duration="500"
                                 >
                                     <div className='OurSoluCard  flex-column  mt-5 mt-sm-5 mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0'>
 
@@ -84,6 +87,7 @@ function Our_Solutions({ Type }) {
                                 <div className=' d-flex justify-content-center'
                                 data-aos="zoom-in-up"
                                 data-aos-offset="300"
+                                data-aos-duration="500"
                                 >
                                     <div className='OurSoluCard   flex-column  mt-5 mt-sm-5 mt-md-0 mt-lg-5 mt-xl-5 mt-xxl-5'>
                                         {Type === "Cosm" ?
@@ -129,6 +133,7 @@ function Our_Solutions({ Type }) {
                                 <div className=' d-flex justify-content-center'
                                 data-aos="zoom-in-up"
                                 data-aos-offset="300"
+                                data-aos-duration="500"
                                 >
                                     <div className='OurSoluCard  flex-column  mt-5 mt-sm-5 mt-md-5 mt-lg-0 mt-xl-0 mt-xxl-0'>
                                         {Type === "Cosm" ?

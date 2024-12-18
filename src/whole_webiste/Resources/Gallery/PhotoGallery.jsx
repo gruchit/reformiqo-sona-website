@@ -60,6 +60,7 @@ const categories = [
     images: [PhotoGlry3, PhotoGlry4, PhotoGlry5],
   }
 ];
+console.log(categories);
 
 function PhotoGallery() {
   useEffect(() => {
@@ -109,6 +110,7 @@ function PhotoGallery() {
                       className="category-card"
                       onClick={() => setSelectedCategory(category)}
                       data-aos="fade-up"
+                      data-aos-duration="600"
                     >
                       <img
                         src={category.images[0]}
@@ -126,7 +128,8 @@ function PhotoGallery() {
                 <div className="row">
                   {selectedCategory.images.map((image, index) => (
                     <div key={index} className="col-12 col-md-4 mb-4 d-flex justify-content-center">
-                      <div className="image-card" data-aos="fade-up">
+                      
+                      <div className="image-card" data-aos="fade-up" data-aos-duration="600" >
                         <img src={image} alt={`Image ${index + 1}`} loading='lazy' />
                       </div>
                     </div>

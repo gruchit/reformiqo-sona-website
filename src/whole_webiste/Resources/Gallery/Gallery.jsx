@@ -10,9 +10,8 @@ function Gallery() {
     return (
         <>
             <Helmet>
-                <title> Gallery | Sona Extrusion</title>
-                <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
-                <meta name="keywords" content="company, products, services, home, business" />
+                <title>Sona Extrusion Gallery - Explore Our Projects & Events</title>
+                <meta name="description" content="Sona Extrusion Gallery showcases our achievements, projects, and memorable moments. Discover our story through visuals." />
             </Helmet>
             <Top />
             <Header />

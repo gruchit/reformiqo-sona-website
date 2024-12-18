@@ -14,9 +14,8 @@ function pharmaceutical() {
     return (
         <>
         <Helmet>
-        <title>Industrial & Agro-Chemical | Sona Extrusion</title>
-        <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
-        <meta name="keywords" content="company, products, services, home, business" />
+        <title>High Quality Pharmaceutical Packaging Manufacturer & Supplier</title>
+        <meta name="description" content="Manufacturer and Supplier of Premium Pharmaceutical Packaging Solutions. Prioritize Durability, Compliance, and Innovation to Ensure Your Products are Protected." />
       </Helmet>
             <Top />
             <Header />

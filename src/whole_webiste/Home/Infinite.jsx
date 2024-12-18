@@ -12,18 +12,17 @@ function Infinite() {
     }, []);
     return (
         <div className='infinite d-flex align-items-center'>
-            <img src={InfiniteSVG} alt="Background" className="infinite-bg" loading='lazy' />
-            <div className='row d-flex justify-content-center infi_card w-100'
+            <img src={InfiniteSVG} alt="Background" className="infinite-bg 
+            " loading='lazy' />
+            <div className='row d-flex justify-content-center infi_card w-100 h-100'
                 data-aos="fade-up"
-                data-aos-offset="50"
-                data-aos-duration="1000"
+                data-aos-offset="300"
+                data-aos-duration="500"
                 easing="ease-in-out"
                 once="true"
                 mirror="true" 
             >
-                <div className='col-lg-8 col-md-12 col-sm-12  d-flex flex-column justify-content-center'
-
-                >
+                <div className='col-lg-8 col-md-12 col-sm-12  d-flex flex-column justify-content-center'>
                     <h3 className='text-white sans_light'>Collapsible Tubes</h3>
                     <h1 className='text-white sans_bold'>Infinite Possibilities</h1>
                     <h5 className='text-white sans_light'>We produce high-quality collapsible multipurpose tubes that are versatile and easy to use.</h5>

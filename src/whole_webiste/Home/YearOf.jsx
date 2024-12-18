@@ -18,13 +18,13 @@ function YearOf() {
                         data-aos="fade-right"
                         // data-aos-offset="0"
                         // data-aos-delay="700"
-                        data-aos-duration="1000"
+                        data-aos-duration="500"
                         >
                         <img src={Arrow} alt="" srcset="" className='year_arrow '
                             data-aos="fade-left"
                             // data-aos-offset="0"
                             // data-aos-delay="1000"
-                            data-aos-duration="1300"
+                            data-aos-duration="500"
                             loading='lazy'
                         />
                         <div className='row d-flex justify-content-center '>
@@ -51,7 +51,7 @@ function YearOf() {
                                     data-aos="fade-down"
                                     data-aos-offset="50"
                                     data-aos-delay="500"
-                                    data-aos-duration="1000"
+                                    data-aos-duration="500"
                                     loading='lazy'/>
                             </div>
                         </div>

@@ -91,26 +91,67 @@
   padding: 10px;
 }
 /* Certificates */
-.Certificates{
+.Certificates {
   padding: 80px 15px;
   background-color: #faf8f5;
 }
-.CertTxt h1{
-  font-weight:700;
+
+.CertTxt h1 {
+  font-weight: 700;
 }
-.CertBodyCard{
+
+.CertBodyCard {
   height: 435px;
   max-width: 280px;
   width: 100%;
-  border:2px solid #f8e5b8;
-  border-radius:10px;
+  border: 2px solid #f8e5b8;
+  border-radius: 10px;
   overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  
 }
-.CertBodyCard img{
+
+.CertBodyCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.CertBodyCard img {
+  transition: 0.3s ;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+/* Fullscreen Scaled Image */
+.expanded-image-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: pointer; /* Clicking on the background closes the image */
+}
+
+.expanded-image-container img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.expanded-image-container:hover img {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+
 /* ProdCapa */
 .ProdCapaTxt{
   overflow: hidden;

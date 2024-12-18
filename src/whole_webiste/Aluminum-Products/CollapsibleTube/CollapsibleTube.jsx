@@ -13,9 +13,9 @@ function CollapsibleTube() {
     return (
         <>
             <Helmet>
-                <title>Collapsible Tubes | Sona Extrusion</title>
-                <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
-                <meta name="keywords" content="company, products, services, home, business" />
+                <title>Aluminium Collapsible Tubes Supplier & Manufacturer</title>
+                <meta name="keywords" content="Aluminium Collapsible Tubes" />
+                <meta name="description" content="Trusted Aluminium Collapsible Tubes Manufacturer Offering Secure Solutions. Meet the Highest Quality Standards for Pharmaceuticals, Cosmetics, and Other Industries." />
             </Helmet>
             <Top />
             <Header />

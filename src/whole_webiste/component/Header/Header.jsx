@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import Logo from '../../../assets/logo.svg';
 import { Link } from 'react-router-dom';
 import { FiMenu } from "react-icons/fi";
@@ -20,21 +20,36 @@ import Gallery from "../../../assets/Gallery.png";
 import BlogMedia from "../../../assets/BlogMedia.png";
 import Careers from "../../../assets/Careers.png";
 
-
-// 
-// 
-// 
-//
-//
 // Home slider
-import Home1 from '../../../assets/Home_main_webp.webp';
-import Home2 from '../../../assets/Home2_webp.webp';
-import Home4 from '../../../assets/Home4_webp.webp';
-import Home5 from '../../../assets/Tablet_Home_webp.webp';
+import Home1 from '../../../assets/Home_main_webp_AVIF.avif';
+// import Home1  from '../../../assets/Home_main_webp_AVIF.avif';
+// import Home1 from '../../../assets/Home_main_webp_AVIF.avif';
+
+import Home2 from '../../../assets/Home2_webp_AVIF.avif';
+// import Home2 from '../../../assets/Home2_webp_AVIF.avif';
+// import Home2 from '../../../assets/Home2_webp_AVIF.avif';
+
+import Home4 from '../../../assets/Home4_webp_AVIF.avif';
+// import Home4Medium from '../../../assets/Home4_webp_AVIF.avif';
+// import Home4Large from '../../../assets/Home4_webp_AVIF.avif';
+
+import Home5 from '../../../assets/Tablet_Home_webp_AVIF.avif';
+// import Home5Medium from '../../../assets/Tablet_Home_webp_AVIF.avif';
+// import Home5Large from '../../../assets/Tablet_Home_webp_AVIF.avif';
+
+import Home7 from '../../../assets/FlaskHome_webp_AVIF.avif';
+// import Home7Medium from '../../../assets/FlaskHome_webp_AVIF.avif';
+// import Home7Large from '../../../assets/FlaskHome_webp_AVIF.avif';
+
+import Home10 from '../../../assets/Home10_webp_AVIF.avif';
+// import Home10Medium from '../../../assets/Home10_webp_AVIF.avif';
+// import Home10Large from '../../../assets/Home10_webp_AVIF.avif';
+
+
+
+
 import Home6 from '../../../assets/Indus_webp.webp';
-import Home7 from '../../../assets/FlaskHome_webp.webp';
 import Home8 from '../../../assets/Home9_webp.webp';
-import Home10 from '../../../assets/Home10_webp.webp';
 import { GoArrowUpRight } from "react-icons/go";
 import { IoClose } from "react-icons/io5";
 import Button_Arrow from '../../../assets/button_Arrow.svg';
@@ -45,64 +60,8 @@ import { useLocation } from 'react-router-dom';
 import Home11 from '../../../assets/Home11.jpg';
 
 function Header() {
+
   const location = useLocation();
-  // console.log(location);
-
-  const [scrolling, setScrolling] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [openSubmenu, setOpenSubmenu] = useState(null);
-  const [isStickyVisible, setIsStickyVisible] = useState(false);;
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      // Show the header if scrolled down more than 100px
-      if (currentScrollY > 400 && currentScrollY > lastScrollY) {
-        setIsStickyVisible(true);
-      } else if (currentScrollY > lastScrollY || currentScrollY <= 400) {
-        setIsStickyVisible(false);
-      }
-
-      setLastScrollY(currentScrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [lastScrollY]);
-
-  const toggleSubmenu = (submenu) => {
-
-
-    setOpenSubmenu(prevSubmenu => (prevSubmenu === submenu ? null : submenu));
-  };
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-    if (!menuOpen) {
-      document.body.style.overflowY = "hidden";
-    } else {
-      document.body.style.overflowY = "scroll";
-    }
-  };
-  const handleOutsideClick = (e) => {
-    if (e.target.classNameList.contains('modal-overlay')) {
-      toggleMenu();
-    }
-  };
-  useEffect(() => {
-    if (menuOpen) {
-      document.addEventListener('click', handleOutsideClick);
-    }
-    return () => {
-      document.removeEventListener('click', handleOutsideClick);
-    };
-  }, [menuOpen]);
-
   const settings = {
     dots: false,
     infinite: true,
@@ -114,27 +73,88 @@ function Header() {
     pauseOnHover: false,
     arrows: false,
   };
+
+  const [scrolling, setScrolling] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [openSubmenu, setOpenSubmenu] = useState(null);
+  const [isStickyVisible, setIsStickyVisible] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > 400 && currentScrollY > lastScrollY) {
+        setIsStickyVisible(true);
+      } else if (currentScrollY > lastScrollY || currentScrollY <= 400) {
+        setIsStickyVisible(false);
+      }
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
+
+  const toggleSubmenu = (submenu) => {
+    setOpenSubmenu(prevSubmenu => (prevSubmenu === submenu ? null : submenu));
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+    if (!menuOpen) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "auto";
+    }
+  };
+
+  const handleOutsideClick = (e) => {
+    if (e.target.classNameList.contains('modal-overlay')) {
+      toggleMenu();
+    }
+  };
+
+  // Close menu and enable scrolling on route change
+  useEffect(() => {
+    setMenuOpen(false);
+    document.body.style.overflowY = "auto";
+  }, [location.pathname]);
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.addEventListener('click', handleOutsideClick);
+    }
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  }, [menuOpen]);
+
+
+
   return (
     <>
       <div className='HeaderSmall d-xl-none d-flex justify-content-between align-items-center w-100 px-md-5 px-sm-3'>
         <div className='HeaderSmall_Logo'>
           <a className="navbar-brand" href="/">
-            <img className="w-100" src={Logo} alt="Logo" loading='eager'/>
+            <img className="w-100" src={Logo} alt="Logo" loading='eager' />
           </a>
         </div>
         <div className='header-items'>
           <ul className='d-flex list-unstyled m-0'>
             <li className='mx-3'>
-              <a  onClick={toggleMenu} className='text-decoration-none '>
-                <FiMenu className='fs-3 sonaColorr' loading='eager'/>
+              <a onClick={toggleMenu} className='text-decoration-none '>
+                <FiMenu className='fs-3 sonaColorr' loading='eager' />
               </a>
             </li>
           </ul>
         </div>
       </div>
       {menuOpen && (
-        <div className="modal-overlay d-flex justify-content-center" >
-          <div className="modal-content flex-column" onClick={(e) => e.stopPropagation()} >
+        <div className="modal-overlay  d-flex justify-content-center" >
+          <div className='modal-content flex-column ' onClick={(e) => e.stopPropagation()} data-aos-duration="500" data-aos="fade-down" data-aos-easing='ease-in-out' mirror="true" once="false">
             <ul className='flex-column list-unstyled m-0'>
               <li className='d-flex justify-content-between align-items-center' onClick={() => toggleSubmenu('Home')}>
                 <Link to="/" className={`text-decoration-none textBlack ${(location.pathname === '' || location.pathname === '/') ? 'active' : ''}`}>Home</Link>
@@ -151,31 +171,31 @@ function Header() {
                 <div className={`submenusAbout mt-2 ${openSubmenu === 'aboutUs' ? 'open' : ''}`}>
                   <ul className='list-unstyled'>
                     <li className='d-flex align-items-center'>
-                      <img src={Our_Store} alt="" className='navimg' loading='eager'/>
+                      <img src={Our_Store} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/About/Our-Store/" className={`text-decoration-none textBlack ${location.pathname === '/About/Our-Store/' ? 'active' : ''}`}>Our Story</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={Advantages} alt="" className='navimg' loading='eager'/>
+                      <img src={Advantages} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/About/Advatages-Sona/" className={`text-decoration-none textBlack ${location.pathname === '/About/Advatages-Sona/' ? 'active' : ''}`}>Advantages Sona</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={manufacturing} alt="" className='navimg' loading='eager'/>
+                      <img src={manufacturing} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/About/Manufacturing-Unit/" className={`text-decoration-none textBlack ${location.pathname === '/About/Manufacturing-Unit/' ? 'active' : ''}`}>Manufacturing Unit</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={Envir} alt="" className='navimg' loading='eager'/>
+                      <img src={Envir} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/About/Enviro-Friendly/" className={`text-decoration-none textBlack ${location.pathname === '/About/Enviro-Friendly/' ? 'active' : ''}`}>Enviro-Friendly</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={Brochures} alt="" className='navimg' loading='eager'/>
+                      <img src={Brochures} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/About/Brochures/" className={`text-decoration-none textBlack ${location.pathname === '/About/Brochures/' ? 'active' : ''}`}>Brochure</Link>
                       </span>
@@ -193,25 +213,25 @@ function Header() {
                 <div className={`submenusAbout pt-2 ${openSubmenu === 'industry' ? 'open' : ''}`}>
                   <ul className='list-unstyled'>
                     <li className='d-flex align-items-center'>
-                      <img src={Pharmaceutical} alt="" className='navimg' loading='eager'/>
+                      <img src={Pharmaceutical} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/Industry/Pharmaceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Pharmaceutical/' ? 'active' : ''}`}>Pharmaceutical</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={Cosmetic} alt="" className='navimg' loading='eager'/>
+                      <img src={Cosmetic} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/Industry/Cosmetic-And-Personal-Care/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Cosmetic-And-Personal-Care/' ? 'active' : ''}`}>Cosmetic & Personal Care</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={Nutraceutical} alt="" className='navimg' loading='eager'/>
+                      <img src={Nutraceutical} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/Industry/Nutraceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Nutraceutical/' ? 'active' : ''}`}>Nutraceutical</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={IndustrialAgro} alt="" className='navimg' loading='eager'/>
+                      <img src={IndustrialAgro} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/Industry/Industrial-And-Agro-Chemical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Industrial-And-Agro-Chemical/' ? 'active' : ''}`}>Industrial & Agro-Chemical</Link>
                       </span>
@@ -229,19 +249,19 @@ function Header() {
                 <div className={`submenusAbout pt-2 ${openSubmenu === 'AluminumPro' ? 'open' : ''}`}>
                   <ul className='list-unstyled'>
                     <li className='d-flex align-items-center'>
-                      <img src={CollapsibleTubes1} alt="" className='navimg' loading='eager'/>
+                      <img src={CollapsibleTubes1} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/Aluminum-Products/Collapsible-Tubes/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Collapsible-Tubes/' ? 'active' : ''}`}>Collapsible Tubes</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={FlasksBottles} alt="" className='navimg' loading='eager'/>
+                      <img src={FlasksBottles} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/Aluminum-Products/Flasks-And-Bottles/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Flasks-And-Bottles/' ? 'active' : ''}`}>Flasks & Bottles</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={TabletCanisters} alt="" className='navimg' loading='eager'/>
+                      <img src={TabletCanisters} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/Aluminum-Products/Tablet-Canisters/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Tablet-Canisters/' ? 'active' : ''}`}>Tablet Canisters</Link>
                       </span>
@@ -263,19 +283,19 @@ function Header() {
                 <div className={`submenusAbout pt-2 ${openSubmenu === 'Resources' ? 'open' : ''}`}>
                   <ul className='list-unstyled'>
                     <li className='d-flex align-items-center'>
-                      <img src={Careers} alt="" className='navimg' loading='eager'/>
+                      <img src={Careers} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/Resources/Careers/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Careers/' ? 'active' : ''}`}>Careers</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={BlogMedia} alt="" className='navimg' loading='eager'/>
+                      <img src={BlogMedia} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/Resources/BlogMedia/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/BlogMedia/' ? 'active' : ''}`}>Blogs & Media</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={Gallery} alt="" className='navimg' loading='eager'/>
+                      <img src={Gallery} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/Resources/Gallery/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Gallery/' ? 'active' : ''}`}>Gallery</Link>
                       </span>
@@ -291,10 +311,10 @@ function Header() {
 
               </li>
             </ul>
-            <div className="d-flex justify-content-start mt-3">
-              <a  className="reach-us-button gap-4 text-black">
+            <div className="d-flex justify-content-start">
+              <Link to="/ReachUs/" className="reach-us-button gap-4 text-black">
                 Reach Us <span><GoArrowUpRight className="button-arrow text-white " /></span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -305,10 +325,10 @@ function Header() {
           <nav className="navbar navbar-expand"
             data-aos="zoom-in-up"
             data-aos-offset="100"
-            data-aos-duration="1500"
+            data-aos-duration="400"
           >
             <a className="navbar-brand" href="/">
-              <img className="w-100" src={Logo} alt="Logo" loading='eager'/>
+              <img className="w-100" src={Logo} alt="Logo" loading='eager' />
             </a>
             <div className="navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
               <ul className="navbar-nav mb-lg-0">
@@ -325,31 +345,31 @@ function Header() {
                   <div className='set_ul'>
                     <ul className='list-unstyled'>
                       <li className='d-flex align-item-center'>
-                        <img src={Our_Store} alt="" className='navimg' loading='eager'/>
+                        <img src={Our_Store} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/About/Our-Store/" className={`text-decoration-none textBlack ${location.pathname === '/About/Our-Store/' ? 'active' : ''}`}>Our Story</Link>
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={Advantages} alt="" className='navimg' loading='eager'/>
+                        <img src={Advantages} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/About/Advatages-Sona/" className={`text-decoration-none textBlack ${location.pathname === '/About/Advatages-Sona/' ? 'active' : ''}`}>Advantages Sona</Link>
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={manufacturing} alt="" className='navimg' loading='eager'/>
+                        <img src={manufacturing} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/About/Manufacturing-Unit/" className={`text-decoration-none textBlack ${location.pathname === '/About/Manufacturing-Unit/' ? 'active' : ''}`}>Manufacturing Unit</Link>
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={Envir} alt="" className='navimg' loading='eager'/>
+                        <img src={Envir} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/About/Enviro-Friendly/" className={`text-decoration-none textBlack ${location.pathname === '/About/Enviro-Friendly/' ? 'active' : ''}`}>Enviro-Friendly</Link>
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={Brochures} alt="" className='navimg' loading='eager'/>
+                        <img src={Brochures} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/About/Brochures/" className={`text-decoration-none textBlack ${location.pathname === '/About/Brochures/' ? 'active' : ''}`}>Brochure</Link>
                         </span>
@@ -364,26 +384,26 @@ function Header() {
                   <div className='set_ul'>
                     <ul className='list-unstyled'>
                       <li className='d-flex align-item-center'>
-                        <img src={Pharmaceutical} alt="" className='navimg' loading='eager'/>
+                        <img src={Pharmaceutical} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/Industry/Pharmaceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Pharmaceutical/' ? 'active' : ''}`}>Pharmaceutical</Link>
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={Cosmetic} alt="" className='navimg' loading='eager'/>
+                        <img src={Cosmetic} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/Industry/Cosmetic-And-Personal-Care/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Cosmetic-And-Personal-Care/' ? 'active' : ''}`}>Cosmetic & Personal Care</Link>
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={Nutraceutical} alt="" className='navimg' loading='eager'/>
+                        <img src={Nutraceutical} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/Industry/Nutraceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Nutraceutical/' ? 'active' : ''}`}>Nutraceutical</Link>
 
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={IndustrialAgro} alt="" className='navimg' loading='eager'/>
+                        <img src={IndustrialAgro} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/Industry/Industrial-And-Agro-Chemical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Industrial-And-Agro-Chemical/' ? 'active' : ''}`}>Industrial & Agro-Chemical</Link>
                         </span>
@@ -398,21 +418,21 @@ function Header() {
                   <div className='set_ul'>
                     <ul className='list-unstyled'>
                       <li className='d-flex align-item-center'>
-                        <img src={CollapsibleTubes1} alt="" className='navimg' loading='eager'/>
+                        <img src={CollapsibleTubes1} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/Aluminum-Products/Collapsible-Tubes/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Collapsible-Tubes/' ? 'active' : ''}`}>Collapsible Tubes</Link>
 
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={FlasksBottles} alt="" className='navimg' loading='eager'/>
+                        <img src={FlasksBottles} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/Aluminum-Products/Flasks-And-Bottles/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Flasks-And-Bottles/' ? 'active' : ''}`}>Flasks & Bottles</Link>
 
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={TabletCanisters} alt="" className='navimg' loading='eager'/>
+                        <img src={TabletCanisters} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/Aluminum-Products/Tablet-Canisters/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Tablet-Canisters/' ? 'active' : ''}`}>Tablet Canisters</Link>
                         </span>
@@ -428,21 +448,21 @@ function Header() {
                   <div className='set_ul'>
                     <ul className='list-unstyled'>
                       <li className='d-flex align-item-center'>
-                        <img src={Careers} alt="" className='navimg' loading='eager'/>
+                        <img src={Careers} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/Resources/Careers/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Careers/' ? 'active' : ''}`}>Careers</Link>
 
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={BlogMedia} alt="" className='navimg' loading='eager'/>
+                        <img src={BlogMedia} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/Resources/BlogMedia/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/BlogMedia/' ? 'active' : ''}`}>Blogs & Media</Link>
 
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={Gallery} alt="" className='navimg' loading='eager'/>
+                        <img src={Gallery} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/Resources/Gallery/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Gallery/' ? 'active' : ''}`}>Gallery</Link>
                         </span>
@@ -465,12 +485,11 @@ function Header() {
           </nav>
         </div>
 
-
         <div className={`sticky-header  p-md-0 p-sm-0 ${isStickyVisible ? 'visible' : ''}`}>
           <nav className="navbar navbar-expand ApplySticky d-lg-none d-md-none d-sm-none d-none d-xl-block d-xxl-block ">
             <div className='container-xxl'>
               <a className="navbar-brand" href="/">
-                <img className="w-100" src={Logo} alt="Logo" loading='eager'/>
+                <img className="w-100" src={Logo} alt="Logo" loading='eager' />
               </a>
               <div className="navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
                 <ul className="navbar-nav mb-lg-0">
@@ -487,31 +506,31 @@ function Header() {
                     <div className='set_ul'>
                       <ul className='list-unstyled'>
                         <li className='d-flex align-item-center'>
-                          <img src={Our_Store} alt="" className='navimg' loading='eager'/>
+                          <img src={Our_Store} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/About/Our-Store/" className={`text-decoration-none textBlack ${location.pathname === '/About/Our-Store/' ? 'active' : ''}`}>Our Story</Link>
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={Advantages} alt="" className='navimg' loading='eager'/>
+                          <img src={Advantages} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/About/Advatages-Sona/" className={`text-decoration-none textBlack ${location.pathname === '/About/Advatages-Sona/' ? 'active' : ''}`}>Advantages Sona</Link>
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={manufacturing} alt="" className='navimg' loading='eager'/>
+                          <img src={manufacturing} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/About/Manufacturing-Unit/" className={`text-decoration-none textBlack ${location.pathname === '/About/Manufacturing-Unit/' ? 'active' : ''}`}>Manufacturing Unit</Link>
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={Envir} alt="" className='navimg' loading='eager'/>
+                          <img src={Envir} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/About/Enviro-Friendly/" className={`text-decoration-none textBlack ${location.pathname === '/About/Enviro-Friendly/' ? 'active' : ''}`}>Enviro-Friendly</Link>
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={Brochures} alt="" className='navimg' loading='eager'/>
+                          <img src={Brochures} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/About/Brochures/" className={`text-decoration-none textBlack ${location.pathname === '/About/Brochures/' ? 'active' : ''}`}>Brochure</Link>
                           </span>
@@ -526,26 +545,26 @@ function Header() {
                     <div className='set_ul'>
                       <ul className='list-unstyled'>
                         <li className='d-flex align-item-center'>
-                          <img src={Pharmaceutical} alt="" className='navimg' loading='eager'/>
+                          <img src={Pharmaceutical} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/Industry/Pharmaceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Pharmaceutical/' ? 'active' : ''}`}>Pharmaceutical</Link>
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={Cosmetic} alt="" className='navimg' loading='eager'/>
+                          <img src={Cosmetic} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/Industry/Cosmetic-And-Personal-Care/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Cosmetic-And-Personal-Care/' ? 'active' : ''}`}>Cosmetic & Personal Care</Link>
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={Nutraceutical} alt="" className='navimg' loading='eager'/>
+                          <img src={Nutraceutical} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/Industry/Nutraceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Nutraceutical/' ? 'active' : ''}`}>Nutraceutical</Link>
 
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={IndustrialAgro} alt="" className='navimg' loading='eager'/>
+                          <img src={IndustrialAgro} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/Industry/Industrial-And-Agro-Chemical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Industrial-And-Agro-Chemical/' ? 'active' : ''}`}>Industrial & Agro-Chemical</Link>
                           </span>
@@ -560,21 +579,21 @@ function Header() {
                     <div className='set_ul'>
                       <ul className='list-unstyled'>
                         <li className='d-flex align-item-center'>
-                          <img src={CollapsibleTubes1} alt="" className='navimg' loading='eager'/>
+                          <img src={CollapsibleTubes1} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/Aluminum-Products/Collapsible-Tubes/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Collapsible-Tubes/' ? 'active' : ''}`}>Collapsible Tubes</Link>
 
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={FlasksBottles} alt="" className='navimg' loading='eager'/>
+                          <img src={FlasksBottles} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/Aluminum-Products/Flasks-And-Bottles/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Flasks-And-Bottles/' ? 'active' : ''}`}>Flasks & Bottles</Link>
 
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={TabletCanisters} alt="" className='navimg' loading='eager'/>
+                          <img src={TabletCanisters} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/Aluminum-Products/Tablet-Canisters/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Tablet-Canisters/' ? 'active' : ''}`}>Tablet Canisters</Link>
                           </span>
@@ -590,21 +609,21 @@ function Header() {
                     <div className='set_ul'>
                       <ul className='list-unstyled'>
                         <li className='d-flex align-item-center'>
-                          <img src={Careers} alt="" className='navimg' loading='eager'/>
+                          <img src={Careers} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/Resources/Careers/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Careers/' ? 'active' : ''}`}>Careers</Link>
 
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={BlogMedia} alt="" className='navimg' loading='eager'/>
+                          <img src={BlogMedia} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/Resources/BlogMedia/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/BlogMedia/' ? 'active' : ''}`}>Blogs & Media</Link>
 
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={Gallery} alt="" className='navimg' loading='eager'/>
+                          <img src={Gallery} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/Resources/Gallery/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Gallery/' ? 'active' : ''}`}>Gallery</Link>
 
@@ -632,13 +651,13 @@ function Header() {
           <nav className="Sticky-Navbar p-md-0 p-sm-0 d-flex justify-content-between  d-lg-block d-lg-block  d-xl-none">
             <div className='StickyNavbarImg float-start  d-flex justify-content-start'>
               <a className="navbar-brand" href="/">
-                <img className="" src={Logo} alt="Logo" loading='eager'/>
+                <img className="" src={Logo} alt="Logo" loading='eager' />
               </a>
             </div>
             <div className='header-items float-end d-flex  align-items-center'>
               <ul className='d-flex align-items-center justify-content-end list-unstyled m-0'>
-                <li className='mx-3'onClick={toggleMenu} >
-                  <a  className='p-0 text-decoration-none text-white '>
+                <li className='mx-3' onClick={toggleMenu} >
+                  <a className='p-0 text-decoration-none text-white '>
                     <FiMenu className='fs-3 sonaColorr' />
                   </a>
                 </li>
@@ -647,32 +666,26 @@ function Header() {
           </nav>
         </div>
 
-
-
         <div className="home-photo" style={{ borderRadius: scrolling ? '0' : '35px' }}>
           <Slider {...settings}>
-          <div>
-              <img src={Home10} alt="" data-aos="zoom-in"  data-aos-offset="50"  data-aos-duration="700" loading='eager'/>
-            </div>
-            <div>
-              <img src={Home1} alt="" data-aos="zoom-in" data-aos-offset="50"  data-aos-duration="700" loading='eager'/>
-            </div>
-            <div>
-              <img src={Home2} alt="" data-aos="zoom-in" data-aos-offset="50"  data-aos-duration="700" loading='eager'/>
-            </div>
-            <div>
-              <img src={Home11} alt="" data-aos="zoom-in"  data-aos-offset="50"  data-aos-duration="700" loading='eager'/>
-            </div>
-            <div>
-              <img src={Home4} alt="" data-aos="zoom-in"  data-aos-offset="50"  data-aos-duration="700" loading='eager'/>
-            </div>
-            <div>
-              <img src={Home5} alt="" data-aos="zoom-in"  data-aos-offset="50"  data-aos-duration="700" loading='eager'/>
-            </div>
-            <div>
-              <img src={Home7} alt="" data-aos="zoom-in"  data-aos-offset="50"  data-aos-duration="700" loading='eager'/>
-            </div>
-            
+                <div>
+                  <img src={Home1} alt="" rel="preload" sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="400" loading="lazy" />
+                </div>
+                <div>
+                  <img src={Home2} alt="" rel="preload" sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="400" loading="lazy" />
+                </div>
+                <div>
+                  <img src={Home4} alt="" rel="preload" sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="400" loading="lazy" />
+                </div>
+                <div>
+                  <img src={Home5} alt="" rel="preload" sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="400" loading="lazy" />
+                </div>
+                <div>
+                  <img src={Home7} alt="" rel="preload" sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="400" loading="lazy" />
+                </div>
+                <div>
+                  <img src={Home10} alt="" rel="preload" sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="400" loading="lazy" />
+                </div>
           </Slider>
         </div>
       </div >
@@ -681,4 +694,3 @@ function Header() {
 }
 
 export default Header;
-

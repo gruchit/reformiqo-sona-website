@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 function AllumColl() {
     useEffect(() => {
         AOS.init({
-            once: true, 
+            once: true,
         });
     }, []);
     return (
@@ -14,7 +14,12 @@ function AllumColl() {
             <div className='AllumColl'>
                 <div className='container'>
                     <div className='AllumCollTxt flex-column'
-                    data-aos="zoom-in-up"
+                        data-aos="zoom-in-up"
+                        data-aos-offset="200"
+                        data-aos-duration="600"
+                        easing="ease-in-out"
+                        once="true"
+                        mirror="true"
                     >
                         <h1 className='text-center mb-5 sans_bold'>Your #1 Choice For Aluminium Collapsible Tubes, Containers and Aluminium Bottles Flakes</h1>
                         <p className='sans_Light text-center text-secondary'>An ISO 15378:2017 (GMP) Certified – SGS, ISO 9001:2015 Certified – TUV & US DMF Registered Certified Company and proudly having the best production capacity based on significant investments in cutting-edge technology, skilled workforce and effective processes. The technology investments have given us an advantage over our competitors and enabled us to consistently deliver high-quality aluminium extrusions.</p>
@@ -25,7 +30,12 @@ function AllumColl() {
                         <div className='row d-flex justify-content-center'>
                             <div className='col-lg-6 col-md-12 mt-5 d-flex justify-content-center'>
                                 <div className='AllumBodyCads'
-                                data-aos="zoom-in"
+                                    data-aos="zoom-in"
+                                    data-aos-offset="200"
+                                    data-aos-duration="500"
+                                    easing="ease-in-out"
+                                    once="true"
+                                    mirror="true"
                                 >
                                     <h4 className='mb-3 sans_Medium text-center'>Specialities:</h4>
                                     <div className='AllumBodyCard d-md-flex d-lg-flex d-xl-flex d-xxl-flex'>
@@ -56,7 +66,12 @@ function AllumColl() {
                             </div>
                             <div className='col-lg-6 col-md-12 mt-5 d-flex justify-content-center'>
                                 <div className='AllumBodyTable'
-                                data-aos="fade-up-left"
+                                    data-aos="fade-up-left"
+                                    data-aos-offset="200"
+                                    data-aos-duration="500"
+                                    easing="ease-in-out"
+                                    once="true"
+                                    mirror="true"
                                 >
                                     <h2 className='sans_Medium d-inline-block'>Manufacturing Unit</h2>
                                     <div className="info-table-container">

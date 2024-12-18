@@ -96,7 +96,8 @@
 }
 /*  */
 .CompanyChange{
-    margin-bottom:200px;
+    margin-bottom:50px;
+    /* height:400px; */
 }
 .CompanyBlackCard{
     padding:0px 15px ;
@@ -104,6 +105,7 @@
 
 .Company_black img{
     width: 100%;
+    /* height: 400px; */
     object-fit: cover;
     position: relative;
     z-index: -2;
@@ -121,7 +123,7 @@
 }
 
 .CompanyBlackCard{
-    position: absolute;
+    /* position: absolute; */
     bottom:0px;
     width: 100%;
     
@@ -136,7 +138,7 @@
     box-shadow: 0 1px 15px rgba(130, 158, 195, 0.4);
     height: 260px;
     background-color: white;
-    padding: 20px;
+    padding: 50px 20px;
     border-radius: 5px;
     border: 2px solid #fff5dc;
     overflow: hidden;
@@ -152,34 +154,38 @@
     height:auto;
     top:0px;
     z-index: 2;
-    left:75px
+    left:30px;
 }
 .cmpSpecifications{
     position: absolute;
     max-width:80px;
     width: 100%;
     height:auto;
-    top:-45px;
+    top:0px;
     z-index: 2;
-    left:75px
+    left:30px;
 }
-.cmpUnprecedented{
+.cmpUnprecedented
+{
     position: absolute;
     max-width:80px;
     width: 100%;
     height:auto;
     top:0px;
     z-index: 2;
-    left:75px
+    left:30px;
 }
 .cmpTbsPioneers{
     position: absolute;
     max-width:80px;
     width: 100%;
     height:auto;
-    top:-45px;
+    top:0px;
     z-index: 2;
-    left:75px;
+    left:30px;
+}
+.CompanyChangeCard p{
+    text-align:justify;
 }
 
 /* WhyChoose */
@@ -230,8 +236,11 @@
 
 
 @media (min-width: 320px){
+    .CompanyChange,.Company_black img{
+        height:400px;
+    }
     .CompanyBlackCard{
-        padding:0px 15px ;
+        padding:50px 15px ;
     }
     .WhyChooseTXT{
         padding: 40px 15px 40px 15px;
@@ -262,8 +271,11 @@
     }
 }
 @media (min-width: 576px){
+    .CompanyChange,.Company_black img{
+        height:400px;
+    }
     .CompanyBlackCard{
-        padding:0px 20px ;
+        padding:50px 20px ;
     }
     .WhyChooseTXT{
         padding: 40px 20px 40px 20px;
@@ -294,8 +306,14 @@
     }
 }
 @media (min-width: 768px) {
+    .cmpUnprecedented{
+        top:0px;
+    }
+    .CompanyChange,.Company_black img{
+        height:100%;
+    }
     .CompanyBlackCard{
-        padding:0px 30px ;
+        padding:50px 30px ;
     }
     .WhyChooseTXT{
         padding: 40px 30px 40px 30px;
@@ -326,8 +344,17 @@
     }
 }
 @media (min-width: 992px) {
+    .cmpUnprecedented{
+        top:0px;
+    }
+    .cmpSpecifications,.cmpTbsPioneers{
+        top:-50px;
+    }
+    .CompanyChange,.Company_black img{
+        height:100%;
+    }
     .CompanyBlackCard{
-        padding:0px 40px ;
+        padding:50px 40px ;
     }
     .WhyChooseTXT{
         padding: 40px 40px 40px 40px;
@@ -355,8 +382,17 @@
     }
 }
 @media (min-width: 1200px) {
+    .cmpUnprecedented{
+        top:0px;
+    }
+    .cmpSpecifications,.cmpTbsPioneers{
+        top:-50px;
+    }
+    .CompanyChange,.Company_black img{
+        height:500px;
+    }
     .CompanyBlackCard{
-        padding:0px 50px ;
+        padding: 50px ;
     }
     .WhyChooseTXT{
         padding: 40px 50px 40px 50px;

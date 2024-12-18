@@ -29,6 +29,7 @@ function AdvantagesTop() {
                         <div className='col-xl-6 col-lg-12 d-flex justify-content-center p-0 m-0'>
                             <div className='AdvTopLeft d-flex justify-content-center'
                             data-aos="fade-right"
+                            data-aos-duration="600"
                             >
                                 <img src={AdvaLeft} alt="" className='AdvTopLeftTruck' loading='lazy'/>
                                 <img src={Youtube} alt="" className='AdvTopYoutube ' loading='lazy'/>
@@ -37,6 +38,7 @@ function AdvantagesTop() {
                         <div className='col-xl-6 col-lg-12 d-flex justify-content-center align-items-center pe-xxl-5 pe-xl-5 mt-5 mt-lg-5 mt-md-5 mt-xxl-0 mt-xl-0'>
                             <div className='AdvTopright  text-xl-start'
                             data-aos="zoom-out-left"
+                            data-aos-duration="600"
                             >
                                 <h3 className='mb-2 sans_Medium SonaTxtColor '>Welcome to Your Advantage</h3>
                                 <h1 className='mb-4 sans_bold'>Our Guarantee is the Commitment to Deliver Innovative Products </h1>

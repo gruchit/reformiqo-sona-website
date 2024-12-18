@@ -14,9 +14,10 @@ function TabletCanisters() {
     return (
         <>
             <Helmet>
-                <title>Tablet & Canisters | Sona Extrusion</title>
-                <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
-                <meta name="keywords" content="company, products, services, home, business" />
+                <title>Aluminium Tablet Canisters Manufacturer - Safe Packaging</title>
+                
+                <meta name="keywords" content="Aluminium Tablet Canisters" />
+                <meta name="description" content="Sona Extrusion delivers high-quality aluminium tablet canisters, ensuring safety and durability. We delivers eco-friendly packaging solutions for all industries." />
             </Helmet>
             <Top />
             <Header />

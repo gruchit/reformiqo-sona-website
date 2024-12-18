@@ -20,14 +20,17 @@ function VideoGlry() {
                         <div className='d-flex justify-content-center'>
                             <img src={Single_BlackBol_Line} alt="" className='VideoGlryTxtImg' loading='lazy' />
                         </div>
-                        <div data-aos="zoom-out-up"
-                            data-aos-offset="200">
+                        <div data-aos="zoom-in-up"
+                            data-aos-offset="200"
+                            data-aos-duration="500"
+                            
+                            >
                             <h1 className='text-center sans_bold'>Video Gallery</h1>
                         </div>
                     </div>
                     <div className='VideoGlryBody'>
                         <div className='row d-flex justify-content-center'>
-                            <div className='mt-5 col-lg-4 col-md-6 col-sm-12   d-flex justify-content-center' data-aos="zoom-in" data-aos-offset="200">
+                            <div className='mt-5 col-lg-4 col-md-6 col-sm-12   d-flex justify-content-center' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-duration="600">
                                 <div className='VideoGlryCard'>
                                     <iframe
                                         className="VideoIframe"
@@ -36,10 +39,11 @@ function VideoGlry() {
                                         frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen
+                                        loading="lazy"
                                     ></iframe>
                                 </div>
                             </div>
-                            <div className='mt-5 col-lg-4 col-md-6 col-sm-12  d-flex justify-content-center' data-aos="zoom-in" data-aos-offset="200">
+                            <div className='mt-5 col-lg-4 col-md-6 col-sm-12  d-flex justify-content-center' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-duration="600">
                                 <div className='VideoGlryCard'>
                                     <iframe
                                         className="VideoIframe"
@@ -48,10 +52,10 @@ function VideoGlry() {
                                         frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin"
-                                        allowfullscreen></iframe>
+                                        allowfullscreen loading="lazy"></iframe>
                                 </div>
                             </div>
-                            <div className='mt-5 col-lg-4 col-md-6 col-sm-12  d-flex justify-content-center' data-aos="zoom-in" data-aos-offset="200">
+                            <div className='mt-5 col-lg-4 col-md-6 col-sm-12  d-flex justify-content-center' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-duration="600">
                                 <div className='VideoGlryCard'>
                                     <iframe
                                         className="VideoIframe"
@@ -60,7 +64,7 @@ function VideoGlry() {
                                         frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin"
-                                        allowfullscreen></iframe>
+                                        allowfullscreen loading="lazy"></iframe>
                                 </div>
                             </div>
                         </div>

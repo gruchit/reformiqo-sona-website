@@ -13,9 +13,8 @@ function Cosm_Per() {
     return (
         <>
             <Helmet>
-                <title>Cosmetic & Personal-Care | Sona Extrusion</title>
-                <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
-                <meta name="keywords" content="company, products, services, home, business" />
+                <title>Cosmetic & Personal Care Packaging Manufacturer & Supplier</title>
+                <meta name="description" content="Expert manufacturer of cosmetic and personal care packaging. We offer eco-friendly, innovative, and durable designs that reflect your brand’s unique identity." />
             </Helmet>
             <Top />
             <Header />

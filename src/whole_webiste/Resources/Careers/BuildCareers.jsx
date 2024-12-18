@@ -10,6 +10,7 @@ const jobOptions = [
   { label: 'Full-Time' },
   { label: 'Part-Time' },
   { label: 'Permanent' },
+  { label: 'Permanent' },
 ];
 
 const categoryOptions = [
@@ -26,7 +27,7 @@ function BuildCareers() {
   return (
     <>
       <div className="BuildCareers">
-        <div className="BuildCareers_Detalis flex-column text-center" data-aos="zoom-in-up"  data-aos-offset="200">
+        <div className="BuildCareers_Detalis flex-column text-center" data-aos="zoom-in-up" data-aos-offset="200">
           <h1 className="sans_bold mb-5">Build Your Career</h1>
           <p className="sans_light text-secondary">
             Sona Extrusion is a great place to kickstart your career. You will contribute to our
@@ -40,7 +41,7 @@ function BuildCareers() {
             responsibilities very quickly.
           </p>
         </div>
-        <div className="BuildCareersForm" data-aos="zoom-in-up"  data-aos-offset="200">
+        <div className="BuildCareersForm" data-aos="zoom-in-up" data-aos-offset="200">
           <form action="">
             <div className="flex-column row-gap-3">
               <div className="d-flex justify-content-between align-items-center">
@@ -50,6 +51,7 @@ function BuildCareers() {
                     label="City, State or Pin code"
                     variant="outlined"
                     className="CityInput"
+                     autoComplete="off"
                   />
                   <IoLocationOutline className="location-icon" />
                 </div>
@@ -62,9 +64,10 @@ function BuildCareers() {
                 <Autocomplete
                   disablePortal
                   options={jobOptions}
-                  sx={{ width: '100%' }}
+                  className='BuldjobInput'
+                  sx={{ width: '100%',zIndex: 10   }}
                   renderInput={(params) => (
-                    <TextField {...params} label="Job Type" variant="outlined" className="BuildJob" />
+                    <TextField {...params} label="Job Type" variant="outlined" className="BuildJob " sx={{ zIndex: 10  }}/>
                   )}
                 />
 
@@ -72,9 +75,10 @@ function BuildCareers() {
                 <Autocomplete
                   disablePortal
                   options={categoryOptions}
+                  className='CategoryjobInput'
                   sx={{ width: '100%' }}
                   renderInput={(params) => (
-                    <TextField {...params} label="Category" variant="outlined" className="BuildCategory" />
+                    <TextField {...params} label="Category" variant="outlined" className="BuildCategory" sx={{ zIndex: 10  }}/>
                   )}
                 />
               </div>

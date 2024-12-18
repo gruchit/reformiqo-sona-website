@@ -13,9 +13,9 @@ function Nutrac() {
   return (
     <>
     <Helmet>
-        <title>Nutraceutical | Sona Extrusion</title>
-        <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
-        <meta name="keywords" content="company, products, services, home, business" />
+        <title>Nutraceutical Packaging Containers Manufacturer & Supplier</title>
+        <meta name="description" content="Premium nutraceutical packaging containers that prioritize safety and sustainability. Explore durable, eco-friendly containers crafted for the health industry.
+" />
       </Helmet>
       <Top />
       <Header />

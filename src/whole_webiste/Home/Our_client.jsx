@@ -31,7 +31,7 @@ function Our_client() {
     const goToNext = () => sliderRef.current.slickNext();
     const totalSlides = 2;
     return (
-        <div className='Our_client '>
+        <div className='Our_client'>
             <div className=''>
                 <div className='row'>
                     <div className='col-xxl-5 col-xl-5 p-5 col-md-12 col-sm-12'>
@@ -39,9 +39,8 @@ function Our_client() {
                             <div
                                 className='d-flex justify-content-end'
                                 data-aos="fade-right"
-                                data-aos-offset="50"
-                                data-aos-delay="300"
-                                data-aos-duration="3000"
+                                data-aos-offset="300"
+                                data-aos-duration="700"
                                 data-aos-easing="ease-in-out"
                                 data-aos-once="true"
                                 data-aos-mirror="true"
@@ -51,9 +50,8 @@ function Our_client() {
                             <div
                                 className='d-flex justify-content-center'
                                 data-aos="fade-right"
-                                data-aos-offset="50"
-                                data-aos-delay="0"
-                                data-aos-duration="1500"
+                                data-aos-offset="300"
+                                data-aos-duration="600"
                                 data-aos-easing="ease-in-out"
                                 data-aos-once="true"
                                 data-aos-mirror="true"
@@ -65,9 +63,9 @@ function Our_client() {
                             <div
                                 className='d-flex justify-content-start'
                                 data-aos="fade-up"
-                                data-aos-offset="50"
+                                data-aos-offset="200"
                                 data-aos-delay="0"
-                                data-aos-duration="1500"
+                                data-aos-duration="500"
                                 data-aos-easing="ease-in-out"
                                 data-aos-once="true"
                                 data-aos-mirror="true"
@@ -78,9 +76,9 @@ function Our_client() {
                     </div>
                     <div className='me-auto col-xxl-7 col-xl-7 col-md-12 col-sm-12 Our_client_right p-3 p-sm-4 p-md-5 p-lg-5 p-xl-5 p-xxl-5' 
                         data-aos="fade-left"
-                        data-aos-offset="50"
+                        data-aos-offset="200"
                         data-aos-delay="0"
-                        data-aos-duration="1500"
+                        data-aos-duration="500"
                         easing="ease-in-out"
                         once="true"
                         mirror="true"
@@ -124,8 +122,8 @@ function Our_client() {
                         </Slider>
 
                         <div className='addd d-flex justify-content-between align-items-center mt-auto px-5'>
-                            <div className='arowOur d-flex align-items-center'>
-                                {/* Left Arrow */}
+                            {/* <div className='arowOur d-flex align-items-center'>
+                                
                                 <img
                                     src={left_S_aro}
                                     alt=""
@@ -134,7 +132,7 @@ function Our_client() {
                                     style={{ cursor: 'pointer' }}
                                 />
 
-                                {/* Right Arrow */}
+                                
                                 <img
                                     src={Right_S_aro}
                                     alt=""
@@ -142,7 +140,7 @@ function Our_client() {
                                     onClick={goToNext}
                                     style={{ cursor: 'pointer' }}
                                 />
-                            </div>
+                            </div> */}
 
                             <p className='sans_light text-secondary m-0'>{currentSlide + 1}/{totalSlides}</p>
                         </div>

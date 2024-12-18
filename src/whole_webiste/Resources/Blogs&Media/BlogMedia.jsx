@@ -9,9 +9,8 @@ function BlogMedia() {
     return (
         <>
         <Helmet>
-                <title>Blog & Media | Sona Extrusion</title>
-                <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
-                <meta name="keywords" content="company, products, services, home, business" />
+                <title>Sona Extrusion Blog - Innovations, News, and Insights</title>
+                <meta name="description" content="Sona Extrusion Blog Media provides expert insights, news, and trends to keep you informed about the latest in the extrusion industry. Visit now!" />
             </Helmet>
             <Top />
             <Header />

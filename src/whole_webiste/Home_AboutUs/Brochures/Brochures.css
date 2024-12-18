@@ -1,23 +1,38 @@
-.brochure-container {
+/* Center the cont
+ainer */
+.brocherSet{
+  overflow: hidden;
+}
+.flipbook-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-.brochure .page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    color: #333;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-}
-.cover {
-    background-color: #4A90E2;
-    color: white;
-}
-.back-cover {
-    background-color: #333;
-    color: white;
+    height: 1000px; /* Full viewport height */
+    background-color: #f0f0f0; /* Optional background */
+    overflow: hidden;
+    height: 1000px; /* Full viewport height */
+    box-shadow: none; /* Remove shadow */
+  }
+  
+  /* Optionally remove any shadows */
+  .demoPage {
+    box-shadow: none; /* Remove shadow */
+  }
+  
+  /* Optional styling for the title */
+  h1 {
+    margin-bottom: 20px;
+  }
+  /* .react-pdf__Page__canvas{ */
+    /* margin: auto; */
+  /* } */
+  .stf__parent{
+    margin: auto;
+    height: 500px;
+  }
+  .react-pdf__Page__canvas{
+    height: 500px !important;
+  }
+.brocherSet{
+  padding: 80px 0px;
 }

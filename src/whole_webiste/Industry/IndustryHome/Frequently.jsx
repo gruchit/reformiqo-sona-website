@@ -45,7 +45,7 @@ function Frequently() {
             <div className='row'>
                 <div className='col-xl-6 col-lg-12 mt-5'>
                     <div className='Frequently_right flex-column'
-                        data-aos="fade-up"
+                        data-aos="fade-up" 
                     >
                         <div className='px-sm-5 px-md-5 px-lg-5 px-xl-5 px-xxl-5 '>
                             <h3 className='text-start py-3 sans_bold'>Talk to an Automation Expert</h3>

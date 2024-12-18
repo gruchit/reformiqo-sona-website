@@ -16,7 +16,7 @@ function MarketLe() {
             <img src={Arrow_Left} alt="" className='markerLe_img' loading='lazy'
                 data-aos="fade-right"
                 data-aos-offset="0"
-                data-aos-duration="1000"
+                data-aos-duration="500"
                 easing="ease-in-out"
                 once="true"
                 mirror="true"
@@ -25,7 +25,8 @@ function MarketLe() {
                 <div className="col-xl-6 col-lg-6 col-sm-12 col-md-6 d-flex justify-content-center">
                     <div className='py-4 markerLeLeft'
                         data-aos="fade-right"
-                        data-aos-duration="1000"
+                        data-aos-duration="500"
+                        data-aos-offset="200"
                         data-aos-easing="ease-in-sine"
                         data-aos-once="true"
                         mirror="true"
@@ -43,8 +44,8 @@ function MarketLe() {
                 <div className="col-xl-6 col-lg-6 col-sm-12 col-md-6 flex-column ">
                     <div className=' markerLe_cards flex-column mx-auto'
                         data-aos="zoom-in"
-                        data-aos-offset="500"
-                        data-aos-duration="1000"
+                        data-aos-offset="200"
+                        data-aos-duration="700"
                         easing="ease-in-out"
                         once="true"
                         mirror="true">
@@ -56,7 +57,7 @@ function MarketLe() {
                         data-aos="fade-up"
                         data-aos-offset="0"
                         data-aos-delay="1000"
-                        data-aos-duration="3000"
+                        data-aos-duration="1500"
                         easing="ease-in-out"
                         once="true"
                         mirror="true"

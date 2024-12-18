@@ -21,9 +21,8 @@ function Order() {
                     <div className='Order_text flex-column'>
                         <div className='d-flex justify-content-center '>
                             <img src={Single_BlackBol_Line} alt="" loading='lazy' srcset="" className='' data-aos="zoom-in-up"
-                                data-aos-offset="50"
-                                data-aos-delay="1000"
-                                data-aos-duration="1000"
+                                data-aos-offset="200"
+                                data-aos-duration="500"
                                 easing="ease-in-out"
                                 // once="true"
                                 // mirror="true" 
@@ -31,9 +30,8 @@ function Order() {
                         </div>
                         <h1 className='text-center mb-xl-5 mb-xxl-5 mb-md-5 mb-sm-5 mb-lg-5 mb-xl-5 pb-xl-5 pb-xxl-5 pb-md-5 pb-sm-5 pb-lg-5 '
                             data-aos="zoom-in-up"
-                            data-aos-offset="50"
-                            data-aos-delay="1000"
-                            data-aos-duration="1000"
+                            data-aos-offset="200"
+                            data-aos-duration="500"
                             easing="ease-in-out"
                             once="true"
                             mirror="true"
@@ -44,9 +42,8 @@ function Order() {
                             <img src={Doted_line} alt="" srcset="" className='' loading='lazy'/>
                             <div className=' Order_images_box1  flex-column'
                                 data-aos="fade-right"
-                                data-aos-offset="50"
-                                data-aos-delay="500"
-                                data-aos-duration="1000"
+                                data-aos-offset="200"
+                                data-aos-duration="500"
                                 easing="ease-in-out"
                                 once="true"
                                 mirror="true"
@@ -60,9 +57,8 @@ function Order() {
                             </div>
                             <div className=' Order_images_box2'
                                 data-aos="fade-left"
-                                data-aos-offset="50"
-                                data-aos-delay="500"
-                                data-aos-duration="1000"
+                                data-aos-offset="200"
+                                data-aos-duration="500"
                                 easing="ease-in-out"
                                 once="true"
                                 mirror="true"
@@ -77,9 +73,8 @@ function Order() {
                             </div>
                             <div className=' Order_images_box3'
                                 data-aos="fade-up"
-                                data-aos-offset="50"
-                                data-aos-delay="500"
-                                data-aos-duration="1000"
+                                data-aos-offset="200"
+                                data-aos-duration="500"
                                 easing="ease-in-out"
                                 once="true"
                                 mirror="true"

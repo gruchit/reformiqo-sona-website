@@ -14,22 +14,19 @@ function ThreTabs() {
     return (
         <>
             <div className='ThreTabs'>
-                <div className='ThreleftArrow'
-
-                >
+                <div className='ThreleftArrow'>
                     <img src={leftArrow} alt="" className='' loading='lazy' />
                 </div>
                 <div className='container-xxl'>
                     <div className='row d-flex justify-content-center'
-                        data-aos="zoom-in-up"
-                        data-aos-offset="50"
-                        data-aos-delay="500"
-                        data-aos-duration="1000"
+                        
+                    >
+                        <div className='col-xl-4  col-lg-4 col-md-6  mt-lg-0  d-flex justify-content-center' data-aos="zoom-in-up"
+                        data-aos-offset="200"
+                        data-aos-duration="500"
                         easing="ease-in-out"
                         once="true"
-                        mirror="true"
-                    >
-                        <div className='col-xl-4  col-lg-4 col-md-6  mt-lg-0  d-flex justify-content-center'>
+                        mirror="true">
                             <div className='ThreTbs1'>
                                 <img src={Pioneers} alt="" className='ThreTbsPioneers' loading='lazy' />
                                 <div className='ThreTabs1 d-flex align-items-center mt-5 mt-sm-5 mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0  '>
@@ -38,7 +35,12 @@ function ThreTabs() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4  col-lg-4 col-md-6  mt-lg-0 d-flex justify-content-center'>
+                        <div className='col-xl-4  col-lg-4 col-md-6  mt-lg-0 d-flex justify-content-center' data-aos="zoom-in-up"
+                        data-aos-offset="200"
+                        data-aos-duration="500"
+                        easing="ease-in-out"
+                        once="true"
+                        mirror="true">
                             <div className='ThreTbs1'>
                                 <img src={Unprecedented} alt="" className='ThreUnprecedented' loading='lazy' />
                                 <div className='ThreTabs1 d-flex align-items-center mt-5 mt-sm-5 mt-md-0 mt-lg-5 mt-xl-5 mt-xxl-5   '>
@@ -48,7 +50,12 @@ function ThreTabs() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4  col-lg-4 col-md-6  mt-lg-0 d-flex justify-content-center'>
+                        <div className='col-xl-4  col-lg-4 col-md-6  mt-lg-0 d-flex justify-content-center' data-aos="zoom-in-up"
+                        data-aos-offset="200"
+                        data-aos-duration="500"
+                        easing="ease-in-out"
+                        once="true"
+                        mirror="true">
                             <div className='ThreTbs1'>
                                 <img src={Specifications} alt="" className='ThreSpecifications' loading='lazy' />
                                 <div className='ThreTabs1 d-flex align-items-center mt-5 mt-sm-5 mt-md-5 mt-lg-0 mt-xl-0 mt-xxl-0  '>

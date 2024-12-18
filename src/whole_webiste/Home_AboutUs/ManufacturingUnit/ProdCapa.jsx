@@ -34,10 +34,11 @@ function ProdCapa() {
                         </div>
                         <div className='col-lg-6 col-md-12 mt-5 '>
                             <div>
-                                <div className='ProdCapaTxt d-flex justify-content-center '
-                                >
+                                <div className='ProdCapaTxt d-flex justify-content-center'>
                                     <table className="info-table sans_Medium"
                                     data-aos="fade-up-left"
+                                    data-aos-duration="500"
+                                    data-aos-offset="200"   
                                     >
                                         <tbody>
                                             <tr>

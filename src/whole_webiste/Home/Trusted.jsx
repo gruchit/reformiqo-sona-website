@@ -61,12 +61,11 @@ function Trusted() {
       <div 
         className='Trusted_text'
         data-aos="zoom-in-up" 
-        data-aos-offset="50" 
-        data-aos-delay="100" 
-        data-aos-duration="1000"
+        data-aos-offset="200" 
+        data-aos-duration="600"
         data-aos-easing="ease-in-out"
-        data-aos-once="true" 
-        data-aos-mirror="true"
+        // data-aos-once="true" 
+        // data-aos-mirror="true"
       >
         <div className='d-flex justify-content-center'>
           <img src={Single_BlackBol_Line} alt="Separator Line" loading='lazy'/>
@@ -76,13 +75,10 @@ function Trusted() {
 
       <div 
         className='slider-container'
-        // data-aos="zoom-in-up" 
-        // data-aos-offset="0" 
-        // data-aos-delay="0" 
-        // data-aos-duration="3000"
-        // data-aos-easing="ease-in-out"
-        // data-aos-once="true" 
-        // data-aos-mirror="true"
+        data-aos="zoom-in-up" 
+        data-aos-offset="200" 
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out"
       >
         <Slider {...settings}>
           <div className='slide-item d-flex justify-content-center'>

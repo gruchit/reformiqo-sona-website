@@ -1,47 +1,83 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 import HTMLFlipBook from 'react-pageflip';
 import './Brochures.css';
-import Top from '../../component/Top/Top';
-import Header from '../../component/Header/Header';
-import Footer from '../../component/Footer/Footer';
-import Focus from '../../Home/Focus';
-import Helmet  from 'react-helmet';
-function Brochures() {
-  const bookRef = useRef();
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import pdf from '../../../assets/PdfFile.pdf'; // Path to your PDF file
+
+import { Document, Page, pdfjs } from 'react-pdf';
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+
+const Pages = React.forwardRef((props, ref) => (
+  <div className="demoPage" ref={ref}>
+    <p>{props.children}</p>
+    <p>Page number: {props.number}</p>
+  </div>
+));
+Pages.displayName = 'Pages';
+
+function Flipbook() {
+  const [numPages, setNumPages] = useState(null);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
 
   return (
-    <>
-      <Helmet>
-        <title>Brochures | Sona Extrusion</title>
-        <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
-        <meta name="keywords" content="company, products, services, home, business" />
-      </Helmet>
-      <Top />
-      <Header />
-      <Focus type="Brochure" />
-      <div className="brochure-container">
-        <HTMLFlipBook
-          width={300}
-          height={200}
-          size="stretch"
-          minWidth={300}
-          maxWidth={600}
-          minHeight={400}
-          maxHeight={200}
-          maxShadowOpacity={0.5}
-          showCover={true}
-          mobileScrollSupport={false}
-          ref={bookRef}
-        >
-          <div className="page cover">Cover Page</div>
-          <div className="page">Page 1</div>
-          <div className="page">Page 2</div>
-          <div className="page back-cover">Back Cover</div>
-        </HTMLFlipBook>
+    <div className="brocherSet ">
+      <h1 className=" text-black text-center font-bold ">Sona Brocher</h1>
+      <div className='container'>
+          <div className=''>
+            <Document
+              file={pdf}
+              onLoadSuccess={onDocumentLoadSuccess}
+              onLoadError={console.error}
+            >
+              {numPages && (
+                <HTMLFlipBook width={300} height={500} mobileScrollSupport={false} showCover={true} className='Book'>
+                  <Pages key={0} number={1}>
+                    <Page
+                      // height={00}
+                      pageNumber={1}
+                      width={300}
+                      height={500}
+                      renderAnnotationLayer={false}
+                      renderTextLayer={false}
+                    />
+                    <p>Page 1 of {numPages}</p>
+                  </Pages>
+
+
+                  {[...Array(numPages - 2).keys()].map((pNum) => (
+                    <Pages key={pNum + 1} number={pNum + 2}>
+                      <Page
+                        pageNumber={pNum + 2}
+                        width={300} 
+                        height={500}
+                        renderAnnotationLayer={false}
+                        renderTextLayer={false}
+                      />
+                      <p>Page {pNum + 2} of {numPages}</p>
+                    </Pages>
+                  ))}
+
+
+                  <Pages key={numPages - 1} number={numPages}>
+                    <Page
+                      pageNumber={numPages}
+                      width={300}
+                       height={500}
+                      renderAnnotationLayer={false}
+                      renderTextLayer={false}
+                    />
+                    <p>Page {numPages} of {numPages}</p>
+                  </Pages>
+                </HTMLFlipBook>
+              )}
+            </Document>
+          </div>
       </div>
-      <Footer />
-    </>
+    </div>
   );
 }
 
-export default Brochures;
+export default Flipbook;

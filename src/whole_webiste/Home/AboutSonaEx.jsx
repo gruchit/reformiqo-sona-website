@@ -19,7 +19,7 @@ function AboutSonaEx() {
                             <div className='abSona_left  d-flex justify-content-center'>
                                 <img src={Truck} alt="" srcset="" loading='lazy'
                                     data-aos="fade-right"
-                                //    data-aos-duration="1000"
+                                   data-aos-duration="500"
                                 />
                             </div>
                         </div>
@@ -27,7 +27,7 @@ function AboutSonaEx() {
                             {/* <div className='absone_right  text-lg-center px-xl-4 py-xl-0 text-xl-start p-lg-5 p-md-5 p-sm-5 ' */}
                             <div className='absone_right text-center text-xl-start'
                                 data-aos="zoom-out-left"
-                                // data-aos-duration="1000"
+                                data-aos-duration="500"
                                 >
                                 <h3 className='mb-4 sans_Medium'>About Sona Extrusion</h3>
                                 <h1 className='sans_bold'>Efficiently Crafting The Future: Innovating  effective Engineering</h1>

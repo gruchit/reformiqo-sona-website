@@ -13,10 +13,10 @@ function ManufacturingUnit() {
   return (
     <>
       <Helmet>
-        <title>Manufacturing Unit | Sona Extrusion</title>
-        <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
-        <meta name="keywords" content="company, products, services, home, business" />
+        <title>The Backbone of Sonaextrusion: Our Manufacturing Excellence</title>
+        <meta name="description" content="Sonaextrusion's Manufacturing Unit Is Powered by Modern Technology, Ensuring Precision and Durability in Every Product. Learn to Produce High-Quality Products!" />
       </Helmet>
+      
       <Top />
       <Header />
       <Focus type="ManufacturingUnit" />

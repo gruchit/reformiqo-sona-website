@@ -43,6 +43,27 @@
     max-width: 400px;
     width: 100%;
 }
+.MoreImgBolDoted{
+    max-width:180px;
+    width: 100%;
+    display: block;
+    margin: 0px 0px 10px 120px;
+}
+.Know_More_tabs{
+    padding:50px 0px;
+    background-color: #faf8f5;
+    transition: all 0.3s;
+
+}
+.Know_More_tabsInner{
+    background-color:white;
+    width:90%;
+    overflow: hidden;
+    height:auto;
+    transition: all 0.3s;
+    /* height:325px; */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
 .filter-buttons{
     overflow-y: auto;
     box-sizing: border-box;
@@ -92,10 +113,12 @@
     bottom: -5px;
     height: 2px;
     background-color: #b49f6c;
-    transition: width 0.3s ease-in-out;
+    /* transition: width 0.3s ease-in-out; */
     width: 0; 
 }
 
+
+/* Main tab content container */
 .KnowMoreTabs {
     padding: 15px 15px ;
     border-radius: 8px;
@@ -114,21 +137,36 @@
     flex: 1;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.5s ease;
-    display: none;
-    height: 100%; /* Take up full height */
-    overflow-y: auto; /* Add vertical scroll for overflow */
-    transition: all 0.3s;
-
+    position: absolute; 
+    visibility: hidden; 
+    height: 100%; 
+    overflow-y: auto; 
 }
 
-.tab-content.show {
-    transition: opacity 0.5s ease;
-    opacity: 1;
-    transform: translateY(0);
-    display: block;
-    
+
+
+/* Utility classNamees */
+.flex-column {
+    display: flex;
+    flex-direction: column;
 }
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+.text-ellipsis {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10; /* Limits the text to 10 lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px 0;
+}
+
 
 /* Utility classNamees */
 .flex-column {
@@ -225,9 +263,9 @@
     transition: background-color 0.5s;
 }
 
-.faq-question:hover {
-    background-color: #f0f0f0; /* Subtle hover effect */
-}
+/* .faq-question:hover {
+    background-color: #f0f0f0; 
+} */
 
 .arrow {
     font-size: 16px;
@@ -282,10 +320,9 @@
 }
 .faq-section-open {
     transition: all 0.5s;
-
     background-color: #d4b76e;
     color: white;
-  }
+}
 @media (min-width: 320px) { 
     .KnowMoreTabs {
         padding: 15px 15px ;

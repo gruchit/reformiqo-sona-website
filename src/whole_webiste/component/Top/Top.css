@@ -1,6 +1,4 @@
-.containers{
-    padding:0px 40px;
-}
+
 hr{
     background-color: black !important;
     height:2px;
@@ -38,4 +36,45 @@ hr{
 .topofwebs{
     background-color:white;
     margin-bottom:20px;
+}
+.cursurePoint{
+    cursor: pointer;
+}
+@media (min-width: 320px) { 
+    .containers{
+        padding:15px;
+    }
+}
+
+
+@media (min-width: 576px) { 
+    .containers{
+        padding:15px;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    .containers{
+        padding:15px;
+    }
+}
+
+
+@media (min-width: 992px) { 
+    .containers{
+        padding:15px;
+    }
+}
+
+
+@media (min-width: 1200px) { 
+    .containers{
+        padding:0px 40px;
+    }
+}
+
+
+@media (min-width: 1400px) { 
+
 }

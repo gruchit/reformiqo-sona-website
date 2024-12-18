@@ -30,7 +30,8 @@ function WhyChoose() {
                     />
                     <div className={isLargeScreen ? "container-xxl" : ""}
                         data-aos="zoom-in-up"
-                        data-aos-duration="1000"
+                        data-aos-offset="200"
+                        data-aos-duration="500"
                         once="true"
                         mirror="true"
                     >
@@ -42,46 +43,48 @@ function WhyChoose() {
                 <div className='WhyChooseTXT '>
                     <img src={Arrow} alt="" srcset="" className='WhyArrow' loading='lazy'
                         data-aos="fade-left"
-                        data-aos-delay="500"
-                        data-aos-duration="1000"
+                        data-aos-offset="200"
+                        data-aos-duration="500"
                         easing="ease-in-out"
 
                     />
                     <div className={isLargeScreen ? "container-xl" : ""}>
                         <div className='d-flex justify-content-center'>
                             <ul className=' list-unstyled sans_bold'>
-                                <li className='py-2'><FaCheck className='WhyIcon fs-6 me-4' 
-                                data-aos="zoom-in"
-                                    data-aos-delay="1000"
-                                    
-                                /><a className='text-black text-decoration-none'
+                                <li className='py-2'><FaCheck className='WhyIcon fs-6 me-4'
+                                    data-aos="zoom-in"
+                                    data-aos-offset="200"
+                                    data-aos-duration="500"/>
+                                <a className='text-black text-decoration-none'
                                     data-aos="fade-in"
-                                    data-aos-delay="1000"
-                                    data-aos-duration="1500">Leading Manufacturer of Aluminium Collapsible Tubes, Containers, Bottles and Flasks</a></li>
-                                <li className='py-2'><FaCheck className='WhyIcon fs-6 me-4' 
-                                data-aos="zoom-in"
-                                data-aos-delay="1000"
-                                
-                                /><a className='text-black text-decoration-none'
+                                    data-aos-offset="200"
+                                    data-aos-duration="600">
+                                    Leading Manufacturer of Aluminium Collapsible Tubes, Containers, Bottles and Flasks</a></li>
+                                <li className='py-2'><FaCheck className='WhyIcon fs-6 me-4'
+                                    data-aos="zoom-in"
+                                    data-aos-offset="200"
+                                    data-aos-duration="500"/>
+                                <a className='text-black text-decoration-none'
                                     data-aos="fade-in"
-                                    data-aos-delay="1000"
-                                    data-aos-duration="1500"
-                                >One of the Largest Single Roof Production Capacity in India</a></li>
-                                <li className='py-2'><FaCheck className='WhyIcon fs-6 me-4' 
-                               data-aos="zoom-in"
-                               data-aos-delay="1000"
-                               
-                                /><a className='text-black text-decoration-none'
+                                    data-aos-offset="200"
+                                    data-aos-duration="600">
+                                One of the Largest Single Roof Production Capacity in India</a></li>
+                                <li className='py-2'><FaCheck className='WhyIcon fs-6 me-4'
+                                    data-aos="zoom-in"
+                                    data-aos-offset="200"
+                                    data-aos-duration="500"
+                                    />
+                                <a className='text-black text-decoration-none'
                                     data-aos="fade-in"
-                                    data-aos-delay="1000"
-                                    data-aos-duration="1500"
-                                >Manufacturing Capacity of 500 Mn Tubes & 50 Mn Flasks/Containers per annum</a></li>
+                                    data-aos-offset="200"
+                                    data-aos-duration="600">
+                                Manufacturing Capacity of 500 Mn Tubes & 50 Mn Flasks/Containers per annum</a></li>
                             </ul>
                         </div>
                         <p className='text-center text-secondary sans_light'
                             data-aos="fade-in"
-                            data-aos-delay="500"
-                            data-aos-duration="1500"
+                            data-aos-offset="200"
+                            data-aos-duration="600"
                         >We are delivering premium quality products meeting the ever-changing requirements of our elite customers in the markets of Canada, U.S.A., U.K., Spain, Sweden, Russia, India, Sri Lanka, Singapore, Malaysia, Australia, Nigeria, Joran, Ethiopia, South Africa, and many more.</p>
                     </div>
                 </div>

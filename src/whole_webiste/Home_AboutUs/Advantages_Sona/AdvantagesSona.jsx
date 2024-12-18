@@ -16,9 +16,9 @@ function AdvantagesSona() {
   return (
     <>
       <Helmet>
-        <title>Advantages Sona | Sona Extrusion</title>
-        <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
-        <meta name="keywords" content="company, products, services, home, business" />
+        <title>Sonaextrusion Advantages: Where Quality Meets Innovation</title>
+        <meta name="description" content="Sonaextrusion delivers a perfect mixture of technology, durability, and eco-consciousness. Explore the advantages of choosing us as your extrusion partner!
+"/>
       </Helmet>
         <Top />
         <Header />

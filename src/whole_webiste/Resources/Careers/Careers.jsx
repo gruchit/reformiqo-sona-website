@@ -10,9 +10,8 @@ function Careers() {
   return (
     <>
       <Helmet>
-        <title>Careers | Sona Extrusion</title>
-        <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
-        <meta name="keywords" content="company, products, services, home, business" />
+        <title>Join the Sona Extrusion Family - Exciting Career Opportunities</title>
+        <meta name="description" content="Build a rewarding career with Sona Extrusion. Discover current job openings and apply online to join our innovative and dynamic team today. Click Now!" />
       </Helmet>
       <Top />
       <Header />

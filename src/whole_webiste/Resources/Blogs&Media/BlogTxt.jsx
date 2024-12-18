@@ -3,7 +3,7 @@ import './Blog.css'
 import BlogImg1 from '../../../assets/Home4_webp.webp'
 import BlogImg2 from '../../../assets/Home_main_webp.webp'
 import AOS from 'aos';
-
+import { Link } from 'react-router-dom';
 function BlogTxt({ Type }) {
     useEffect(() => {
         AOS.init();
@@ -17,7 +17,7 @@ function BlogTxt({ Type }) {
                         data-aos="zoom-in-up"
                         // data-aos-offset="50"
                         // data-aos-delay="1000"
-                        data-aos-duration="1000"
+                        data-aos-duration="500"
                         easing="ease-in-out"
                         once="true"
                         mirror="true"
@@ -43,7 +43,7 @@ function BlogTxt({ Type }) {
                                 data-aos="zoom-in"
                                 data-aos-offset="50"
                                 // data-aos-delay="1000"
-                                data-aos-duration="1000"
+                                data-aos-duration="500"
                                 easing="ease-in-out"
                                 once="true"
                                 mirror="true"
@@ -56,7 +56,9 @@ function BlogTxt({ Type }) {
                                         <p className=' sans_Light text-center'>The future of Aluminium Collapsible Tubes</p>
                                     </div>
                                     <div className='d-flex justify-content-center align-items-center'>
+                                        <Link to="/FuturAluminium">
                                         <button className='btn BlogBtn'>Read More</button>
+                                        </Link>
                                     </div>
 
                                 </div>
@@ -66,7 +68,7 @@ function BlogTxt({ Type }) {
                                 data-aos="zoom-in"
                                 data-aos-offset="50"
                                 // data-aos-delay="1000"
-                                data-aos-duration="1000"
+                                data-aos-duration="500"
                                 easing="ease-in-out"
                                 once="true"
                                 mirror="true"
@@ -78,7 +80,9 @@ function BlogTxt({ Type }) {
                                         <p className=' sans_Light text-center'>Define the advantages and application: technological effectiveness in the field of aluminium collapsible tubes?</p>
                                     </div>
                                     <div className='d-flex justify-content-center align-items-center'>
+                                        <Link to="/DefineAdvantages">
                                         <button className='btn BlogBtn'>Read More</button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

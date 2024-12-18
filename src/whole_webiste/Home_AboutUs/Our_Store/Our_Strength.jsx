@@ -11,6 +11,7 @@ import AOS from 'aos';
 
 
 function Our_Strength() {
+
     useEffect(() => {
         AOS.init();
     }, []);
@@ -21,21 +22,20 @@ function Our_Strength() {
                     <div className='Our_Strength_images'>
                         <img src={Arrow_Left} alt="" className='left_arwOurSt' loading='lazy'
                             data-aos="fade-right"
-                            data-aos-offset="50"
-                            data-aos-duration="1000"
+                            data-aos-offset="300"
+                            data-aos-duration="600"
                             easing="ease-in-out"
                         />
                         <img src={Double_bol_line} alt="" srcset="" className='DoubleBolLine_Our' loading='lazy'
                             data-aos="fade-down"
-                            data-aos-duration="1000"
+                            data-aos-duration="600"
                             easing="ease-in-out"
                         />
                     </div>
                     <div className='Our_Strength_details'
                         data-aos="zoom-in-up"
-                        data-aos-offset="50"
-                        data-aos-delay="500"
-                        data-aos-duration="1000"
+                        data-aos-offset="300"
+                        data-aos-duration="600"
                         easing="ease-in-out"
                         once="true"
                         mirror="true"
@@ -45,18 +45,14 @@ function Our_Strength() {
                             state-of-the-art technology.</p>
                     </div>
                     <div className='Our_Strength_cards_details'>
-                        <div className='row d-flex justify-content-center'
-                            data-aos="fade-up"
-                            data-aos-offset="50"
-                            data-aos-delay="500"
-                            data-aos-duration="1000"
+                        <div className='row d-flex justify-content-center'>
+                            <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0 d-flex justify-content-center' data-aos="fade-up"
+                            data-aos-offset="300"
+                            data-aos-duration="600"
                             easing="ease-in-out"
                             once="true"
-                            mirror="true"
-                        >
-                            <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0 d-flex justify-content-center'>
-                                <div className='Our_Strength_cards flex-column '>
-
+                            mirror="true">
+                                <div className='Our_Strength_cards flex-column'>
                                     <img src={Pharmaceutical1} alt="" loading='lazy' />
                                     <h5 className='sans_Medium'>Efficient and Effective Technology</h5>
                                     <p className='sans_light text-secondary'>We manufacture using state-of-the-art machinery and technology making it possible for us to efficiently & effectively produce quality aluminium packaging solutions.</p>
@@ -64,7 +60,12 @@ function Our_Strength() {
 
                                 </div>
                             </div>
-                            <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-0 mt-lg-5 mt-xl-5 mt-xxl-5 d-flex justify-content-center'>
+                            <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-0 mt-lg-5 mt-xl-5 mt-xxl-5 d-flex justify-content-center' data-aos="fade-up"
+                            data-aos-offset="300"
+                            data-aos-duration="600"
+                            easing="ease-in-out"
+                            once="true"
+                            mirror="true">
                                 <div className='Our_Strength_cards flex-column '>
 
                                     <img src={Cosmetic1} alt="" loading='lazy' />
@@ -74,7 +75,12 @@ function Our_Strength() {
 
                                 </div>
                             </div>
-                            <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-5 mt-lg-0 mt-xl-0 mt-xxl-0 d-flex justify-content-center'>
+                            <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-5 mt-lg-0 mt-xl-0 mt-xxl-0 d-flex justify-content-center' data-aos="fade-up"
+                            data-aos-offset="300"
+                            data-aos-duration="600"
+                            easing="ease-in-out"
+                            once="true"
+                            mirror="true">
                                 <div className='Our_Strength_cards flex-column '>
 
                                     <img src={Nutraceuticals} alt="" loading='lazy' />
@@ -84,7 +90,13 @@ function Our_Strength() {
 
                                 </div>
                             </div>
-                            <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5 mt-xxl-5 d-flex justify-content-center '>
+                            <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5 mt-xxl-5 d-flex justify-content-center ' data-aos="fade-up"
+                            data-aos-offset="300"
+                            data-aos-duration="600"
+                            easing="ease-in-out"
+                            once="true"
+                            mirror="true"
+                            >
                                 <div className='Our_Strength_cards flex-column '>
 
                                     <img src={Industrial1} alt="" loading='lazy' />

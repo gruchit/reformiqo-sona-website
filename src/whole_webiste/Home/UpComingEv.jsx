@@ -60,7 +60,7 @@ function UpComingEv() {
                 data-aos="zoom-in-up"
                 data-aos-offset="50"
                 data-aos-delay="500"
-                data-aos-duration="1000"
+                data-aos-duration="500"
                 data-aos-easing="ease-in-out"
                 data-aos-once="true"
                 data-aos-mirror="true"
@@ -72,19 +72,19 @@ function UpComingEv() {
             </div>
 
             <div className='slider-container'
-                data-aos="zoom-in-up"
-                data-aos-offset="0"
-                // data-aos-delay=""
-                data-aos-duration="1300"
-                data-aos-easing="ease-in-out"
-                data-aos-once="true"
-                data-aos-mirror="true"
+               
             >
                 {isSliderActive ? (
                     <Slider {...sliderSettings}>
                         {/* UpcomingEv_text */}
                         {events.map((event) => (
-                            <div key={event.id} className="date_Upcominrela col-4 p-0 mt-5 d-flex justify-content-center">
+                            <div key={event.id} className="date_Upcominrela col-4 p-0 mt-5 d-flex justify-content-center"  data-aos="zoom-in-up"
+                            data-aos-offset="0"
+                            // data-aos-delay=""
+                            data-aos-duration="600"
+                            data-aos-easing="ease-in-out"
+                            data-aos-once="true"
+                            data-aos-mirror="true">
                                 <div className='date_Upcomin flex-column text-white'>
                                     <p className='p-0 m-0 sans_light'>{event.date}</p>
                                     <h4 className='p-0 m-0 sans_light'>{event.month}</h4>
@@ -98,9 +98,14 @@ function UpComingEv() {
                     </Slider>
                 ) : (
                     <div className='container'>
-                        <div className="row">
+                        <div className="row" >
                             {events.map((event) => (
-                                <div key={event.id} className="date_Upcominrela col-4 p-0 d-flex justify-content-center">
+                                <div key={event.id} className="date_Upcominrela col-4 p-0 d-flex justify-content-center"  data-aos="zoom-in-up"
+                                data-aos-offset="200"
+                                data-aos-duration="600"
+                                data-aos-easing="ease-in-out"
+                                data-aos-once="true"
+                                data-aos-mirror="true">
                                     <div className='date_Upcomin flex-column text-white'>
                                         <p className='p-0 m-0 sans_light'>{event.date}</p>
                                         <h4 className='p-0 m-0 sans_light'>{event.month}</h4>

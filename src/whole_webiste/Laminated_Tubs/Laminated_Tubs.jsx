@@ -11,16 +11,16 @@ function Laminated_Tubs() {
     return (
         <>
         <Helmet>
-                <title>Laminated Tubs | Sona Extrusion</title>
-                <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
-                <meta name="keywords" content="company, products, services, home, business" />
+                <title>High-Quality Laminated Tubes for Cosmetic & Industrial Needs</title>
+                <meta name="keywords" content="Laminated Tubes" />
+                <meta name="description" content="Laminated tubes by Sona Extrusion provide high-quality packaging for pharmaceuticals, cosmetics, and industrial products. Get Ideal packaging solutions!" />
             </Helmet>
             <Top />
             <Header />
             <Focus type="Laminated_Tubs"/>
             <Why_Sona/>
             <WhyPartner/>
-            <Product/>
+            <Product type="Laminated_Tubs"/>
             <Footer />
         </>
     )

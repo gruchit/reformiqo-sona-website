@@ -25,23 +25,23 @@ function Home() {
     <>
       <Helmet>
         <title>Home | Sona Extrusion</title>
-        <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
         <meta name="keywords" content="company, products, services, home, business" />
+        <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
       </Helmet>
 
       <Top />
-      <Header />
+      <Header  />
       <Focus type="Home" />
       <AboutSonaEx />
       <YearOf />
-      <Product />
+      <Trusted />
+      <Counter />
+      <Product type="Home"/>
       <Infinite />
       <MarketLe />
       <Order />
       <Our_client />
       <UpComingEv />
-      <Trusted />
-      <Counter />
       <BlogTxt Type="Home" />
       <SonaMap />
       <Footer />

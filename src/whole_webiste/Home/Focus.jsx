@@ -16,12 +16,18 @@ function Focus({ type }) {
                 <div
                     className="Focus_on"
                     data-aos="zoom-out-up"
+                    data-aos-duration="600"
                     data-aos-offset="200"
                     // data-aos-delay="500"
                 >
                     <div className="d-flex align-items-center justify-content-center">
                         <p className="font_oswald text-white text-uppercase text-center">
-                            
+                        
+                            {type === "Future" && "The Future Of Aluminium Collapsible Tubes"}
+                            {type === "Define" && "Define Advantages & Application"}
+                            {type === "AssistantExe" && "Assistant Ipqc Executive"}
+                            {type === "ProductionSup" && "Production Supervisor"}
+                            {type === "MachineOp" && "Machine Operator"}
                             {type === "ReachUs" && "Reach Us"}
                             {type === "Laminated_Tubs" && "Laminated Tubs"}
                             {type === "Careers" && "Careers"}

@@ -29,8 +29,6 @@ import Idus6 from '../../../assets/Idus6.png';
 import Idus7 from '../../../assets/Idus7.jpg';
 import Idus8 from '../../../assets/Idus8.png';
 import Idus9 from '../../../assets/Idus9.jpg';
-
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './pharm.css';
@@ -40,9 +38,7 @@ import { useEffect } from 'react';
 
 function TopSliderPhar({ Type }) {
     useEffect(() => {
-        AOS.init({
-          
-        });
+        AOS.init();
     }, []);
     const settings = {
         dots: false,
@@ -90,6 +86,7 @@ function TopSliderPhar({ Type }) {
             <div className="d-flex justify-content-center" 
              data-aos="zoom-in"
              data-aos-offset="300"
+             data-aos-duration="600"
             >
                 <div className="TopSliderPhar"
                 >

@@ -21,7 +21,9 @@ function Missine() {
                         <div className='row'>
                             <div className='col-lg-6 col-md-12 mt-5 d-flex justify-content-center'>
                                 <div className='MissineCard flex-column' 
-                                data-aos="fade-up" >
+                                data-aos="fade-up"
+                                data-aos-offset="200"
+                                    data-aos-duration="600" >
                                     <img src={Mission} alt="" className='MissionImg' loading='lazy' />
                                     <div className='mt-5 pt-3'>
                                         <h4 className='mt-4 sans_Medium'>Our Mission For Sustainability</h4>
@@ -32,6 +34,8 @@ function Missine() {
                             <div className='col-lg-6 col-md-12 mt-5 d-flex justify-content-center'>
                                 <div className='MissineCard flex-column'
                                 data-aos="fade-up" 
+                                data-aos-offset="200"
+                                    data-aos-duration="600"
                                 >
                                     <img src={Economys} alt="" className='MissionImg' loading='lazy' />
                                     <div className='mt-5 pt-3'>

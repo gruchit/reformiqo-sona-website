@@ -10,17 +10,17 @@ import Helmet from 'react-helmet';
 function Aluminum_Pro() {
     return (
         <>
-        <Helmet>
-                <title>Aluminum Products | Sona Extrusion</title>
-                <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
-                <meta name="keywords" content="company, products, services, home, business" />
+            <Helmet>
+                <title> Aluminium Products Manufacturing for Diverse Industries</title>
+                <meta name="keywords" content="Aluminium Products Manufacture" />
+                <meta name="description" content="Aluminium Products Manufacturer Delivering Top-Quality, Durable Solutions for Industries Like Pharmaceuticals, Cosmetics, and Agro-Chemical Sectors. Get Now!" />
             </Helmet>
             <Top />
             <Header />
-            <Focus type="Aluminium Products"/>
-            <AluMarketLed/>
-            <AlumBenefit/>
-            <Product/>
+            <Focus type="Aluminium Products" />
+            <AluMarketLed />
+            <AlumBenefit />
+            <Product type="Alume" />
             <Footer />
         </>
     )

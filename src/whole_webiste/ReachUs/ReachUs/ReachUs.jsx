@@ -14,9 +14,9 @@ function ReachUs() {
     return (
         <>
         <Helmet>
-                <title>Reach Us | Sona Extrusion</title>
-                <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
-                <meta name="keywords" content="company, products, services, home, business" />
+                <title>Sona Extrusion - Reach Us for Support or Inquiries</title>
+                
+                <meta name="description" content="Contact Sona Extrusion for support, queries, or information. Find all the details you need on our Reach Us page. Get in touch today!" />
             </Helmet>
             <Top />
             <Header />

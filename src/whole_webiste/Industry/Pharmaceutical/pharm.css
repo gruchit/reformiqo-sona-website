@@ -157,21 +157,22 @@
     top: -15px;
     left: 70px;
 }
-.Faq{
+/*  */
+.FaqMain{
     padding: 80px 0px;
     overflow:hidden;
 }
-.faq-section-open {
+.faq-section-open_main {
     background-color: #d4b76e;
     color: white;
   }
   
   /* Prevent hover styles from overriding when the section is open */
-  .faq-question.faq-section-open:hover {
+  .faq-question-Main.faq-section-open_main:hover {
     background-color: #d4b76e;
     color: white;
   }
-.Faq h2{
+.FaqMain h2{
     max-height: ;
     font-weight:600;
 }
@@ -183,6 +184,106 @@
 }
 
 
+
+/*  */
+.Know_More_tabs{
+    padding:50px 0px;
+    background-color: #faf8f5;
+    transition: all 0.3s;
+
+}
+.Know_More_tabsInner{
+    background-color:white;
+    width:90%;
+    overflow: hidden;
+    height:auto;
+    transition: all 0.3s;
+    /* height:325px; */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.filter-buttons{
+    overflow-y: auto;
+    box-sizing: border-box;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+.Know_More h1 {
+    /* margin-bottom: 10px; */
+    font-weight: 700;
+}
+.filter-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    color: #555;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, letter-spacing 0.3s ease-in-out;
+}
+
+.filter-button.active {
+    color: black;
+    letter-spacing: 1px; 
+    transform: scale(1.05);
+    font-weight: 600; 
+}
+
+.filter-button.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #b49f6c;
+    transition: width 0.3s ease-in-out;
+    width: 100%; /* Full width on active */
+}
+
+.filter-button::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    right: 0% ;
+    bottom: -5px;
+    height: 2px;
+    background-color: #b49f6c;
+    /* transition: width 0.3s ease-in-out; */
+    width: 0; 
+}
+
+
+/* Main tab content container */
+.KnowMoreTabs {
+    padding: 15px 15px ;
+    border-radius: 8px;
+    overflow: hidden;
+}
+/* Smooth transition for content change */
+.text-ellipsis {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10; /* Limits the text to 10 lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px 0;
+}
+.tab-content {
+    flex: 1;
+    opacity: 0;
+    transform: translateY(20px);
+    position: absolute; /* Remove from normal flow */
+    visibility: hidden; /* Hide element initially */
+    
+    height: 100%; /* Take up full height */
+    overflow-y: auto; /* Add vertical scroll for overflow */
+}
+
+.tab-content.show {
+    visibility: visible; /* Make it visible */
+    position: relative; /* Restore normal flow */
+}
 @media (min-width: 320px) {
   .TopSliderPhar {
         width: 100%;

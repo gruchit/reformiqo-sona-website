@@ -11,7 +11,7 @@ const OurStore = lazy(() => import("./whole_webiste/Home_AboutUs/Our_Store/Sona_
 const AdvatagesSona = lazy(() => import("./whole_webiste/Home_AboutUs/Advantages_Sona/AdvantagesSona.jsx"));
 const ManufacturingUnit = lazy(() => import("./whole_webiste/Home_AboutUs/ManufacturingUnit/ManufacturingUnit.jsx"));
 const Enviro_Friendly = lazy(() => import("./whole_webiste/Home_AboutUs/Enviro-Friendly/Enviro_Friendly.jsx"));
-const Brochures = lazy(() => import("./whole_webiste/Home_AboutUs/Brochures/Brochures.jsx"));
+const Brochures = lazy(() => import("./whole_webiste/Home_AboutUs/Brochures/BrocherMain.jsx"));
 const IndustryHome = lazy(() => import("./whole_webiste/Industry/IndustryHome/Industry.jsx"));
 const Pharmaceutical = lazy(() => import("./whole_webiste/Industry/Pharmaceutical/pharmaceutical.jsx"));
 const Cosm_Per = lazy(() => import("./whole_webiste/Industry/cosm_&_per/Cosm_Per.jsx"));
@@ -27,6 +27,13 @@ const Gallery = lazy(() => import("./whole_webiste/Resources/Gallery/Gallery.jsx
 const Laminated_Tubs = lazy(() => import("./whole_webiste/Laminated_Tubs/Laminated_Tubs.jsx"));
 const ReachUs = lazy(() => import("./whole_webiste/ReachUs/ReachUs/ReachUs.jsx"));
 const Error = lazy(() => import("./whole_webiste/component/ErrorPages/ErrorPage.jsx"));
+const ProductionSup = lazy(() => import("./whole_webiste/SubPages/Production Supervisor/ProductionSup.jsx"));
+const MachineOp = lazy(() => import("./whole_webiste/SubPages/Machine operator/MachineOp.jsx"));
+const AssistantExe = lazy(() => import("./whole_webiste/SubPages/Assistant Ipqc Executive/AssistantExe.jsx"));
+const DefineAdvantages = lazy(() => import("./whole_webiste/SubPages/DefineAdvantages/Define.jsx"));
+const FuturAluminium = lazy(() => import("./whole_webiste/SubPages/FutureAluminium/Future.jsx"));
+// const  
+
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -39,12 +46,13 @@ function ScrollToTop() {
 }
 
 function App() {
+  
   return (
     <>
-      <HelmetProvider> {/* Wrap the entire application */}
+      <HelmetProvider> 
         <Router>
           <ScrollToTop />
-          <Suspense fallback={<Loader />}> {/* Preloader */}
+            <Suspense fallback={<Loader />}>          
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/About/Our-Store/" element={<OurStore />} />
@@ -65,6 +73,16 @@ function App() {
               <Route path="/Resources/BlogMedia/" element={<BlogMedia />} />
               <Route path="/Resources/Gallery/" element={<Gallery />} />
               <Route path="/Laminated-Tubs/" element={<Laminated_Tubs />} />
+              {/* SubPages */}
+              
+              {/* Job */}
+              <Route path="/ProductionSup/" element={<ProductionSup />} />
+              <Route path="/Machine-Operator/" element={<MachineOp />} />
+              <Route path="/Assistant-Ipqc-Executive/" element={<AssistantExe />} />
+              {/* Blog */}
+              <Route path="/DefineAdvantages/" element={<DefineAdvantages />} />
+              <Route path="/FuturAluminium/" element={<FuturAluminium />} />
+
               <Route path="/ReachUs/" element={<ReachUs />} />
               <Route path="*" element={<Error />} />
             </Routes>

@@ -131,6 +131,16 @@
 }
 /*  */
 /* General styling for the container */
+.about-section {
+    padding: 80px 15px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.about-header-line {
+    max-width: 180px;
+    margin: 0 auto 10px;
+}
 .Know_More {
     padding: 80px 15px;
     background-color: white;
@@ -138,12 +148,7 @@
 }
 
 /* Header section with a centered line decoration */
-.MoreImgBolDoted{
-    max-width:180px;
-    width: 100%;
-    display: block;
-    margin: 0px 0px 10px 120px;
-}
+
 .Know_More_tabs{
     padding:50px 0px;
     background-color: #faf8f5;
@@ -157,7 +162,12 @@
     height:auto;
     transition: all 0.3s;
     /* height:325px; */
+
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.Know_More_imgBol {
+    margin-bottom: 20px;
+    margin-left:300px;
 }
 .filter-buttons{
     overflow-y: auto;
@@ -228,36 +238,86 @@
     text-overflow: ellipsis;
     margin: 5px 0;
 }
-.tab-content {
-    flex: 1;
+
+
+
+
+.header-line-image {
+    width: 100%;
+    display: block;
+}
+
+.about-container {
+    text-align: center;
+}
+
+.about-title {
+    font-weight: 700;
+}
+
+.about-description {
+    font-size: 16px;
+    color: #555;
+}
+
+.tabs-section {
+    padding: 50px 0;
+    background-color: #faf8f5;
+    transition: all 0.3s;
+}
+
+.tabs-container {
+    background-color: white;
+    width: 90%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.tabs-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    color: #555;
+    transition: all 0.3s ease-in-out;
+}
+
+.tab-button.active {
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.tab-button.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #b49f6c;
+    width: 100%;
+}
+
+.tab-panel {
+    display: none;
+    padding: 15px;
     opacity: 0;
-    transform: translateY(20px);
-    position: absolute; /* Remove from normal flow */
-    visibility: hidden; /* Hide element initially */
-    transition: visibility 0s ease 0.8s; /* Delay visibility change to match animation */
-    height: 100%; /* Take up full height */
-    overflow-y: auto; /* Add vertical scroll for overflow */
+    transition: opacity 0.3s ease-in-out;
 }
 
-.tab-content.show {
-    visibility: visible; /* Make it visible */
-    position: relative; /* Restore normal flow */
-    animation: fadeInUp 0.8s ease; /* Apply animation */
+.tab-panel.visible {
+    display: block;
+    opacity: 1;
 }
 
-/* Utility classNamees */
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.d-flex {
-    display: flex;
-}
-
-.justify-content-center {
-    justify-content: center;
-}
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -275,7 +335,7 @@
     .Your_choice{
         padding:100px 15px; 
     }
-    .KnowMoreTabs {
+    .tabs-content {
         padding: 15px 15px ;
     } 
     .YourChoice_tubes_box{
@@ -283,6 +343,9 @@
     }
     .Our_Strength{
         padding: 50px 15px;
+    }
+    .KnowMoreTabs {
+        padding: 15px 15px ;
     }
     .Know_More{
     padding: 80px 15px;
@@ -292,7 +355,7 @@
     .MoreImgBolDoted{
         margin: 0px 0px 20px 270px;
     }
-    .KnowMoreTabs {
+    .tabs-content {
         padding: 20px 15px ;
     } 
     .Your_choice{
@@ -306,6 +369,9 @@
     }
     .Know_More{
         padding: 80px 20px;
+    }
+    .KnowMoreTabs {
+        padding: 20px 15px ;
     }
 }
 
@@ -332,6 +398,9 @@
     .KnowMoreTabs {
         padding: 20px 40px ;
     }
+    .tabs-content {
+        padding: 20px 40px ;
+    }
  }
 
 
@@ -352,6 +421,9 @@
         padding: 80px 40px;
     }
     .KnowMoreTabs {
+        padding: 20px 50px ;
+    }
+    .tabs-content {
         padding: 20px 50px ;
     }
  }
@@ -376,6 +448,7 @@
     .KnowMoreTabs {
         padding: 20px 60px ;
     }
+
  }
 
 

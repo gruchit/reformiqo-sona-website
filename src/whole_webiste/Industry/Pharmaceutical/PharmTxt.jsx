@@ -135,18 +135,18 @@ function PharmTxt({ Type }) {
                     <img src={ParmS3} alt="Default Slide 2" className="slider-image" loading='lazy' />,
                     <img src={ParmS4} alt="Default Slide 2" className="slider-image" loading='lazy' />,
                 ];
+                console.log(SmallSlider);
+                
     return (
         <>
             <div className='PharmTxt'>
                 <div className='container'>
                     <div className='pharmaceutical text-center'>
-                        <div
-                           
-                        >
+                        <div>
                             {Type === "Cosm"
                                 ?
                                 <>
-                                    <div data-aos="zoom-in" data-aos-offset="300" >
+                                    <div data-aos="zoom-in" data-aos-offset="300" data-aos-duration="500">
                                         <h1 className=' sans_bold mb-5'>Cosmetic & Personal Care</h1>
                                         <p className='sans_light text-secondary mb-5'>We design, manufacture, and offer highly efficient, reliable, and cost-effective solutions to
                                             pharmaceutical industries that satisfy various needs of the industry.  We can develop aluminium packaging material from the start as per material requirement that can be filled inside aluminium tube. Our advanced extrusion technology, along with our team of experts,
@@ -161,7 +161,7 @@ function PharmTxt({ Type }) {
                                     Type === "Nut"
                                     ?
                                     <>
-                                        <div data-aos="zoom-in" data-aos-offset="300">
+                                        <div data-aos="zoom-in" data-aos-offset="300" data-aos-duration="500">
                                             <h1 className=' sans_bold mb-5'>Nutraceutical</h1>
                                             <p className='sans_light text-secondary mb-5'>The pharmaceutical and nutraceutical industries are flourishing. Increased consumer focus on health and wellbeing is driving flexible packaging’s rapid expansion and strong demand for a quicker, more noticeable brand presence. Sona Extrusion provides flexible packaging solutions that strengthen your brand and increase operational effectiveness to help you market your goods more quickly. With our comprehensive variety of flexible packaging options, we have delivered effective brand packaging for functional or medicinal food and beverages.
                                             </p>
@@ -171,7 +171,7 @@ function PharmTxt({ Type }) {
                                     Type === "Indu"
                                     ?
                                     <>
-                                        <div data-aos="zoom-in" data-aos-offset="300">
+                                        <div data-aos="zoom-in" data-aos-offset="300" data-aos-duration="500">
                                             <h1 className=' sans_bold mb-5'>Industrial & Agro-Chemical</h1>
                                             <p className='sans_light text-secondary mb-3'>We are the industry’s top producers and distributors of aluminium packaging solutions or products. Because of our commitment to quality and innovation, we have gained the trust of customers all over the world.</p>
                                             <p className='sans_light text-secondary mb-5'> To ensure that our customers receive the best possible service, we have continuously improved our procedures and designed our products to meet the highest standards of quality and safety.
@@ -180,7 +180,7 @@ function PharmTxt({ Type }) {
                                     </>
                                     :
                                     <>
-                                        <div data-aos="zoom-in" data-aos-offset="300">
+                                        <div data-aos="zoom-in" data-aos-offset="300" data-aos-duration="500">
                                             <h1 className=' sans_bold mb-5'>Pharmaceutical</h1>
                                             <p className='sans_light text-secondary mb-5'>We design, manufacture, and offer highly efficient, reliable, and cost-effective solutions to
                                                 pharmaceutical industries that satisfy various needs of the industry.  We can develop aluminium packaging material from the start as per material requirement that can be filled inside aluminium tube. Our advanced extrusion technology, along with our team of experts,
@@ -192,7 +192,7 @@ function PharmTxt({ Type }) {
                         }
                                 </div>
                             <div className='pharmacSlider position-relative' >
-                                <div className="PharmTxtSlider" data-aos="fade-up" data-aos-offset="300">
+                                <div className="PharmTxtSlider" data-aos="fade-up" data-aos-offset="300" data-aos-duration="500">
                                     <Slider {...settings}>
                                         {SmallSlider.map((slide, index) => (
                                             <div className="PharmTxtcard" key={index}>

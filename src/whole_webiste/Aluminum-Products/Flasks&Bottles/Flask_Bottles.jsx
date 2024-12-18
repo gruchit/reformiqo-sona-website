@@ -14,9 +14,10 @@ function Flask_Bottles() {
     return (
         <>
         <Helmet>
-        <title>Flasks & Bottles | Sona Extrusion</title>
-        <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
-        <meta name="keywords" content="company, products, services, home, business" />
+        <title>Custom Aluminium Bottles & Flasks Supplier & Manufacturer</title>
+        <meta name="keywords" content="Aluminium Bottles & Flasks" />
+        <meta name="description" content="Looking for Eco-Friendly Packaging? Sona Extrusion Manufactures Custom Aluminium Bottles and Flasks, Ideal for Pharmaceutical, Cosmetic, and other Industries.
+" />
     </Helmet>
             <Top />
             <Header />

@@ -13,9 +13,8 @@ function Indu_Ago() {
   return (
     <>
       <Helmet>
-        <title>Industrial & Agro-Chemical | Sona Extrusion</title>
-        <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
-        <meta name="keywords" content="company, products, services, home, business" />
+        <title>Industrial & Agro-Chemical Packaging Manufacturer & Supplier</title>
+        <meta name="description" content="Reliable packaging solutions for industrial and agro-chemical products. Offering innovative, durable solutions to ensure the safety and quality of your products." />
       </Helmet>
       <Top />
       <Header />

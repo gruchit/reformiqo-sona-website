@@ -3,6 +3,7 @@ import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import Single_BlackBol_Line from '../../../assets/single_BlackBol_Line.svg'
 import './pharm.css'
+import '../IndustryHome/indu.css'
 import AOS from 'aos';
 import { useEffect } from 'react';
 
@@ -99,7 +100,7 @@ function Faq({ Type }) {
           </div>
           <div className='faq-section'>
             {faqs.map((faq, index) => (
-              <div key={index} className='faq-item border-0 mb-4' data-aos="zoom-in-up" data-aos-offset="300">
+              <div key={index} className='faq-item border-0 mb-4'data-aos="zoom-in-up" >
                 <div
                   className={`faq-question ${openIndex === index ? 'faq-section-open' : ''}`}
                   onClick={() => toggleFAQ(index)}

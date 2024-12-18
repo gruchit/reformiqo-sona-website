@@ -15,9 +15,8 @@ function Industry() {
     return (
         <>
             <Helmet>
-                <title>Industry | Sona Extrusion</title>
-                <meta name="description" content="Explore our products and services on our official homepage. Learn more about our company and mission." />
-                <meta name="keywords" content="company, products, services, home, business" />
+                <title>High Quality Packaging Materials for Diverse Industries</title>
+                <meta name="description" content="Sona Extrusion provides high-quality packaging materials for Pharmaceutical, Cosmetic & Personal Care, Nutraceutical, Industrial & Agro-Chemical industries. Get now!" />
             </Helmet>
             <Top />
             <Header />

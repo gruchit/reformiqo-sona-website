@@ -10,10 +10,9 @@ function Counter() {
 
     useEffect(() => {
         AOS.init({
-            duration: 1000,
+            duration: 500,
             easing: 'ease-in-out',
-            offset: 50,
-            delay: 100,
+            offset: 200,
             once: true,
             mirror: true,
         });
