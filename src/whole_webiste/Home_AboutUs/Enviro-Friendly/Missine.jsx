@@ -5,6 +5,7 @@ import Economys from '../../../assets/Economys.svg'
 import Arrow_Left from '../../../assets/arrow_Left.svg'
 import AOS from 'aos';
 import { useEffect } from 'react';
+import 'aos/dist/aos.css';
 
 function Missine() {
     useEffect(() => {
@@ -15,7 +16,7 @@ function Missine() {
     return (
         <>
             <div className='Missine'>
-                <img src={Arrow_Left} alt="" srcset="" className='MissineImgArow' data-aos="fade-right" loading='lazy' />
+                <img src={Arrow_Left} alt=""  className='MissineImgArow' data-aos="fade-right" loading='lazy' />
                 <div className='containerxxl'>
                     <div className='MissineBody'>
                         <div className='row'>
@@ -27,7 +28,7 @@ function Missine() {
                                     <img src={Mission} alt="" className='MissionImg' loading='lazy' />
                                     <div className='mt-5 pt-3'>
                                         <h4 className='mt-4 sans_Medium'>Our Mission For Sustainability</h4>
-                                        <p className='text-secondary sans_light mt-3'>The preservation of the environment is of paramount significance in our opinion. In order to create new and improved, healthier plastic and aluminium packing tubes, eco-friendly materials, and green engineering solutions, we draw on our more than 35+ years of technical knowledge and experience. Our mission is to provide our clients with the best solutions while minimizing our environmental effect and maximizing their social impact. We work to strike a balance between social responsibility, environmental protection, and economic prosperity.</p>
+                                        <p className='text-secondary sans_light mt-3'>The preservation of the environment is of paramount significance in our opinion. In order to create new and improved, healthier plastic and aluminum packing tubes, eco-friendly materials, and green engineering solutions, we draw on our more than 35+ years of technical knowledge and experience. Our mission is to provide our clients with the best solutions while minimizing our environmental effect and maximizing their social impact. We work to strike a balance between social responsibility, environmental protection, and economic prosperity.</p>
                                     </div>
                                 </div>
                             </div>

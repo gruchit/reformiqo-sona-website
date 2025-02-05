@@ -5,6 +5,8 @@ import Arrow from '../../../assets/arrow.svg'
 import { useState, useEffect } from 'react';
 import { FaCheck } from "react-icons/fa6";
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function WhyChoose() {
     useEffect(() => {
         AOS.init();
@@ -24,7 +26,7 @@ function WhyChoose() {
         <>
             <div className='WhyChooseOver'>
                 <div className='WhyChoose'>
-                    <img src={Double_bol_line} alt="" srcset="" className='WhyDoted' loading='lazy'
+                    <img src={Double_bol_line} alt=""  className='WhyDoted' loading='lazy'
 
 
                     />
@@ -32,7 +34,7 @@ function WhyChoose() {
                         data-aos="zoom-in-up"
                         data-aos-offset="200"
                         data-aos-duration="500"
-                        once="true"
+                        data-aos-once="true"
                         mirror="true"
                     >
                         <h3 className='SonaTxtColor text-center mb-4 sans_Medium'>Why Choose Us</h3>
@@ -41,7 +43,7 @@ function WhyChoose() {
                     </div>
                 </div>
                 <div className='WhyChooseTXT '>
-                    <img src={Arrow} alt="" srcset="" className='WhyArrow' loading='lazy'
+                    <img src={Arrow} alt=""  className='WhyArrow' loading='lazy'
                         data-aos="fade-left"
                         data-aos-offset="200"
                         data-aos-duration="500"
@@ -59,7 +61,7 @@ function WhyChoose() {
                                     data-aos="fade-in"
                                     data-aos-offset="200"
                                     data-aos-duration="600">
-                                    Leading Manufacturer of Aluminium Collapsible Tubes, Containers, Bottles and Flasks</a></li>
+                                    Leading Manufacturer of Aluminum Collapsible Tubes, Containers, Bottles and Flasks</a></li>
                                 <li className='py-2'><FaCheck className='WhyIcon fs-6 me-4'
                                     data-aos="zoom-in"
                                     data-aos-offset="200"
@@ -85,7 +87,7 @@ function WhyChoose() {
                             data-aos="fade-in"
                             data-aos-offset="200"
                             data-aos-duration="600"
-                        >We are delivering premium quality products meeting the ever-changing requirements of our elite customers in the markets of Canada, U.S.A., U.K., Spain, Sweden, Russia, India, Sri Lanka, Singapore, Malaysia, Australia, Nigeria, Joran, Ethiopia, South Africa, and many more.</p>
+                        >We are delivering premium quality products meeting the ever-changing requirements of our elite customers in the markets of Canada, U.S.A., U.K., Spain, Sweden, Russia, India, Sri Lanka, Singapore, Malaysia, Australia, Nigeria, Jordan, Ethiopia, South Africa, and many more.</p>
                     </div>
                 </div>
             </div>

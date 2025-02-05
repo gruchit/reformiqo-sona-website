@@ -6,6 +6,8 @@ import Doted_line from '../../assets/Doted_line.svg'
 import Industries from '../../assets/Industries.svg'
 import Certifications from '../../assets/Certifications.svg'
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { useEffect } from 'react';
 
 
@@ -20,7 +22,7 @@ function Order() {
                 <div className=''>
                     <div className='Order_text flex-column'>
                         <div className='d-flex justify-content-center '>
-                            <img src={Single_BlackBol_Line} alt="" loading='lazy' srcset="" className='' data-aos="zoom-in-up"
+                            <img src={Single_BlackBol_Line} alt="" loading='lazy'  className='' data-aos="zoom-in-up"
                                 data-aos-offset="200"
                                 data-aos-duration="500"
                                 easing="ease-in-out"
@@ -33,19 +35,19 @@ function Order() {
                             data-aos-offset="200"
                             data-aos-duration="500"
                             easing="ease-in-out"
-                            once="true"
+                            data-aos-once="true"
                             mirror="true"
                         >Orders Delivered Satisfactorily</h1>
                     </div>
                     <div className='d-lg-none d-md-none d-sm-none d-none d-xl-block'>
                         <div className='Order_images d-flex justify-content-center '>
-                            <img src={Doted_line} alt="" srcset="" className='' loading='lazy'/>
+                            <img src={Doted_line} alt=""  className='' loading='lazy'/>
                             <div className=' Order_images_box1  flex-column'
                                 data-aos="fade-right"
                                 data-aos-offset="200"
                                 data-aos-duration="500"
                                 easing="ease-in-out"
-                                once="true"
+                                data-aos-once="true"
                                 mirror="true"
 
                             >
@@ -53,14 +55,14 @@ function Order() {
                                     <img src={Product_capacity} alt="" className='' loading='lazy'/>
                                     <h4 className='text-center mb-3 sans_Medium'>Production Capacity</h4>
                                 </div>
-                                <p className='sans_light text-secondary'>We, at Sona Extrusion, are proud to have the best production capacity due to our significant investments in cutting-edge technology, a skilled workforce, and effective processes. These investments have given us an advantage over our competitors and enabled us to consistently deliver high-quality aluminium aluminium packaging solutions in large quantities.</p>
+                                <p className='sans_light text-secondary'>We, at Sona Extrusion, are proud to have the best production capacity due to our significant investments in cutting-edge technology, a skilled workforce, and effective processes. These investments have given us an advantage over our competitors and enabled us to consistently deliver high-quality aluminum packaging solutions in large quantities.</p>
                             </div>
                             <div className=' Order_images_box2'
                                 data-aos="fade-left"
                                 data-aos-offset="200"
                                 data-aos-duration="500"
                                 easing="ease-in-out"
-                                once="true"
+                                data-aos-once="true"
                                 mirror="true"
 
 
@@ -76,7 +78,7 @@ function Order() {
                                 data-aos-offset="200"
                                 data-aos-duration="500"
                                 easing="ease-in-out"
-                                once="true"
+                                data-aos-once="true"
                                 mirror="true"
 
 
@@ -100,7 +102,7 @@ function Order() {
                                 </div>
                                 <h4 className="text-center mb-3">Production Capacity</h4>
                                 <p className="sans_light text-secondary">
-                                    We, at Sona Extrusion, are proud to have the best production capacity due to our significant investments in cutting-edge technology, a skilled workforce, and effective processes. These investments have given us an advantage over our competitors and enabled us to consistently deliver high-quality aluminium aluminium packaging solutions in large quantities.
+                                    We, at Sona Extrusion, are proud to have the best production capacity due to our significant investments in cutting-edge technology, a skilled workforce, and effective processes. These investments have given us an advantage over our competitors and enabled us to consistently deliver high-quality aluminum packaging solutions in large quantities.
                                 </p>
                             </div>
                         </div>

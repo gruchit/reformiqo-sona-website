@@ -1,0 +1,1 @@
+const o="/assets/faceBookColor-DdcnnVd-.png",s="/assets/LinkedinColor-BZJBJHCu.png",n="/assets/YoutubeColor-BzWe5HLR.png",a="/assets/InstragamCaolor1-BPQ3K29S.png";export{a as I,s as L,n as Y,o as f};

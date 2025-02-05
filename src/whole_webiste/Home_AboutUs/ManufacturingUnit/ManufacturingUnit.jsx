@@ -10,11 +10,26 @@ import Focus from '../../Home/Focus.jsx'
 import Helmet from 'react-helmet';
 
 function ManufacturingUnit() {
+    const Category_Name = "Manufacturing Unit";
+    const Category_URL = "https://sonaextrusion.com/About/Manufacturing-Unit/";
+    const Category_Description = "Sonaextrusion's Manufacturing Unit Is Powered by Modern Technology, Ensuring Precision and Durability in Every Product. Learn to Produce High-Quality Products!";
+
+const schema = `{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "${Category_Name}",
+    "url": "${Category_URL}",
+    "description": "${Category_Description}"
+}`;
+  
   return (
     <>
       <Helmet>
         <title>The Backbone of Sonaextrusion: Our Manufacturing Excellence</title>
-        <meta name="description" content="Sonaextrusion's Manufacturing Unit Is Powered by Modern Technology, Ensuring Precision and Durability in Every Product. Learn to Produce High-Quality Products!" />
+        <meta name="description" content={Category_Description} />
+        <script type="application/ld+json">
+          {schema}
+        </script>
       </Helmet>
       
       <Top />

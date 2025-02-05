@@ -5,6 +5,8 @@ import Unprecedented from '../../../assets/Unprecedented.svg'
 import Specifications from '../../../assets/Specifications.svg'
 import leftArrow from '../../../assets/arrow.svg'
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { useState, useEffect } from 'react';
 
 function ThreTabs() {
@@ -25,12 +27,12 @@ function ThreTabs() {
                         data-aos-offset="200"
                         data-aos-duration="500"
                         easing="ease-in-out"
-                        once="true"
+                        data-aos-once="true"
                         mirror="true">
                             <div className='ThreTbs1'>
                                 <img src={Pioneers} alt="" className='ThreTbsPioneers' loading='lazy' />
                                 <div className='ThreTabs1 d-flex align-items-center mt-5 mt-sm-5 mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0  '>
-                                    <h4 className='sans_Medium'>Pioneers in Aluminium
+                                    <h4 className='sans_Medium'>Pioneers in Aluminum
                                         Collapsible Tubes</h4>
                                 </div>
                             </div>
@@ -39,7 +41,7 @@ function ThreTabs() {
                         data-aos-offset="200"
                         data-aos-duration="500"
                         easing="ease-in-out"
-                        once="true"
+                        data-aos-once="true"
                         mirror="true">
                             <div className='ThreTbs1'>
                                 <img src={Unprecedented} alt="" className='ThreUnprecedented' loading='lazy' />
@@ -54,7 +56,7 @@ function ThreTabs() {
                         data-aos-offset="200"
                         data-aos-duration="500"
                         easing="ease-in-out"
-                        once="true"
+                        data-aos-once="true"
                         mirror="true">
                             <div className='ThreTbs1'>
                                 <img src={Specifications} alt="" className='ThreSpecifications' loading='lazy' />

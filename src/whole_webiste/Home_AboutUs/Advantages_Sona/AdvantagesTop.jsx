@@ -4,6 +4,7 @@ import AOS from 'aos';
 import AdvaLeft from '../../../assets/advaLeft1.svg'
 import Youtube from '../../../assets/Youtube.svg'
 import './AdvantSona.css'
+import 'aos/dist/aos.css';
 
 function AdvantagesTop() {
     useEffect(() => {
@@ -42,7 +43,7 @@ function AdvantagesTop() {
                             >
                                 <h3 className='mb-2 sans_Medium SonaTxtColor '>Welcome to Your Advantage</h3>
                                 <h1 className='mb-4 sans_bold'>Our Guarantee is the Commitment to Deliver Innovative Products </h1>
-                                <p className='sans_light text-xxl-start text-xl-start text-lg-center text-xxl-start text-md-center text-secondary'>Sona Extrusion Pvt. Ltd. is one of the leading manufacturers of aluminium collapsible tubes and containers in India, duly ISO 15378:2017 (GMP) Certified – SGS (Primary Packaging materials for Pharmaceutical Products) & ISO 9001:2015 Certified – TUV & US DMF Registered Company.</p>
+                                <p className='sans_light text-xxl-start text-xl-start text-lg-center text-xxl-start text-md-center text-secondary'>Sona Extrusion Pvt. Ltd. is one of the leading manufacturers of aluminum collapsible tubes and containers in India, duly ISO 15378:2017 (GMP) Certified – SGS (Primary Packaging materials for Pharmaceutical Products) & ISO 9001:2015 Certified – TUV & US DMF Registered Company.</p>
                                 <ul className='sans_bold flex-column ms-auto'>
                                     <li className='pb-2'>High-quality products</li>
                                     <li className='pb-2'>Timely delivery</li>

@@ -41,6 +41,7 @@ import Slider from 'react-slick';
 import './pharm.css'
 import AOS from 'aos';
 import { useEffect } from 'react';
+import 'aos/dist/aos.css';
 
 function PharmTxt({ Type }) {
     useEffect(() => {
@@ -135,7 +136,7 @@ function PharmTxt({ Type }) {
                     <img src={ParmS3} alt="Default Slide 2" className="slider-image" loading='lazy' />,
                     <img src={ParmS4} alt="Default Slide 2" className="slider-image" loading='lazy' />,
                 ];
-                console.log(SmallSlider);
+                
                 
     return (
         <>
@@ -149,7 +150,7 @@ function PharmTxt({ Type }) {
                                     <div data-aos="zoom-in" data-aos-offset="300" data-aos-duration="500">
                                         <h1 className=' sans_bold mb-5'>Cosmetic & Personal Care</h1>
                                         <p className='sans_light text-secondary mb-5'>We design, manufacture, and offer highly efficient, reliable, and cost-effective solutions to
-                                            pharmaceutical industries that satisfy various needs of the industry.  We can develop aluminium packaging material from the start as per material requirement that can be filled inside aluminium tube. Our advanced extrusion technology, along with our team of experts,
+                                            pharmaceutical industries that satisfy various needs of the industry.  We can develop aluminum packaging material from the start as per material requirement that can be filled inside aluminum tube. Our advanced extrusion technology, along with our team of experts,
                                             ensure that we are well-positioned to serve our customers with the highest
                                             quality products and services.
                                         </p>
@@ -173,7 +174,7 @@ function PharmTxt({ Type }) {
                                     <>
                                         <div data-aos="zoom-in" data-aos-offset="300" data-aos-duration="500">
                                             <h1 className=' sans_bold mb-5'>Industrial & Agro-Chemical</h1>
-                                            <p className='sans_light text-secondary mb-3'>We are the industry’s top producers and distributors of aluminium packaging solutions or products. Because of our commitment to quality and innovation, we have gained the trust of customers all over the world.</p>
+                                            <p className='sans_light text-secondary mb-3'>We are the industry’s top producers and distributors of aluminum packaging solutions or products. Because of our commitment to quality and innovation, we have gained the trust of customers all over the world.</p>
                                             <p className='sans_light text-secondary mb-5'> To ensure that our customers receive the best possible service, we have continuously improved our procedures and designed our products to meet the highest standards of quality and safety.
                                             </p>
                                         </div>
@@ -183,7 +184,7 @@ function PharmTxt({ Type }) {
                                         <div data-aos="zoom-in" data-aos-offset="300" data-aos-duration="500">
                                             <h1 className=' sans_bold mb-5'>Pharmaceutical</h1>
                                             <p className='sans_light text-secondary mb-5'>We design, manufacture, and offer highly efficient, reliable, and cost-effective solutions to
-                                                pharmaceutical industries that satisfy various needs of the industry.  We can develop aluminium packaging material from the start as per material requirement that can be filled inside aluminium tube. Our advanced extrusion technology, along with our team of experts,
+                                                pharmaceutical industries that satisfy various needs of the industry.  We can develop aluminum packaging material from the start as per material requirement that can be filled inside aluminum tube. Our advanced extrusion technology, along with our team of experts,
                                                 ensure that we are well-positioned to serve our customers with the highest
                                                 quality products and services.
                                             </p>

@@ -4,12 +4,13 @@ import Autocomplete from '@mui/material/Autocomplete';
 import { IoLocationOutline } from "react-icons/io5";
 import './Careers.css';
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { useEffect } from 'react';
 // Sample Data for Autocomplete Suggestions
 const jobOptions = [
   { label: 'Full-Time' },
   { label: 'Part-Time' },
-  { label: 'Permanent' },
   { label: 'Permanent' },
 ];
 
@@ -27,7 +28,7 @@ function BuildCareers() {
   return (
     <>
       <div className="BuildCareers">
-        <div className="BuildCareers_Detalis flex-column text-center" data-aos="zoom-in-up" data-aos-offset="200">
+        <div className="BuildCareers_Detalis flex-column text-center" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="500">
           <h1 className="sans_bold mb-5">Build Your Career</h1>
           <p className="sans_light text-secondary">
             Sona Extrusion is a great place to kickstart your career. You will contribute to our
@@ -41,7 +42,7 @@ function BuildCareers() {
             responsibilities very quickly.
           </p>
         </div>
-        <div className="BuildCareersForm" data-aos="zoom-in-up" data-aos-offset="200">
+        {/* <div className="BuildCareersForm" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="500">
           <form action="">
             <div className="flex-column row-gap-3">
               <div className="d-flex justify-content-between align-items-center">
@@ -60,7 +61,7 @@ function BuildCareers() {
                 </button>
               </div>
               <div className="d-flex justify-content-between gap-3 mt-3">
-                {/* Job Type Autocomplete */}
+                
                 <Autocomplete
                   disablePortal
                   options={jobOptions}
@@ -71,7 +72,7 @@ function BuildCareers() {
                   )}
                 />
 
-                {/* Category Autocomplete */}
+                
                 <Autocomplete
                   disablePortal
                   options={categoryOptions}
@@ -84,7 +85,7 @@ function BuildCareers() {
               </div>
             </div>
           </form>
-        </div>
+        </div> */}
       </div>
     </>
   );

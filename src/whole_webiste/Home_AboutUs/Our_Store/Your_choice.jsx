@@ -4,6 +4,8 @@ import Arrow_Left from '../../../assets/arrow_Left.svg'
 import Bot_bol_3 from '../../../assets/bot_bol_3.png'
 import Idea_white from '../../../assets/idea_white.svg'
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { Link } from 'react-router-dom';
 function Your_choice() {
     useEffect(() => {
@@ -29,10 +31,10 @@ function Your_choice() {
                         data-aos-duration="500"
                     >
                         <h1 className="text-center sans_bold">
-                            We're Your Choice for Aluminium Collapsible <br />
-                            Tubes, Containers and Aluminium Bottles / Flasks
+                            We're Your Choice for Aluminum Collapsible <br />
+                            Tubes, Containers and Aluminum Bottles / Flasks
                         </h1>
-                        <p className="text-center text-secondary sans_light p-3">With over three decades of experience, Sona Extrusion have made a mark as the pioneer of aluminium collapsible tubes, containers and  aluminium bottles/flasks. Our focus has always been on quality, innovation and customer satisfaction. We have developed a reputation for creating products that are of the highest calibre, dependable and customizable to suit the various industries requirements.</p>
+                        <p className="text-center text-secondary sans_light p-3">With over three decades of experience, Sona Extrusion have made a mark as the pioneer of aluminum collapsible tubes, containers and  aluminum bottles/flasks. Our focus has always been on quality, innovation and customer satisfaction. We have developed a reputation for creating products that are of the highest calibre, dependable and customizable to suit the various industries requirements.</p>
                     </div>
                     <div className='YourChoice_Btn d-flex justify-content-center mb-5'
                         data-aos="zoom-in"
@@ -61,8 +63,8 @@ function Your_choice() {
                                 />
                             </div>
                             <div className='flex-column text-white p-3'>
-                                <h3 className='sans_bold'>500 Mn Tubesubes</h3>
-                                <p className='sans_light m-0'>By leveraging advanced technology, hiring highly skilled professionals and engaging sustainable production practices, Sona Extrusion is one of the leading manufacturers of aluminium packaging solutions. We produce 500 Mn collapsible tubes per annum, making us one of the country's most sought-after packaging companies.duce high quality collapsible multipurpose tubes that are versatile and easy to use.</p>
+                                <h3 className='sans_bold'>500 Mn Tubestubes</h3>
+                                <p className='sans_light m-0'>By leveraging advanced technology, hiring highly skilled professionals and engaging sustainable production practices, Sona Extrusion is one of the leading manufacturers of aluminum packaging solutions. We produce 500 million collapsible tubes annually, establishing ourselves as one of the country's most sought-after packaging companies. Our high-quality, multipurpose collapsible tubes are versatile and easy to use.</p>
                             </div>
                         </div>
                     </div>

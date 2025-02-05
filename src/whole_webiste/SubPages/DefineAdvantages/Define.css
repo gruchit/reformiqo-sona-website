@@ -9,6 +9,7 @@
 }
 .DefinePadd{
     padding:50px 0px;
+    
 }
 
 .DefIntroduc p{
@@ -27,7 +28,6 @@
 }
 .DefFuturAlum p{
     text-align:justify;
-
 }
 
 .DefineBox{
@@ -75,6 +75,7 @@
 .DefinRightIcon img{
     width:100%;
 }
+
 .DefineFormSection{
     padding:50px 0px;
 }
@@ -119,6 +120,46 @@
     transform: scaleX(1); /* Expands the fill */
 }
 
-.AboutSonaEx_DefineForm_btnBtn button:hover {
-    color: #fff; /* Changes text color on hover */
+/* .DefineForm_btn button:hover {
+    color: #fff; 
+} */
+
+@media (min-width: 320px) {    
+    .DefinePadd{ 
+   width: 100%;
+}
+}
+
+@media (min-width: 576px) {    
+    .DefinePadd{ 
+   width: 100%;
+}
+}
+
+
+@media (min-width: 768px) {    
+     .DefinePadd{ 
+    width: 100%;
+}
+ }
+
+
+@media (min-width: 992px) { 
+    .DefinePadd{ 
+        width: 100%;
+    }
+ }
+
+
+@media (min-width: 1200px) {     
+    .DefinePadd{ 
+        /* float:left; */
+    width: 70%;
+} }
+
+
+@media (min-width: 1400px) { 
+    .DefinePadd{ 
+    width: 70%;
+}
 }

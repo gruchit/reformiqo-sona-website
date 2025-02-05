@@ -11,20 +11,34 @@ import Helmet from 'react-helmet';
 import Focus from '../../Home/Focus'
 
 function ReachUs() {
+    const Category_Name = "Reach Us";
+    const Category_URL = "https://sonaextrusion.com/ReachUs/";
+    const Category_Description = "Contact Sona Extrusion for support, queries, or information. Find all the details you need on our Reach Us page. Get in touch today!";
+
+    const schema = `{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "${Category_Name}",
+    "url": "${Category_URL}",
+    "description": "${Category_Description}"
+  }`;
+ 
     return (
         <>
-        <Helmet>
+            <Helmet>
                 <title>Sona Extrusion - Reach Us for Support or Inquiries</title>
-                
-                <meta name="description" content="Contact Sona Extrusion for support, queries, or information. Find all the details you need on our Reach Us page. Get in touch today!" />
+                <meta name="description" content={Category_Description} />
+                <script type="application/ld+json">
+                    {schema}
+                </script>
             </Helmet>
             <Top />
             <Header />
             <Focus type="ReachUs" />
             <Order />
-            <Our_client/>
-            <Trusted/>
-            <Frequently/>
+            <Our_client />
+            <Trusted />
+            <Frequently />
             <Footer />
         </>
     )

@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../../assets/logo.svg'
+import Logo from '../../../assets/DownloadLogo.png'
 import Insta from '../../../assets/Footer_instagram.svg'
 import Facebook from '../../../assets/Footer_facebook.svg'
 import Youtube from '../../../assets/Footer_youtube.svg'
@@ -14,6 +14,8 @@ import { FaFacebook } from "react-icons/fa";
 import { ImLinkedin } from "react-icons/im";
 import './Footer.css'
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 function Footer() {
@@ -31,7 +33,7 @@ function Footer() {
                         data-aos-offset="100"
                         data-aos-duration="500"
                         easing="ease-in-out"
-                        once="true"
+                        data-aos-once="true"
                         mirror="true"
                     >
                         <div className='col-xl-5 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center mb-5'>
@@ -39,7 +41,7 @@ function Footer() {
                                 <div className='d-flex justify-content-center'>
                                     <img src={Logo} alt="" className='' loading='lazy' />
                                 </div>
-                                <p className='sans_light text-secondary'>Sona Extrusion Private Limited is one of the leading manufacturers of aluminium collapsible tubes, containers and aluminium bottles/flasks in India, US FDA DMF Registered, ISO 15378(SGS) & ISO 9001(TUV-SUD) certified company.</p>
+                                <p className='sans_light text-secondary'>Sona Extrusion Private Limited is one of the leading manufacturers of aluminum collapsible tubes, containers and aluminum bottles/flasks in India, US FDA DMF Registered, ISO 15378(SGS) & ISO 9001(TUV-SUD) certified company.</p>
                                 <div className='Footer_Bottom_icon d-flex justify-content-center mt-4 gap-4'>
                                     <a href="https://www.facebook.com/sonaextrusion/" target="_blank" className='text-decoration-none' >
                                         <FaFacebook className='IconsetFooter'/>
@@ -61,7 +63,7 @@ function Footer() {
                                 <h2 className=' text-white Cont_number'>Quick Links</h2>
                                 <ul className='ps-5 '>
                                     <li className=' p-1'>
-                                        <Link to="/About/Our-Store/" className='sans_light FooterList text-decoration-none '>
+                                        <Link to="/About/Our-Story/" className='sans_light FooterList text-decoration-none '>
                                             Our Story
                                         </Link>
                                     </li>
@@ -79,22 +81,23 @@ function Footer() {
                                         <Link to="/Industry/" className='s_light FooterList text-decoration-none '>Industries We Serve</Link>
                                     </li>
                                     <li className=' p-1'>
-                                        <Link to="/Aluminum-Products/" className='s_light FooterList text-decoration-none '>Aluminium Products</Link>
+                                        <Link to="/Aluminum-Products/" className='s_light FooterList text-decoration-none '>Aluminum Products</Link>
                                     </li>
                                     <li className=' p-1'>
                                         <Link to="/ReachUs/" className='s_light FooterList text-decoration-none '>Reach Us
                                         </Link>
                                     </li>
                                     <li className=' p-1'>
-                                        <Link to="/BlogMedia/" className='s_light FooterList text-decoration-none '>Blogs
+                                        <Link to="/Resources/BlogMedia/" className='s_light FooterList text-decoration-none '>Blogs
                                         </Link>
                                     </li>
                                 </ul>
 
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-top mb-5'>
+                        <div className='col-xl-4 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-top  mb-5'>
                             <div className='Contact_Company '>
+                                
                                 <h2 className='sans_Medium text-white text-center'>Contact Company</h2>
                                 <div className='Cont_number d-flex p-3 justify-contact-center'>
                                     <div>
@@ -146,8 +149,9 @@ function Footer() {
                                     </div>
                                 </div>
                             </div>
+                            </div>
 
-                        </div>
+                        
                     </div>
                 </div>
             </div>

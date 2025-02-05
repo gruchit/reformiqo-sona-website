@@ -3,6 +3,7 @@ import Arrow from '../../../assets/arrow_Left.svg'
 import './pharm.css'
 import AOS from 'aos';
 import { useEffect } from 'react';
+import 'aos/dist/aos.css';
 
 function TbasOutSolu() {
 useEffect(() => {
@@ -36,18 +37,18 @@ useEffect(() => {
 
                     <div className="KnowMoreTabs text-secondary">
                         {activeTab === 'Market Leader' && (
-                            <div className="" data-aos="fade-up" data-aos-duration="400" data-aos-offset="10" once="true" mirror="true">
-                                <p className='sans_light '>Sona Extrusion Pvt. Ltd. is a leading manufacturer of aluminium collapsible tubes, containers and aluminium bottles/flasks in India, duly ISO 15378:2017 (GMP) Certified – SGS (Primary Packaging Materials for Pharmaceutical Products) & ISO 9001:2015 Certified – TUV & US DMF Registered Company. Sona Extrusions is having one of the highest production capacities in the country.</p>
+                            <div className="" data-aos="fade-up" data-aos-duration="400" data-aos-offset="10" data-aos-once="true" mirror="true">
+                                <p className='sans_light '>Sona Extrusion Pvt. Ltd. is a leading manufacturer of aluminum collapsible tubes, containers and aluminum bottles/flasks in India, duly ISO 15378:2017 (GMP) Certified – SGS (Primary Packaging Materials for Pharmaceutical Products) & ISO 9001:2015 Certified – TUV & US DMF Registered Company. Sona Extrusions is having one of the highest production capacities in the country.</p>
                             </div>
                         )}
                         {activeTab === 'Infrastructure' && (
-                            <div className="" data-aos="fade-up" data-aos-duration="400" data-aos-offset="10" once="true" mirror="true">
+                            <div className="" data-aos="fade-up" data-aos-duration="400" data-aos-offset="10" data-aos-once="true" mirror="true">
                                 <p className='sans_light' >We, at Sona Extrusion, are maximizing our potential at our 1,00,000 sq. ft. ultramodern & well-defined single roof manufacturing plant which is fully controlled by 5 Micron Positive Air Handling System and operated high-quality, well-advanced & reliable German Machinery. We ensure a well-organized and totally dust-free manufacturing environment, strictly adhering to ‘Good Manufacturing Practices’ as per ISO 15378:2017 (GMP).</p>
 
                             </div>
                         )}
                         {activeTab === 'Production Capacity' && (
-                            <div className="" data-aos="fade-up" data-aos-duration="400" data-aos-offset="10" once="true" mirror="true">
+                            <div className="" data-aos="fade-up" data-aos-duration="400" data-aos-offset="10" data-aos-once="true" mirror="true">
                                 <p className='sans_light'>Sona Extrusion Pvt. Ltd. has a Manufacturing Capacity of 500 Mn Tubes & 50 Mn Flask and Containers per annum. We deliver Premium Quality Products at economical prices across India & Globally for 110+ Clients. Our 35+ Years of Experience has assisted us to remain committed and elevate our manufacturing standards.</p>
                             </div>
                         )}

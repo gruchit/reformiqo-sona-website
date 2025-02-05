@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import InfiniteSVG from '../../assets/Infinite_webp.webp';
 import button_Arrow from '../../assets/button_Arrow.svg';
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { useEffect } from 'react';
 
 function Infinite() {
@@ -19,7 +21,7 @@ function Infinite() {
                 data-aos-offset="300"
                 data-aos-duration="500"
                 easing="ease-in-out"
-                once="true"
+                data-aos-once="true"
                 mirror="true" 
             >
                 <div className='col-lg-8 col-md-12 col-sm-12  d-flex flex-column justify-content-center'>

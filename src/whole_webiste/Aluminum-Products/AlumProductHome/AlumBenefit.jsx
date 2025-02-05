@@ -4,6 +4,8 @@ import Arrow from '../../../assets/arrow.svg';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import './Alum.css';
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { useEffect } from 'react';
 function AlumBenefit() {
     useEffect(() => {
@@ -18,22 +20,23 @@ function AlumBenefit() {
                     <div className='AlumBenefit_Img d-flex justify-content-center'>
                         <img src={Single_BlackBol_Line} alt="Line Decoration" loading='lazy'/>
                     </div>
-                    <div className='AlumBenefit_ditals'
+                    <div className='AlumBenefit_ditals container'
                     data-aos="zoom-in-up"
                     data-aos-offset="300"
+                    data-aos-duration="500"
                     >
-                        <h1 className="text-center sans_bold">Aluminium Benefits</h1>
+                        <h1 className="text-center sans_bold">Aluminum Benefits</h1>
                         <p className="text-center text-secondary sans_light">
                             Aluminum tubes are a popular packaging option for leading industries because
-                            they offer several <br /> advantages over other materials. Aluminum tubes are a great packaging option:
+                            they offer several  advantages over other materials. Aluminum tubes are a great packaging option:
                         </p>
                     </div>
                 </div>
             </div>
             <div className='AlumBenefitDown d-flex' >
-                <img src={Arrow} alt="" srcset="" loading='lazy' data-aos="fade-left"/>
-                <div className='d-flex justify-content-start' data-aos="fade-right">
-                    <div className='AlumBenefitTabs flex-column' >
+                <img src={Arrow} alt=""  loading='lazy' data-aos="fade-left" data-aos-duration="800"/>
+                <div className='d-flex justify-content-start' data-aos="fade-right" data-aos-duration="500" >
+                    <div className='AlumBenefitTabs flex-column'>
                         <div className='d-flex my-2 ms-4'>
                             <div className='d-flex align-items-center me-2'>
                                 <span><FaArrowRightLong className='AlumBenefitTabsIcon fs-5' /></span>

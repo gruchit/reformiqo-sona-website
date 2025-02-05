@@ -11,14 +11,27 @@ import Focus from '../../Home/Focus.jsx'
 import Your_choice from './Your_choice.jsx'
 
 function Sona_About() {
+
+    const Category_Name = "Our Story";
+    const Category_URL = "https://sonaextrusion.com/About/Our-Story/";
+    const Category_Description = "Sonaextrusion’s store offers precision engineered extrusion products made for exceptional industrial performance. Designed to enhance efficiency. Visit Today!";
+
+const schema = `{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "${Category_Name}",
+    "url": "${Category_URL}",
+    "description": "${Category_Description}"
+}`;
+
     return (
         <>
             <Helmet>
                 <title>Sonaextrusion Store: Precision, Sustainability, Innovation</title>
-                <meta
-                    name="description"
-                    content="Sonaextrusion’s store offers precision engineered extrusion products made for exceptional industrial performance. Designed to enhance efficiency. Visit Today!"
-                />
+                <meta name="description" content={Category_Description} />
+                <script type="application/ld+json">
+                    {schema}
+                </script>
             </Helmet>
             <Top />
             <Header />

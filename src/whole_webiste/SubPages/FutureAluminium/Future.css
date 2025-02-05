@@ -10,7 +10,6 @@
 }
 .ftrFuturAlum ul li{
     text-align:justify;
-
 }
 .Future ol > li::marker {
     color: black; /* Example style */
@@ -40,6 +39,9 @@
 .FutureCardTxt {
     flex-grow: 1; 
 }
+.FutureCardTxt p{
+    font-weight:600;
+}
 .FutureCardImg{
     height: 200px;    
     width: 100%;
@@ -63,15 +65,15 @@
     width:100%;
 }
 
-.FutureFormSection{
+.DefineFormSection{
     padding:50px 0px;
 }
-.FutureForm{
+.DefineForm{
     padding:40px 30px;
     background-color:#faf8f5;
     border-radius:10px;
 }
-.FutureInput{
+.DefinInput{
     width:100%;
 }
 
@@ -105,4 +107,44 @@
 }
 .FutureForm_btn button:hover::before {
     transform: scaleX(1); /* Expands the fill */
+}
+
+@media (min-width: 320px) {    
+    .FuturePadd{ 
+   width: 100%;
+}
+}
+
+@media (min-width: 576px) {    
+    .FuturePadd{ 
+   width: 100%;
+}
+}
+
+
+@media (min-width: 768px) {    
+     .FuturePadd{ 
+    width: 100%;
+}
+ }
+
+
+@media (min-width: 992px) { 
+    .FuturePadd{ 
+        width: 100%;
+    }
+ }
+
+
+@media (min-width: 1200px) {     
+    .FuturePadd{ 
+        /* float:left; */
+    width: 70%;
+} }
+
+
+@media (min-width: 1400px) { 
+    .FuturePadd{ 
+    width: 70%;
+}
 }

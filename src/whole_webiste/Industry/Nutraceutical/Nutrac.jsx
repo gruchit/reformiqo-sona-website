@@ -9,17 +9,31 @@ import TbasOutSolu from '../Pharmaceutical/TbasOutSolu';
 import Faq from '../Pharmaceutical/Faq';
 import Focus from '../../Home/Focus.jsx'
 import Helmet from 'react-helmet';
+
 function Nutrac() {
+  const Category_Name = "Nutraceutical";
+  const Category_URL = "https://sonaextrusion.com/Industry/Nutraceutical/";
+  const Category_Description = "Premium nutraceutical packaging containers that prioritize safety and sustainability. Explore durable, eco-friendly containers crafted for the health industry.";
+
+const schema = `{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "${Category_Name}",
+  "url": "${Category_URL}",
+  "description": "${Category_Description}"
+}`;
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>Nutraceutical Packaging Containers Manufacturer & Supplier</title>
-        <meta name="description" content="Premium nutraceutical packaging containers that prioritize safety and sustainability. Explore durable, eco-friendly containers crafted for the health industry.
-" />
+        <meta name="description" content={Category_Description} />
+        <script type="application/ld+json">
+          {schema}
+        </script>
       </Helmet>
       <Top />
       <Header />
-      <Focus type="Nutrac"/>
+      <Focus type="Nutrac" />
       <TopSliderPhar Type="Nut" />
       <PharmTxt Type="Nut" />
       <Our_Solutions Type="Nut" />

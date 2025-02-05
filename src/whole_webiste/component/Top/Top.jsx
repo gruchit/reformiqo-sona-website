@@ -7,6 +7,8 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Top.css';
@@ -57,7 +59,7 @@ function Top() {
         { icon: <FaPhoneAlt className="text-white fs-5" />, text: '+91 9227663451', linkRedirect: 'tel:+919227663451' },
     ];
     return (
-        <div className="containers topofwebs mt-sm-3 mt-md-3 mt-lg-3">
+        <div className="containers topofwebs my-sm-2 my-md-2 my-lg-2">
             {isSliderView ? (
                 <div className='d-xl-none d-xxl-none d-block'>
                     <Slider {...sliderSettings}>

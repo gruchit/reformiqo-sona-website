@@ -20,6 +20,8 @@ import Table1 from '../../../assets/Table1.png';
 import Table2 from '../../../assets/Table2.png';
 import Table3 from '../../../assets/Table3.png';
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { useEffect } from 'react';
 
 function Collapsible({ Type }) {
@@ -41,16 +43,16 @@ function Collapsible({ Type }) {
         ];
     } else if (Type === "Flask") {
         cardData = [
-            { imgSrc: Flask1, title: 'Aluminium Tablet Canisters' },
-            { imgSrc: Flask2, title: 'Tablet Canisters' },
+            // { imgSrc: Flask1, title: 'Aluminum Tablet Canisters' },
+            // { imgSrc: Flask2, title: 'Tablet Canisters' },
             { imgSrc: Flask3, title: 'Shampoo Bottles' },
             { imgSrc: Flask4, title: 'Essential oil & Perfume Bottles' },
-            { imgSrc: Flask5, title: 'Brushed Aluminium Bottles' },
-            { imgSrc: Flask6, title: 'Printed Aluminium Bottles' }
+            { imgSrc: Flask5, title: 'Brushed Aluminum Bottles' },
+            { imgSrc: Flask6, title: 'Printed Aluminum Bottles' }
         ];
     } else if (Type === "Table") {
         cardData = [
-            { imgSrc: Table1, title: 'Aluminium Tablet Canisters' },
+            { imgSrc: Table1, title: 'Aluminum Tablet Canisters' },
             { imgSrc: Table2, title: 'Tablet Canisters' },
             { imgSrc: Table3, title: 'Tablet Canisters' }
         ];
@@ -61,7 +63,7 @@ function Collapsible({ Type }) {
     return (
         <div className='Collapsible'>
             <div className='container-xxl'>
-                <div className='CollapsibleTxt' data-aos="zoom-in-up" >
+                <div className='CollapsibleTxt' data-aos="zoom-in-up" data-aos-duration="600">
                     {Type === "Colla" ?
                         <>
                             <h1 className='text-center sans_bold mb-5'>
@@ -111,7 +113,7 @@ function Collapsible({ Type }) {
                                 key={index}
                                 className='col-xl-4 col-lg-4 col-md-6 mt-5 d-flex justify-content-center'
                             >
-                                <div className='CollapsibleCard' data-aos="zoom-in">
+                                <div className='CollapsibleCard' data-aos="zoom-in" data-aos-duration="500" data-aos-offset="200">
                                     <img src={card.imgSrc} alt={card.title} loading='lazy'/>
                                     <div className='CollaCardTitale'>
                                         <p className='sans_bold'>{card.title}</p>

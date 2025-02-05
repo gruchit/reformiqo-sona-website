@@ -4,6 +4,8 @@ import Double_bol_line from '../../assets/double_bol_line.svg';
 import Cret from '../../assets/Certi.svg'
 import Arrow_Left from '../../assets/arrow_Left.svg'
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { useEffect } from 'react';
 
 
@@ -18,7 +20,7 @@ function MarketLe() {
                 data-aos-offset="0"
                 data-aos-duration="500"
                 easing="ease-in-out"
-                once="true"
+                data-aos-once="true"
                 mirror="true"
             />
             <div className="row no-gutters d-flex justify-content-center pt-sm-3 ">
@@ -33,8 +35,8 @@ function MarketLe() {
                     >
                         <h2 className='sans_bold text-center text-lg-start text-md-start text-sm-start '>Market Leaders</h2>
                         <p className='sans_light text-secondary py-3 text-center text-lg-start text-md-start text-xl-start '>
-                            Sona Extrusion Pvt. Ltd. is a leading manufacturer of aluminium   collapsible
-                            tubes, containers, and  aluminium bottles/flasks in India, duly ISO 15378:2017
+                            Sona Extrusion Pvt. Ltd. is a leading manufacturer of aluminum   collapsible
+                            tubes, containers, and  aluminum bottles/flasks in India, duly ISO 15378:2017
                             (GMP) Certified – SGS (Primary Packaging  Materials for Pharmaceutical Products)
                             & ISO 9001:2015 Certified –  TUV & US DMF Registered Company. Sona Extrusions has
                             one of the highest production capacities in the country.
@@ -47,19 +49,19 @@ function MarketLe() {
                         data-aos-offset="200"
                         data-aos-duration="700"
                         easing="ease-in-out"
-                        once="true"
+                        data-aos-once="true"
                         mirror="true">
-                        <img src={Cret} alt="" srcset="" loading='lazy'/>
+                        <img src={Cret} alt=""  loading='lazy'/>
                         <h4 className='py-3 sans_Medium'>500 Mn Tubes</h4>
                         <p className='text-secondary sans_light'>Investing in cutting-edge technology, equipment, and infrastructure while ensuring the highest level of safety and quality standards, effective processes and skilled personnels, we are in a position to offer our customers state-of-the-art facilities and high-quality products.</p>
                     </div>
-                    <img src={Double_bol_line} alt="" srcset="" className='doblebol_markerLe_cards' loading='lazy'
+                    <img src={Double_bol_line} alt=""  className='doblebol_markerLe_cards' loading='lazy'
                         data-aos="fade-up"
                         data-aos-offset="0"
                         data-aos-delay="1000"
                         data-aos-duration="1500"
                         easing="ease-in-out"
-                        once="true"
+                        data-aos-once="true"
                         mirror="true"
 
                     />

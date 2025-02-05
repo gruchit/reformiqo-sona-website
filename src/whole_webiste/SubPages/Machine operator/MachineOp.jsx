@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Machine.css'
 import Top from '../../component/Top/Top.jsx'
 import Header from '../../component/Header/Header.jsx'
@@ -10,13 +10,29 @@ import { Link } from 'react-router-dom';
 import { MdShare } from "react-icons/md";
 import '../../../assets/fonts/fonts.css'
 import Focus from '../../Home/Focus'
+import ModelOpen from '../ModelFile/ModelOpen.jsx';
+import Helmet from 'react-helmet';
+
 function MachineOp() {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "{{Category Name}}",
+    "url": "{{Category URL}}",
+    "description": "{{Category Description}}"
+  }
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
-         <Top />
-         <Header />
-         <Focus type="MachineOp"/>
-         <div className='container'>
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(organizationSchema)}
+        </script>
+      </Helmet>
+      <Top />
+      <Header />
+      <Focus type="MachineOp" />
+      <div className='container'>
         <div className='MachineOp'>
           <div>
             <div className='MachineTop d-md-flex justify-content-between'>
@@ -31,13 +47,9 @@ function MachineOp() {
               </div>
               <div className='FeaturedPro d-flex my-auto'>
                 <div className='my-auto'>
-                  <img src={Featured} alt="" srcset="" className='mb-1' loading='lazy' /><span className='sans_bold ms-2'>Featured</span>
+                  <img src={Featured} alt="" className='mb-1' loading='lazy' /><span className='sans_bold ms-2'>Featured</span>
                 </div>
-                <div className='machineOp_Btn ms-5'>
-                  <Link to="/ProductionSup/">
-                    <button className=''><span><MdShare /></span> Apply Now</button>
-                  </Link>
-                </div>
+                <div className='machineOp_Btn ms-5' onClick={() => setIsModalOpen(true)}><button><span><MdShare /></span>Apply Now</button></div>
               </div>
 
             </div>
@@ -47,7 +59,7 @@ function MachineOp() {
             <h4 className='sans_Medium'>Roles and Responsibilities</h4>
             <ul className='sans_light text-secondary'>
               <li className='text-secondary my-2'>Operate and Maintain Extrusion press for extrusion automated machine.</li>
-              <li className='text-secondary my-2'>Should have knowledge of manufacturing aluminium tubes.</li>
+              <li className='text-secondary my-2'>Should have knowledge of manufacturing aluminum tubes.</li>
               <li className='text-secondary my-2'>Should be experienced in operating Extrusion, Annealing, Printing machines and to troubleshoot on common process problems.</li>
               <li className='text-secondary my-2'>Should be able to do routine preventive maintenances.</li>
               <li className='text-secondary my-2'>Report production output against given target.</li>
@@ -84,15 +96,17 @@ function MachineOp() {
               <li className=' my-2'><span className='h4 sans_Medium'>Employment Type:</span><a className='text-decoration-none ms-2 text-secondary sans_light' >Full Time, Permanent</a></li>
               <li className=' my-2'><span className='h4 sans_Medium'>Role Category:</span><a className='text-decoration-none ms-2 text-secondary sans_light' >Operations, Maintenance & Support</a></li>
             </ul>
-            <div className='machineOp_Btn ms-5'>
-                  <Link to="/ProductionSup/">
-                    <button className=''><span><MdShare /></span> Apply Now</button>
-                  </Link>
-                </div>
+            <div className='machineOp_Btn ms-5' onClick={() => setIsModalOpen(true)}
+            >
+              <button>
+                <span><MdShare /></span> Apply Now
+              </button>
+            </div>
           </div>
         </div>
       </div>
-         <Footer />
+      <Footer />
+      <ModelOpen isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   )
 }

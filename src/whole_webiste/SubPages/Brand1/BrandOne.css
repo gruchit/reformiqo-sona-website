@@ -1,0 +1,158 @@
+.BrandOne{
+    padding:50px 0px;
+}
+.BrandOnePadd{
+    padding:50px 0px;
+    
+}
+.BrndoneIntroduc p{
+    text-align:justify;
+}
+.ftrBrnone ul li{
+    text-align:justify;
+}
+.BrandOne ol > li::marker {
+    color: black; /* Example style */
+    font-size: 1.5em; /* Make the number larger */
+    font-weight: bold; /* Make the number bold */
+}
+
+
+.iconProDuct{
+    color:#D4B76E;
+}
+
+.DefineBox{
+    padding:50px 0px;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+
+.DefineCard{
+    max-width: 400px ;
+    width: 100%;
+    height: 370px;
+    border:2px solid #EFDBA8;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+.DefineCardTxt {
+    flex-grow: 1; 
+}
+.DefineCardImg{
+    height: 200px;    
+    width: 100%;
+}
+.DefineCardImg img{
+    object-fit: cover;
+    height: 200px;    
+    width: 100%;
+    border-radius: 0px 0px 200px 200px / 0px 0px 30px 30px;
+}
+.DefineCardTxt p{
+    font-weight:600;
+}
+
+
+.DefinRightIcon{
+    max-width:50px;
+    width:100%;
+    height:50px;
+    cursor:pointer;
+    
+}
+.DefinRightIcon img{
+    width:100%;
+}
+
+
+.DefineFormSection{
+    padding:50px 0px;
+}
+.DefineForm{
+    padding:40px 30px;
+    background-color:#faf8f5;
+    border-radius:10px;
+}
+.DefinInput{
+    width:100%;
+}
+
+
+
+.BrandOne_btn button {
+    position: relative; /* Needed for the pseudo-element positioning */
+    overflow: hidden; /* Ensures the pseudo-element does not go outside the button */
+    background-color: transparent; /* Transparent base for visual effect */
+    border: 2px solid #d4b76e; /* Optional: Customize button border */
+    color: #d4b76e; /* Text color */
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius:15px;
+    transition: color 0.3s ease;
+    font-size:20px;
+}
+
+.BrandOne_btn button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #d4b76e; /* Fill color */
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: left; /* Animation starts from the left */
+    transition: transform 0.3s ease; /* Smooth transition */
+    z-index: -1; /* Ensures it appears behind text */
+}
+.BrandOne_btn button:hover::before {
+    transform: scaleX(1); /* Expands the fill */
+}
+
+/* .BrandOne_btn button:hover {
+    color: #fff; 
+} */
+
+@media (min-width: 320px) {    
+    .BrandOnePadd{ 
+   width: 100%;
+}
+}
+
+@media (min-width: 576px) {    
+    .BrandOnePadd{ 
+   width: 100%;
+}
+}
+
+
+@media (min-width: 768px) {    
+     .BrandOnePadd{ 
+    width: 100%;
+}
+ }
+
+
+@media (min-width: 992px) { 
+    .BrandOnePadd{ 
+        width: 100%;
+    }
+ }
+
+
+@media (min-width: 1200px) {     
+    .BrandOnePadd{ 
+        /* float:left; */
+    width: 70%;
+} }
+
+
+@media (min-width: 1400px) { 
+    .BrandOnePadd{ 
+    width: 70%;
+}
+}

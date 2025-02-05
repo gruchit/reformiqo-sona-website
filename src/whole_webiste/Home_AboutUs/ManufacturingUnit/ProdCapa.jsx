@@ -4,6 +4,7 @@ import { FaCheck } from "react-icons/fa6";
 import SignleBlackLine from '../../../assets/single_BlackBol_Line.svg'
 import AOS from 'aos';
 import { useEffect } from 'react';
+import 'aos/dist/aos.css';
 
 
 function ProdCapa() {
@@ -22,7 +23,7 @@ function ProdCapa() {
                             data-aos="zoom-in-up"
                             >
                                 <div className='d-flex justify-content-end'>
-                                    <img src={SignleBlackLine} alt="" srcset="" className='ProdCapaImg mb-3' loading='lazy' />
+                                    <img src={SignleBlackLine} alt=""  className='ProdCapaImg mb-3' loading='lazy' />
                                 </div>
                                 <h2 className='text-center sans_bold'>Production Capacity</h2>
                                 <ul className='list-unstyled sans_Medium mt-4'>

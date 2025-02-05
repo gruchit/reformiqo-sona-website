@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useMemo } from 'react';
-import Logo from '../../../assets/logo.svg';
+import React, { useEffect, useState, useMemo, useRef } from 'react';
+import Logo from '../../../assets/DownloadLogo.png';
 import { Link } from 'react-router-dom';
 import { FiMenu } from "react-icons/fi";
 import { IoIosArrowDown } from "react-icons/io";
@@ -19,48 +19,46 @@ import FlasksBottles from "../../../assets/flasks-and-bottles.png";
 import Gallery from "../../../assets/Gallery.png";
 import BlogMedia from "../../../assets/BlogMedia.png";
 import Careers from "../../../assets/Careers.png";
+// Home slider AVIF file 
+import Home1 from '../../../assets/Home_main_Set.webp';
+import Home2 from '../../../assets/Home2_Set.webp';
+import Home3 from '../../../assets/Home4_Set.webp';
+import Home4 from '../../../assets/Tablet_Home_Set.webp';
+import Home5 from '../../../assets/FlaskHome_Set.webp';
 
-// Home slider
-import Home1 from '../../../assets/Home_main_webp_AVIF.avif';
-// import Home1  from '../../../assets/Home_main_webp_AVIF.avif';
-// import Home1 from '../../../assets/Home_main_webp_AVIF.avif';
+import Home6 from '../../../assets/newheaderPhoto/Resize/webp/Home1.webp';
+import Home7 from '../../../assets/newheaderPhoto/Resize/webp/Home2.webp';
+import Home8 from '../../../assets/newheaderPhoto/Resize/webp/Home3.webp';
+import Home9 from '../../../assets/newheaderPhoto/Resize/webp/Home4.webp';
+import Home10 from '../../../assets/newheaderPhoto/Resize/webp/Home5.webp';
+import Home12 from '../../../assets/newheaderPhoto/Resize/webp/Home6.webp';
+import Home13 from '../../../assets/newheaderPhoto/Resize/webp/Home7.webp';
+import Home14 from '../../../assets/newheaderPhoto/Resize/webp/Home8.webp';
+import Home15 from '../../../assets/newheaderPhoto/Resize/webp/Home9.webp';
+import Home16 from '../../../assets/newheaderPhoto/Resize/webp/Home10.webp';
+import Home17 from '../../../assets/newheaderPhoto/Resize/webp/Home11.webp';
+import Home18 from '../../../assets/newheaderPhoto/Resize/webp/Home12.webp';
+import Home19 from '../../../assets/newheaderPhoto/Resize/webp/Home13.webp';
+import Home20 from '../../../assets/newheaderPhoto/Resize/webp/Home14.webp';
+import Home21 from '../../../assets/newheaderPhoto/Resize/webp/Home15.webp';
+import HomeBlog1 from '../../../assets/newheaderPhoto/Resize/webp/Blog3.webp';
+import HomeBlog2 from '../../../assets/newheaderPhoto/Resize/webp/Blog2.webp';
+import HomeBlog3 from '../../../assets/newheaderPhoto/Resize/webp/Home3.webp';
+import HomeBlog4 from '../../../assets/newheaderPhoto/Resize/webp/Home2.webp';
+import HomeBlog5 from '../../../assets/newheaderPhoto/Resize/webp/Home_main_Set2.webp';
+import HomeBlog6 from '../../../assets/newheaderPhoto/Resize/webp/Home4.webp';
 
-import Home2 from '../../../assets/Home2_webp_AVIF.avif';
-// import Home2 from '../../../assets/Home2_webp_AVIF.avif';
-// import Home2 from '../../../assets/Home2_webp_AVIF.avif';
-
-import Home4 from '../../../assets/Home4_webp_AVIF.avif';
-// import Home4Medium from '../../../assets/Home4_webp_AVIF.avif';
-// import Home4Large from '../../../assets/Home4_webp_AVIF.avif';
-
-import Home5 from '../../../assets/Tablet_Home_webp_AVIF.avif';
-// import Home5Medium from '../../../assets/Tablet_Home_webp_AVIF.avif';
-// import Home5Large from '../../../assets/Tablet_Home_webp_AVIF.avif';
-
-import Home7 from '../../../assets/FlaskHome_webp_AVIF.avif';
-// import Home7Medium from '../../../assets/FlaskHome_webp_AVIF.avif';
-// import Home7Large from '../../../assets/FlaskHome_webp_AVIF.avif';
-
-import Home10 from '../../../assets/Home10_webp_AVIF.avif';
-// import Home10Medium from '../../../assets/Home10_webp_AVIF.avif';
-// import Home10Large from '../../../assets/Home10_webp_AVIF.avif';
-
-
-
-
-import Home6 from '../../../assets/Indus_webp.webp';
-import Home8 from '../../../assets/Home9_webp.webp';
 import { GoArrowUpRight } from "react-icons/go";
 import { IoClose } from "react-icons/io5";
 import Button_Arrow from '../../../assets/button_Arrow.svg';
 import Slider from 'react-slick';
 import './header.css';
 import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { useLocation } from 'react-router-dom';
-import Home11 from '../../../assets/Home11.jpg';
+// import Home11 from '../../../assets/Home11.jpg';
 
 function Header() {
-
   const location = useLocation();
   const settings = {
     dots: false,
@@ -73,13 +71,12 @@ function Header() {
     pauseOnHover: false,
     arrows: false,
   };
-
   const [scrolling, setScrolling] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
   const [isStickyVisible, setIsStickyVisible] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
-
+  
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -90,9 +87,7 @@ function Header() {
       }
       setLastScrollY(currentScrollY);
     };
-
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -101,7 +96,6 @@ function Header() {
   const toggleSubmenu = (submenu) => {
     setOpenSubmenu(prevSubmenu => (prevSubmenu === submenu ? null : submenu));
   };
-
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
     if (!menuOpen) {
@@ -110,19 +104,15 @@ function Header() {
       document.body.style.overflowY = "auto";
     }
   };
-
   const handleOutsideClick = (e) => {
     if (e.target.classNameList.contains('modal-overlay')) {
       toggleMenu();
     }
   };
-
-  // Close menu and enable scrolling on route change
   useEffect(() => {
     setMenuOpen(false);
     document.body.style.overflowY = "auto";
   }, [location.pathname]);
-
   useEffect(() => {
     if (menuOpen) {
       document.addEventListener('click', handleOutsideClick);
@@ -131,9 +121,6 @@ function Header() {
       document.removeEventListener('click', handleOutsideClick);
     };
   }, [menuOpen]);
-
-
-
   return (
     <>
       <div className='HeaderSmall d-xl-none d-flex justify-content-between align-items-center w-100 px-md-5 px-sm-3'>
@@ -162,40 +149,32 @@ function Header() {
               </li>
               <li onClick={() => toggleSubmenu('aboutUs')}>
                 <div className='d-flex justify-content-between align-items-center'>
-                  <Link to="" className={` text-decoration-none textBlack ${(location.pathname === '/About/Our-Store/' || location.pathname === '/About/Advatages-Sona/' || location.pathname === '/About/Manufacturing-Unit/' || location.pathname === '/About/Enviro-Friendly/' || location.pathname === '/About/Brochures/') ? 'active' : ''}`}>About Us</Link>
-                  <IoIosArrowDown
-                    className={`arwBck ${openSubmenu === 'aboutUs' ? '  arrow-rotate' : ' Back-Rorate'}`}
-                  />
+                  <Link to="" className={` text-decoration-none textBlack ${(location.pathname === '/About/Our-Story/' || location.pathname === '/About/Advatages-Sona/' || location.pathname === '/About/Manufacturing-Unit/' || location.pathname === '/About/Enviro-Friendly/' || location.pathname === '/About/Brochures/') ? 'active' : ''}`}>About Us</Link>
+                  <IoIosArrowDown className={`arwBck ${openSubmenu === 'aboutUs' ? '  arrow-rotate' : ' Back-Rorate'}`} />
                 </div>
-
                 <div className={`submenusAbout mt-2 ${openSubmenu === 'aboutUs' ? 'open' : ''}`}>
                   <ul className='list-unstyled'>
                     <li className='d-flex align-items-center'>
-                      <img src={Our_Store} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
-                        <Link to="/About/Our-Store/" className={`text-decoration-none textBlack ${location.pathname === '/About/Our-Store/' ? 'active' : ''}`}>Our Story</Link>
+                        <Link to="/About/Our-Story/" className={`text-decoration-none textBlack ${location.pathname === '/About/Our-Story/' ? 'active' : ''}`}>Our Story</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={Advantages} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/About/Advatages-Sona/" className={`text-decoration-none textBlack ${location.pathname === '/About/Advatages-Sona/' ? 'active' : ''}`}>Advantages Sona</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={manufacturing} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/About/Manufacturing-Unit/" className={`text-decoration-none textBlack ${location.pathname === '/About/Manufacturing-Unit/' ? 'active' : ''}`}>Manufacturing Unit</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={Envir} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/About/Enviro-Friendly/" className={`text-decoration-none textBlack ${location.pathname === '/About/Enviro-Friendly/' ? 'active' : ''}`}>Enviro-Friendly</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={Brochures} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/About/Brochures/" className={`text-decoration-none textBlack ${location.pathname === '/About/Brochures/' ? 'active' : ''}`}>Brochure</Link>
                       </span>
@@ -206,32 +185,26 @@ function Header() {
               <li onClick={() => toggleSubmenu('industry')}>
                 <div className='d-flex justify-content-between align-items-center'>
                   <Link to="/Industry/" className={`text-decoration-none textBlack ${(location.pathname === '/Industry/' || location.pathname === '/Industry/Pharmaceutical/' || location.pathname === '/Industry/Cosmetic-And-Personal-Care/' || location.pathname === '/Industry/Nutraceutical/' || location.pathname === '/Industry/Industrial-And-Agro-Chemical/') ? 'active' : ''}`}>Industry</Link>
-                  <IoIosArrowDown
-                    className={`arwBck ${openSubmenu === 'industry' ? ' arrow-rotate' : 'Back-Rorate'}`}
-                  />
+                  <IoIosArrowDown className={`arwBck ${openSubmenu === 'industry' ? ' arrow-rotate' : 'Back-Rorate'}`} />
                 </div>
                 <div className={`submenusAbout pt-2 ${openSubmenu === 'industry' ? 'open' : ''}`}>
                   <ul className='list-unstyled'>
                     <li className='d-flex align-items-center'>
-                      <img src={Pharmaceutical} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/Industry/Pharmaceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Pharmaceutical/' ? 'active' : ''}`}>Pharmaceutical</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={Cosmetic} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/Industry/Cosmetic-And-Personal-Care/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Cosmetic-And-Personal-Care/' ? 'active' : ''}`}>Cosmetic & Personal Care</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={Nutraceutical} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/Industry/Nutraceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Nutraceutical/' ? 'active' : ''}`}>Nutraceutical</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={IndustrialAgro} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/Industry/Industrial-And-Agro-Chemical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Industrial-And-Agro-Chemical/' ? 'active' : ''}`}>Industrial & Agro-Chemical</Link>
                       </span>
@@ -242,60 +215,47 @@ function Header() {
               <li onClick={() => toggleSubmenu('AluminumPro')}>
                 <div className='d-flex justify-content-between align-items-center'>
                   <Link to="/Aluminum-Products/" className={`text-decoration-none textBlack ${(location.pathname === '/Aluminum-Products/' || location.pathname === '/Aluminum-Products/Collapsible-Tubes/' || location.pathname === '/Aluminum-Products/Flasks-And-Bottles/' || location.pathname === '/Aluminum-Products/Tablet-Canisters/') ? 'active' : ''}`}>Aluminum Products</Link>
-                  <IoIosArrowDown
-                    className={`arwBck ${openSubmenu === 'AluminumPro' ? 'arrow-rotate' : 'Back-Rorate'}`}
-                  />
+                  <IoIosArrowDown className={`arwBck ${openSubmenu === 'AluminumPro' ? 'arrow-rotate' : 'Back-Rorate'}`} />
                 </div>
                 <div className={`submenusAbout pt-2 ${openSubmenu === 'AluminumPro' ? 'open' : ''}`}>
                   <ul className='list-unstyled'>
                     <li className='d-flex align-items-center'>
-                      <img src={CollapsibleTubes1} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/Aluminum-Products/Collapsible-Tubes/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Collapsible-Tubes/' ? 'active' : ''}`}>Collapsible Tubes</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={FlasksBottles} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/Aluminum-Products/Flasks-And-Bottles/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Flasks-And-Bottles/' ? 'active' : ''}`}>Flasks & Bottles</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={TabletCanisters} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/Aluminum-Products/Tablet-Canisters/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Tablet-Canisters/' ? 'active' : ''}`}>Tablet Canisters</Link>
                       </span>
                     </li>
                   </ul>
                 </div>
-
               </li>
               <li onClick={() => toggleSubmenu('Resources')}>
                 <div className='d-flex justify-content-between align-items-center'>
                   <Link to="" className={`text-decoration-none textBlack ${(location.pathname === '/Resources/Careers/' || location.pathname === '/Resources/BlogMedia/' || location.pathname === '/Resources/Gallery/') ? 'active' : ''}`}
                   >Resources</Link>
-                  <IoIosArrowDown
-
-                    className={`arwBck ${openSubmenu === 'Resources' ? 'arrow-rotate' : 'Back-Rorate'}`}
-                  />
+                  <IoIosArrowDown className={`arwBck ${openSubmenu === 'Resources' ? 'arrow-rotate' : 'Back-Rorate'}`} />
                 </div>
-
                 <div className={`submenusAbout pt-2 ${openSubmenu === 'Resources' ? 'open' : ''}`}>
                   <ul className='list-unstyled'>
                     <li className='d-flex align-items-center'>
-                      <img src={Careers} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/Resources/Careers/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Careers/' ? 'active' : ''}`}>Careers</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={BlogMedia} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/Resources/BlogMedia/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/BlogMedia/' ? 'active' : ''}`}>Blogs & Media</Link>
                       </span>
                     </li>
                     <li className='d-flex align-items-center'>
-                      <img src={Gallery} alt="" className='navimg' loading='eager' />
                       <span className='setLing'>
                         <Link to="/Resources/Gallery/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Gallery/' ? 'active' : ''}`}>Gallery</Link>
                       </span>
@@ -305,10 +265,9 @@ function Header() {
               </li>
               <li onClick={() => toggleSubmenu('LaminatedTubs')}>
                 <div className='d-flex justify-content-between align-items-center'>
-                  <Link to="/Laminated-tubs/" className={`text-decoration-none textBlack ${location.pathname === '/Laminated-tubs/' ? 'active' : ''}`}>Laminated Tubs</Link>
+                  <Link to="/Laminated-tubs/" className={`text-decoration-none textBlack ${location.pathname === '/Laminated-tubs/' ? 'active' : ''}`}>Laminated Tubes</Link>
                   {/* <IoIosArrowDown className={openSubmenu === 'LaminatedTubs' ? 'arrow-rotate fs-3' : 'fs-3 Back-Rorate'}/> */}
                 </div>
-
               </li>
             </ul>
             <div className="d-flex justify-content-start">
@@ -319,14 +278,12 @@ function Header() {
           </div>
         </div>
       )}
-
       <div className="header_main m-auto">
         <div className="container-xxl header d-xl-block ">
           <nav className="navbar navbar-expand"
             data-aos="zoom-in-up"
             data-aos-offset="100"
-            data-aos-duration="400"
-          >
+            data-aos-duration="400">
             <a className="navbar-brand" href="/">
               <img className="w-100" src={Logo} alt="Logo" loading='eager' />
             </a>
@@ -338,38 +295,32 @@ function Header() {
                   </Link>
                 </li>
                 <li className="nav-item hover_serv">
-                  <Link to="" className={`nav-link  hebo px-3 text-decoration-none textBlack ${(location.pathname === '/About/Our-Store/' || location.pathname === '/About/Advatages-Sona/' || location.pathname === '/About/Manufacturing-Unit/' || location.pathname === '/About/Enviro-Friendly/' || location.pathname === '/About/Brochures/') ? 'active' : ''}`}>
+                  <Link to="" className={`nav-link  hebo px-3 text-decoration-none textBlack ${(location.pathname === '/About/Our-Story/' || location.pathname === '/About/Advatages-Sona/' || location.pathname === '/About/Manufacturing-Unit/' || location.pathname === '/About/Enviro-Friendly/' || location.pathname === '/About/Brochures/') ? 'active' : ''}`}>
                     About Us
                   </Link>
-
                   <div className='set_ul'>
                     <ul className='list-unstyled'>
                       <li className='d-flex align-item-center'>
-                        <img src={Our_Store} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
-                          <Link to="/About/Our-Store/" className={`text-decoration-none textBlack ${location.pathname === '/About/Our-Store/' ? 'active' : ''}`}>Our Story</Link>
+                          <Link to="/About/Our-Story/" className={`text-decoration-none textBlack ${location.pathname === '/About/Our-Story/' ? 'active' : ''}`}>Our Story</Link>
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={Advantages} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/About/Advatages-Sona/" className={`text-decoration-none textBlack ${location.pathname === '/About/Advatages-Sona/' ? 'active' : ''}`}>Advantages Sona</Link>
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={manufacturing} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/About/Manufacturing-Unit/" className={`text-decoration-none textBlack ${location.pathname === '/About/Manufacturing-Unit/' ? 'active' : ''}`}>Manufacturing Unit</Link>
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={Envir} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/About/Enviro-Friendly/" className={`text-decoration-none textBlack ${location.pathname === '/About/Enviro-Friendly/' ? 'active' : ''}`}>Enviro-Friendly</Link>
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={Brochures} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/About/Brochures/" className={`text-decoration-none textBlack ${location.pathname === '/About/Brochures/' ? 'active' : ''}`}>Brochure</Link>
                         </span>
@@ -384,26 +335,21 @@ function Header() {
                   <div className='set_ul'>
                     <ul className='list-unstyled'>
                       <li className='d-flex align-item-center'>
-                        <img src={Pharmaceutical} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/Industry/Pharmaceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Pharmaceutical/' ? 'active' : ''}`}>Pharmaceutical</Link>
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={Cosmetic} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/Industry/Cosmetic-And-Personal-Care/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Cosmetic-And-Personal-Care/' ? 'active' : ''}`}>Cosmetic & Personal Care</Link>
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={Nutraceutical} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/Industry/Nutraceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Nutraceutical/' ? 'active' : ''}`}>Nutraceutical</Link>
-
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={IndustrialAgro} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/Industry/Industrial-And-Agro-Chemical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Industrial-And-Agro-Chemical/' ? 'active' : ''}`}>Industrial & Agro-Chemical</Link>
                         </span>
@@ -418,26 +364,20 @@ function Header() {
                   <div className='set_ul'>
                     <ul className='list-unstyled'>
                       <li className='d-flex align-item-center'>
-                        <img src={CollapsibleTubes1} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/Aluminum-Products/Collapsible-Tubes/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Collapsible-Tubes/' ? 'active' : ''}`}>Collapsible Tubes</Link>
-
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={FlasksBottles} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/Aluminum-Products/Flasks-And-Bottles/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Flasks-And-Bottles/' ? 'active' : ''}`}>Flasks & Bottles</Link>
-
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={TabletCanisters} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/Aluminum-Products/Tablet-Canisters/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Tablet-Canisters/' ? 'active' : ''}`}>Tablet Canisters</Link>
                         </span>
                       </li>
-
                     </ul>
                   </div>
                 </li>
@@ -448,21 +388,16 @@ function Header() {
                   <div className='set_ul'>
                     <ul className='list-unstyled'>
                       <li className='d-flex align-item-center'>
-                        <img src={Careers} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/Resources/Careers/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Careers/' ? 'active' : ''}`}>Careers</Link>
-
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={BlogMedia} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/Resources/BlogMedia/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/BlogMedia/' ? 'active' : ''}`}>Blogs & Media</Link>
-
                         </span>
                       </li>
                       <li className='d-flex align-item-center'>
-                        <img src={Gallery} alt="" className='navimg' loading='eager' />
                         <span className='setLing'>
                           <Link to="/Resources/Gallery/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Gallery/' ? 'active' : ''}`}>Gallery</Link>
                         </span>
@@ -472,7 +407,7 @@ function Header() {
                 </li>
                 <li className="nav-item hover_serv">
                   <Link to="/Laminated-Tubs/" className={`nav-link  hebo px-3 text-decoration-none textBlack ${location.pathname === '/Laminated-Tubs/' ? 'active' : ''}`}>
-                    Laminated Tubs
+                    Laminated Tubes
                   </Link>
                 </li>
               </ul>
@@ -484,7 +419,6 @@ function Header() {
             </div>
           </nav>
         </div>
-
         <div className={`sticky-header  p-md-0 p-sm-0 ${isStickyVisible ? 'visible' : ''}`}>
           <nav className="navbar navbar-expand ApplySticky d-lg-none d-md-none d-sm-none d-none d-xl-block d-xxl-block ">
             <div className='container-xxl'>
@@ -499,38 +433,32 @@ function Header() {
                     </Link>
                   </li>
                   <li className="nav-item  hover_serv">
-                    <Link to="" className={`nav-link HTxt StlyHeader px-3 text-decoration-none textBlack ${(location.pathname === '/About/Our-Store/' || location.pathname === '/About/Advatages-Sona/' || location.pathname === '/About/Manufacturing-Unit/' || location.pathname === '/About/Enviro-Friendly/' || location.pathname === '/About/Brochures/') ? 'active' : ''}`}>
+                    <Link to="" className={`nav-link HTxt StlyHeader px-3 text-decoration-none textBlack ${(location.pathname === '/About/Our-Story/' || location.pathname === '/About/Advatages-Sona/' || location.pathname === '/About/Manufacturing-Unit/' || location.pathname === '/About/Enviro-Friendly/' || location.pathname === '/About/Brochures/') ? 'active' : ''}`}>
                       About Us
                     </Link>
-
                     <div className='set_ul'>
                       <ul className='list-unstyled'>
                         <li className='d-flex align-item-center'>
-                          <img src={Our_Store} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
-                            <Link to="/About/Our-Store/" className={`text-decoration-none textBlack ${location.pathname === '/About/Our-Store/' ? 'active' : ''}`}>Our Story</Link>
+                            <Link to="/About/Our-Story/" className={`text-decoration-none textBlack ${location.pathname === '/About/Our-Story/' ? 'active' : ''}`}>Our Story</Link>
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={Advantages} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/About/Advatages-Sona/" className={`text-decoration-none textBlack ${location.pathname === '/About/Advatages-Sona/' ? 'active' : ''}`}>Advantages Sona</Link>
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={manufacturing} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/About/Manufacturing-Unit/" className={`text-decoration-none textBlack ${location.pathname === '/About/Manufacturing-Unit/' ? 'active' : ''}`}>Manufacturing Unit</Link>
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={Envir} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/About/Enviro-Friendly/" className={`text-decoration-none textBlack ${location.pathname === '/About/Enviro-Friendly/' ? 'active' : ''}`}>Enviro-Friendly</Link>
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={Brochures} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/About/Brochures/" className={`text-decoration-none textBlack ${location.pathname === '/About/Brochures/' ? 'active' : ''}`}>Brochure</Link>
                           </span>
@@ -545,26 +473,21 @@ function Header() {
                     <div className='set_ul'>
                       <ul className='list-unstyled'>
                         <li className='d-flex align-item-center'>
-                          <img src={Pharmaceutical} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/Industry/Pharmaceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Pharmaceutical/' ? 'active' : ''}`}>Pharmaceutical</Link>
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={Cosmetic} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/Industry/Cosmetic-And-Personal-Care/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Cosmetic-And-Personal-Care/' ? 'active' : ''}`}>Cosmetic & Personal Care</Link>
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={Nutraceutical} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/Industry/Nutraceutical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Nutraceutical/' ? 'active' : ''}`}>Nutraceutical</Link>
-
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={IndustrialAgro} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/Industry/Industrial-And-Agro-Chemical/" className={`text-decoration-none textBlack ${location.pathname === '/Industry/Industrial-And-Agro-Chemical/' ? 'active' : ''}`}>Industrial & Agro-Chemical</Link>
                           </span>
@@ -579,26 +502,20 @@ function Header() {
                     <div className='set_ul'>
                       <ul className='list-unstyled'>
                         <li className='d-flex align-item-center'>
-                          <img src={CollapsibleTubes1} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/Aluminum-Products/Collapsible-Tubes/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Collapsible-Tubes/' ? 'active' : ''}`}>Collapsible Tubes</Link>
-
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={FlasksBottles} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/Aluminum-Products/Flasks-And-Bottles/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Flasks-And-Bottles/' ? 'active' : ''}`}>Flasks & Bottles</Link>
-
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={TabletCanisters} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/Aluminum-Products/Tablet-Canisters/" className={`text-decoration-none textBlack ${location.pathname === '/Aluminum-Products/Tablet-Canisters/' ? 'active' : ''}`}>Tablet Canisters</Link>
                           </span>
                         </li>
-
                       </ul>
                     </div>
                   </li>
@@ -609,34 +526,28 @@ function Header() {
                     <div className='set_ul'>
                       <ul className='list-unstyled'>
                         <li className='d-flex align-item-center'>
-                          <img src={Careers} alt="" className='navimg' loading='eager' />
                           <span className='setLing'>
                             <Link to="/Resources/Careers/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Careers/' ? 'active' : ''}`}>Careers</Link>
-
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={BlogMedia} alt="" className='navimg' loading='eager' />
+
                           <span className='setLing'>
                             <Link to="/Resources/BlogMedia/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/BlogMedia/' ? 'active' : ''}`}>Blogs & Media</Link>
-
                           </span>
                         </li>
                         <li className='d-flex align-item-center'>
-                          <img src={Gallery} alt="" className='navimg' loading='eager' />
+
                           <span className='setLing'>
                             <Link to="/Resources/Gallery/" className={`text-decoration-none textBlack ${location.pathname === '/Resources/Gallery/' ? 'active' : ''}`}>Gallery</Link>
-
-
                           </span>
                         </li>
-
                       </ul>
                     </div>
                   </li>
                   <li className="nav-item HTxt hover_serv">
                     <Link to="/Laminated-Tubs/" className={`nav-link HTxt StlyHeader px-3 text-decoration-none textBlack ${location.pathname === '/Laminated-Tubs/' ? 'active' : ''}`}>
-                      Laminated Tubs
+                      Laminated Tubes
                     </Link>
                   </li>
                 </ul>
@@ -665,32 +576,196 @@ function Header() {
             </div>
           </nav>
         </div>
-
-        <div className="home-photo" style={{ borderRadius: scrolling ? '0' : '35px' }}>
-          <Slider {...settings}>
-                <div>
-                  <img src={Home1} alt="" rel="preload" sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="400" loading="lazy" />
-                </div>
-                <div>
-                  <img src={Home2} alt="" rel="preload" sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="400" loading="lazy" />
-                </div>
-                <div>
-                  <img src={Home4} alt="" rel="preload" sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="400" loading="lazy" />
-                </div>
-                <div>
-                  <img src={Home5} alt="" rel="preload" sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="400" loading="lazy" />
-                </div>
-                <div>
-                  <img src={Home7} alt="" rel="preload" sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="400" loading="lazy" />
-                </div>
-                <div>
-                  <img src={Home10} alt="" rel="preload" sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="400" loading="lazy" />
-                </div>
-          </Slider>
+        <div className="home-photo" >
+          {location.pathname === '' || location.pathname === '/' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={Home6} alt="" rel="preload" srcSet='' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+                {/* {console.log("hello")} */}
+                
+              </div>
+            {/* </Slider> */}
+          </>}
+          {location.pathname === '/About/Our-Story/' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={Home7} alt="" rel="preload" srcSet='' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+          </>}
+          {location.pathname === '/About/Advatages-Sona/' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={Home8} alt="" rel="preload" srcSet='' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+          </>}
+          {location.pathname === '/About/Manufacturing-Unit/' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={Home9} alt="" rel="preload" srcSet='' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+              
+            {/* </Slider> */}
+          </>}
+          {location.pathname === '/About/Enviro-Friendly/' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={Home10} alt="" rel="preload" srcSet='' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+          </>}
+          {location.pathname === '/About/Brochures/' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={Home12} alt="" rel="preload" srcSet='' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+          </>}
+          {location.pathname === '/Industry/' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={Home12} alt="" rel="preload" srcSet='' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+          </>}
+          {location.pathname === '/Industry/Pharmaceutical/' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={Home13} alt="" rel="preload" srcSet='' className='InduPhar' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+          </>}
+          {location.pathname === '/Industry/Cosmetic-And-Personal-Care/' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={Home14} alt="" rel="preload" srcSet='' className='InduPhar' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+          </>}
+          {location.pathname === '/Industry/Nutraceutical/' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={Home9} alt="" rel="preload" srcSet='' className='InduPhar' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+          </>}
+          {location.pathname === '/Industry/Industrial-And-Agro-Chemical/' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={Home15} alt="" rel="preload" srcSet='' className='InduPhar' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+          </>}
+          {location.pathname === '/Aluminum-Products/' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={Home16} alt="" rel="preload" srcSet='' className='InduPhar' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+          </>}
+          {location.pathname === '/Aluminum-Products/Collapsible-Tubes/' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={Home17} alt="" rel="preload" srcSet='' className='InduPhar' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+          </>}
+          {location.pathname === '/Aluminum-Products/Flasks-And-Bottles/' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={Home18} alt="" rel="preload" srcSet='' className='InduPhar' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+          </>}
+          {location.pathname === '/Aluminum-Products/Tablet-Canisters/' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={Home19} alt="" rel="preload" srcSet='' className='InduPhar' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+          </>}
+          {location.pathname === '/Resources/Careers/' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={Home20} alt="" rel="preload" srcSet='' className='InduPhar' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+          </>}
+          {location.pathname === '/Resources/BlogMedia/' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={Home9} alt="" rel="preload" srcSet='' className='InduPhar' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+          </>}
+          {location.pathname === '/Resources/Gallery/' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={Home9} alt="" rel="preload" srcSet='' className='InduPhar' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+          </>}
+          {location.pathname === '/Laminated-Tubs/' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={Home21} alt="" rel="preload" srcSet='' className='InduPhar' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+            </>}
+            {location.pathname === '/ProductionSup/' || location.pathname === '/Machine-Operator/' || location.pathname === '/Assistant-Ipqc-Executive/' || location.pathname === '/ReachUs/' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={Home8} alt="" rel="preload" srcSet='' className='InduPhar' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+            </>}
+            {location.pathname === '/FuturAluminum' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={HomeBlog6} alt="" rel="preload" srcSet='' className='InduPhar' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+            </>}
+            {location.pathname === '/DefineAdvantages' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={HomeBlog5} alt="" rel="preload" srcSet='' className='InduPhar' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+            </>}
+            {location.pathname === '/Pioneering-in-Manufacturing-of-Tubes' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={HomeBlog4} alt="" rel="preload" srcSet='' className='InduPhar' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+            </>}
+            {location.pathname === '/Factors-for-Choosing-the-Pharma-Packaging-Partner' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={HomeBlog1} alt="" rel="preload" srcSet='' className='InduPhar' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+            </>}
+            {location.pathname === '/Benefits-of-Using-Tubes-in-Pharma-Products' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={HomeBlog2} alt="" rel="preload" srcSet='' className='InduPhar' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+            </>}
+            {location.pathname === '/Trust-Sona-Extrusion-for-Packaging-Solutions' && <>
+            {/* <Slider {...settings}> */}
+              <div>
+                <img src={HomeBlog3} alt="" rel="preload" srcSet='' className='InduPhar' sizes="(max-width: 600px) 100vh, (max-width: 1200px) 50vh, 33vh" loading="lazy" />
+              </div>
+            {/* </Slider> */}
+            </>}
         </div>
       </div >
     </>
   );
 }
-
 export default Header;
+

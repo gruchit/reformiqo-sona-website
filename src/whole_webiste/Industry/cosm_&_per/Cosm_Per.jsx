@@ -10,11 +10,25 @@ import Faq from '../Pharmaceutical/Faq';
 import Focus from '../../Home/Focus.jsx'
 import Helmet from 'react-helmet';
 function Cosm_Per() {
+    const Category_Name = "Cosmetic & Personal Care";
+    const Category_URL = "https://sonaextrusion.com/Industry/Cosmetic-And-Personal-Care/";
+    const Category_Description = "Expert manufacturer of cosmetic and personal care packaging. We offer eco-friendly, innovative, and durable designs that reflect your brand’s unique identity.";
+
+const schema = `{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "${Category_Name}",
+    "url": "${Category_URL}",
+    "description": "${Category_Description}"
+}`;
     return (
         <>
             <Helmet>
                 <title>Cosmetic & Personal Care Packaging Manufacturer & Supplier</title>
-                <meta name="description" content="Expert manufacturer of cosmetic and personal care packaging. We offer eco-friendly, innovative, and durable designs that reflect your brand’s unique identity." />
+                <meta name="description" content={Category_Description} />
+                <script type="application/ld+json">
+                    {schema}
+                </script>
             </Helmet>
             <Top />
             <Header />

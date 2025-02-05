@@ -6,6 +6,8 @@ import Industrial1 from '../../../assets/Industrial1.svg'
 import Company_black from '../../../assets/Company_black.jpg'
 import './AdvantSona.css'
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { useState, useEffect } from 'react';
 
 function CompanyChange() {
@@ -24,7 +26,7 @@ function CompanyChange() {
                                 data-aos-offset="200"
                                 data-aos-duration="500"
                                 easing="ease-in-out"
-                                once="true"
+                                data-aos-once="true"
                                 mirror="true"
                             >
                                 <h1 className='text-center sans_light text-white mb-5'>A Company to Change the World  </h1>
@@ -42,7 +44,7 @@ function CompanyChange() {
                         data-aos-offset="200"
                         data-aos-duration="500"
                         easing="ease-in-out"
-                        once="true"
+                        data-aos-once="true"
                         mirror="true"
 
                     >
@@ -51,7 +53,7 @@ function CompanyChange() {
                         data-aos-offset="200"
                         data-aos-duration="500"
                         easing="ease-in-out"
-                        once="true"
+                        data-aos-once="true"
                         mirror="true"
                         >
                             <div className='cmp1'>
@@ -67,7 +69,7 @@ function CompanyChange() {
                         data-aos-offset="200"
                         data-aos-duration="500"
                         easing="ease-in-out"
-                        once="true"
+                        data-aos-once="true"
                         mirror="true"
                         >
                             <div className='cmp1'>
@@ -84,7 +86,7 @@ function CompanyChange() {
                         data-aos-offset="200"
                         data-aos-duration="500"
                         easing="ease-in-out"
-                        once="true"
+                        data-aos-once="true"
                         mirror="true"
                         >
                             <div className='cmp1'>
@@ -101,7 +103,7 @@ function CompanyChange() {
                         data-aos-offset="200"
                         data-aos-duration="500"
                         easing="ease-in-out"
-                        once="true"
+                        data-aos-once="true"
                         mirror="true"
                         >
                             <div className='cmp1'>

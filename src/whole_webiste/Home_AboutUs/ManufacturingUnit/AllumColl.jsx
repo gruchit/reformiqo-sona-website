@@ -2,6 +2,8 @@ import React from 'react'
 import './manu.css'
 import { FaCheck } from "react-icons/fa6";
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { useEffect } from 'react';
 function AllumColl() {
     useEffect(() => {
@@ -18,11 +20,11 @@ function AllumColl() {
                         data-aos-offset="200"
                         data-aos-duration="600"
                         easing="ease-in-out"
-                        once="true"
+                        data-aos-once="true"
                         mirror="true"
                     >
-                        <h1 className='text-center mb-5 sans_bold'>Your #1 Choice For Aluminium Collapsible Tubes, Containers and Aluminium Bottles Flakes</h1>
-                        <p className='sans_Light text-center text-secondary'>An ISO 15378:2017 (GMP) Certified – SGS, ISO 9001:2015 Certified – TUV & US DMF Registered Certified Company and proudly having the best production capacity based on significant investments in cutting-edge technology, skilled workforce and effective processes. The technology investments have given us an advantage over our competitors and enabled us to consistently deliver high-quality aluminium extrusions.</p>
+                        <h1 className='text-center mb-5 sans_bold'>Your #1 Choice For Aluminum Collapsible Tubes, Containers and Aluminum Bottles & Flakes</h1>
+                        <p className='sans_Light text-center text-secondary'>An ISO 15378:2017 (GMP) Certified – SGS, ISO 9001:2015 Certified – TUV & US DMF Registered Certified Company and proudly having the best production capacity based on significant investments in cutting-edge technology, skilled workforce and effective processes. The technology investments have given us an advantage over our competitors and enabled us to consistently deliver high-quality aluminum extrusions.</p>
                     </div>
                 </div>
                 <div className='AllumCollBody '>
@@ -34,7 +36,7 @@ function AllumColl() {
                                     data-aos-offset="200"
                                     data-aos-duration="500"
                                     easing="ease-in-out"
-                                    once="true"
+                                    data-aos-once="true"
                                     mirror="true"
                                 >
                                     <h4 className='mb-3 sans_Medium text-center'>Specialities:</h4>
@@ -53,11 +55,11 @@ function AllumColl() {
                                         <div className='AllumBodyright sans_Medium flex-column' >
                                             <ul className='list-unstyled'>
                                                 <li> <span><FaCheck className='me-3 checkAllum fs-5' /></span>Pharma Packaging</li>
-                                                <li> <span><FaCheck className='me-3 checkAllum fs-5' /></span>Aluminium bottles</li>
+                                                <li> <span><FaCheck className='me-3 checkAllum fs-5' /></span>Aluminum bottles</li>
                                                 <li> <span><FaCheck className='me-3 checkAllum fs-5' /></span>Opthalmic Tubes</li>
                                                 <li> <span><FaCheck className='me-3 checkAllum fs-5' /></span>Pharmaceutical Tubes</li>
-                                                <li> <span><FaCheck className='me-3 checkAllum fs-5' /></span>Aluminium Flasks</li>
-                                                <li> <span><FaCheck className='me-3 checkAllum fs-5' /></span>Aluminium Containers</li>
+                                                <li> <span><FaCheck className='me-3 checkAllum fs-5' /></span>Aluminum Flasks</li>
+                                                <li> <span><FaCheck className='me-3 checkAllum fs-5' /></span>Aluminum Containers</li>
 
                                             </ul>
                                         </div>
@@ -70,7 +72,7 @@ function AllumColl() {
                                     data-aos-offset="200"
                                     data-aos-duration="500"
                                     easing="ease-in-out"
-                                    once="true"
+                                    data-aos-once="true"
                                     mirror="true"
                                 >
                                     <h2 className='sans_Medium d-inline-block'>Manufacturing Unit</h2>
@@ -96,9 +98,9 @@ function AllumColl() {
                                                 <tr>
                                                     <td>Products Manufactured:</td>
                                                     <td>
-                                                        Aluminium collapsible tubes<br />
-                                                        Aluminium Tablet Canisters<br />
-                                                        Aluminium Flask and Bottles
+                                                        Aluminum collapsible tubes<br />
+                                                        Aluminum Tablet Canisters<br />
+                                                        Aluminum Flask and Bottles
                                                     </td>
                                                 </tr>
                                                 <tr>

@@ -13,7 +13,7 @@ import Table from '../../assets/Table.jpg'
 import LamiProduct from '../../assets/LamiProduct.svg'
 import LaminatPhrma from '../../assets/LaminatPhrma.svg'
 import LamiConsmatic from '../../assets/LamiConsmatic.svg'
-
+import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { useState, useEffect } from 'react';
 
@@ -38,7 +38,7 @@ function Product({ type }) {
                 <div className='Product_Detail'>
                     <img src={Arrow_Left} alt="" loading='lazy' className='Product_Detail_left'
                         data-aos="fade-right"
-                        data-aos-offset="50"
+                        data-aos-offset="100"
                         // data-aos-delay="1000"
                         data-aos-duration="500"
                         easing="ease-in-out"
@@ -47,11 +47,11 @@ function Product({ type }) {
 
                     <div className='pt-5 container'
                         data-aos="zoom-in-up"
-                        data-aos-offset="50"
+                        data-aos-offset="100"
                         // data-aos-delay="1000"
                         data-aos-duration="500"
                         easing="ease-in-out"
-                        once="true"
+                        data-aos-once="true"
                         mirror="true"
                     >
                         {type === "Laminated_Tubs" ?
@@ -75,11 +75,10 @@ function Product({ type }) {
                     <div className={isLargeScreen ? "container-xxl" : ""}>
                         <div className='row d-flex justify-content-center py-5'
                             data-aos="zoom-in-up"
-                            data-aos-offset="100"
-                            data-aos-delay="500"
+                            data-aos-offset="300"
                             data-aos-duration="500"
                             easing="ease-in-out"
-                            once="true"
+                            data-aos-once="true"
                             mirror="true"
 
                         >
@@ -87,13 +86,13 @@ function Product({ type }) {
                                 {type === "Home" || type === "Alume" ? <>
                                     <Link to="/Aluminum-Products/Collapsible-Tubes/" className='sans_light text-decoration-none text-black'>
                                         <div className="Product_cards m-auto">
-                                            <div className="product_img p-4">
+                                            <div className="product_img p-3">
                                                 <img src={Ellipse} alt="" loading='lazy' />
                                             </div>
                                             <div className="Produ_card_det  px-4">
-                                                <h4 className='m-0 my-2 sans_Medium'>Collapsible Tubes</h4>
+                                                <h4 className='m-0 mb-2 sans_Medium'>Collapsible Tubes</h4>
                                                 <p className='sans_light text-secondary '>
-                                                    We offer premium aluminium collapsible tubes made with
+                                                    We offer premium aluminum collapsible tubes made with
                                                     cutting-edge manufacturing techniques, meticulous quality control,
                                                     and ongoing innovation to meet the needs of our end-users.
                                                 </p>
@@ -108,13 +107,13 @@ function Product({ type }) {
                                     :
                                     type === "Laminated_Tubs" ? <>
                                         <div className="Product_cards m-auto">
-                                            <div className="product_img p-4">
+                                            <div className="product_img p-3">
                                                 <img src={LaminatPhrma} alt="" loading='lazy' />
                                             </div>
                                             <div className="Produ_card_det  px-4">
-                                                <h4 className='m-0 my-2 sans_Medium'>Pharmaceuticals</h4>
+                                                <h4 className='m-0 mb-2 sans_Medium'>Pharmaceuticals</h4>
                                                 <p className='sans_light text-secondary '>
-                                                    In the pharmaceutical industry, product safety and compliance are paramount. Our laminated tubes are ideal for packaging ointments, gels, and other medicinal products, providing robust protection against contamination and environmental factors. Our tubes meet stringent industry standards, ensuring that your pharmaceutical products are securely contained and preserved. With precise, tamper-evident closures and high-quality materials, our tubes help maintain the integrity and efficacy of your medicinal formulations.
+                                                In the pharmaceutical industry, product safety and compliance are paramount. Our laminated tubes are ideal for packaging ointments, gels, and other medicinal products, providing robust protection against contamination and environmental factors. Our tubes meet stringent industry standards, ensuring that your pharmaceutical products are securely contained and preserved. With precise, tamper-evident closures and high-quality materials, our tubes help maintain the integrity and efficacy of your medicinal formulations.
                                                 </p>
                                             </div>
                                             <div className='product_bottom_phto'>
@@ -123,13 +122,13 @@ function Product({ type }) {
                                         </div>
                                     </> : <>
                                         <div className="Product_cards m-auto">
-                                            <div className="product_img p-4">
+                                            <div className="product_img p-3">
                                                 <img src={Ellipse} alt="" loading='lazy' />
                                             </div>
                                             <div className="Produ_card_det  px-4">
-                                                <h4 className='m-0 my-2 sans_Medium'>Collapsible Tubes</h4>
+                                                <h4 className='m-0 mb-2 sans_Medium'>Collapsible Tubes</h4>
                                                 <p className='sans_light text-secondary '>
-                                                    We offer premium aluminium collapsible tubes made with
+                                                    We offer premium aluminum collapsible tubes made with
                                                     cutting-edge manufacturing techniques, meticulous quality control,
                                                     and ongoing innovation to meet the needs of our end-users.
                                                 </p>
@@ -144,13 +143,13 @@ function Product({ type }) {
                                 {type === "Home" || type === "Alume" ? <>
                                     <Link to="/Aluminum-Products/Flasks-And-Bottles/" className='sans_light text-decoration-none text-black'>
                                         <div className="Product_cards m-auto">
-                                            <div className="product_img p-4">
+                                            <div className="product_img p-3">
                                                 <img src={Product2} alt="" loading='lazy' />
                                             </div>
                                             <div className="Produ_card_det  px-4">
-                                                <h4 className='m-0 my-2 sans_Medium'>Flasks & Bottles</h4>
+                                                <h4 className='m-0 mb-2 sans_Medium'>Flasks & Bottles</h4>
                                                 <p className='sans_light text-secondary '>
-                                                    Our flasks and bottles have been rigorously tested to guarantee that they are of the highest quality, made with durable materials that are designed.
+                                                Our flasks and bottles undergo rigorous testing to ensure they meet the highest quality standards. Made from durable and carefully designed materials, they are crafted to deliver exceptional performance and reliability.
                                                 </p>
                                             </div>
                                             <div className='product_bottom_phto'>
@@ -161,13 +160,13 @@ function Product({ type }) {
                                 </> :
                                     type === "Laminated_Tubs" ? <>
                                         <div className="Product_cards m-auto">
-                                            <div className="product_img p-4">
+                                            <div className="product_img p-3">
                                                 <img src={LamiConsmatic} alt="" loading='lazy' />
                                             </div>
                                             <div className="Produ_card_det  px-4">
-                                                <h4 className='m-0 my-2 sans_Medium'>Cosmetics</h4>
+                                                <h4 className='m-0 mb-2 sans_Medium'>Cosmetics</h4>
                                                 <p className='sans_light text-secondary '>
-                                                    Our laminated tubes are expertly designed to package a wide variety of personal care products, including lotions, creams, and gels. The superior barrier properties of our tubes ensure that your products remain fresh and effective, while the sleek, customizable design options enhance your brand's image on the shelf. Whether you need tubes with elegant finishes or vibrant prints, our solutions will showcase your cosmetics with sophistication and style.
+                                                Our laminated tubes are expertly designed to package a wide variety of personal care products, including lotions, creams, and gels. The superior barrier properties of our tubes ensure that your products remain fresh and effective, while the sleek, customizable design options enhance your brand's image on the shelf. Whether you need tubes with elegant finishes or vibrant prints, our solutions will showcase your cosmetics with sophistication and style.
                                                 </p>
                                             </div>
                                             <div className='product_bottom_phto'>
@@ -176,11 +175,11 @@ function Product({ type }) {
                                         </div>
                                     </> :
                                         <><div className="Product_cards m-auto">
-                                            <div className="product_img p-4">
+                                            <div className="product_img p-3">
                                                 <img src={Product2} alt="" loading='lazy' />
                                             </div>
                                             <div className="Produ_card_det  px-4">
-                                                <h4 className='m-0 my-2 sans_Medium'>Flasks & Bottles</h4>
+                                                <h4 className='m-0 mb-2 sans_Medium'>Flasks & Bottles</h4>
                                                 <p className='sans_light text-secondary '>
                                                     Our flasks and bottles have been rigorously tested to guarantee that they are of the highest quality, made with durable materials that are designed.
                                                 </p>
@@ -194,13 +193,13 @@ function Product({ type }) {
                                 {type === "Home" || type === "Alume" ? <>
                                     <Link to="/Aluminum-Products/Tablet-Canisters/" className='sans_light text-decoration-none text-black'>
                                         <div className="Product_cards m-auto">
-                                            <div className="product_img p-4">
+                                            <div className="product_img p-3">
                                                 <img src={Product3} alt="" loading='lazy' />
                                             </div>
                                             <div className="Produ_card_det  px-4">
-                                                <h4 className='m-0 my-2 sans_Medium'>Tablet Canisters</h4>
+                                                <h4 className='m-0 mb-2 sans_Medium'>Tablet Canisters</h4>
                                                 <p className='sans_light text-secondary '>
-                                                    We produce world-className tablet canisters with internally lacquered and externally printed or varnished using state-of-the-art processes, ensuring the highest quality standards with highly experienced.
+                                                We produce world-class tablet canisters with an internal lacquer coating and external printing or varnishing using state-of-the-art processes. Our commitment to quality ensures the highest standards, supported by a highly experienced team.
                                                 </p>
                                             </div>
                                             <div className='product_bottom_phto'>
@@ -211,13 +210,13 @@ function Product({ type }) {
                                 </> :
                                     type === "Laminated_Tubs" ? <>
                                         <div className="Product_cards m-auto">
-                                            <div className="product_img p-4">
+                                            <div className="product_img p-3">
                                                 <img src={LaminatPhrma} alt="" loading='lazy' />
                                             </div>
                                             <div className="Produ_card_det  px-4">
                                                 <h4 className='m-0 my-2 sans_Medium'>LamiProduct</h4>
                                                 <p className='sans_light text-secondary '>
-                                                    For the food industry, our laminated tubes offer an effective and hygienic packaging solution for a range of consumables, including sauces, pastes, and spreads. The advanced barrier properties of our tubes protect your food products from spoilage and contamination, while the customizable design options allow for clear labeling and appealing presentation.
+                                                For the food industry, our laminated tubes offer an effective and hygienic packaging solution for a range of consumables, including sauces, pastes, and spreads. The advanced barrier properties of our tubes protect your food products from spoilage and contamination, while the customizable design options allow for clear labeling and appealing presentation.
                                                 </p>
                                             </div>
                                             <div className='product_bottom_phto'>
@@ -228,7 +227,7 @@ function Product({ type }) {
                                         :
                                         <>
                                             <div className="Product_cards m-auto">
-                                                <div className="product_img p-4">
+                                                <div className="product_img p-3">
                                                     <img src={Product3} alt="" loading='lazy' />
                                                 </div>
                                                 <div className="Produ_card_det  px-4">
@@ -243,7 +242,7 @@ function Product({ type }) {
                                             </div>
                                         </>}
                             </div>
-                            <img src={Double_bol_line} alt="" srcset="" className='Double_line' loading='lazy' />
+                            <img src={Double_bol_line} alt=""  className='Double_line' loading='lazy' />
                         </div>
                     </div>
                 </div>

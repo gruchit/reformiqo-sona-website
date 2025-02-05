@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import './AssistantExe.css'
 import Top from '../../component/Top/Top.jsx'
 import Header from '../../component/Header/Header.jsx'
@@ -10,11 +10,27 @@ import { Link } from 'react-router-dom';
 import { MdShare } from "react-icons/md";
 import '../../../assets/fonts/fonts.css'
 import Focus from '../../Home/Focus'
-
+import ModelOpen from '../ModelFile/ModelOpen.jsx';
+import Helmet from 'react-helmet';
 
 function AssistantExe() {
+    const organizationSchema = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "{{Category Name}}",
+        "url": "{{Category URL}}",
+        "description": "{{Category Description}}"
+    }
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+
     return (
         <>
+            <Helmet>
+                <script type="application/ld+json">
+                    {JSON.stringify(organizationSchema)}
+                </script>
+            </Helmet>
             <Top />
             <Header />
             <Focus type="AssistantExe" />
@@ -33,13 +49,9 @@ function AssistantExe() {
                             </div>
                             <div className='FeaturedAiiss d-flex my-auto'>
                                 <div className='my-auto'>
-                                    <img src={Featured} alt="" srcset="" className='mb-1' loading='lazy' /><span className='sans_bold ms-2'>Featured</span>
+                                    <img src={Featured} alt="" className='mb-1' loading='lazy' /><span className='sans_bold ms-2'>Featured</span>
                                 </div>
-                                <div className='AssistantExe_Btn ms-5'>
-                                    <Link to="/Assistant-Ipqc-Executive/">
-                                        <button className=''><span><MdShare /></span> Apply Now</button>
-                                    </Link>
-                                </div>
+                                <div className='AssistantExe_Btn ms-5' onClick={() => setIsModalOpen(true)}><button><span><MdShare /></span>Apply Now</button></div>
                             </div>
                         </div>
                     </div>
@@ -95,15 +107,12 @@ function AssistantExe() {
                             <li className=' my-2'><span className='h4 sans_Medium'>Employment Type:</span><a className='text-decoration-none ms-2 text-secondary sans_light' >Full Time, Permanent</a></li>
                             <li className=' my-2'><span className='h4 sans_Medium'>Role Category:</span><a className='text-decoration-none ms-2 text-secondary sans_light' >Operations, Maintenance & Support</a></li>
                         </ul>
-                        <div className='AssistantExe_Btn d-flex  ms-5'>
-                            <Link to="/Assistant-Ipqc-Executive/">
-                                <button className=''><span><MdShare /></span> Apply Now</button>
-                            </Link>
-                        </div>
+                        <div className='AssistantExe_Btn d-flex  ms-5' onClick={() => setIsModalOpen(true)}><button><span><MdShare /></span>Apply Now</button></div>
                     </div>
                 </div>
             </div>
             <Footer />
+            <ModelOpen isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </>
     )
 }

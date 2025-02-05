@@ -6,12 +6,14 @@ import TablePeralex from '../../../assets/TablePeralex.png';
 import button_Arrow from '../../../assets/button_Arrow.svg';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { useEffect } from 'react';
 
 function ParalexImg({ Type }) {
     useEffect(() => {
         AOS.init({
-            once: true, // Prevent animations from replaying
+            once: true,
         });
     }, []);
     return (

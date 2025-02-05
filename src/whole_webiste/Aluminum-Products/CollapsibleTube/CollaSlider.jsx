@@ -21,6 +21,8 @@ import AllumPro12 from '../../../assets/AllumPro12.jpg';
 import AllumPro13 from '../../../assets/AllumPro13.jpg';
 import AllumPro14 from '../../../assets/AllumPro14.jpg';
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { useEffect } from 'react';
 function CollaSlider() {
     useEffect(() => {
@@ -53,7 +55,7 @@ function CollaSlider() {
         ],
     };
     const imagePaths = [
-        { imgSrc: AllumPro1, title: 'Brushed Aluminium Bottles' },
+        { imgSrc: AllumPro1, title: 'Brushed Aluminum Bottles' },
         { imgSrc: AllumPro2, title: 'Ayurvedic Tubes' },
         { imgSrc: AllumPro3, title: 'Primary Pharma Packaging' },
         { imgSrc: AllumPro4, title: 'Adhesive Tubes' },
@@ -61,9 +63,9 @@ function CollaSlider() {
         { imgSrc: AllumPro6, title: 'Ophthalmic Tubes' },
         { imgSrc: AllumPro7, title: 'Stationary Tubes' },
         { imgSrc: AllumPro8, title: 'Cosmetic Tubes' },
-        { imgSrc: AllumPro9, title: 'Aluminium Open-End Containers' },
-        { imgSrc: AllumPro10, title: 'Aluminium Flasks' },
-        { imgSrc: AllumPro11, title: 'Aluminium Tablet Canisters' },
+        { imgSrc: AllumPro9, title: 'Aluminum Open-End Containers' },
+        { imgSrc: AllumPro10, title: 'Aluminum Flasks' },
+        { imgSrc: AllumPro11, title: 'Aluminum Tablet Canisters' },
         { imgSrc: AllumPro12, title: 'Printed Bottles' },
         { imgSrc: AllumPro13, title: 'Shampoo Bottles' },
         { imgSrc: AllumPro14, title: 'Essential Oil And Perfume Bottles' },
@@ -71,14 +73,14 @@ function CollaSlider() {
 
     return (
         <div className="CollaSlider">
-            <img src={Leftarrow} alt="" srcset="" className='LeftarwCollaSlider ' loading='lazy'data-aos="fade-right"/>
-            <img src={Double_bol_line} alt="" srcset="" className='Double_bol_lineCollaSlider ' loading='lazy' data-aos="fade-down"/>
+            <img src={Leftarrow} alt=""  className='LeftarwCollaSlider ' loading='lazy'data-aos="fade-right"  data-aos-duration="600" data-aos-offset="200"/>
+            <img src={Double_bol_line} alt=""  className='Double_bol_lineCollaSlider ' loading='lazy' data-aos="fade-down"  data-aos-duration="600" data-aos-offset="200"/>
 
             <div className="container-xxl">
                 <div className="CollaSliderTxt" data-aos="zoom-in-up">
                     <h1 className="text-center sans_bold mb-5">Specificities</h1>
                     <p className="text-center text-secondary sans_light mb-5">
-                        Sona Extrusion has proficiency and competence in the Aluminium Packaging Industry spanning
+                        Sona Extrusion has proficiency and competence in the Aluminum Packaging Industry spanning
                         over three decades of experience. Being an ISO 15378, ISO 9001 Certified & US FDA DMF Registered
                         Company, Sona Extrusion is continuously thriving to serve with convenient, safe, and
                         sustainable packaging solutions.
@@ -90,8 +92,8 @@ function CollaSlider() {
                     <div className="CollaBody">
                         <Slider {...settings}>
                             {imagePaths.map((image, index) => (
-                                <div className="CollaSliderCard" key={index} data-aos="fade-up">
-
+                                <div className="CollaSliderCard" key={index} data-aos="fade-up"  data-aos-duration="600" data-aos-offset="200">
+                                    {/* {console.log(image.imgSrc)} */}
                                     <img src={image.imgSrc} alt={`Slide ${index + 1}`} className="sliderCollaimage" loading='lazy'/>
                                     <div className="CollaSliderTitle ">
                                         <p className='sans_bold text-dark my-3 '>{image.title}</p>

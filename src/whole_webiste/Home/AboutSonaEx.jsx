@@ -1,6 +1,8 @@
 import React from 'react'
 import Truck from '../../assets/truck2.svg'
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { useEffect } from 'react';
 import './Home.css'
 import { Link } from 'react-router-dom';
@@ -17,7 +19,7 @@ function AboutSonaEx() {
                     <div className='row'>
                         <div className='col-xl-6  col-lg-12 p-0 m-0'>
                             <div className='abSona_left  d-flex justify-content-center'>
-                                <img src={Truck} alt="" srcset="" loading='lazy'
+                                <img src={Truck} alt=""  loading='lazy'
                                     data-aos="fade-right"
                                    data-aos-duration="500"
                                 />
@@ -31,9 +33,9 @@ function AboutSonaEx() {
                                 >
                                 <h3 className='mb-4 sans_Medium'>About Sona Extrusion</h3>
                                 <h1 className='sans_bold'>Efficiently Crafting The Future: Innovating  effective Engineering</h1>
-                                <p className='sans_light text-secondary text-lg-center text-xl-start '>We, Sona Extrusions, a leading manufacturer of aluminium collapsible tubes, containers and aluminium bottles/flasks in India with ISO 15378:2017 (GMP) Certified – SGS and ISO 9001:2015 Certified – TUV certification and have a verifiable 35+ years of reputation for providing high-quality standard products. </p>
+                                <p className='sans_light text-secondary text-lg-center text-xl-start '>We, Sona Extrusions, a leading manufacturer of aluminum collapsible tubes, containers and aluminum bottles/flasks in India with ISO 15378:2017 (GMP) Certified – SGS and ISO 9001:2015 Certified – TUV certification and have a verifiable 35+ years of reputation for providing high-quality standard products. </p>
                                 <div className='AboutSonaEx_Btn  mt-5'>
-                                    <Link to="/About/Our-Store/" className=" text-decoration-none">
+                                    <Link to="/About/Our-Story/" className=" text-decoration-none">
                                         <button className=" btn-1 hover-filled-slide-right"><span>Read More</span></button>
                                     </Link>
                                 </div>

@@ -10,15 +10,14 @@
 
 
 .ProductionSup_Btn button {
-    position: relative; /* Needed for the pseudo-element positioning */
-    overflow: hidden; /* Ensures the pseudo-element does not go outside the button */
-    background-color: transparent; /* Transparent base for visual effect */
-    border: 2px solid #d4b76e; /* Optional: Customize button border */
-    color: #d4b76e; /* Text color */
+    position: relative; 
+    overflow: hidden; 
+    background-color: transparent; 
+    border: 2px solid #d4b76e; 
+    color: #d4b76e; 
     padding: 8px 20px;
     cursor: pointer;
     border-radius:15px;
-
     transition: color 0.3s ease;
     font-size:20px;
 
@@ -46,4 +45,73 @@
 }
 .iconProDuct{
     color:#d4b76e;
+}
+
+.UserApply{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.51); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    cursor: pointer;
+}
+.UserApplyForm{
+    position: relative;
+    z-index: 9999;
+    max-width:700px;
+    width: 100%;
+    max-height: 90%;
+    background-color:white;
+    border-radius:10px;
+    margin:25px;
+    padding: 30px;
+}
+.CloseButtonMade{
+    position: absolute;
+    top:-20px;
+    right:-25px;
+    background-color:#d4b76e;
+    border-radius:35px;
+    /* border: 2px solid #d4b76e; */
+}
+.CloseButtonMade button{
+    color:white!important;
+}
+.ApplyForThe_Btn button {
+    position: relative; /* Needed for the pseudo-element positioning */
+    overflow: hidden; /* Ensures the pseudo-element does not go outside the button */
+    background-color: transparent; /* Transparent base for visual effect */
+    border: 2px solid #d4b76e; /* Optional: Customize button border */
+    color: #d4b76e; /* Text color */
+    padding: 10px 70px;
+    cursor: pointer;
+    border-radius:35px;
+    transition: color 0.3s ease;
+    font-size:24px;
+}
+
+.ApplyForThe_Btn button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #d4b76e; /* Fill color */
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: left; /* Animation starts from the left */
+    transition: transform 0.3s ease; /* Smooth transition */
+    z-index: -1; /* Ensures it appears behind text */
+}
+.ApplyForThe_Btn button:hover::before {
+    transform: scaleX(1); /* Expands the fill */
+}
+
+.ApplyForThe_Btn button:hover {
+    color: #fff; /* Changes text color on hover */
 }

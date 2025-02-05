@@ -4,6 +4,7 @@ import { FaCheck } from "react-icons/fa6";
 import RightArrow from '../../../assets/arrow.svg'
 import AOS from 'aos';
 import { useEffect } from 'react';
+import 'aos/dist/aos.css';
 
 function EnviTop() {
     useEffect(() => {
@@ -15,7 +16,7 @@ function EnviTop() {
         <>
             <div className='EnviTop'>
                 <div className='EnviTopArwLeftSet'>
-                    <img src={RightArrow} alt="" srcset="" className='EnviTopArwLeft' loading='lazy' data-aos="fade-left" />
+                    <img src={RightArrow} alt=""  className='EnviTopArwLeft' loading='lazy' data-aos="fade-left" />
                 </div>
                 <div className='container-xxl'>
                     <div className='EnviTopTxt'

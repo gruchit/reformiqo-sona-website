@@ -7,11 +7,11 @@ import Industrial1 from '../../../assets/Industrial1.svg'
 import Nutraceuticals from '../../../assets/Nutraceuticals.svg'
 import Pharmaceutical1 from '../../../assets/Pharmaceutical1.svg'
 import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 function Our_Strength() {
-
     useEffect(() => {
         AOS.init();
     }, []);
@@ -26,7 +26,7 @@ function Our_Strength() {
                             data-aos-duration="600"
                             easing="ease-in-out"
                         />
-                        <img src={Double_bol_line} alt="" srcset="" className='DoubleBolLine_Our' loading='lazy'
+                        <img src={Double_bol_line} alt="" className='DoubleBolLine_Our' loading='lazy'
                             data-aos="fade-down"
                             data-aos-duration="600"
                             easing="ease-in-out"
@@ -37,7 +37,7 @@ function Our_Strength() {
                         data-aos-offset="300"
                         data-aos-duration="600"
                         easing="ease-in-out"
-                        once="true"
+                        data-aos-once="true"
                         mirror="true"
                     >
                         <h1 className='sans_bold text-center'>Our Strength</h1>
@@ -47,25 +47,25 @@ function Our_Strength() {
                     <div className='Our_Strength_cards_details'>
                         <div className='row d-flex justify-content-center'>
                             <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0 d-flex justify-content-center' data-aos="fade-up"
-                            data-aos-offset="300"
-                            data-aos-duration="600"
-                            easing="ease-in-out"
-                            once="true"
-                            mirror="true">
+                                data-aos-offset="300"
+                                data-aos-duration="600"
+                                easing="ease-in-out"
+                                data-aos-once="true"
+                                mirror="true">
                                 <div className='Our_Strength_cards flex-column'>
                                     <img src={Pharmaceutical1} alt="" loading='lazy' />
                                     <h5 className='sans_Medium'>Efficient and Effective Technology</h5>
-                                    <p className='sans_light text-secondary'>We manufacture using state-of-the-art machinery and technology making it possible for us to efficiently & effectively produce quality aluminium packaging solutions.</p>
+                                    <p className='sans_light text-secondary'>We manufacture using state-of-the-art machinery and technology making it possible for us to efficiently & effectively produce quality aluminum packaging solutions.</p>
 
 
                                 </div>
                             </div>
                             <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-0 mt-lg-5 mt-xl-5 mt-xxl-5 d-flex justify-content-center' data-aos="fade-up"
-                            data-aos-offset="300"
-                            data-aos-duration="600"
-                            easing="ease-in-out"
-                            once="true"
-                            mirror="true">
+                                data-aos-offset="300"
+                                data-aos-duration="600"
+                                easing="ease-in-out"
+                                data-aos-once="true"
+                                mirror="true">
                                 <div className='Our_Strength_cards flex-column '>
 
                                     <img src={Cosmetic1} alt="" loading='lazy' />
@@ -76,11 +76,11 @@ function Our_Strength() {
                                 </div>
                             </div>
                             <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-5 mt-lg-0 mt-xl-0 mt-xxl-0 d-flex justify-content-center' data-aos="fade-up"
-                            data-aos-offset="300"
-                            data-aos-duration="600"
-                            easing="ease-in-out"
-                            once="true"
-                            mirror="true">
+                                data-aos-offset="300"
+                                data-aos-duration="600"
+                                easing="ease-in-out"
+                                data-aos-once="true"
+                                mirror="true">
                                 <div className='Our_Strength_cards flex-column '>
 
                                     <img src={Nutraceuticals} alt="" loading='lazy' />
@@ -91,11 +91,11 @@ function Our_Strength() {
                                 </div>
                             </div>
                             <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5 mt-xxl-5 d-flex justify-content-center ' data-aos="fade-up"
-                            data-aos-offset="300"
-                            data-aos-duration="600"
-                            easing="ease-in-out"
-                            once="true"
-                            mirror="true"
+                                data-aos-offset="300"
+                                data-aos-duration="600"
+                                easing="ease-in-out"
+                                data-aos-once="true"
+                                mirror="true"
                             >
                                 <div className='Our_Strength_cards flex-column '>
 

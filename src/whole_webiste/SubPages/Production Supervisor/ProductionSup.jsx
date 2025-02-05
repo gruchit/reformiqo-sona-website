@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import './ProductionSup.css'
 import Top from '../../component/Top/Top.jsx'
 import Header from '../../component/Header/Header.jsx'
@@ -10,10 +10,26 @@ import { Link } from 'react-router-dom';
 import { MdShare } from "react-icons/md";
 import '../../../assets/fonts/fonts.css'
 import Focus from '../../Home/Focus'
+import ModelOpen from '../ModelFile/ModelOpen.jsx';
+import Helmet from 'react-helmet';
 
 function ProductionSup() {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "{{Category Name}}",
+    "url": "{{Category URL}}",
+    "description": "{{Category Description}}"
+  }
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <>
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(organizationSchema)}
+        </script>
+      </Helmet>
       <Top />
       <Header />
       <Focus type="ProductionSup" />
@@ -32,15 +48,11 @@ function ProductionSup() {
               </div>
               <div className='FeaturedPro d-flex my-auto '>
                 <div className='my-auto'>
-                  <img src={Featured} alt="" srcset="" className='mb-1' loading='lazy' /><span className='sans_bold ms-2'>Featured</span>
+                  <img src={Featured} alt="" className='mb-1' loading='lazy' /><span className='sans_bold ms-2'>Featured</span>
                 </div>
-                <div className='ProductionSup_Btn ms-5'>
-                  <Link to="/ProductionSup/">
-                    <button className=''><span><MdShare /></span> Apply Now</button>
-                  </Link>
-                </div>
+                {/* <div className="ProductionSup_Btn ms-5" onClick={() => {setIsModalOpen(true);}}><button><span><MdShare /></span> Apply Now</button></div> */}
+                <div className="ProductionSup_Btn ms-5" onClick={() => setIsModalOpen(true)}><button><span><MdShare /></span>Apply Now</button></div>
               </div>
-
             </div>
             <p className='sans_light text-secondary'>The Production Supervisor is responsible for supervising the production line and ensuring that it operates efficiently to meet production targets, quality standards, and safety regulations. The Production Supervisor must have strong leadership skills, excellent communication skills, and be able to motivate and manage a team of production workers to achieve the goals set by the…</p>
           </div>
@@ -56,7 +68,6 @@ function ProductionSup() {
               <li className='text-secondary my-2'>Monitor and control inventory levels of raw materials, finished goods, and packaging materials.</li>
               <li className='text-secondary my-2'>Ensure that all production equipment is maintained and repaired as needed.</li>
               <li className='text-secondary my-2'>Should have technical knowledge of Mechanical, Electrical and Pneumatic.</li>
-
             </ul>
           </div>
           <div className='Endu '>
@@ -88,15 +99,22 @@ function ProductionSup() {
               <li className=' my-2'><span className='h4 sans_Medium'>Employment Type:</span><a className='text-decoration-none ms-2 text-secondary sans_light' >Full Time, Permanent</a></li>
               <li className=' my-2'><span className='h4 sans_Medium'>Role Category:</span><a className='text-decoration-none ms-2 text-secondary sans_light' >Operations, Maintenance & Support</a></li>
             </ul>
-            <div className='ProductionSup_Btn ms-5 mt-5'>
-              <Link to="/ProductionSup/">
-                <button className=''><span><MdShare /></span> Apply Now</button>
-              </Link>
+            {/*  */}
+            <div
+              className="ProductionSup_Btn ms-5 mt-5"
+              onClick={() => setIsModalOpen(true)}
+            >
+              <button>
+                <span><MdShare /></span> Apply Now
+              </button>
             </div>
+
           </div>
         </div>
       </div>
       <Footer />
+
+      <ModelOpen isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   )
 }

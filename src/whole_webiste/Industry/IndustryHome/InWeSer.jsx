@@ -5,6 +5,7 @@ import Double_bol_line from '../../../assets/double_bol_line.svg';
 import './Indu.css';
 import AOS from 'aos';
 import { useEffect } from 'react';
+import 'aos/dist/aos.css';
 
 function InWeSer() {
        useEffect(() => {
@@ -19,7 +20,7 @@ function InWeSer() {
     return (
         <>
             <div className='InWeSer'>
-                <div data-aos="zoom-in-up" data-aos-duration="500" once="true" mirror="true">
+                <div data-aos="zoom-in-up" data-aos-duration="500" data-aos-once="true" mirror="true">
                     <div className="InWeSer_imag d-flex justify-content-center">
                         <img src={Single_BlackBol_Line} alt="Line Decoration" loading='lazy' />
                     </div>
@@ -35,7 +36,7 @@ function InWeSer() {
                 <div className='InWeSer_tabs_left '>
                     <img src={Arrow_Left} alt="" loading='lazy'  />
                 </div>
-                <div className='InWeSer_tabsBox' data-aos="fade-left" data-aos-duration="400" data-aos-offset="10" once="true" mirror="true">
+                <div className='InWeSer_tabsBox' data-aos="fade-left" data-aos-duration="400" data-aos-offset="10" data-aos-once="true" mirror="true">
                    <div className="filter-buttons py-4 d-flex justify-content-evenly">
                             {['Pharmaceutical', 'Cosmetic & Personal Care', 'Nutraceutical', 'Industrial'].map((tab) => (
                                 <button
@@ -51,23 +52,23 @@ function InWeSer() {
 
                     <div className="KnowMoreTabs">
                         {activeTab === 'Pharmaceutical' && (
-                            <div className="tab-contenttt" data-aos="fade-up" data-aos-duration="400" data-aos-offset="10" once="true" mirror="true">
+                            <div className="tab-contenttt" data-aos="fade-up" data-aos-duration="400" data-aos-offset="10" data-aos-once="true" mirror="true">
                                 <p className='text-secondary'>We design, manufacture and offer highly efficient, reliable, and cost-effective solutions to pharmaceutical industries that satisfy various needs of the industry and pharmaceutical packaging as per customers product specifications or requirements. Our team of experts ensure that we are well-positioned to serve our customers with the highest quality products and services.</p>
                             </div>
                         )}
                         {activeTab === 'Cosmetic & Personal Care' && (
-                            <div className="tab-contenttt" data-aos="fade-up" data-aos-duration="400" once="true" mirror="true">
+                            <div className="tab-contenttt" data-aos="fade-up" data-aos-duration="400" data-aos-once="true" mirror="true">
                                 <p className='text-secondary'>We provide a broad range of packaging options for the cosmetic and personal care industries, including dispensing pumps, flip-top caps, and various other tubes and containers. Our products are made to be strong, lightweight, and to maintain the calibre of the contents they contain. In addition, all of our products are designed for convenience and ease-of-use for the consumer.</p>
                             </div>
                         )}
                         {activeTab === 'Nutraceutical' && (
-                            <div className="tab-contenttt" data-aos="fade-up" data-aos-duration="400" once="true" mirror="true">
+                            <div className="tab-contenttt" data-aos="fade-up" data-aos-duration="400" data-aos-once="true" mirror="true">
                                 <p className='text-secondary'>We produce top-notch goods that primarily benefit the agricultural sector. To ensure that our customers receive the best products possible, we have made sizable investments in research and development. Our offerings include agricultural pipes and irrigation systems, both of which are vital components of the agricultural industry.</p>
                             </div>
                         )}
                         {activeTab === 'Industrial' && (
-                            <div className="tab-contenttt" data-aos="fade-up" data-aos-duration="400" once="true" mirror="true">
-                                <p className='text-secondary'>We are the industry's top producers and distributors of aluminium Drink Bottles, Tablet Cannister, Tablet Bottles. Because of our commitment to quality and innovation, we have gained the trust of customers all over the world. To ensure that our customers receive the best possible service, we have continuously improved our procedures and designed our products to meet the highest standards of quality and safety.</p>
+                            <div className="tab-contenttt" data-aos="fade-up" data-aos-duration="400" data-aos-once="true" mirror="true">
+                                <p className='text-secondary'>We are the industry's top producers and distributors of aluminum Drink Bottles, Tablet Cannister, Tablet Bottles. Because of our commitment to quality and innovation, we have gained the trust of customers all over the world. To ensure that our customers receive the best possible service, we have continuously improved our procedures and designed our products to meet the highest standards of quality and safety.</p>
                             </div>
                         )}
                     </div>

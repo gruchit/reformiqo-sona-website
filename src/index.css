@@ -10,7 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
 }
 .home-photo{
     margin-top:10px;

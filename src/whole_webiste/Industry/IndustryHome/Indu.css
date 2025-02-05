@@ -297,6 +297,7 @@
 .Frequently_right ul{
     font-weight:500 !important;
 }
+
 .SubmitFormAuto{
     background-color:#d4b76e;
     padding:10px 0px;
@@ -305,11 +306,9 @@
 .SubmitFormAuto:hover{
     background-color:#dcb142;
 }
-.Frequently_right form:focus{
-}
+
 .Frequently_right form input:focus,.Frequently_right textarea:focus {
     transition: all 0.5s;
-
     box-shadow: 0 0 5px #D4B76E !important; /* Blue shadow to show focus */
     background-color: #ffffff !important; /* Slight color change on focus */
     border-radius:10px;

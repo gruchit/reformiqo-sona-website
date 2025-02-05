@@ -9,12 +9,28 @@ import TbasOutSolu from '../Pharmaceutical/TbasOutSolu';
 import Faq from '../Pharmaceutical/Faq';
 import Focus from '../../Home/Focus.jsx'
 import Helmet from 'react-helmet';
+
 function Indu_Ago() {
+
+  const Category_Name = "Industrial & Agro-Chemical";
+  const Category_URL = "https://sonaextrusion.com/Industry/Industrial-And-Agro-Chemical/";
+  const Category_Description = "Reliable packaging solutions for industrial and agro-chemical products. Offering innovative, durable solutions to ensure the safety and quality of your products.";
+
+const schema = `{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "${Category_Name}",
+  "url": "${Category_URL}",
+  "description": "${Category_Description}"
+}`;
   return (
     <>
       <Helmet>
         <title>Industrial & Agro-Chemical Packaging Manufacturer & Supplier</title>
-        <meta name="description" content="Reliable packaging solutions for industrial and agro-chemical products. Offering innovative, durable solutions to ensure the safety and quality of your products." />
+        <meta name="description" content={Category_Description} />
+        <script type="application/ld+json">
+          {schema}
+        </script>
       </Helmet>
       <Top />
       <Header />

@@ -8,12 +8,26 @@ import AluMarketLed from './AluMarketLed'
 import AlumBenefit from './AlumBenefit'
 import Helmet from 'react-helmet';
 function Aluminum_Pro() {
+    const Category_Name = "Aluminum Products";
+    const Category_URL = "https://sonaextrusion.com/Aluminum-Products/";
+    const Category_Description = "Aluminum Products Manufacturer Delivering Top-Quality, Durable Solutions for Industries Like Pharmaceuticals, Cosmetics, and Agro-Chemical Sectors. Get Now!";
+  
+  const schema = `{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "${Category_Name}",
+    "url": "${Category_URL}",
+    "description": "${Category_Description}"
+  }`;
     return (
         <>
             <Helmet>
-                <title> Aluminium Products Manufacturing for Diverse Industries</title>
-                <meta name="keywords" content="Aluminium Products Manufacture" />
-                <meta name="description" content="Aluminium Products Manufacturer Delivering Top-Quality, Durable Solutions for Industries Like Pharmaceuticals, Cosmetics, and Agro-Chemical Sectors. Get Now!" />
+                <title> Aluminum Products Manufacturing for Diverse Industries</title>
+                <meta name="keywords" content="Aluminum Products Manufacture" />
+                <meta name="description" content={Category_Description} />
+                <script type="application/ld+json">
+                    {schema}
+                </script>
             </Helmet>
             <Top />
             <Header />

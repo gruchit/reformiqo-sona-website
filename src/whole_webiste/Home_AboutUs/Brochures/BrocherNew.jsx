@@ -16,12 +16,12 @@ export default function App() {
     };
     const status = bookRef.current.pageFlip().getOrientation();
     setOrientation(status);
-    console.log("status", status, pageMap[status]);
+    // console.log("status", status, pageMap[status]);
   };
 
   const onPrev = (hasFlip = "N") => {
     const pageIndex = bookRef.current.pageFlip().getCurrentPageIndex();
-    console.log("pageIndex", pageIndex);
+    // console.log("pageIndex", pageIndex);
     if (hasFlip === "Y") {
       bookRef.current.pageFlip().flipPrev("bottom");
     } else {
@@ -31,7 +31,7 @@ export default function App() {
 
   const onNext = (hasFlip = "N") => {
     const pageIndex = bookRef.current.pageFlip().getCurrentPageIndex();
-    console.log("pageIndex", pageIndex);
+    // console.log("pageIndex", pageIndex);
     // 到底了
     if (pageIndex === 7) return;
     if (hasFlip === "Y") {
@@ -45,7 +45,7 @@ export default function App() {
   const onFlip = (e) => {
     const curPage = e.data;
     setCurPage(curPage);
-    console.log("flip", e);
+    // console.log("flip", e);
   };
 
   const onChangeState = (instance) => {
@@ -73,7 +73,7 @@ export default function App() {
           useMouseEvents={true}
           onChangeState={onChangeState}
           onUpdate={(e) => {
-            console.log(e);
+            // console.log(e);
           }}
           swipeDistance={30}
           drawShadow={true}

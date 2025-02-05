@@ -42,6 +42,8 @@ import PhotoGlry36 from '../../../assets/PhotoGly36.png';
 import PhotoGlry37 from '../../../assets/PhotoGly37.jpg';
 import { FaChevronLeft } from "react-icons/fa";
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { useEffect } from 'react';
 const categories = [
   {
@@ -51,7 +53,7 @@ const categories = [
   },
   {
     id: 2,
-    title: 'Team',
+    title: 'Tubs',
     images: [PhotoGlry2, PhotoGlry14, PhotoGlry15, PhotoGlry16, PhotoGlry17, PhotoGlry18, PhotoGlry19, PhotoGlry20, PhotoGlry21, PhotoGlry22, PhotoGlry23, PhotoGlry24, PhotoGlry25, PhotoGlry26, PhotoGlry28, PhotoGlry29, PhotoGlry30, PhotoGlry31, PhotoGlry32, PhotoGlry33, PhotoGlry34, PhotoGlry35, PhotoGlry36, PhotoGlry37],
   },
   {
@@ -60,7 +62,7 @@ const categories = [
     images: [PhotoGlry3, PhotoGlry4, PhotoGlry5],
   }
 ];
-console.log(categories);
+
 
 function PhotoGallery() {
   useEffect(() => {

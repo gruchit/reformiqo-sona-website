@@ -7,12 +7,16 @@ import Convenient from '../../../assets/Convenient.svg'
 import Practical from '../../../assets/Practical.svg'
 import './Colla.css'
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { useEffect } from 'react';
 function Our_Strength_Alum({ Type }) {
     useEffect(() => {
         AOS.init({
             once: true,
         });
+        
+        
     }, []);
     return (
         <>
@@ -22,7 +26,7 @@ function Our_Strength_Alum({ Type }) {
                         <img src={Arrow_Left} alt="" className='Strength_Alumleft_arwOurSt' loading='lazy' />
                         <img src={Double_bol_line} alt="" srcset="" className='Strength_AlumDoubleBolLine_Our' loading='lazy' />
                     </div>
-                    <div className='Our_Strength_Alumdetails' data-aos="zoom-in-up">
+                    <div className='Our_Strength_Alumdetails' data-aos="zoom-in-up" data-aos-duration="500" data-aos-offset="200">
                         <h1 className='sans_bold text-center'>Our Strength</h1>
                         {Type === "Colla" ?
                             <>
@@ -49,7 +53,7 @@ function Our_Strength_Alum({ Type }) {
                     <div className='Our_Strength_Alumcards_details'>
                         <div className='row d-flex justify-content-center'>
                             <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0 d-flex justify-content-center'>
-                                <div className='Our_Strength_Alumcards flex-column '  data-aos="zoom-in">
+                                <div className='Our_Strength_Alumcards flex-column' data-aos="zoom-in" data-aos-duration="600" data-aos-offset="200">
                                     {Type === "Colla" ?
                                         <>
                                             <div>
@@ -57,8 +61,8 @@ function Our_Strength_Alum({ Type }) {
                                                     <img src={FirstRate} alt="" className='OurSoluImgAlum' loading='lazy' />
                                                 </div>
                                                 <div className='mt-5'>
-                                                    <h5 className='sans_Medium'>First Rate Quality</h5>
-                                                    <p className='text-secondary sans_Light mt-3'>We cater to a wide-range of industries providing them with highly durable, flexible, and lightweight premium quality aluminium collapsible tubes.</p>
+                                                    <h5 className='sans_Medium'>Top-notch quality</h5>
+                                                    <p className='text-secondary sans_Light mt-3'>We cater to a wide-range of industries providing them with highly durable, flexible, and lightweight premium quality aluminum collapsible tubes.</p>
                                                 </div>
                                             </div>
                                         </>
@@ -93,7 +97,7 @@ function Our_Strength_Alum({ Type }) {
                                 </div>
                             </div>
                             <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-0 mt-lg-5 mt-xl-5 mt-xxl-5 d-flex justify-content-center'>
-                                <div className='Our_Strength_Alumcards flex-column ' data-aos="zoom-in">
+                                <div className='Our_Strength_Alumcards flex-column ' data-aos="zoom-in" data-aos-duration="600" data-aos-offset="200">
                                     {Type === "Colla" ?
                                         <>
                                             <div>
@@ -101,7 +105,7 @@ function Our_Strength_Alum({ Type }) {
                                             </div>
                                             <div className='mt-5'>
                                                 <h5 className='sans_Medium'>Environment Safety</h5>
-                                                <p className='text-secondary sans_Light mt-3'>We cater to a wide-range of industries providing them with highly durable, flexible, and lightweight premium quality aluminium collapsible tubes.</p>
+                                                <p className='text-secondary sans_Light mt-3'>We cater to a wide-range of industries providing them with highly durable, flexible, and lightweight premium quality aluminum collapsible tubes.</p>
                                             </div>
                                         </>
                                         :
@@ -135,7 +139,7 @@ function Our_Strength_Alum({ Type }) {
                                 </div>
                             </div>
                             <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-5 mt-lg-0 mt-xl-0 mt-xxl-0 d-flex justify-content-center'>
-                                <div className='Our_Strength_Alumcards flex-column ' data-aos="zoom-in">
+                                <div className='Our_Strength_Alumcards flex-column ' data-aos="zoom-in" data-aos-duration="600" data-aos-offset="200">
                                     {Type === "Colla" ?
                                         <>
                                             <div>
@@ -177,7 +181,7 @@ function Our_Strength_Alum({ Type }) {
                                 </div>
                             </div>
                             <div className='col-xl-3 col-lg-4 col-md-6 mt-5 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5 mt-xxl-5 d-flex justify-content-center '>
-                                <div className='Our_Strength_Alumcards flex-column '  data-aos="zoom-in">
+                                <div className='Our_Strength_Alumcards flex-column '  data-aos="zoom-in" data-aos-duration="600" data-aos-offset="200">
                                     {Type === "Colla" ?
                                         <>
                                             <div>
@@ -185,7 +189,7 @@ function Our_Strength_Alum({ Type }) {
                                             </div>
                                             <div className='mt-5'>
                                                 <h5 className='sans_Medium'>Practical & Profitable</h5>
-                                                <p className='text-secondary sans_Light mt-3'>Our aluminium collapsible tubes are cost-effective and offer value for money along with being efficient, corrosion-resistant, and versatile.</p>
+                                                <p className='text-secondary sans_Light mt-3'>Our aluminum collapsible tubes are cost-effective and offer value for money along with being efficient, corrosion-resistant, and versatile.</p>
                                             </div>
                                         </>
                                         :

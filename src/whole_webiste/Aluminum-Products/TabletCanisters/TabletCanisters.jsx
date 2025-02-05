@@ -11,13 +11,26 @@ import CollaSlider from '../CollapsibleTube/CollaSlider'
 import Focus from '../../Home/Focus'
 import Helmet from 'react-helmet';
 function TabletCanisters() {
+    const Category_Name = "Tablet Canisters";
+    const Category_URL = "https://sonaextrusion.com/Aluminum-Products/Tablet-Canisters/";
+    const Category_Description = "Sona Extrusion delivers high-quality aluminum tablet canisters, ensuring safety and durability. We delivers eco-friendly packaging solutions for all industries.";
+  
+  const schema = `{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "${Category_Name}",
+    "url": "${Category_URL}",
+    "description": "${Category_Description}"
+  }`;
     return (
         <>
             <Helmet>
-                <title>Aluminium Tablet Canisters Manufacturer - Safe Packaging</title>
-                
-                <meta name="keywords" content="Aluminium Tablet Canisters" />
-                <meta name="description" content="Sona Extrusion delivers high-quality aluminium tablet canisters, ensuring safety and durability. We delivers eco-friendly packaging solutions for all industries." />
+                <title>Aluminum Tablet Canisters Manufacturer - Safe Packaging</title>
+                <meta name="keywords" content="Aluminum Tablet Canisters" />
+                <meta name="description" content={Category_Description} />
+                <script type="application/ld+json">
+                    {schema}
+                </script>
             </Helmet>
             <Top />
             <Header />

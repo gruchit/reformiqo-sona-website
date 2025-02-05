@@ -15,6 +15,7 @@ import Industryexpertise from '../../../assets/Industry-expertise.svg'
 import './pharm.css'
 import AOS from 'aos';
 import { useEffect } from 'react';
+import 'aos/dist/aos.css';
 
 function Our_Solutions({ Type }) {
     useEffect(() => {
@@ -47,7 +48,7 @@ function Our_Solutions({ Type }) {
                                                 <img src={HighTech} alt="" className='OurSoluImg' loading='lazy'/>
                                                 <div className='mt-5'>
                                                     <h5 className='sans_Medium'>High-Tech Processes</h5>
-                                                    <p className='text-secondary sans_Light mt-3'>We are a customer-centric company committed to offering our loyal pharmaceutical customers a cutting-edge manufacturing facility that makes High quality aluminium packaging solution using cutting-edge technology and equipment. Our committed team of engineers and technicians makes sure that each product that is released onto the market is up to the highest standards of reliability and quality. Our tubes are preferred because they are chemically stable and provide protection against contamination, oxidation, evaporation, and microbial growth.</p>
+                                                    <p className='text-secondary sans_Light mt-3'>We are a customer-centric company committed to offering our loyal pharmaceutical customers a cutting-edge manufacturing facility that makes High quality aluminum packaging solution using cutting-edge technology and equipment. Our committed team of engineers and technicians makes sure that each product that is released onto the market is up to the highest standards of reliability and quality. Our tubes are preferred because they are chemically stable and provide protection against contamination, oxidation, evaporation, and microbial growth.</p>
                                                 </div>
                                             </>
                                             :
@@ -56,8 +57,7 @@ function Our_Solutions({ Type }) {
                                                     <img src={Extensive} alt="" className='OurSoluImg' loading='lazy'/>
                                                     <div className='mt-5'>
                                                         <h5 className='sans_Medium'>Extensive Industry Experience</h5>
-                                                        <p className='text-secondary sans_Light mt-3'>The company has more than three decades of wholistic experience in the manufacturing of canisters and bottles for Nutraceuticals companies. Over the course of those three decades, we have perfected the process of creating canisters and bottles to provide companies with safe and effective storage solutions. We are renowned for our quality craftsmanship, attention to detail and unparalleled customer service.
-                                                            Quality and Innovation</p>
+                                                        <p className='text-secondary sans_Light mt-3'>The company has more than three decades of wholistic experience in the manufacturing of canisters and bottles for Nutraceuticals companies. Over the course of those three decades, we have perfected the process of creating canisters and bottles to provide companies with safe and effective storage solutions. We are renowned for our quality craftsmanship, attention to detail and unparalleled customer service.</p>
                                                     </div>
                                                 </>
                                                 :
@@ -67,7 +67,7 @@ function Our_Solutions({ Type }) {
                                                         <div className='mt-5'>
                                                             <h5 className='sans_Medium'>Highest-level of
                                                                 Customer Service</h5>
-                                                            <p className='text-secondary sans_Light mt-3'>We are a customer-centric company committed to offering our loyal pharmaceutical customers a cutting-edge manufacturing facility that makes High quality aluminium packaging solution using cutting-edge technology and equipment. Our committed team of engineers and technicians makes sure that each product that is released onto the market is up to the highest standards of reliability and quality. Our tubes are preferred because they are chemically stable and provide protection against contamination, oxidation, evaporation, and microbial growth.</p>
+                                                            <p className='text-secondary sans_Light mt-3'>We are a customer-centric company committed to offering our loyal pharmaceutical customers a cutting-edge manufacturing facility that makes High quality aluminum packaging solution using cutting-edge technology and equipment. Our committed team of engineers and technicians makes sure that each product that is released onto the market is up to the highest standards of reliability and quality. Our tubes are preferred because they are chemically stable and provide protection against contamination, oxidation, evaporation, and microbial growth.</p>
                                                         </div>
                                                     </>
                                                     :
@@ -75,7 +75,7 @@ function Our_Solutions({ Type }) {
                                                         <img src={StateArt} alt="" className='OurSoluImg' loading='lazy'/>
                                                         <div className='mt-5'>
                                                             <h5 className='sans_Medium'>State-of-the-art manufacturing facility</h5>
-                                                            <p className='text-secondary sans_Light mt-3'>We are a customer-centric company committed to offering our loyal pharmaceutical customers a cutting-edge manufacturing facility that makes High quality aluminium packaging solution using cutting-edge technology and equipment. Our committed team of engineers and technicians makes sure that each product that is released onto the market is up to the highest standards of reliability and quality. Our tubes are preferred because they are chemically stable and provide protection against contamination, oxidation, evaporation, and microbial growth.</p>
+                                                            <p className='text-secondary sans_Light mt-3'>We are a customer-centric company committed to offering our pharmaceutical customers a cutting-edge manufacturing facility that makes High quality aluminum packaging solution using cutting-edge technology and equipment. Our committed team of engineers and technicians makes sure that each product that is released onto the market is up to the highest standards of reliability and quality. Our tubes are preferred because they are chemically stable and provide protection against contamination, oxidation, evaporation, and microbial growth.</p>
                                                         </div>
                                                     </>
                                         }
@@ -104,7 +104,7 @@ function Our_Solutions({ Type }) {
                                                     <img src={Quality} alt="" className='OurSoluImg' loading='lazy'/>
                                                     <div className='mt-5'>
                                                         <h5 className='sans_Medium'>Quality and Innovation</h5>
-                                                        <p className='text-secondary sans_Light mt-3'>Our primary focus is producing high-quality aluminium collapsible tube in order to satisfy the unique requirements of our Agro-Chemical companies. Through highly advance production techniques and careful research and development, we have become the go-to supplier for all companies looking for highest quality products. To ensure consistency in quality and dependability, our manufacturing process makes use of cutting-edge technology and stringent quality control procedures.</p>
+                                                        <p className='text-secondary sans_Light mt-3'>Our primary focus is producing high-quality aluminum collapsible tube in order to satisfy the unique requirements of our Agro-Chemical companies. Through highly advance production techniques and careful research and development, we have become the go-to supplier for all companies looking for highest quality products. To ensure consistency in quality and dependability, our manufacturing process makes use of cutting-edge technology and stringent quality control procedures.</p>
                                                     </div>
                                                 </>
                                                 :
@@ -150,7 +150,7 @@ function Our_Solutions({ Type }) {
                                                     <img src={Cost} alt="" className='OurSoluImg' loading='lazy'/>
                                                     <div className='mt-5'>
                                                         <h5 className='sans_Medium'>Cost-effectiveness</h5>
-                                                        <p className='text-secondary sans_Light mt-3'>Due to our highly efficient manufacturing methods, we are able to offer aluminium collapsible tubes at highly-competitive prices. For business that make Agro-Chemical products and need to keep their production cost down, we provide the perfect solution. This lower cost means businesses can save on their production costs and maintain their competitive edge in the market</p>
+                                                        <p className='text-secondary sans_Light mt-3'>Due to our highly efficient manufacturing methods, we are able to offer aluminum collapsible tubes at highly-competitive prices. For business that make Agro-Chemical products and need to keep their production cost down, we provide the perfect solution. This lower cost means businesses can save on their production costs and maintain their competitive edge in the market</p>
                                                     </div>
                                                 </>
                                                 :

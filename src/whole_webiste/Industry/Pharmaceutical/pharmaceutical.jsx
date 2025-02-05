@@ -10,21 +10,36 @@ import Faq from './Faq'
 import Focus from '../../Home/Focus.jsx'
 import Helmet from 'react-helmet';
 function pharmaceutical() {
-    
+
+    const Category_Name = "Pharmaceutical";
+    const Category_URL = "https://sonaextrusion.com/Industry/Pharmaceutical/";
+    const Category_Description = "Manufacturer and Supplier of Premium Pharmaceutical Packaging Solutions. Prioritize Durability, Compliance, and Innovation to Ensure Your Products are Protected.";
+
+const schema = `{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "${Category_Name}",
+    "url": "${Category_URL}",
+    "description": "${Category_Description}"
+}`;
+
     return (
         <>
-        <Helmet>
-        <title>High Quality Pharmaceutical Packaging Manufacturer & Supplier</title>
-        <meta name="description" content="Manufacturer and Supplier of Premium Pharmaceutical Packaging Solutions. Prioritize Durability, Compliance, and Innovation to Ensure Your Products are Protected." />
-      </Helmet>
+            <Helmet>
+                <title>High Quality Pharmaceutical Packaging Manufacturer & Supplier</title>
+                <meta name="description" content={Category_Description} />
+                <script type="application/ld+json">
+                    {schema}
+                </script>
+            </Helmet>
             <Top />
             <Header />
-            <Focus type="pharmaceutical"/>
+            <Focus type="pharmaceutical" />
             <TopSliderPhar />
-            <PharmTxt/>
-            <Our_Solutions/>
-            <TbasOutSolu/>
-            <Faq/>
+            <PharmTxt />
+            <Our_Solutions />
+            <TbasOutSolu />
+            <Faq />
             <Footer />
         </>
 

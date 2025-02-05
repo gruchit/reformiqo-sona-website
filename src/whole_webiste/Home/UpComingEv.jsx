@@ -5,6 +5,8 @@ import Upcoming_Event from '../../assets/Upcomin_Event1_webp.webp';
 import Upcoming_Even from '../../assets/Upcomin_Event2_webp.webp';
 import Upcoming_Eve from '../../assets/Upcomin_Event3_webp.webp';
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Home.css';

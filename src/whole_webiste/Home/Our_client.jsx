@@ -10,6 +10,7 @@ import Right_S_aro from '../../assets/right_S_aro.svg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
 function Our_client() {
     useEffect(() => {
         AOS.init();
@@ -63,7 +64,7 @@ function Our_client() {
                             <div
                                 className='d-flex justify-content-start'
                                 data-aos="fade-up"
-                                data-aos-offset="200"
+                                data-aos-offset="100"
                                 data-aos-delay="0"
                                 data-aos-duration="500"
                                 data-aos-easing="ease-in-out"
@@ -76,11 +77,11 @@ function Our_client() {
                     </div>
                     <div className='me-auto col-xxl-7 col-xl-7 col-md-12 col-sm-12 Our_client_right p-3 p-sm-4 p-md-5 p-lg-5 p-xl-5 p-xxl-5' 
                         data-aos="fade-left"
-                        data-aos-offset="200"
+                        data-aos-offset="100"
                         data-aos-delay="0"
                         data-aos-duration="500"
                         easing="ease-in-out"
-                        once="true"
+                        data-aos-once="true"
                         mirror="true"
                     >
                         <Slider ref={sliderRef} {...settings}>
@@ -97,7 +98,7 @@ function Our_client() {
                                     <p className='sans_light text-secondary showPro p-3'>
                                         “Sona Extrusion is a very courteous and prompt team.
                                         With their three decades of manufacturing experience,
-                                        the aluminium collapsible tubes have been of superior quality,
+                                        the aluminum collapsible tubes have been of superior quality,
                                         and they kept their commitment to delivery on time.
                                         Very happy with Sona Extrusion’s overall commitment.“
                                     </p>
@@ -107,8 +108,8 @@ function Our_client() {
                                 <div className='OurClientRight_top d-xxl-flex d-xl-flex d-lg-flex d-md-flex align-items-xxl-center align-items-xl-center align-items-lg-center align-items-md-center'>
                                     <img src={User} alt="" className='m-auto m-xxl-0 m-xl-0 m-lg-0 m-md-0' loading='lazy'/>
                                     <div className='mx-4 my-auto'>
-                                        <h5 className='text-xl-start text-xxl-start text-center'>Another Client</h5>
-                                        <p className='m-0 text-secondary sans_light text-xl-start text-center text-xxl-start'>CEO, XYZ Company</p>
+                                        <h5 className='text-xl-start text-xxl-start text-center'>Dipen Vaja</h5>
+                                        <p className='m-0 text-secondary sans_light text-xl-start text-center text-xxl-start'>Co-Founder & COO at reformiqo</p>
                                     </div>
                                     <img src={Star} alt="" className='m-auto m-xxl-0 m-xl-0 m-lg-0 m-md-0' loading='lazy'/>
                                 </div>

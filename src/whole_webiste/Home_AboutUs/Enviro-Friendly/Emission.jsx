@@ -4,6 +4,7 @@ import { FaCheck } from "react-icons/fa6";
 import Single_BlackBol_Line from '../../../assets/single_BlackBol_Line.svg'
 import AOS from 'aos';
 import { useEffect } from 'react';
+import 'aos/dist/aos.css';
 
 function Emission() {
     useEffect(() => {
@@ -14,7 +15,7 @@ function Emission() {
     return (
         <>
             <div className='Emission'>
-                <img src={Single_BlackBol_Line} alt="" srcset="" className='EmissionSingleBoletdIMg' data-aos="fade-right" data-aos-offset="200" data-aos-duration="600" loading='lazy' />
+                <img src={Single_BlackBol_Line} alt=""  className='EmissionSingleBoletdIMg' data-aos="fade-right" data-aos-offset="200" data-aos-duration="600" loading='lazy' />
                 <div className='container-xxl'>
                     <div className='EmissionBody'>
                         <div className='row d-flex justify-content-center' data-aos="fade-up"
@@ -25,7 +26,7 @@ function Emission() {
                                     
                                 >
                                     <h2 className='mb-4 sans_bold'>CO<sub>2</sub> Emission</h2>
-                                    <p className='mb-4 text-secondary sans_light'>We’re committed to producing high-quality aluminium products while minimising our carbon footprint. The steps we take to lessen our company’s impact on the environment and advance a more sustainable future. We place a high priority on utilising renewable energy sources to run our manufacturing facilities, and we have implemented numerous effective waste-reduction strategies.</p>
+                                    <p className='mb-4 text-secondary sans_light'>We’re committed to producing high-quality aluminum products while minimising our carbon footprint. The steps we take to lessen our company’s impact on the environment and advance a more sustainable future. We place a high priority on utilising renewable energy sources to run our manufacturing facilities, and we have implemented numerous effective waste-reduction strategies.</p>
                                     <div className='d-flex'>
                                         <ul className='flex-column list-unstyled justify-content-evenly mb-0 sans_Medium'>
                                             <li className='d-flex justify-content-center pb-2'><div className='m-0 d-block'><FaCheck className='ProdCapaCheck fs-5 me-2' /></div><div>Putting in place recycling procedures for packaging
