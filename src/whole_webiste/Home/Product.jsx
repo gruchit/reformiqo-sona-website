@@ -84,7 +84,7 @@ function Product({ type }) {
                         >
                             <div className="col-lg-4 col-md-6 col-sm-12 ProCol d-flex justify-content-center ">
                                 {type === "Home" || type === "Alume" ? <>
-                                    <Link to="/Aluminum-Products/Collapsible-Tubes/" className='sans_light text-decoration-none text-black'>
+                                    <Link to="/Aluminum-Products/Collapsible-Tubes" className='sans_light text-decoration-none text-black'>
                                         <div className="Product_cards m-auto">
                                             <div className="product_img p-3">
                                                 <img src={Ellipse} alt="" loading='lazy' />
@@ -141,7 +141,7 @@ function Product({ type }) {
                             </div>
                             <div className="col-lg-4 col-md-6 col-sm-12 ProCol d-flex justify-content-center mt-lg-5 pt-lg-5    mt-sm-3 pt-sm-0   mt-md-0 pt-md-0 ">
                                 {type === "Home" || type === "Alume" ? <>
-                                    <Link to="/Aluminum-Products/Flasks-And-Bottles/" className='sans_light text-decoration-none text-black'>
+                                    <Link to="/Aluminum-Products/Flasks-And-Bottles" className='sans_light text-decoration-none text-black'>
                                         <div className="Product_cards m-auto">
                                             <div className="product_img p-3">
                                                 <img src={Product2} alt="" loading='lazy' />
@@ -191,7 +191,7 @@ function Product({ type }) {
                             </div>
                             <div className="col-lg-4 col-md-6 col-sm-12 ProCol d-flex justify-content-center mt-sm-3">
                                 {type === "Home" || type === "Alume" ? <>
-                                    <Link to="/Aluminum-Products/Tablet-Canisters/" className='sans_light text-decoration-none text-black'>
+                                    <Link to="/Aluminum-Products/Tablet-Canisters" className='sans_light text-decoration-none text-black'>
                                         <div className="Product_cards m-auto">
                                             <div className="product_img p-3">
                                                 <img src={Product3} alt="" loading='lazy' />

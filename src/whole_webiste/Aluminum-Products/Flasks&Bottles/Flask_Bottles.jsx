@@ -14,7 +14,7 @@ import Helmet from 'react-helmet';
 function Flask_Bottles() {
 
     const Category_Name = "Flasks & Bottles";
-    const Category_URL = "https://sonaextrusion.com/Aluminum-Products/Flasks-And-Bottles/";
+    const Category_URL = "https://sonaextrusion.com/Aluminum-Products/Flasks-And-Bottles";
     const Category_Description = "Looking for Eco-Friendly Packaging? Sona Extrusion Manufactures Custom Aluminum Bottles and Flasks, Ideal for Pharmaceutical, Cosmetic, and other Industries.";
   
   const schema = `{

@@ -9,7 +9,7 @@ import Helmet from 'react-helmet';
 function BlogMedia() {
     
     const Category_Name = "Blog & Media";
-    const Category_URL = "https://sonaextrusion.com/Resources/BlogMedia/";
+    const Category_URL = "https://sonaextrusion.com/Resources/BlogMedia";
     const Category_Description = "Sona Extrusion Blog Media provides expert insights, news, and trends to keep you informed about the latest in the extrusion industry. Visit now!";
   
   const schema = `{

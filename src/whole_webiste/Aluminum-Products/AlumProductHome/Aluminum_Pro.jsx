@@ -9,7 +9,7 @@ import AlumBenefit from './AlumBenefit'
 import Helmet from 'react-helmet';
 function Aluminum_Pro() {
     const Category_Name = "Aluminum Products";
-    const Category_URL = "https://sonaextrusion.com/Aluminum-Products/";
+    const Category_URL = "https://sonaextrusion.com/Aluminum-Products";
     const Category_Description = "Aluminum Products Manufacturer Delivering Top-Quality, Durable Solutions for Industries Like Pharmaceuticals, Cosmetics, and Agro-Chemical Sectors. Get Now!";
   
   const schema = `{

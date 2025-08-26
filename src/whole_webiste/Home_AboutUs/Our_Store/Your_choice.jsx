@@ -41,7 +41,7 @@ function Your_choice() {
                         data-aos-offset="200"
                         data-aos-duration="500"
                     >
-                        <Link to="/Aluminum-Products/Flasks-And-Bottles/" className="text-decoration-none ">
+                        <Link to="/Aluminum-Products/Flasks-And-Bottles" className="text-decoration-none ">
                             <button type="button" className='AboutSonaExBtn '>Learn More</button>
                         </Link>
                     </div>

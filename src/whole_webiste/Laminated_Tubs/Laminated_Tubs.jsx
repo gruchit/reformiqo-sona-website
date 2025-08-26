@@ -11,7 +11,7 @@ import Helmet from 'react-helmet';
 function Laminated_Tubs() {
 
     const Category_Name = "Laminated Tubs";
-    const Category_URL = "https://sonaextrusion.com/Laminated-Tubs/";
+    const Category_URL = "https://sonaextrusion.com/Laminated-Tubs";
     const Category_Description = "Laminated tubes by Sona Extrusion provide high-quality packaging for pharmaceuticals, cosmetics, and industrial products. Get Ideal packaging solutions!";
 
     const schema = `{

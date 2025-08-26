@@ -14,7 +14,7 @@ import Loader from "../../component/Loader/Loader.jsx";
 import CMPsecond from './CMPsecond'
 function AdvantagesSona() {
   const Category_Name = "Advantages Sona";
-    const Category_URL = "https://sonaextrusion.com/About/Advatages-Sona/";
+    const Category_URL = "https://sonaextrusion.com/About/Advatages-Sona";
     const Category_Description = "Sonaextrusion delivers a perfect mixture of technology, durability, and eco-consciousness. Explore the advantages of choosing us as your extrusion partner!";
 
 const schema = `{

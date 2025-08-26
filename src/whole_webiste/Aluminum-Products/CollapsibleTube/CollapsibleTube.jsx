@@ -13,7 +13,7 @@ import Helmet from 'react-helmet';
 function CollapsibleTube() {
 
     const Category_Name = "Collapsible Tubes";
-    const Category_URL = "https://sonaextrusion.com/Aluminum-Products/Collapsible-Tubes/";
+    const Category_URL = "https://sonaextrusion.com/Aluminum-Products/Collapsible-Tubes";
     const Category_Description = "Trusted Aluminum Collapsible Tubes Manufacturer Offering Secure Solutions. Meet the Highest Quality Standards for Pharmaceuticals, Cosmetics, and Other Industries.";
   
   const schema = `{

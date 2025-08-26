@@ -153,7 +153,7 @@ const schema = `
                                 <h1 className='sans_Medium py-3'>5 Benefits of Using Collapsible Tubes</h1>
                                 <h4 className='sans_Medium'>Benefit 1: Enhanced Product Protection:</h4>
                                 <ul className=''>
-                                    <li className='my-4'><a className='text-decoration-none ms-2 text-secondary sans_light'><span> <Link to="/Aluminum-Products/Collapsible-Tubes/">Aluminum Collapsible</Link></span> tubes provide superior barrier properties, effectively shielding contents from external factors like light, air, and moisture.</a></li>
+                                    <li className='my-4'><a className='text-decoration-none ms-2 text-secondary sans_light'><span> <Link to="/Aluminum-Products/Collapsible-Tubes">Aluminum Collapsible</Link></span> tubes provide superior barrier properties, effectively shielding contents from external factors like light, air, and moisture.</a></li>
                                     <li className='my-4'><a className='text-decoration-none ms-2 text-secondary sans_light'>These barriers are crucial in maintaining the product’s integrity, extending shelf life, and ensuring it remains safe for use.</a></li>
                                     <li className='my-4'><a className='text-decoration-none ms-2 text-secondary sans_light' >For pharmaceutical products, where consistent efficacy is vital, collapsible tubes ensure that the contents stay uncontaminated and potent until the last dose.</a></li>
                                 </ul>

@@ -12,7 +12,7 @@ import Helmet from 'react-helmet';
 
 function Nutrac() {
   const Category_Name = "Nutraceutical";
-  const Category_URL = "https://sonaextrusion.com/Industry/Nutraceutical/";
+  const Category_URL = "https://sonaextrusion.com/Industry/Nutraceutical";
   const Category_Description = "Premium nutraceutical packaging containers that prioritize safety and sustainability. Explore durable, eco-friendly containers crafted for the health industry.";
 
 const schema = `{

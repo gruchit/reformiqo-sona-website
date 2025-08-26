@@ -11,7 +11,7 @@ import Helmet from 'react-helmet';
 
 function ManufacturingUnit() {
     const Category_Name = "Manufacturing Unit";
-    const Category_URL = "https://sonaextrusion.com/About/Manufacturing-Unit/";
+    const Category_URL = "https://sonaextrusion.com/About/Manufacturing-Unit";
     const Category_Description = "Sonaextrusion's Manufacturing Unit Is Powered by Modern Technology, Ensuring Precision and Durability in Every Product. Learn to Produce High-Quality Products!";
 
 const schema = `{

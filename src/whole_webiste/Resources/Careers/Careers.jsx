@@ -10,7 +10,7 @@ import Helmet from 'react-helmet';
 function Careers() {
   
   const Category_Name = "Careers";
-  const Category_URL = "https://sonaextrusion.com/Resources/Careers/";
+  const Category_URL = "https://sonaextrusion.com/Resources/Careers";
   const Category_Description = "Build a rewarding career with Sona Extrusion. Discover current job openings and apply online to join our innovative and dynamic team today. Click Now!";
 
 const schema = `{

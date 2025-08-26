@@ -10,7 +10,7 @@ import Helmet from 'react-helmet';
 function Gallery() {
     
     const Category_Name = "Gallery";
-    const Category_URL = "https://sonaextrusion.com/Resources/Gallery/";
+    const Category_URL = "https://sonaextrusion.com/Resources/Gallery";
     const Category_Description = "Sona Extrusion Gallery showcases our achievements, projects, and memorable moments. Discover our story through visuals.";
 
     const schema = `{

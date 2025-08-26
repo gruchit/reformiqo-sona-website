@@ -12,7 +12,7 @@ import Focus from '../../Home/Focus'
 
 function ReachUs() {
     const Category_Name = "Reach Us";
-    const Category_URL = "https://sonaextrusion.com/ReachUs/";
+    const Category_URL = "https://sonaextrusion.com/ReachUs";
     const Category_Description = "Contact Sona Extrusion for support, queries, or information. Find all the details you need on our Reach Us page. Get in touch today!";
 
     const schema = `{

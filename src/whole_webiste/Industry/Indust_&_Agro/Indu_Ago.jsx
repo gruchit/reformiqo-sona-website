@@ -13,7 +13,7 @@ import Helmet from 'react-helmet';
 function Indu_Ago() {
 
   const Category_Name = "Industrial & Agro-Chemical";
-  const Category_URL = "https://sonaextrusion.com/Industry/Industrial-And-Agro-Chemical/";
+  const Category_URL = "https://sonaextrusion.com/Industry/Industrial-And-Agro-Chemical";
   const Category_Description = "Reliable packaging solutions for industrial and agro-chemical products. Offering innovative, durable solutions to ensure the safety and quality of your products.";
 
 const schema = `{

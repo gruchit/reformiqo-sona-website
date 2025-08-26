@@ -16,7 +16,7 @@ import { MdShare } from "react-icons/md";
 import '../DefineAdvantages/Define.css'
 import '../../../assets/fonts/fonts.css'
 import Focus from '../../Home/Focus';
-import BlogImg2 from '../../../assets/newheaderPhoto/Resize/webp/Blog3.webp';
+import BlogImg2 from '../../../assets/newheaderPhoto/Resize/webp/Home12.webp';
 import TextField from '@mui/material/TextField';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
@@ -174,11 +174,11 @@ const schema = `
                                     </div>
                                     <div className='FutureCardTxt p-3'>
                                         <h5 className='text-secondary sans_bold text-center'>
-                                            <Link to="/Factors-for-Choosing-the-Pharma-Packaging-Partner" className='text-decoration-none text-secondary'>
+                                            <Link to="/Benefits-of-Airtight-Tablet-Canisters-in-Pharma-Industry" className='text-decoration-none text-secondary'>
                                                 Previous
                                             </Link>
                                         </h5>
-                                        <p className='sans_Light text-center'>Choosing the Right Pharmaceutical Packaging Partner</p>
+                                        <p className='sans_Light text-center'>Why Airtight Tablet Canisters Are Essential for Pharma Industry</p>
                                     </div>
                                 </div>
                             </div>

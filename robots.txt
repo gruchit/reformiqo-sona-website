@@ -1,0 +1,41 @@
+# robots.txt file for sonaextrusion.com
+# This file guides search engine bots on how to interact with the site's content
+
+# Apply rules to all bots
+User-agent: *
+
+# Disallow crawling of sensitive or non-essential directories
+Disallow: /admin/             			# Admin panel
+Disallow: /login/             			# Login pages
+Disallow: /register/          			# Registration pages
+Disallow: /private/           			# Private files
+Disallow: /search/            			# Search results
+Disallow: /thank-you/         			# Thank-you pages
+Disallow: /tmp/               			# Temporary files or directories
+
+# Disallow dynamic URLs 
+Disallow: /kgcc.aspx          			# Block kgcc.aspx and all its variants
+Disallow: /Stars.aspx         			# Block Stars.aspx and all its variants
+Disallow: /index.aspx         			# Block index.aspx
+Disallow: /Index.aspx         			# Block Index.aspx
+Disallow: /onlys.aspx         			# Block onlys.aspx
+Disallow: /home-layout-5/     			# Block home-layout-5
+Disallow: /home-layout-1/     			# Block home-layout-1
+Disallow: /author/newsona2023/  		# Block author
+Disallow: /lq-project/*/  			    # Block lq-project pages
+Disallow: /lq-project/  			    # Block lq-project
+Disallow: /cart/  				        # Block author
+Disallow: /service/*/  				    # Block service
+Disallow: /products_info.php	  		# Block Products
+Disallow: /service/barrel-markers/  	# Block barrel markers
+
+
+
+
+
+# Allow crawling of important sections
+Allow: /services/             # Services pages
+Allow: /Resources/BlogMedia  # Blog content
+
+# Specify the location of the sitemap
+Sitemap: https://sonaextrusion.com/sitemap.xml

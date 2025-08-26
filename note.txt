@@ -145,3 +145,8 @@ export default Flipbook;
        <img src={Home4} alt="Cosm Slide 2" className="" loading='lazy'/>,
        <img src={Home5} alt="Cosm Slide 2" className="" loading='lazy'/>
    ]
+
+
+
+
+   

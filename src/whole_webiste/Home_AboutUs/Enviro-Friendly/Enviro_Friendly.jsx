@@ -9,7 +9,7 @@ import Focuse from '../../Home/Focus.jsx'
 import Helmet from 'react-helmet';
 function Enviro_Friendly() {
     const Category_Name = "Enviro friendly";
-    const Category_URL = "https://sonaextrusion.com/About/Enviro-Friendly/";
+    const Category_URL = "https://sonaextrusion.com/About/Enviro-Friendly";
     const Category_Description = "Sonaextrusion’s eco-conscious initiatives, from reducing waste to energy-efficient manufacturing. Learn how we prioritize sustainability in our operations!";
 
 const schema = `{

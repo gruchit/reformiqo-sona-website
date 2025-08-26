@@ -25,7 +25,7 @@ function IndustryTop() {
                                     For Ever - Changing Industry Requirements </h1>
                                 <p className='sans_light text-secondary text-lg-center text-xl-start '>Sona Extrusion Pvt. Ltd. is a complete plant and has a separate Extrusion Area, Lacquering and Annealing Area, Printing Area and fully controlled 5 Micron positive air Handling Capping & Packing area. Area cleanliness is maintained by highest standard of hygiene which ensure good manufacturing practices.</p>
                                 <div className='IndustryTop_Btn  mt-5'>
-                                    <Link to="/About/Our-Story/" className=" text-decoration-none">
+                                    <Link to="/About/Our-Story" className=" text-decoration-none">
                                         <button className=" btn-1 hover-filled-slide-right"><span>Learn More</span></button>
                                     </Link>
                                 </div>

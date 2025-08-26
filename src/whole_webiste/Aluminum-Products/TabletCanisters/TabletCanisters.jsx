@@ -12,7 +12,7 @@ import Focus from '../../Home/Focus'
 import Helmet from 'react-helmet';
 function TabletCanisters() {
     const Category_Name = "Tablet Canisters";
-    const Category_URL = "https://sonaextrusion.com/Aluminum-Products/Tablet-Canisters/";
+    const Category_URL = "https://sonaextrusion.com/Aluminum-Products/Tablet-Canisters";
     const Category_Description = "Sona Extrusion delivers high-quality aluminum tablet canisters, ensuring safety and durability. We delivers eco-friendly packaging solutions for all industries.";
   
   const schema = `{

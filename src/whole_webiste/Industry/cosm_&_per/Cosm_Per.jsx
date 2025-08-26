@@ -11,7 +11,7 @@ import Focus from '../../Home/Focus.jsx'
 import Helmet from 'react-helmet';
 function Cosm_Per() {
     const Category_Name = "Cosmetic & Personal Care";
-    const Category_URL = "https://sonaextrusion.com/Industry/Cosmetic-And-Personal-Care/";
+    const Category_URL = "https://sonaextrusion.com/Industry/Cosmetic-And-Personal-Care";
     const Category_Description = "Expert manufacturer of cosmetic and personal care packaging. We offer eco-friendly, innovative, and durable designs that reflect your brand’s unique identity.";
 
 const schema = `{

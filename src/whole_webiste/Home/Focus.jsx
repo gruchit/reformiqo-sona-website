@@ -31,6 +31,14 @@ function Focus({ type }) {
                                     A Glimpse into Sona Extrusion’s <br /> State-of-the-Art Manufacturing
                                 </>
                             )}
+                            
+                            {type === "BenifitsFeature" && "Why Airtight Tablet Canisters Are Essential for Pharma Industry"}
+                            {type === "ExpertType" && "A Guide to Pharmaceutical Packaging Solutions: From Design to Patient Compliance"}
+                            {type === "PharmaPack" && "Pharmaceutical Packaging: Best Practices & Innovations"}
+                            {type === "AllumColl" && "Aluminum Collapsible Tubes: Benefits & Industry Applications"}
+                            {type === "BoostBrand" && "How Personal Care Packaging Affects Brand Perception"}
+                            {type === "BenifitAllum" && "Benefits of Aluminium Tubes for Creams, Gels, Ointment Types of Pharma Products"}
+                            {type === "CustomSolutions" && "Custom Solutions for High-Volume Pharmaceutical Packaging"}
                             {type === "BrandTwo" && "Why Leading Brands Choose Sona Extrusion"}
                             {type === "BenifitColla" && "5 Benefits of Using Collapsible Tubes for Pharma Products"}
                             {type === "BlogPharm" && "Choosing the Right Pharmaceutical Packaging Partner"}

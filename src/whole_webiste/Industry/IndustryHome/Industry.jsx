@@ -13,7 +13,7 @@ import Loader from "../../component/Loader/Loader.jsx";
 
 function Industry() {
     const Category_Name = "Industry";
-    const Category_URL = "https://sonaextrusion.com/Industry/";
+    const Category_URL = "https://sonaextrusion.com/Industry";
     const Category_Description = "Sona Extrusion provides high-quality packaging materials for Pharmaceutical, Cosmetic & Personal Care, Nutraceutical, Industrial & Agro-Chemical industries. Get now!";
 
 const schema = `{

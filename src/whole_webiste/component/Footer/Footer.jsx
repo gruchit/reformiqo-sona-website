@@ -63,32 +63,32 @@ function Footer() {
                                 <h2 className=' text-white Cont_number'>Quick Links</h2>
                                 <ul className='ps-5 '>
                                     <li className=' p-1'>
-                                        <Link to="/About/Our-Story/" className='sans_light FooterList text-decoration-none '>
+                                        <Link to="/About/Our-Story" className='sans_light FooterList text-decoration-none '>
                                             Our Story
                                         </Link>
                                     </li>
                                     <li className=' p-1'>
-                                        <Link to="/About/Advatages-Sona/" className='sans_light FooterList text-decoration-none '>
+                                        <Link to="/About/Advatages-Sona" className='sans_light FooterList text-decoration-none '>
                                             Advantage Sona
                                         </Link>
                                     </li>
                                     <li className=' p-1'>
-                                        <Link to="/About/Manufacturing-Unit/" className='sans_light FooterList text-decoration-none '>
+                                        <Link to="/About/Manufacturing-Unit" className='sans_light FooterList text-decoration-none '>
                                             Manufacturing Unit
                                         </Link>
                                     </li>
                                     <li className=' p-1'>
-                                        <Link to="/Industry/" className='s_light FooterList text-decoration-none '>Industries We Serve</Link>
+                                        <Link to="/Industry" className='s_light FooterList text-decoration-none '>Industries We Serve</Link>
                                     </li>
                                     <li className=' p-1'>
-                                        <Link to="/Aluminum-Products/" className='s_light FooterList text-decoration-none '>Aluminum Products</Link>
+                                        <Link to="/Aluminum-Products" className='s_light FooterList text-decoration-none '>Aluminum Products</Link>
                                     </li>
                                     <li className=' p-1'>
-                                        <Link to="/ReachUs/" className='s_light FooterList text-decoration-none '>Reach Us
+                                        <Link to="/ReachUs" className='s_light FooterList text-decoration-none '>Reach Us
                                         </Link>
                                     </li>
                                     <li className=' p-1'>
-                                        <Link to="/Resources/BlogMedia/" className='s_light FooterList text-decoration-none '>Blogs
+                                        <Link to="/Resources/BlogMedia" className='s_light FooterList text-decoration-none '>Blogs
                                         </Link>
                                     </li>
                                 </ul>

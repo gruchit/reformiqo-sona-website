@@ -31,7 +31,7 @@ function Infinite() {
                 </div>
                 <div className="col-lg-4 col-md-12 col-sm-12 d-flex align-items-end align-items-center  justify-content-end ">
                     {/* <button > */}
-                        <Link to="/ReachUs/" className="custom-button text-decoration-none">
+                        <Link to="/ReachUs" className="custom-button text-decoration-none">
                         <span >Contact Us Today</span>
                         <div className="icon-wrapper"
                         >

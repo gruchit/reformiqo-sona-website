@@ -13,7 +13,7 @@ import Your_choice from './Your_choice.jsx'
 function Sona_About() {
 
     const Category_Name = "Our Story";
-    const Category_URL = "https://sonaextrusion.com/About/Our-Story/";
+    const Category_URL = "https://sonaextrusion.com/About/Our-Story";
     const Category_Description = "Sonaextrusion’s store offers precision engineered extrusion products made for exceptional industrial performance. Designed to enhance efficiency. Visit Today!";
 
 const schema = `{

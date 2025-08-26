@@ -9,7 +9,7 @@ import Focus from '../../Home/Focus';
 import { Helmet } from 'react-helmet-async';
 function BrocherMain() {
     const Category_Name = "Brochure";
-    const Category_URL = "https://sonaextrusion.com/About/Brochures/";
+    const Category_URL = "https://sonaextrusion.com/About/Brochures";
     const Category_Description = "Get access to Sonaextrusion brochures for a complete understanding of our products, services, and eco-conscious initiatives. Get now for detailed insights!";
 
 const schema = `{

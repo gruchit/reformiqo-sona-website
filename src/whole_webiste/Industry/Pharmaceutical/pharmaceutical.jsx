@@ -12,7 +12,7 @@ import Helmet from 'react-helmet';
 function pharmaceutical() {
 
     const Category_Name = "Pharmaceutical";
-    const Category_URL = "https://sonaextrusion.com/Industry/Pharmaceutical/";
+    const Category_URL = "https://sonaextrusion.com/Industry/Pharmaceutical";
     const Category_Description = "Manufacturer and Supplier of Premium Pharmaceutical Packaging Solutions. Prioritize Durability, Compliance, and Innovation to Ensure Your Products are Protected.";
 
 const schema = `{

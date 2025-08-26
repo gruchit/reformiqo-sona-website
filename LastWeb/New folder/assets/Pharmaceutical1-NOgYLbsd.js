@@ -1,1 +1,0 @@
-const s="/assets/Company_black-CGpgeWSU.jpg",a="/assets/Cosmetic1-D5shKMZN.svg",t="/assets/Industrial1-BIplrvAY.svg",c="/assets/Nutraceuticals-CZxqoJan.svg",e="/assets/Pharmaceutical1-BmVkrNGr.svg";export{s as C,t as I,c as N,e as P,a};
